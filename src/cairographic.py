@@ -404,6 +404,10 @@ class Graphic(object):
                         cr.move_to(offset, y0+10)
                     else:
                         cr.move_to(offset, y0+10)
+                    if count == 0:
+                        count = 0
+                        total = 0
+                        continue
                     average = float("{0:.1f}".format(total / count))
                     str1 = 'ave=' + str(average)
                     cr.show_text(str1)
