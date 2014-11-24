@@ -1,0 +1,1764 @@
+[3648105.217]profiling_start:touch hardware down
+[3648105.610]  -> xdg_surface@29.deactivated()
+[3648105.878]  -> xdg_surface@29.activated()
+[22:18:47.897] already in the native mode
+[3648106.462]profiling_end:touch hardware down
+[3648106.593]profiling_start:touch down
+[3648106.721]profiling_end:touch down
+[3648106.849]  -> wl_touch@23.down(21, 738087512, wl_surface@26, 0, 950.000000, 268.000000)
+[3648108.390]profiling_start:client process
+[3648110.325]profiling_end:graphic hardware
+[3648110.573]profiling_start:weston
+[3648111.020]profiling_end:weston
+[3648111.243]profiling_start:graphic hardware
+[3648111.409] wl_surface@15.frame(new id wl_callback@30)
+[3648111.889] wl_surface@15.attach(wl_buffer@28, 0, 0)
+[3648112.757] wl_surface@15.damage(0, 0, 1920, 1080)
+[3648113.725] wl_surface@15.commit()
+[3648113.962]profiling_end:client process
+[3648114.108]profiling_start:wcommit
+[3648114.288]profiling_start:wcommit_15
+[3648114.437]profiling_end:wcommit_15
+[3648114.570]profiling_end:wcommit
+[3648126.992]profiling_end:graphic hardware
+[3648127.183]profiling_start:weston
+[3648133.215]  -> wl_buffer@28.release()
+[3648133.860]profiling_end:weston
+[3648135.180]profiling_start:graphic hardware
+[3648135.372]profiling_start:touch hardware motion
+[3648135.503]profiling_end:touch hardware motion
+[3648135.631]profiling_start:touch motion
+[3648135.780]profiling_end:touch motion
+[3648135.926]  -> wl_touch@23.motion(738087526, 0, 951.000000, 269.000000)
+[3648136.986]profiling_start:client process
+[3648137.120]profiling_start:touch hardware motion
+[3648137.292]profiling_end:touch hardware motion
+[3648137.407]profiling_start:touch motion
+[3648137.557]profiling_end:touch motion
+[3648137.726]  -> wl_touch@23.motion(738087536, 0, 952.000000, 271.000000)
+[3648145.628]profiling_start:client process
+[3648145.773]profiling_start:touch hardware motion
+[3648145.902]profiling_end:touch hardware motion
+[3648146.091]profiling_start:touch motion
+[3648146.216]profiling_end:touch motion
+[3648146.384]  -> wl_touch@23.motion(738087546, 0, 952.000000, 272.000000)
+[3648147.380]profiling_start:client process
+[3648147.490]  -> wl_callback@30.done(245829421)
+[3648147.834]  -> wl_display@1.delete_id(30)
+[3648148.189]profiling_end:graphic hardware
+[3648149.209]profiling_start:touch hardware motion
+[3648149.379]profiling_end:touch hardware motion
+[3648149.497]profiling_start:touch motion
+[3648149.604]profiling_end:touch motion
+[3648149.732]  -> wl_touch@23.motion(738087556, 0, 953.000000, 274.000000)
+[3648150.779]profiling_start:client process
+[3648159.184]profiling_start:touch hardware motion
+[3648159.363]profiling_end:touch hardware motion
+[3648159.481]profiling_start:touch motion
+[3648159.588]profiling_end:touch motion
+[3648159.716]  -> wl_touch@23.motion(738087566, 0, 953.000000, 275.000000)
+[3648160.752]profiling_start:client process
+[3648164.192]profiling_start:touch hardware motion
+[3648164.416]profiling_end:touch hardware motion
+[3648164.541]profiling_start:touch motion
+[3648164.648]profiling_end:touch motion
+[3648164.809]  -> wl_touch@23.motion(738087571, 0, 953.000000, 276.000000)
+[3648165.830]profiling_start:client process
+[3648174.185]profiling_start:touch hardware motion
+[3648174.363]profiling_end:touch hardware motion
+[3648174.483]profiling_start:touch motion
+[3648174.591]profiling_end:touch motion
+[3648174.724]  -> wl_touch@23.motion(738087581, 0, 954.000000, 278.000000)
+[3648175.761]profiling_start:client process
+[3648184.186]profiling_start:touch hardware motion
+[3648184.377]profiling_end:touch hardware motion
+[3648184.498]profiling_start:touch motion
+[3648184.606]profiling_end:touch motion
+[3648184.738]  -> wl_touch@23.motion(738087591, 0, 955.000000, 280.000000)
+[3648185.781]profiling_start:client process
+[3648189.191]profiling_start:touch hardware motion
+[3648189.422]profiling_end:touch hardware motion
+[3648189.546]profiling_start:touch motion
+[3648189.654]profiling_end:touch motion
+[3648189.817]  -> wl_touch@23.motion(738087596, 0, 955.000000, 281.000000)
+[3648190.808]profiling_start:client process
+[3648198.186]profiling_start:touch hardware motion
+[3648198.367]profiling_end:touch hardware motion
+[3648198.486]profiling_start:touch motion
+[3648198.596]profiling_end:touch motion
+[3648198.729]  -> wl_touch@23.motion(738087605, 0, 956.000000, 283.000000)
+[3648199.771]profiling_start:client process
+[3648203.189]profiling_start:touch hardware motion
+[3648203.419]profiling_end:touch hardware motion
+[3648203.548]profiling_start:touch motion
+[3648203.657]profiling_end:touch motion
+[3648203.823]  -> wl_touch@23.motion(738087610, 0, 956.000000, 285.000000)
+[3648204.818]profiling_start:client process
+[3648208.196]profiling_start:touch hardware motion
+[3648208.370]profiling_end:touch hardware motion
+[3648208.488]profiling_start:touch motion
+[3648208.595]profiling_end:touch motion
+[3648208.725]  -> wl_touch@23.motion(738087615, 0, 956.000000, 287.000000)
+[3648209.705]profiling_start:client process
+[3648213.193]profiling_start:touch hardware motion
+[3648213.424]profiling_end:touch hardware motion
+[3648213.550]profiling_start:touch motion
+[3648213.659]profiling_end:touch motion
+[3648213.791]  -> wl_touch@23.motion(738087620, 0, 957.000000, 289.000000)
+[3648214.810]profiling_start:client process
+[3648218.194]profiling_start:touch hardware motion
+[3648218.368]profiling_end:touch hardware motion
+[3648218.487]profiling_start:touch motion
+[3648218.594]profiling_end:touch motion
+[3648218.724]  -> wl_touch@23.motion(738087625, 0, 957.000000, 291.000000)
+[3648219.745]profiling_start:client process
+[3648223.191]profiling_start:touch hardware motion
+[3648223.420]profiling_end:touch hardware motion
+[3648223.545]profiling_start:touch motion
+[3648223.652]profiling_end:touch motion
+[3648223.817]  -> wl_touch@23.motion(738087630, 0, 958.000000, 292.000000)
+[3648224.790]profiling_start:client process
+[3648228.195]profiling_start:touch hardware motion
+[3648228.374]profiling_end:touch hardware motion
+[3648228.493]profiling_start:touch motion
+[3648228.653]profiling_end:touch motion
+[3648228.793]  -> wl_touch@23.motion(738087635, 0, 958.000000, 294.000000)
+[3648229.806]profiling_start:client process
+[3648233.190]profiling_start:touch hardware motion
+[3648233.427]profiling_end:touch hardware motion
+[3648233.554]profiling_start:touch motion
+[3648233.662]profiling_end:touch motion
+[3648233.829]  -> wl_touch@23.motion(738087640, 0, 958.000000, 295.000000)
+[3648234.846]profiling_start:client process
+[3648238.200]profiling_start:touch hardware motion
+[3648238.384]profiling_end:touch hardware motion
+[3648238.505]profiling_start:touch motion
+[3648238.614]profiling_end:touch motion
+[3648238.744]  -> wl_touch@23.motion(738087645, 0, 959.000000, 297.000000)
+[3648239.783]profiling_start:client process
+[3648243.191]profiling_start:touch hardware motion
+[3648243.423]profiling_end:touch hardware motion
+[3648243.549]profiling_start:touch motion
+[3648243.697]profiling_end:touch motion
+[3648243.837]  -> wl_touch@23.motion(738087650, 0, 959.000000, 300.000000)
+[3648244.873]profiling_start:client process
+[3648248.197]profiling_start:touch hardware motion
+[3648248.371]profiling_end:touch hardware motion
+[3648248.490]profiling_start:touch motion
+[3648248.598]profiling_end:touch motion
+[3648248.759]  -> wl_touch@23.motion(738087655, 0, 959.000000, 302.000000)
+[3648249.765]profiling_start:client process
+[3648253.190]profiling_start:touch hardware motion
+[3648253.416]profiling_end:touch hardware motion
+[3648253.541]profiling_start:touch motion
+[3648253.649]profiling_end:touch motion
+[3648253.811]  -> wl_touch@23.motion(738087660, 0, 959.000000, 304.000000)
+[3648254.806]profiling_start:client process
+[3648258.197]profiling_start:touch hardware motion
+[3648258.374]profiling_end:touch hardware motion
+[3648258.492]profiling_start:touch motion
+[3648258.599]profiling_end:touch motion
+[3648258.728]  -> wl_touch@23.motion(738087665, 0, 960.000000, 306.000000)
+[3648259.824]profiling_start:client process
+[3648263.191]profiling_start:touch hardware motion
+[3648263.421]profiling_end:touch hardware motion
+[3648263.544]profiling_start:touch motion
+[3648263.652]profiling_end:touch motion
+[3648263.814]  -> wl_touch@23.motion(738087670, 0, 960.000000, 309.000000)
+[3648264.805]profiling_start:client process
+[3648268.198]profiling_start:touch hardware motion
+[3648268.374]profiling_end:touch hardware motion
+[3648268.492]profiling_start:touch motion
+[3648268.598]profiling_end:touch motion
+[3648268.728]  -> wl_touch@23.motion(738087675, 0, 960.000000, 311.000000)
+[3648269.780]profiling_start:client process
+[3648273.190]profiling_start:touch hardware motion
+[3648273.420]profiling_end:touch hardware motion
+[3648273.545]profiling_start:touch motion
+[3648273.653]profiling_end:touch motion
+[3648273.819]  -> wl_touch@23.motion(738087680, 0, 960.000000, 314.000000)
+[3648274.808]profiling_start:client process
+[3648277.195]profiling_start:touch hardware motion
+[3648277.374]profiling_end:touch hardware motion
+[3648277.492]profiling_start:touch motion
+[3648277.599]profiling_end:touch motion
+[3648277.761]  -> wl_touch@23.motion(738087684, 0, 960.000000, 316.000000)
+[3648278.781]profiling_start:client process
+[3648282.190]profiling_start:touch hardware motion
+[3648282.419]profiling_end:touch hardware motion
+[3648282.545]profiling_start:touch motion
+[3648282.655]profiling_end:touch motion
+[3648282.789]  -> wl_touch@23.motion(738087689, 0, 961.000000, 320.000000)
+[3648283.813]profiling_start:client process
+[3648287.197]profiling_start:touch hardware motion
+[3648287.381]profiling_end:touch hardware motion
+[3648287.501]profiling_start:touch motion
+[3648287.608]profiling_end:touch motion
+[3648287.775]  -> wl_touch@23.motion(738087694, 0, 961.000000, 323.000000)
+[3648288.742]profiling_start:client process
+[3648292.191]profiling_start:touch hardware motion
+[3648292.420]profiling_end:touch hardware motion
+[3648292.545]profiling_start:touch motion
+[3648292.653]profiling_end:touch motion
+[3648292.819]  -> wl_touch@23.motion(738087699, 0, 962.000000, 325.000000)
+[3648293.899]profiling_start:client process
+[3648297.197]profiling_start:touch hardware motion
+[3648297.471]profiling_end:touch hardware motion
+[3648297.593]profiling_start:touch motion
+[3648297.701]profiling_end:touch motion
+[3648297.866]  -> wl_touch@23.motion(738087704, 0, 962.000000, 328.000000)
+[3648298.854]profiling_start:client process
+[3648302.192]profiling_start:touch hardware motion
+[3648302.422]profiling_end:touch hardware motion
+[3648302.546]profiling_start:touch motion
+[3648302.655]profiling_end:touch motion
+[3648302.819]  -> wl_touch@23.motion(738087709, 0, 963.000000, 331.000000)
+[3648303.834]profiling_start:client process
+[3648307.196]profiling_start:touch hardware motion
+[3648307.375]profiling_end:touch hardware motion
+[3648307.495]profiling_start:touch motion
+[3648307.604]profiling_end:touch motion
+[3648307.766]  -> wl_touch@23.motion(738087714, 0, 963.000000, 334.000000)
+[3648308.759]profiling_start:client process
+[3648312.190]profiling_start:touch hardware motion
+[3648312.418]profiling_end:touch hardware motion
+[3648312.543]profiling_start:touch motion
+[3648312.653]profiling_end:touch motion
+[3648312.821]  -> wl_touch@23.motion(738087719, 0, 963.000000, 338.000000)
+[3648313.821]profiling_start:client process
+[3648317.194]profiling_start:touch hardware motion
+[3648317.371]profiling_end:touch hardware motion
+[3648317.489]profiling_start:touch motion
+[3648317.597]profiling_end:touch motion
+[3648317.762]  -> wl_touch@23.motion(738087724, 0, 963.000000, 341.000000)
+[3648318.776]profiling_start:client process
+[3648322.192]profiling_start:touch hardware motion
+[3648322.419]profiling_end:touch hardware motion
+[3648322.544]profiling_start:touch motion
+[3648322.652]profiling_end:touch motion
+[3648322.817]  -> wl_touch@23.motion(738087729, 0, 963.000000, 345.000000)
+[3648323.806]profiling_start:client process
+[3648327.198]profiling_start:touch hardware motion
+[3648327.376]profiling_end:touch hardware motion
+[3648327.495]profiling_start:touch motion
+[3648327.604]profiling_end:touch motion
+[3648327.767]  -> wl_touch@23.motion(738087734, 0, 964.000000, 349.000000)
+[3648328.790]profiling_start:client process
+[3648332.192]profiling_start:touch hardware motion
+[3648332.416]profiling_end:touch hardware motion
+[3648332.539]profiling_start:touch motion
+[3648332.648]profiling_end:touch motion
+[3648332.777]  -> wl_touch@23.motion(738087739, 0, 964.000000, 353.000000)
+[3648333.820]profiling_start:client process
+[3648337.196]profiling_start:touch hardware motion
+[3648337.371]profiling_end:touch hardware motion
+[3648337.492]profiling_start:touch motion
+[3648337.600]profiling_end:touch motion
+[3648337.763]  -> wl_touch@23.motion(738087744, 0, 965.000000, 358.000000)
+[3648338.763]profiling_start:client process
+[3648342.191]profiling_start:touch hardware motion
+[3648342.414]profiling_end:touch hardware motion
+[3648342.537]profiling_start:touch motion
+[3648342.644]profiling_end:touch motion
+[3648342.806]  -> wl_touch@23.motion(738087749, 0, 965.000000, 361.000000)
+[3648343.824]profiling_start:client process
+[3648347.198]profiling_start:touch hardware motion
+[3648347.376]profiling_end:touch hardware motion
+[3648347.496]profiling_start:touch motion
+[3648347.605]profiling_end:touch motion
+[3648347.769]  -> wl_touch@23.motion(738087754, 0, 966.000000, 365.000000)
+[3648348.766]profiling_start:client process
+[3648352.190]profiling_start:touch hardware motion
+[3648352.418]profiling_end:touch hardware motion
+[3648352.544]profiling_start:touch motion
+[3648352.653]profiling_end:touch motion
+[3648352.784]  -> wl_touch@23.motion(738087759, 0, 965.000000, 369.000000)
+[3648353.805]profiling_start:client process
+[3648356.196]profiling_start:touch hardware motion
+[3648356.373]profiling_end:touch hardware motion
+[3648356.492]profiling_start:touch motion
+[3648356.601]profiling_end:touch motion
+[3648356.763]  -> wl_touch@23.motion(738087763, 0, 965.000000, 372.000000)
+[3648357.901]profiling_start:client process
+[3648361.192]profiling_start:touch hardware motion
+[3648361.425]profiling_end:touch hardware motion
+[3648361.552]profiling_start:touch motion
+[3648361.660]profiling_end:touch motion
+[3648361.824]  -> wl_touch@23.motion(738087768, 0, 965.000000, 376.000000)
+[3648362.879]profiling_start:client process
+[3648366.199]profiling_start:touch hardware motion
+[3648366.378]profiling_end:touch hardware motion
+[3648366.499]profiling_start:touch motion
+[3648366.609]profiling_end:touch motion
+[3648366.774]  -> wl_touch@23.motion(738087773, 0, 965.000000, 380.000000)
+[3648367.765]profiling_start:client process
+[3648371.190]profiling_start:touch hardware motion
+[3648371.416]profiling_end:touch hardware motion
+[3648371.543]profiling_start:touch motion
+[3648371.650]profiling_end:touch motion
+[3648371.816]  -> wl_touch@23.motion(738087778, 0, 966.000000, 383.000000)
+[3648372.813]profiling_start:client process
+[3648376.199]profiling_start:touch hardware motion
+[3648376.377]profiling_end:touch hardware motion
+[3648376.497]profiling_start:touch motion
+[3648376.605]profiling_end:touch motion
+[3648376.768]  -> wl_touch@23.motion(738087783, 0, 966.000000, 388.000000)
+[3648377.798]profiling_start:client process
+[3648381.192]profiling_start:touch hardware motion
+[3648381.419]profiling_end:touch hardware motion
+[3648381.545]profiling_start:touch motion
+[3648381.653]profiling_end:touch motion
+[3648381.817]  -> wl_touch@23.motion(738087788, 0, 967.000000, 392.000000)
+[3648382.826]profiling_start:client process
+[3648386.196]profiling_start:touch hardware motion
+[3648386.373]profiling_end:touch hardware motion
+[3648386.493]profiling_start:touch motion
+[3648386.601]profiling_end:touch motion
+[3648386.732]  -> wl_touch@23.motion(738087793, 0, 967.000000, 396.000000)
+[3648387.838]profiling_start:client process
+[3648391.190]profiling_start:touch hardware motion
+[3648391.417]profiling_end:touch hardware motion
+[3648391.545]profiling_start:touch motion
+[3648391.654]profiling_end:touch motion
+[3648391.786]  -> wl_touch@23.motion(738087798, 0, 967.000000, 399.000000)
+[3648392.804]profiling_start:client process
+[3648396.199]profiling_start:touch hardware motion
+[3648396.379]profiling_end:touch hardware motion
+[3648396.501]profiling_start:touch motion
+[3648396.611]profiling_end:touch motion
+[3648396.776]  -> wl_touch@23.motion(738087803, 0, 967.000000, 403.000000)
+[3648397.779]profiling_start:client process
+[3648401.191]profiling_start:touch hardware motion
+[3648401.418]profiling_end:touch hardware motion
+[3648401.544]profiling_start:touch motion
+[3648401.654]profiling_end:touch motion
+[3648401.786]  -> wl_touch@23.motion(738087808, 0, 966.000000, 407.000000)
+[3648402.786]profiling_start:client process
+[3648406.198]profiling_start:touch hardware motion
+[3648406.378]profiling_end:touch hardware motion
+[3648406.497]profiling_start:touch motion
+[3648406.604]profiling_end:touch motion
+[3648406.735]  -> wl_touch@23.motion(738087813, 0, 966.000000, 410.000000)
+[3648407.822]profiling_start:client process
+[3648411.194]profiling_start:touch hardware motion
+[3648411.424]profiling_end:touch hardware motion
+[3648411.550]profiling_start:touch motion
+[3648411.659]profiling_end:touch motion
+[3648411.822]  -> wl_touch@23.motion(738087818, 0, 966.000000, 414.000000)
+[3648412.843]profiling_start:client process
+[3648416.197]profiling_start:touch hardware motion
+[3648416.374]profiling_end:touch hardware motion
+[3648416.494]profiling_start:touch motion
+[3648416.601]profiling_end:touch motion
+[3648416.766]  -> wl_touch@23.motion(738087823, 0, 966.000000, 418.000000)
+[3648417.886]profiling_start:client process
+[3648421.191]profiling_start:touch hardware motion
+[3648421.419]profiling_end:touch hardware motion
+[3648421.546]profiling_start:touch motion
+[3648421.655]profiling_end:touch motion
+[3648421.789]  -> wl_touch@23.motion(738087828, 0, 966.000000, 422.000000)
+[3648422.836]profiling_start:client process
+[3648426.199]profiling_start:touch hardware motion
+[3648426.378]profiling_end:touch hardware motion
+[3648426.496]profiling_start:touch motion
+[3648426.605]profiling_end:touch motion
+[3648426.767]  -> wl_touch@23.motion(738087833, 0, 967.000000, 426.000000)
+[3648427.805]profiling_start:client process
+[3648431.193]profiling_start:touch hardware motion
+[3648431.421]profiling_end:touch hardware motion
+[3648431.581]profiling_start:touch motion
+[3648431.708]profiling_end:touch motion
+[3648431.849]  -> wl_touch@23.motion(738087838, 0, 967.000000, 430.000000)
+[3648432.829]profiling_start:client process
+[3648436.198]profiling_start:touch hardware motion
+[3648436.376]profiling_end:touch hardware motion
+[3648436.496]profiling_start:touch motion
+[3648436.604]profiling_end:touch motion
+[3648436.767]  -> wl_touch@23.motion(738087843, 0, 967.000000, 434.000000)
+[3648437.825]profiling_start:client process
+[3648441.190]profiling_start:touch hardware motion
+[3648441.416]profiling_end:touch hardware motion
+[3648441.542]profiling_start:touch motion
+[3648441.650]profiling_end:touch motion
+[3648441.814]  -> wl_touch@23.motion(738087848, 0, 966.000000, 438.000000)
+[3648442.819]profiling_start:client process
+[3648445.190]profiling_start:touch hardware motion
+[3648445.426]profiling_end:touch hardware motion
+[3648445.552]profiling_start:touch motion
+[3648445.658]profiling_end:touch motion
+[3648445.789]  -> wl_touch@23.motion(738087852, 0, 966.000000, 441.000000)
+[3648446.858]profiling_start:client process
+[3648450.190]profiling_start:touch hardware motion
+[3648450.415]profiling_end:touch hardware motion
+[3648450.542]profiling_start:touch motion
+[3648450.653]profiling_end:touch motion
+[3648450.786]  -> wl_touch@23.motion(738087857, 0, 965.000000, 445.000000)
+[3648451.786]profiling_start:client process
+[3648455.191]profiling_start:touch hardware motion
+[3648455.420]profiling_end:touch hardware motion
+[3648455.545]profiling_start:touch motion
+[3648455.653]profiling_end:touch motion
+[3648455.818]  -> wl_touch@23.motion(738087862, 0, 965.000000, 449.000000)
+[3648456.823]profiling_start:client process
+[3648460.190]profiling_start:touch hardware motion
+[3648460.432]profiling_end:touch hardware motion
+[3648460.556]profiling_start:touch motion
+[3648460.665]profiling_end:touch motion
+[3648460.829]  -> wl_touch@23.motion(738087867, 0, 965.000000, 453.000000)
+[3648461.887]profiling_start:client process
+[3648465.189]profiling_start:touch hardware motion
+[3648465.423]profiling_end:touch hardware motion
+[3648465.551]profiling_start:touch motion
+[3648465.661]profiling_end:touch motion
+[3648465.826]  -> wl_touch@23.motion(738087872, 0, 965.000000, 456.000000)
+[3648466.828]profiling_start:client process
+[3648470.191]profiling_start:touch hardware motion
+[3648470.416]profiling_end:touch hardware motion
+[3648470.541]profiling_start:touch motion
+[3648470.648]profiling_end:touch motion
+[3648470.779]  -> wl_touch@23.motion(738087877, 0, 965.000000, 460.000000)
+[3648471.801]profiling_start:client process
+[3648475.192]profiling_start:touch hardware motion
+[3648475.423]profiling_end:touch hardware motion
+[3648475.548]profiling_start:touch motion
+[3648475.656]profiling_end:touch motion
+[3648475.818]  -> wl_touch@23.motion(738087882, 0, 965.000000, 464.000000)
+[3648476.811]profiling_start:client process
+[3648481.199]profiling_start:touch hardware motion
+[3648481.389]profiling_end:touch hardware motion
+[3648481.510]profiling_start:touch motion
+[3648481.619]profiling_end:touch motion
+[3648481.748]  -> wl_touch@23.motion(738087888, 0, 966.000000, 467.000000)
+[3648482.755]profiling_start:client process
+[3648486.195]profiling_start:touch hardware motion
+[3648486.374]profiling_end:touch hardware motion
+[3648486.491]profiling_start:touch motion
+[3648486.598]profiling_end:touch motion
+[3648486.726]  -> wl_touch@23.motion(738087893, 0, 966.000000, 471.000000)
+[3648487.825]profiling_start:client process
+[3648491.189]profiling_start:touch hardware motion
+[3648491.416]profiling_end:touch hardware motion
+[3648491.544]profiling_start:touch motion
+[3648491.652]profiling_end:touch motion
+[3648491.815]  -> wl_touch@23.motion(738087898, 0, 965.000000, 474.000000)
+[3648492.805]profiling_start:client process
+[3648496.199]profiling_start:touch hardware motion
+[3648496.381]profiling_end:touch hardware motion
+[3648496.501]profiling_start:touch motion
+[3648496.608]profiling_end:touch motion
+[3648496.737]  -> wl_touch@23.motion(738087903, 0, 965.000000, 478.000000)
+[3648497.789]profiling_start:client process
+[3648501.192]profiling_start:touch hardware motion
+[3648501.424]profiling_end:touch hardware motion
+[3648501.550]profiling_start:touch motion
+[3648501.657]profiling_end:touch motion
+[3648501.819]  -> wl_touch@23.motion(738087908, 0, 964.000000, 482.000000)
+[3648502.792]profiling_start:client process
+[3648506.198]profiling_start:touch hardware motion
+[3648506.379]profiling_end:touch hardware motion
+[3648506.498]profiling_start:touch motion
+[3648506.606]profiling_end:touch motion
+[3648506.771]  -> wl_touch@23.motion(738087913, 0, 964.000000, 485.000000)
+[3648507.814]profiling_start:client process
+[3648511.190]profiling_start:touch hardware motion
+[3648511.420]profiling_end:touch hardware motion
+[3648511.545]profiling_start:touch motion
+[3648511.652]profiling_end:touch motion
+[3648511.816]  -> wl_touch@23.motion(738087918, 0, 963.000000, 488.000000)
+[3648512.809]profiling_start:client process
+[3648516.199]profiling_start:touch hardware motion
+[3648516.373]profiling_end:touch hardware motion
+[3648516.491]profiling_start:touch motion
+[3648516.598]profiling_end:touch motion
+[3648516.728]  -> wl_touch@23.motion(738087923, 0, 963.000000, 492.000000)
+[3648517.748]profiling_start:client process
+[3648521.189]profiling_start:touch hardware motion
+[3648521.412]profiling_end:touch hardware motion
+[3648521.536]profiling_start:touch motion
+[3648521.644]profiling_end:touch motion
+[3648521.774]  -> wl_touch@23.motion(738087928, 0, 964.000000, 495.000000)
+[3648522.801]profiling_start:client process
+[3648525.188]profiling_start:touch hardware motion
+[3648525.417]profiling_end:touch hardware motion
+[3648525.542]profiling_start:touch motion
+[3648525.650]profiling_end:touch motion
+[3648525.812]  -> wl_touch@23.motion(738087932, 0, 964.000000, 499.000000)
+[3648526.821]profiling_start:client process
+[3648530.191]profiling_start:touch hardware motion
+[3648530.418]profiling_end:touch hardware motion
+[3648530.544]profiling_start:touch motion
+[3648530.652]profiling_end:touch motion
+[3648530.815]  -> wl_touch@23.motion(738087937, 0, 965.000000, 503.000000)
+[3648531.796]profiling_start:client process
+[3648535.189]profiling_start:touch hardware motion
+[3648535.414]profiling_end:touch hardware motion
+[3648535.539]profiling_start:touch motion
+[3648535.647]profiling_end:touch motion
+[3648535.812]  -> wl_touch@23.motion(738087942, 0, 965.000000, 506.000000)
+[3648536.817]profiling_start:client process
+[3648540.199]profiling_start:touch hardware motion
+[3648540.383]profiling_end:touch hardware motion
+[3648540.503]profiling_start:touch motion
+[3648540.611]profiling_end:touch motion
+[3648540.777]  -> wl_touch@23.motion(738087947, 0, 964.000000, 509.000000)
+[3648541.766]profiling_start:client process
+[3648545.190]profiling_start:touch hardware motion
+[3648545.426]profiling_end:touch hardware motion
+[3648545.552]profiling_start:touch motion
+[3648545.661]profiling_end:touch motion
+[3648545.796]  -> wl_touch@23.motion(738087952, 0, 964.000000, 513.000000)
+[3648546.818]profiling_start:client process
+[3648550.193]profiling_start:touch hardware motion
+[3648550.420]profiling_end:touch hardware motion
+[3648550.545]profiling_start:touch motion
+[3648550.654]profiling_end:touch motion
+[3648550.821]  -> wl_touch@23.motion(738087957, 0, 963.000000, 516.000000)
+[3648551.821]profiling_start:client process
+[3648555.191]profiling_start:touch hardware motion
+[3648555.423]profiling_end:touch hardware motion
+[3648555.551]profiling_start:touch motion
+[3648555.660]profiling_end:touch motion
+[3648555.826]  -> wl_touch@23.motion(738087962, 0, 963.000000, 520.000000)
+[3648556.836]profiling_start:client process
+[3648560.192]profiling_start:touch hardware motion
+[3648560.435]profiling_end:touch hardware motion
+[3648560.563]profiling_start:touch motion
+[3648560.671]profiling_end:touch motion
+[3648560.837]  -> wl_touch@23.motion(738087967, 0, 962.000000, 524.000000)
+[3648561.838]profiling_start:client process
+[3648565.211]profiling_start:touch hardware motion
+[3648565.390]profiling_end:touch hardware motion
+[3648565.512]profiling_start:touch motion
+[3648565.675]profiling_end:touch motion
+[3648565.819]  -> wl_touch@23.motion(738087972, 0, 962.000000, 527.000000)
+[3648566.867]profiling_start:client process
+[3648570.199]profiling_start:touch hardware motion
+[3648570.379]profiling_end:touch hardware motion
+[3648570.500]profiling_start:touch motion
+[3648570.608]profiling_end:touch motion
+[3648570.772]  -> wl_touch@23.motion(738087977, 0, 963.000000, 530.000000)
+[3648571.763]profiling_start:client process
+[3648575.216]profiling_start:touch hardware motion
+[3648575.389]profiling_end:touch hardware motion
+[3648575.509]profiling_start:touch motion
+[3648575.617]profiling_end:touch motion
+[3648575.747]  -> wl_touch@23.motion(738087982, 0, 963.000000, 533.000000)
+[3648576.791]profiling_start:client process
+[3648580.191]profiling_start:touch hardware motion
+[3648580.421]profiling_end:touch hardware motion
+[3648580.546]profiling_start:touch motion
+[3648580.653]profiling_end:touch motion
+[3648580.784]  -> wl_touch@23.motion(738087987, 0, 963.000000, 535.000000)
+[3648581.801]profiling_start:client process
+[3648585.210]profiling_start:touch hardware motion
+[3648585.390]profiling_end:touch hardware motion
+[3648585.509]profiling_start:touch motion
+[3648585.618]profiling_end:touch motion
+[3648585.780]  -> wl_touch@23.motion(738087992, 0, 963.000000, 540.000000)
+[3648586.798]profiling_start:client process
+[3648590.204]profiling_start:touch hardware motion
+[3648590.383]profiling_end:touch hardware motion
+[3648590.501]profiling_start:touch motion
+[3648590.608]profiling_end:touch motion
+[3648590.771]  -> wl_touch@23.motion(738087997, 0, 963.000000, 545.000000)
+[3648591.843]profiling_start:client process
+[3648595.211]profiling_start:touch hardware motion
+[3648595.391]profiling_end:touch hardware motion
+[3648595.512]profiling_start:touch motion
+[3648595.620]profiling_end:touch motion
+[3648595.750]  -> wl_touch@23.motion(738088002, 0, 962.000000, 550.000000)
+[3648596.792]profiling_start:client process
+[3648601.414]profiling_start:touch hardware motion
+[3648601.632]profiling_end:touch hardware motion
+[3648601.755]profiling_start:touch motion
+[3648601.863]profiling_end:touch motion
+[3648602.032]  -> wl_touch@23.motion(738088007, 0, 962.000000, 554.000000)
+[3648603.032]profiling_start:client process
+[3648605.215]profiling_start:touch hardware motion
+[3648606.429]profiling_end:touch hardware motion
+[3648606.637]profiling_start:touch motion
+[3648606.767]profiling_end:touch motion
+[3648606.899]  -> wl_touch@23.motion(738088012, 0, 961.000000, 559.000000)
+[3648608.363]profiling_start:client process
+[3648610.213]profiling_start:touch hardware motion
+[3648611.227]profiling_end:touch hardware motion
+[3648611.435]profiling_start:touch motion
+[3648611.565]profiling_end:touch motion
+[3648611.696]  -> wl_touch@23.motion(738088017, 0, 961.000000, 563.000000)
+[3648613.228]profiling_start:client process
+[3648614.216]profiling_start:touch hardware motion
+[3648614.383]profiling_end:touch hardware motion
+[3648614.503]profiling_start:touch motion
+[3648614.610]profiling_end:touch motion
+[3648614.744]  -> wl_touch@23.motion(738088021, 0, 962.000000, 567.000000)
+[3648615.834]profiling_start:client process
+[3648619.210]profiling_start:touch hardware motion
+[3648620.590]profiling_end:touch hardware motion
+[3648620.810]profiling_start:touch motion
+[3648620.944]profiling_end:touch motion
+[3648621.076]  -> wl_touch@23.motion(738088026, 0, 962.000000, 571.000000)
+[3648622.137]profiling_start:client process
+[3648624.213]profiling_start:touch hardware motion
+[3648624.436]profiling_end:touch hardware motion
+[3648624.573]profiling_start:touch motion
+[3648624.704]profiling_end:touch motion
+[3648624.845]  -> wl_touch@23.motion(738088031, 0, 962.000000, 575.000000)
+[3648625.910]profiling_start:client process
+[3648629.201]profiling_start:touch hardware motion
+[3648629.382]profiling_end:touch hardware motion
+[3648629.500]profiling_start:touch motion
+[3648629.609]profiling_end:touch motion
+[3648629.772]  -> wl_touch@23.motion(738088036, 0, 962.000000, 580.000000)
+[3648630.837]profiling_start:client process
+[3648634.206]profiling_start:touch hardware motion
+[3648634.493]profiling_end:touch hardware motion
+[3648634.631]profiling_start:touch motion
+[3648634.764]profiling_end:touch motion
+[3648634.908]  -> wl_touch@23.motion(738088041, 0, 962.000000, 583.000000)
+[3648637.233]profiling_start:client process
+[3648639.209]profiling_start:touch hardware motion
+[3648639.562]profiling_end:touch hardware motion
+[3648639.736]profiling_start:touch motion
+[3648639.893]profiling_end:touch motion
+[3648640.027]  -> wl_touch@23.motion(738088046, 0, 961.000000, 588.000000)
+[3648641.303]profiling_start:client process
+[3648641.500] wl_surface@15.frame(new id wl_callback@30)
+[3648642.062] wl_surface@15.attach(wl_buffer@27, 0, 0)
+[3648642.852] wl_surface@15.damage(0, 0, 1920, 1080)
+[3648643.858] wl_surface@15.commit()
+[3648644.110]profiling_end:client process
+[3648644.362]profiling_start:wcommit
+[3648644.518]profiling_start:wcommit_15
+[3648644.660]profiling_end:wcommit_15
+[3648644.793]profiling_end:wcommit
+[3648662.200]profiling_end:graphic hardware
+[3648662.430]profiling_start:weston
+[3648672.021]  -> wl_buffer@27.release()
+[3648673.378]profiling_end:weston
+[3648673.524]profiling_start:graphic hardware
+[3648673.665]profiling_start:touch hardware motion
+[3648673.804]profiling_end:touch hardware motion
+[3648673.930]profiling_start:touch motion
+[3648674.071]profiling_end:touch motion
+[3648674.263]  -> wl_touch@23.motion(738088051, 0, 961.000000, 592.000000)
+[3648675.508]profiling_start:client process
+[3648675.651]profiling_start:touch hardware motion
+[3648675.754]profiling_end:touch hardware motion
+[3648675.898]profiling_start:touch motion
+[3648676.185]profiling_end:touch motion
+[3648676.329]  -> wl_touch@23.motion(738088056, 0, 960.000000, 596.000000)
+[3648677.737]profiling_start:client process
+[3648677.850]profiling_start:touch hardware motion
+[3648677.951]profiling_end:touch hardware motion
+[3648678.092]profiling_start:touch motion
+[3648679.238]profiling_end:touch motion
+[3648679.458]  -> wl_touch@23.motion(738088061, 0, 960.000000, 600.000000)
+[3648681.077]profiling_start:client process
+[3648681.212]profiling_start:touch hardware motion
+[3648681.367]profiling_end:touch hardware motion
+[3648681.469]profiling_start:touch motion
+[3648681.624]profiling_end:touch motion
+[3648681.762]  -> wl_touch@23.motion(738088066, 0, 961.000000, 604.000000)
+[3648686.404]profiling_start:client process
+[3648686.539]profiling_start:touch hardware motion
+[3648686.663]profiling_end:touch hardware motion
+[3648686.808]profiling_start:touch motion
+[3648686.943]profiling_end:touch motion
+[3648687.074]  -> wl_touch@23.motion(738088071, 0, 961.000000, 609.000000)
+[3648688.070]profiling_start:client process
+[3648688.288]profiling_start:touch hardware motion
+[3648688.443]profiling_end:touch hardware motion
+[3648688.548]profiling_start:touch motion
+[3648688.688]profiling_end:touch motion
+[3648688.801]  -> wl_touch@23.motion(738088076, 0, 962.000000, 612.000000)
+[3648689.859]profiling_start:client process
+[3648689.996]profiling_start:touch hardware motion
+[3648690.131]profiling_end:touch hardware motion
+[3648690.295]profiling_start:touch motion
+[3648690.410]profiling_end:touch motion
+[3648690.552]  -> wl_touch@23.motion(738088081, 0, 961.000000, 616.000000)
+[3648691.648]profiling_start:client process
+[3648693.375]profiling_start:touch hardware motion
+[3648693.626]profiling_end:touch hardware motion
+[3648693.762]profiling_start:touch motion
+[3648693.890]profiling_end:touch motion
+[3648695.182]  -> wl_touch@23.motion(738088086, 0, 961.000000, 620.000000)
+[3648696.217]profiling_start:client process
+[3648696.375]profiling_start:touch hardware motion
+[3648696.480]profiling_end:touch hardware motion
+[3648696.633]profiling_start:touch motion
+[3648696.741]profiling_end:touch motion
+[3648696.889]  -> wl_touch@23.motion(738088091, 0, 960.000000, 623.000000)
+[3648697.930]profiling_start:client process
+[3648698.062]profiling_start:touch hardware motion
+[3648698.239]profiling_end:touch hardware motion
+[3648698.396]profiling_start:touch motion
+[3648698.502]profiling_end:touch motion
+[3648698.648]  -> wl_touch@23.motion(738088095, 0, 960.000000, 627.000000)
+[3648704.182]profiling_start:client process
+[3648704.248]profiling_start:touch hardware motion
+[3648704.269]profiling_end:touch hardware motion
+[3648704.289]profiling_start:touch motion
+[3648704.312]profiling_end:touch motion
+[3648704.335]  -> wl_touch@23.motion(738088100, 0, 960.000000, 631.000000)
+[3648704.444]profiling_start:client process
+[3648704.462]profiling_start:touch hardware motion
+[3648704.479]profiling_end:touch hardware motion
+[3648704.495]profiling_start:touch motion
+[3648704.517]profiling_end:touch motion
+[3648704.537]  -> wl_touch@23.motion(738088105, 0, 960.000000, 634.000000)
+[3648704.644]profiling_start:client process
+[3648704.662]profiling_start:touch hardware motion
+[3648704.681]profiling_end:touch hardware motion
+[3648704.699]profiling_start:touch motion
+[3648704.717]profiling_end:touch motion
+[3648704.740]  -> wl_touch@23.motion(738088110, 0, 960.000000, 638.000000)
+[3648704.846]profiling_start:client process
+[3648704.869]  -> wl_callback@30.done(245829954)
+[3648704.915]  -> wl_display@1.delete_id(30)
+[3648704.983]profiling_end:graphic hardware
+[3648708.186]profiling_start:touch hardware motion
+[3648708.236]profiling_end:touch hardware motion
+[3648708.254]profiling_start:touch motion
+[3648708.276]profiling_end:touch motion
+[3648708.303]  -> wl_touch@23.motion(738088115, 0, 960.000000, 642.000000)
+[3648708.409]profiling_start:client process
+[3648713.185]profiling_start:touch hardware motion
+[3648713.239]profiling_end:touch hardware motion
+[3648713.258]profiling_start:touch motion
+[3648713.280]profiling_end:touch motion
+[3648713.308]  -> wl_touch@23.motion(738088120, 0, 961.000000, 646.000000)
+[3648713.412]profiling_start:client process
+[3648718.188]profiling_start:touch hardware motion
+[3648718.243]profiling_end:touch hardware motion
+[3648718.261]profiling_start:touch motion
+[3648718.284]profiling_end:touch motion
+[3648718.311]  -> wl_touch@23.motion(738088125, 0, 961.000000, 649.000000)
+[3648718.414]profiling_start:client process
+[3648723.184]profiling_start:touch hardware motion
+[3648723.239]profiling_end:touch hardware motion
+[3648723.257]profiling_start:touch motion
+[3648723.279]profiling_end:touch motion
+[3648723.306]  -> wl_touch@23.motion(738088130, 0, 961.000000, 652.000000)
+[3648723.424]profiling_start:client process
+[3648728.191]profiling_start:touch hardware motion
+[3648728.246]profiling_end:touch hardware motion
+[3648728.264]profiling_start:touch motion
+[3648728.286]profiling_end:touch motion
+[3648728.312]  -> wl_touch@23.motion(738088135, 0, 961.000000, 656.000000)
+[3648728.416]profiling_start:client process
+[3648733.185]profiling_start:touch hardware motion
+[3648733.239]profiling_end:touch hardware motion
+[3648733.258]profiling_start:touch motion
+[3648733.280]profiling_end:touch motion
+[3648733.307]  -> wl_touch@23.motion(738088140, 0, 960.000000, 659.000000)
+[3648733.411]profiling_start:client process
+[3648738.183]profiling_start:touch hardware motion
+[3648738.236]profiling_end:touch hardware motion
+[3648738.255]profiling_start:touch motion
+[3648738.277]profiling_end:touch motion
+[3648738.304]  -> wl_touch@23.motion(738088145, 0, 960.000000, 662.000000)
+[3648738.407]profiling_start:client process
+[3648743.184]profiling_start:touch hardware motion
+[3648743.240]profiling_end:touch hardware motion
+[3648743.259]profiling_start:touch motion
+[3648743.281]profiling_end:touch motion
+[3648743.308]  -> wl_touch@23.motion(738088150, 0, 960.000000, 665.000000)
+[3648743.414]profiling_start:client process
+[3648748.183]profiling_start:touch hardware motion
+[3648748.237]profiling_end:touch hardware motion
+[3648748.257]profiling_start:touch motion
+[3648748.279]profiling_end:touch motion
+[3648748.306]  -> wl_touch@23.motion(738088155, 0, 960.000000, 668.000000)
+[3648748.410]profiling_start:client process
+[3648753.186]profiling_start:touch hardware motion
+[3648753.241]profiling_end:touch hardware motion
+[3648753.259]profiling_start:touch motion
+[3648753.282]profiling_end:touch motion
+[3648753.309]  -> wl_touch@23.motion(738088160, 0, 960.000000, 671.000000)
+[3648753.446]profiling_start:client process
+[3648758.183]profiling_start:touch hardware motion
+[3648758.237]profiling_end:touch hardware motion
+[3648758.256]profiling_start:touch motion
+[3648758.278]profiling_end:touch motion
+[3648758.305]  -> wl_touch@23.motion(738088165, 0, 960.000000, 674.000000)
+[3648758.409]profiling_start:client process
+[3648763.186]profiling_start:touch hardware motion
+[3648763.238]profiling_end:touch hardware motion
+[3648763.257]profiling_start:touch motion
+[3648763.279]profiling_end:touch motion
+[3648763.306]  -> wl_touch@23.motion(738088170, 0, 960.000000, 677.000000)
+[3648763.411]profiling_start:client process
+[3648768.183]profiling_start:touch hardware motion
+[3648768.238]profiling_end:touch hardware motion
+[3648768.257]profiling_start:touch motion
+[3648768.279]profiling_end:touch motion
+[3648768.306]  -> wl_touch@23.motion(738088175, 0, 960.000000, 680.000000)
+[3648768.408]profiling_start:client process
+[3648773.184]profiling_start:touch hardware motion
+[3648773.240]profiling_end:touch hardware motion
+[3648773.259]profiling_start:touch motion
+[3648773.281]profiling_end:touch motion
+[3648773.309]  -> wl_touch@23.motion(738088180, 0, 960.000000, 683.000000)
+[3648773.413]profiling_start:client process
+[3648777.183]profiling_start:touch hardware motion
+[3648777.234]profiling_end:touch hardware motion
+[3648777.252]profiling_start:touch motion
+[3648777.275]profiling_end:touch motion
+[3648777.302]  -> wl_touch@23.motion(738088184, 0, 960.000000, 686.000000)
+[3648777.407]profiling_start:client process
+[3648782.185]profiling_start:touch hardware motion
+[3648782.236]profiling_end:touch hardware motion
+[3648782.254]profiling_start:touch motion
+[3648782.277]profiling_end:touch motion
+[3648782.304]  -> wl_touch@23.motion(738088189, 0, 960.000000, 688.000000)
+[3648782.409]profiling_start:client process
+[3648787.183]profiling_start:touch hardware motion
+[3648787.236]profiling_end:touch hardware motion
+[3648787.254]profiling_start:touch motion
+[3648787.276]profiling_end:touch motion
+[3648787.303]  -> wl_touch@23.motion(738088194, 0, 960.000000, 690.000000)
+[3648787.409]profiling_start:client process
+[3648792.185]profiling_start:touch hardware motion
+[3648792.240]profiling_end:touch hardware motion
+[3648792.258]profiling_start:touch motion
+[3648792.281]profiling_end:touch motion
+[3648792.308]  -> wl_touch@23.motion(738088199, 0, 960.000000, 693.000000)
+[3648792.412]profiling_start:client process
+[3648797.183]profiling_start:touch hardware motion
+[3648797.238]profiling_end:touch hardware motion
+[3648797.256]profiling_start:touch motion
+[3648797.279]profiling_end:touch motion
+[3648797.306]  -> wl_touch@23.motion(738088204, 0, 960.000000, 696.000000)
+[3648797.410]profiling_start:client process
+[3648802.185]profiling_start:touch hardware motion
+[3648802.239]profiling_end:touch hardware motion
+[3648802.256]profiling_start:touch motion
+[3648802.279]profiling_end:touch motion
+[3648802.306]  -> wl_touch@23.motion(738088209, 0, 960.000000, 698.000000)
+[3648802.409]profiling_start:client process
+[3648807.182]profiling_start:touch hardware motion
+[3648807.234]profiling_end:touch hardware motion
+[3648807.253]profiling_start:touch motion
+[3648807.275]profiling_end:touch motion
+[3648807.302]  -> wl_touch@23.motion(738088214, 0, 959.000000, 701.000000)
+[3648807.405]profiling_start:client process
+[3648812.184]profiling_start:touch hardware motion
+[3648812.237]profiling_end:touch hardware motion
+[3648812.255]profiling_start:touch motion
+[3648812.277]profiling_end:touch motion
+[3648812.304]  -> wl_touch@23.motion(738088219, 0, 959.000000, 704.000000)
+[3648812.409]profiling_start:client process
+[3648817.183]profiling_start:touch hardware motion
+[3648817.236]profiling_end:touch hardware motion
+[3648817.254]profiling_start:touch motion
+[3648817.277]profiling_end:touch motion
+[3648817.303]  -> wl_touch@23.motion(738088224, 0, 959.000000, 706.000000)
+[3648817.407]profiling_start:client process
+[3648822.182]profiling_start:touch hardware motion
+[3648822.234]profiling_end:touch hardware motion
+[3648822.252]profiling_start:touch motion
+[3648822.315]profiling_end:touch motion
+[3648822.341]  -> wl_touch@23.motion(738088229, 0, 958.000000, 709.000000)
+[3648822.450]profiling_start:client process
+[3648827.181]profiling_start:touch hardware motion
+[3648827.236]profiling_end:touch hardware motion
+[3648827.254]profiling_start:touch motion
+[3648827.276]profiling_end:touch motion
+[3648827.304]  -> wl_touch@23.motion(738088234, 0, 959.000000, 711.000000)
+[3648827.408]profiling_start:client process
+[3648832.184]profiling_start:touch hardware motion
+[3648832.237]profiling_end:touch hardware motion
+[3648832.257]profiling_start:touch motion
+[3648832.279]profiling_end:touch motion
+[3648832.306]  -> wl_touch@23.motion(738088239, 0, 959.000000, 714.000000)
+[3648832.410]profiling_start:client process
+[3648837.180]profiling_start:touch hardware motion
+[3648837.233]profiling_end:touch hardware motion
+[3648837.251]profiling_start:touch motion
+[3648837.273]profiling_end:touch motion
+[3648837.301]  -> wl_touch@23.motion(738088244, 0, 959.000000, 717.000000)
+[3648837.408]profiling_start:client process
+[3648842.184]profiling_start:touch hardware motion
+[3648842.239]profiling_end:touch hardware motion
+[3648842.257]profiling_start:touch motion
+[3648842.280]profiling_end:touch motion
+[3648842.307]  -> wl_touch@23.motion(738088249, 0, 959.000000, 719.000000)
+[3648842.412]profiling_start:client process
+[3648847.185]profiling_start:touch hardware motion
+[3648847.238]profiling_end:touch hardware motion
+[3648847.256]profiling_start:touch motion
+[3648847.278]profiling_end:touch motion
+[3648847.305]  -> wl_touch@23.motion(738088254, 0, 960.000000, 722.000000)
+[3648847.410]profiling_start:client process
+[3648852.183]profiling_start:touch hardware motion
+[3648852.238]profiling_end:touch hardware motion
+[3648852.256]profiling_start:touch motion
+[3648852.278]profiling_end:touch motion
+[3648852.304]  -> wl_touch@23.motion(738088259, 0, 960.000000, 724.000000)
+[3648852.408]profiling_start:client process
+[3648856.182]profiling_start:touch hardware motion
+[3648856.236]profiling_end:touch hardware motion
+[3648856.254]profiling_start:touch motion
+[3648856.276]profiling_end:touch motion
+[3648856.303]  -> wl_touch@23.motion(738088263, 0, 960.000000, 726.000000)
+[3648856.406]profiling_start:client process
+[3648861.183]profiling_start:touch hardware motion
+[3648861.237]profiling_end:touch hardware motion
+[3648861.255]profiling_start:touch motion
+[3648861.277]profiling_end:touch motion
+[3648861.304]  -> wl_touch@23.motion(738088268, 0, 960.000000, 728.000000)
+[3648861.413]profiling_start:client process
+[3648866.182]profiling_start:touch hardware motion
+[3648866.235]profiling_end:touch hardware motion
+[3648866.253]profiling_start:touch motion
+[3648866.275]profiling_end:touch motion
+[3648866.302]  -> wl_touch@23.motion(738088273, 0, 959.000000, 730.000000)
+[3648866.405]profiling_start:client process
+[3648871.186]profiling_start:touch hardware motion
+[3648871.238]profiling_end:touch hardware motion
+[3648871.257]profiling_start:touch motion
+[3648871.279]profiling_end:touch motion
+[3648871.305]  -> wl_touch@23.motion(738088278, 0, 959.000000, 732.000000)
+[3648871.409]profiling_start:client process
+[3648876.183]profiling_start:touch hardware motion
+[3648876.244]profiling_end:touch hardware motion
+[3648876.263]profiling_start:touch motion
+[3648876.288]profiling_end:touch motion
+[3648876.313]  -> wl_touch@23.motion(738088283, 0, 959.000000, 734.000000)
+[3648876.420]profiling_start:client process
+[3648881.183]profiling_start:touch hardware motion
+[3648881.233]profiling_end:touch hardware motion
+[3648881.251]profiling_start:touch motion
+[3648881.273]profiling_end:touch motion
+[3648881.300]  -> wl_touch@23.motion(738088288, 0, 958.000000, 736.000000)
+[3648881.404]profiling_start:client process
+[3648886.181]profiling_start:touch hardware motion
+[3648886.231]profiling_end:touch hardware motion
+[3648886.249]profiling_start:touch motion
+[3648886.272]profiling_end:touch motion
+[3648886.298]  -> wl_touch@23.motion(738088293, 0, 958.000000, 739.000000)
+[3648886.407]profiling_start:client process
+[3648891.182]profiling_start:touch hardware motion
+[3648891.263]profiling_end:touch hardware motion
+[3648891.282]profiling_start:touch motion
+[3648891.304]profiling_end:touch motion
+[3648891.331]  -> wl_touch@23.motion(738088298, 0, 958.000000, 741.000000)
+[3648891.451]profiling_start:client process
+[3648896.453]profiling_start:touch hardware motion
+[3648896.504]profiling_end:touch hardware motion
+[3648896.524]profiling_start:touch motion
+[3648896.546]profiling_end:touch motion
+[3648896.573]  -> wl_touch@23.motion(738088303, 0, 957.000000, 744.000000)
+[3648896.682]profiling_start:client process
+[3648901.184]profiling_start:touch hardware motion
+[3648901.242]profiling_end:touch hardware motion
+[3648901.261]profiling_start:touch motion
+[3648901.284]profiling_end:touch motion
+[3648901.312]  -> wl_touch@23.motion(738088308, 0, 957.000000, 746.000000)
+[3648901.422]profiling_start:client process
+[3648906.185]profiling_start:touch hardware motion
+[3648906.239]profiling_end:touch hardware motion
+[3648906.258]profiling_start:touch motion
+[3648906.280]profiling_end:touch motion
+[3648906.308]  -> wl_touch@23.motion(738088313, 0, 958.000000, 748.000000)
+[3648906.415]profiling_start:client process
+[3648911.185]profiling_start:touch hardware motion
+[3648911.237]profiling_end:touch hardware motion
+[3648911.256]profiling_start:touch motion
+[3648911.278]profiling_end:touch motion
+[3648911.305]  -> wl_touch@23.motion(738088318, 0, 958.000000, 750.000000)
+[3648911.414]profiling_start:client process
+[3648916.183]profiling_start:touch hardware motion
+[3648916.236]profiling_end:touch hardware motion
+[3648916.254]profiling_start:touch motion
+[3648916.276]profiling_end:touch motion
+[3648916.302]  -> wl_touch@23.motion(738088323, 0, 958.000000, 753.000000)
+[3648916.405]profiling_start:client process
+[3648921.182]profiling_start:touch hardware motion
+[3648921.235]profiling_end:touch hardware motion
+[3648921.254]profiling_start:touch motion
+[3648921.276]profiling_end:touch motion
+[3648921.303]  -> wl_touch@23.motion(738088328, 0, 958.000000, 756.000000)
+[3648921.407]profiling_start:client process
+[3648926.188]profiling_start:touch hardware motion
+[3648926.243]profiling_end:touch hardware motion
+[3648926.262]profiling_start:touch motion
+[3648926.283]profiling_end:touch motion
+[3648926.310]  -> wl_touch@23.motion(738088333, 0, 958.000000, 758.000000)
+[3648926.417]profiling_start:client process
+[3648931.183]profiling_start:touch hardware motion
+[3648931.232]profiling_end:touch hardware motion
+[3648931.251]profiling_start:touch motion
+[3648931.273]profiling_end:touch motion
+[3648931.299]  -> wl_touch@23.motion(738088338, 0, 959.000000, 760.000000)
+[3648931.420]profiling_start:client process
+[3648936.181]profiling_start:touch hardware motion
+[3648936.236]profiling_end:touch hardware motion
+[3648936.254]profiling_start:touch motion
+[3648936.277]profiling_end:touch motion
+[3648936.304]  -> wl_touch@23.motion(738088343, 0, 959.000000, 762.000000)
+[3648936.408]profiling_start:client process
+[3648941.182]profiling_start:touch hardware motion
+[3648941.236]profiling_end:touch hardware motion
+[3648941.255]profiling_start:touch motion
+[3648941.277]profiling_end:touch motion
+[3648941.304]  -> wl_touch@23.motion(738088348, 0, 958.000000, 764.000000)
+[3648941.412]profiling_start:client process
+[3648945.180]profiling_start:touch hardware motion
+[3648945.228]profiling_end:touch hardware motion
+[3648945.247]profiling_start:touch motion
+[3648945.269]profiling_end:touch motion
+[3648945.297]  -> wl_touch@23.motion(738088352, 0, 958.000000, 766.000000)
+[3648945.405]profiling_start:client process
+[3648950.181]profiling_start:touch hardware motion
+[3648950.233]profiling_end:touch hardware motion
+[3648950.251]profiling_start:touch motion
+[3648950.274]profiling_end:touch motion
+[3648950.300]  -> wl_touch@23.motion(738088357, 0, 957.000000, 769.000000)
+[3648950.411]profiling_start:client process
+[3648955.184]profiling_start:touch hardware motion
+[3648955.236]profiling_end:touch hardware motion
+[3648955.254]profiling_start:touch motion
+[3648955.275]profiling_end:touch motion
+[3648955.302]  -> wl_touch@23.motion(738088362, 0, 957.000000, 772.000000)
+[3648955.444]profiling_start:client process
+[3648960.186]profiling_start:touch hardware motion
+[3648960.238]profiling_end:touch hardware motion
+[3648960.257]profiling_start:touch motion
+[3648960.279]profiling_end:touch motion
+[3648960.304]  -> wl_touch@23.motion(738088367, 0, 958.000000, 774.000000)
+[3648960.409]profiling_start:client process
+[3648965.183]profiling_start:touch hardware motion
+[3648965.234]profiling_end:touch hardware motion
+[3648965.253]profiling_start:touch motion
+[3648965.276]profiling_end:touch motion
+[3648965.303]  -> wl_touch@23.motion(738088372, 0, 958.000000, 777.000000)
+[3648965.408]profiling_start:client process
+[3648970.183]profiling_start:touch hardware motion
+[3648970.238]profiling_end:touch hardware motion
+[3648970.256]profiling_start:touch motion
+[3648970.278]profiling_end:touch motion
+[3648970.305]  -> wl_touch@23.motion(738088377, 0, 958.000000, 779.000000)
+[3648970.409]profiling_start:client process
+[3648975.193]profiling_start:touch hardware motion
+[3648975.247]profiling_end:touch hardware motion
+[3648975.265]profiling_start:touch motion
+[3648975.287]profiling_end:touch motion
+[3648975.314]  -> wl_touch@23.motion(738088382, 0, 957.000000, 782.000000)
+[3648975.421]profiling_start:client process
+[3648980.184]profiling_start:touch hardware motion
+[3648980.235]profiling_end:touch hardware motion
+[3648980.262]profiling_start:touch motion
+[3648980.288]profiling_end:touch motion
+[3648980.312]  -> wl_touch@23.motion(738088387, 0, 957.000000, 784.000000)
+[3648980.421]profiling_start:client process
+[3648985.185]profiling_start:touch hardware motion
+[3648985.238]profiling_end:touch hardware motion
+[3648985.256]profiling_start:touch motion
+[3648985.278]profiling_end:touch motion
+[3648985.304]  -> wl_touch@23.motion(738088392, 0, 958.000000, 787.000000)
+[3648985.408]profiling_start:client process
+[3648990.185]profiling_start:touch hardware motion
+[3648990.239]profiling_end:touch hardware motion
+[3648990.258]profiling_start:touch motion
+[3648990.281]profiling_end:touch motion
+[3648990.308]  -> wl_touch@23.motion(738088397, 0, 958.000000, 789.000000)
+[3648990.411]profiling_start:client process
+[3648995.180]profiling_start:touch hardware motion
+[3648995.232]profiling_end:touch hardware motion
+[3648995.250]profiling_start:touch motion
+[3648995.273]profiling_end:touch motion
+[3648995.300]  -> wl_touch@23.motion(738088402, 0, 956.000000, 792.000000)
+[3648995.403]profiling_start:client process
+[3649000.184]profiling_start:touch hardware motion
+[3649000.237]profiling_end:touch hardware motion
+[3649000.256]profiling_start:touch motion
+[3649000.279]profiling_end:touch motion
+[3649000.306]  -> wl_touch@23.motion(738088407, 0, 957.000000, 794.000000)
+[3649000.410]profiling_start:client process
+[3649005.192]profiling_start:touch hardware motion
+[3649005.244]profiling_end:touch hardware motion
+[3649005.263]profiling_start:touch motion
+[3649005.285]profiling_end:touch motion
+[3649005.312]  -> wl_touch@23.motion(738088412, 0, 957.000000, 796.000000)
+[3649005.420]profiling_start:client process
+[3649010.183]profiling_start:touch hardware motion
+[3649010.236]profiling_end:touch hardware motion
+[3649010.254]profiling_start:touch motion
+[3649010.276]profiling_end:touch motion
+[3649010.300]  -> wl_touch@23.motion(738088417, 0, 956.000000, 798.000000)
+[3649010.407]profiling_start:client process
+[3649015.182]profiling_start:touch hardware motion
+[3649015.233]profiling_end:touch hardware motion
+[3649015.251]profiling_start:touch motion
+[3649015.273]profiling_end:touch motion
+[3649015.300]  -> wl_touch@23.motion(738088422, 0, 957.000000, 801.000000)
+[3649015.404]profiling_start:client process
+[3649020.184]profiling_start:touch hardware motion
+[3649020.238]profiling_end:touch hardware motion
+[3649020.256]profiling_start:touch motion
+[3649020.279]profiling_end:touch motion
+[3649020.305]  -> wl_touch@23.motion(738088427, 0, 956.000000, 803.000000)
+[3649020.409]profiling_start:client process
+[3649024.183]profiling_start:touch hardware motion
+[3649024.235]profiling_end:touch hardware motion
+[3649024.285]profiling_start:touch motion
+[3649024.308]profiling_end:touch motion
+[3649024.336]  -> wl_touch@23.motion(738088431, 0, 955.000000, 805.000000)
+[3649024.440]profiling_start:client process
+[3649029.184]profiling_start:touch hardware motion
+[3649029.234]profiling_end:touch hardware motion
+[3649029.262]profiling_start:touch motion
+[3649029.287]profiling_end:touch motion
+[3649029.311]  -> wl_touch@23.motion(738088436, 0, 954.000000, 807.000000)
+[3649029.418]profiling_start:client process
+[3649034.184]profiling_start:touch hardware motion
+[3649034.236]profiling_end:touch hardware motion
+[3649034.254]profiling_start:touch motion
+[3649034.276]profiling_end:touch motion
+[3649034.303]  -> wl_touch@23.motion(738088441, 0, 953.000000, 809.000000)
+[3649034.412]profiling_start:client process
+[3649039.184]profiling_start:touch hardware motion
+[3649039.237]profiling_end:touch hardware motion
+[3649039.255]profiling_start:touch motion
+[3649039.289]profiling_end:touch motion
+[3649039.315]  -> wl_touch@23.motion(738088446, 0, 952.000000, 811.000000)
+[3649039.422]profiling_start:client process
+[3649044.186]profiling_start:touch hardware motion
+[3649044.239]profiling_end:touch hardware motion
+[3649044.257]profiling_start:touch motion
+[3649044.279]profiling_end:touch motion
+[3649044.306]  -> wl_touch@23.motion(738088451, 0, 951.000000, 813.000000)
+[3649044.413]profiling_start:client process
+[3649049.184]profiling_start:touch hardware motion
+[3649049.240]profiling_end:touch hardware motion
+[3649049.258]profiling_start:touch motion
+[3649049.280]profiling_end:touch motion
+[3649049.308]  -> wl_touch@23.motion(738088456, 0, 951.000000, 815.000000)
+[3649049.412]profiling_start:client process
+[3649054.182]profiling_start:touch hardware motion
+[3649054.237]profiling_end:touch hardware motion
+[3649054.255]profiling_start:touch motion
+[3649054.277]profiling_end:touch motion
+[3649054.305]  -> wl_touch@23.motion(738088461, 0, 951.000000, 817.000000)
+[3649054.409]profiling_start:client process
+[3649059.185]profiling_start:touch hardware motion
+[3649059.239]profiling_end:touch hardware motion
+[3649059.258]profiling_start:touch motion
+[3649059.280]profiling_end:touch motion
+[3649059.308]  -> wl_touch@23.motion(738088466, 0, 951.000000, 818.000000)
+[3649059.411]profiling_start:client process
+[3649064.183]profiling_start:touch hardware motion
+[3649064.236]profiling_end:touch hardware motion
+[3649064.254]profiling_start:touch motion
+[3649064.276]profiling_end:touch motion
+[3649064.304]  -> wl_touch@23.motion(738088471, 0, 951.000000, 820.000000)
+[3649064.407]profiling_start:client process
+[3649069.184]profiling_start:touch hardware motion
+[3649069.237]profiling_end:touch hardware motion
+[3649069.255]profiling_start:touch motion
+[3649069.279]profiling_end:touch motion
+[3649069.306]  -> wl_touch@23.motion(738088476, 0, 950.000000, 822.000000)
+[3649069.414]profiling_start:client process
+[3649074.183]profiling_start:touch hardware motion
+[3649074.239]profiling_end:touch hardware motion
+[3649074.257]profiling_start:touch motion
+[3649074.279]profiling_end:touch motion
+[3649074.306]  -> wl_touch@23.motion(738088481, 0, 950.000000, 823.000000)
+[3649074.410]profiling_start:client process
+[3649079.186]profiling_start:touch hardware motion
+[3649079.240]profiling_end:touch hardware motion
+[3649079.259]profiling_start:touch motion
+[3649079.281]profiling_end:touch motion
+[3649079.308]  -> wl_touch@23.motion(738088486, 0, 950.000000, 824.000000)
+[3649079.412]profiling_start:client process
+[3649084.185]profiling_start:touch hardware motion
+[3649084.240]profiling_end:touch hardware motion
+[3649084.258]profiling_start:touch motion
+[3649084.281]profiling_end:touch motion
+[3649084.308]  -> wl_touch@23.motion(738088491, 0, 950.000000, 825.000000)
+[3649084.429]profiling_start:client process
+[3649089.187]profiling_start:touch hardware motion
+[3649089.242]profiling_end:touch hardware motion
+[3649089.270]profiling_start:touch motion
+[3649089.296]profiling_end:touch motion
+[3649089.322]  -> wl_touch@23.motion(738088496, 0, 950.000000, 827.000000)
+[3649089.429]profiling_start:client process
+[3649094.183]profiling_start:touch hardware motion
+[3649094.236]profiling_end:touch hardware motion
+[3649094.254]profiling_start:touch motion
+[3649094.277]profiling_end:touch motion
+[3649094.305]  -> wl_touch@23.motion(738088501, 0, 950.000000, 829.000000)
+[3649094.409]profiling_start:client process
+[3649099.184]profiling_start:touch hardware motion
+[3649099.239]profiling_end:touch hardware motion
+[3649099.258]profiling_start:touch motion
+[3649099.279]profiling_end:touch motion
+[3649099.307]  -> wl_touch@23.motion(738088506, 0, 950.000000, 830.000000)
+[3649099.410]profiling_start:client process
+[3649104.183]profiling_start:touch hardware motion
+[3649104.238]profiling_end:touch hardware motion
+[3649104.256]profiling_start:touch motion
+[3649104.279]profiling_end:touch motion
+[3649104.307]  -> wl_touch@23.motion(738088511, 0, 950.000000, 831.000000)
+[3649104.415]profiling_start:client process
+[3649113.188]profiling_start:touch hardware motion
+[3649113.241]profiling_end:touch hardware motion
+[3649113.260]profiling_start:touch motion
+[3649113.282]profiling_end:touch motion
+[3649113.310]  -> wl_touch@23.motion(738088520, 0, 950.000000, 833.000000)
+[3649113.414]profiling_start:client process
+[3649123.185]profiling_start:touch hardware motion
+[3649123.240]profiling_end:touch hardware motion
+[3649123.258]profiling_start:touch motion
+[3649123.281]profiling_end:touch motion
+[3649123.308]  -> wl_touch@23.motion(738088530, 0, 950.000000, 834.000000)
+[3649123.413]profiling_start:client process
+[3649133.187]profiling_start:touch hardware motion
+[3649133.243]profiling_end:touch hardware motion
+[3649133.271]profiling_start:touch motion
+[3649133.297]profiling_end:touch motion
+[3649133.323]  -> wl_touch@23.motion(738088540, 0, 949.000000, 836.000000)
+[3649133.434]profiling_start:client process
+[3649138.182]profiling_start:touch hardware motion
+[3649138.233]profiling_end:touch hardware motion
+[3649138.251]profiling_start:touch motion
+[3649138.273]profiling_end:touch motion
+[3649138.300]  -> wl_touch@23.motion(738088545, 0, 949.000000, 837.000000)
+[3649138.408]profiling_start:client process
+[3649148.184]profiling_start:touch hardware motion
+[3649148.240]profiling_end:touch hardware motion
+[3649148.258]profiling_start:touch motion
+[3649148.281]profiling_end:touch motion
+[3649148.308]  -> wl_touch@23.motion(738088555, 0, 948.000000, 839.000000)
+[3649148.413]profiling_start:client process
+[3649158.184]profiling_start:touch hardware motion
+[3649158.238]profiling_end:touch hardware motion
+[3649158.257]profiling_start:touch motion
+[3649158.279]profiling_end:touch motion
+[3649158.306]  -> wl_touch@23.motion(738088565, 0, 947.000000, 841.000000)
+[3649158.410]profiling_start:client process
+[3649163.179]profiling_start:touch hardware motion
+[3649163.230]profiling_end:touch hardware motion
+[3649163.248]profiling_start:touch motion
+[3649163.270]profiling_end:touch motion
+[3649163.297]  -> wl_touch@23.motion(738088570, 0, 947.000000, 842.000000)
+[3649163.406]profiling_start:client process
+[3649173.185]profiling_start:touch hardware motion
+[3649173.240]profiling_end:touch hardware motion
+[3649173.259]profiling_start:touch motion
+[3649173.281]profiling_end:touch motion
+[3649173.309]  -> wl_touch@23.motion(738088580, 0, 946.000000, 844.000000)
+[3649173.413]profiling_start:client process
+[3649183.184]profiling_start:touch hardware motion
+[3649183.239]profiling_end:touch hardware motion
+[3649183.258]profiling_start:touch motion
+[3649183.280]profiling_end:touch motion
+[3649183.308]  -> wl_touch@23.motion(738088590, 0, 946.000000, 845.000000)
+[3649183.411]profiling_start:client process
+[3649187.178]profiling_start:touch hardware motion
+[3649187.225]profiling_end:touch hardware motion
+[3649187.243]profiling_start:touch motion
+[3649187.264]profiling_end:touch motion
+[3649187.291]  -> wl_touch@23.motion(738088594, 0, 945.000000, 847.000000)
+[3649187.396]profiling_start:client process
+[3649192.183]profiling_start:touch hardware motion
+[3649192.238]profiling_end:touch hardware motion
+[3649192.257]profiling_start:touch motion
+[3649192.280]profiling_end:touch motion
+[3649192.335]  -> wl_touch@23.motion(738088599, 0, 945.000000, 849.000000)
+[3649192.445]profiling_start:client process
+[3649202.184]profiling_start:touch hardware motion
+[3649202.239]profiling_end:touch hardware motion
+[3649202.258]profiling_start:touch motion
+[3649202.281]profiling_end:touch motion
+[3649202.308]  -> wl_touch@23.motion(738088609, 0, 945.000000, 850.000000)
+[3649202.412]profiling_start:client process
+[3649207.182]profiling_start:touch hardware motion
+[3649207.236]profiling_end:touch hardware motion
+[3649207.255]profiling_start:touch motion
+[3649207.277]profiling_end:touch motion
+[3649207.305]  -> wl_touch@23.motion(738088614, 0, 945.000000, 852.000000)
+[3649207.408]profiling_start:client process
+[3649217.187]profiling_start:touch hardware motion
+[3649217.242]profiling_end:touch hardware motion
+[3649217.260]profiling_start:touch motion
+[3649217.283]profiling_end:touch motion
+[3649217.312]  -> wl_touch@23.motion(738088624, 0, 945.000000, 853.000000)
+[3649217.420]profiling_start:client process
+[3649222.184]profiling_start:touch hardware motion
+[3649222.238]profiling_end:touch hardware motion
+[3649222.256]profiling_start:touch motion
+[3649222.279]profiling_end:touch motion
+[3649222.306]  -> wl_touch@23.motion(738088629, 0, 945.000000, 855.000000)
+[3649222.409]profiling_start:client process
+[3649232.182]profiling_start:touch hardware motion
+[3649232.238]profiling_end:touch hardware motion
+[3649232.257]profiling_start:touch motion
+[3649232.279]profiling_end:touch motion
+[3649232.307]  -> wl_touch@23.motion(738088639, 0, 945.000000, 856.000000)
+[3649232.412]profiling_start:client process
+[3649242.184]profiling_start:touch hardware motion
+[3649242.242]profiling_end:touch hardware motion
+[3649242.260]profiling_start:touch motion
+[3649242.283]profiling_end:touch motion
+[3649242.311]  -> wl_touch@23.motion(738088649, 0, 945.000000, 858.000000)
+[3649242.421]profiling_start:client process
+[3649252.184]profiling_start:touch hardware motion
+[3649252.240]profiling_end:touch hardware motion
+[3649252.259]profiling_start:touch motion
+[3649252.282]profiling_end:touch motion
+[3649252.309]  -> wl_touch@23.motion(738088659, 0, 945.000000, 860.000000)
+[3649252.417]profiling_start:client process
+[3649262.185]profiling_start:touch hardware motion
+[3649262.241]profiling_end:touch hardware motion
+[3649262.259]profiling_start:touch motion
+[3649262.281]profiling_end:touch motion
+[3649262.309]  -> wl_touch@23.motion(738088669, 0, 945.000000, 861.000000)
+[3649262.412]profiling_start:client process
+[3649267.180]profiling_start:touch hardware motion
+[3649267.227]profiling_end:touch hardware motion
+[3649267.246]profiling_start:touch motion
+[3649267.268]profiling_end:touch motion
+[3649267.294]  -> wl_touch@23.motion(738088674, 0, 945.000000, 862.000000)
+[3649267.397]profiling_start:client process
+[3649272.184]profiling_start:touch hardware motion
+[3649272.237]profiling_end:touch hardware motion
+[3649272.256]profiling_start:touch motion
+[3649272.279]profiling_end:touch motion
+[3649272.307]  -> wl_touch@23.motion(738088679, 0, 945.000000, 863.000000)
+[3649272.414]profiling_start:client process
+[3649276.181]profiling_start:touch hardware motion
+[3649276.234]profiling_end:touch hardware motion
+[3649276.252]profiling_start:touch motion
+[3649276.275]profiling_end:touch motion
+[3649276.301]  -> wl_touch@23.motion(738088683, 0, 945.000000, 865.000000)
+[3649276.405]profiling_start:client process
+[3649286.182]profiling_start:touch hardware motion
+[3649286.238]profiling_end:touch hardware motion
+[3649286.257]profiling_start:touch motion
+[3649286.280]profiling_end:touch motion
+[3649286.307]  -> wl_touch@23.motion(738088693, 0, 945.000000, 866.000000)
+[3649286.410]profiling_start:client process
+[3649296.181]profiling_start:touch hardware motion
+[3649296.240]profiling_end:touch hardware motion
+[3649296.259]profiling_start:touch motion
+[3649296.282]profiling_end:touch motion
+[3649296.310]  -> wl_touch@23.motion(738088703, 0, 945.000000, 868.000000)
+[3649296.418]profiling_start:client process
+[3649303.177] wl_surface@15.frame(new id wl_callback@30)
+[3649303.708] wl_surface@15.attach(wl_buffer@28, 0, 0)
+[3649304.530] wl_surface@15.damage(0, 0, 1920, 1080)
+[3649305.495] wl_surface@15.commit()
+[3649305.694]profiling_end:client process
+[3649305.792]profiling_start:wcommit
+[3649305.936]profiling_start:wcommit_15
+[3649306.056]profiling_end:wcommit_15
+[3649306.249]profiling_end:wcommit
+[3649310.303]profiling_end:graphic hardware
+[3649310.459]profiling_start:weston
+[3649316.777]  -> wl_buffer@28.release()
+[3649319.711]profiling_end:weston
+[3649319.854]profiling_start:graphic hardware
+[3649319.993]profiling_start:touch hardware motion
+[3649320.136]profiling_end:touch hardware motion
+[3649320.289]profiling_start:touch motion
+[3649320.402]profiling_end:touch motion
+[3649320.507]  -> wl_touch@23.motion(738088708, 0, 945.000000, 869.000000)
+[3649321.525]profiling_start:client process
+[3649321.636]profiling_start:touch hardware motion
+[3649321.737]profiling_end:touch hardware motion
+[3649321.836]profiling_start:touch motion
+[3649321.980]profiling_end:touch motion
+[3649322.084]  -> wl_touch@23.motion(738088718, 0, 945.000000, 870.000000)
+[3649323.039]profiling_start:client process
+[3649323.191]  -> wl_callback@30.done(245830604)
+[3649323.491]  -> wl_display@1.delete_id(30)
+[3649326.974]profiling_end:graphic hardware
+[3649327.196]profiling_start:touch hardware motion
+[3649327.332]profiling_end:touch hardware motion
+[3649327.455]profiling_start:touch motion
+[3649327.593]profiling_end:touch motion
+[3649327.724]  -> wl_touch@23.motion(738088733, 0, 945.000000, 872.000000)
+[3649328.684]profiling_start:client process
+[3649336.188]profiling_start:touch hardware motion
+[3649336.361]profiling_end:touch hardware motion
+[3649336.479]profiling_start:touch motion
+[3649336.586]profiling_end:touch motion
+[3649336.715]  -> wl_touch@23.motion(738088743, 0, 945.000000, 873.000000)
+[3649337.675]profiling_start:client process
+[3649346.184]profiling_start:touch hardware motion
+[3649346.360]profiling_end:touch hardware motion
+[3649346.482]profiling_start:touch motion
+[3649346.589]profiling_end:touch motion
+[3649346.717]  -> wl_touch@23.motion(738088753, 0, 945.000000, 875.000000)
+[3649347.688]profiling_start:client process
+[3649356.187]profiling_start:touch hardware motion
+[3649356.358]profiling_end:touch hardware motion
+[3649356.477]profiling_start:touch motion
+[3649356.584]profiling_end:touch motion
+[3649356.711]  -> wl_touch@23.motion(738088763, 0, 945.000000, 876.000000)
+[3649357.702]profiling_start:client process
+[3649370.184]profiling_start:touch hardware motion
+[3649370.362]profiling_end:touch hardware motion
+[3649370.482]profiling_start:touch motion
+[3649370.588]profiling_end:touch motion
+[3649370.717]  -> wl_touch@23.motion(738088777, 0, 945.000000, 878.000000)
+[3649371.682]profiling_start:client process
+[3649380.188]profiling_start:touch hardware motion
+[3649380.376]profiling_end:touch hardware motion
+[3649380.498]profiling_start:touch motion
+[3649380.606]profiling_end:touch motion
+[3649380.736]  -> wl_touch@23.motion(738088787, 0, 945.000000, 880.000000)
+[3649381.710]profiling_start:client process
+[3649395.191]profiling_start:touch hardware motion
+[3649395.367]profiling_end:touch hardware motion
+[3649395.489]profiling_start:touch motion
+[3649395.595]profiling_end:touch motion
+[3649395.760]  -> wl_touch@23.motion(738088802, 0, 944.000000, 881.000000)
+[3649396.770]profiling_start:client process
+[3649405.196]profiling_start:touch hardware motion
+[3649405.368]profiling_end:touch hardware motion
+[3649405.489]profiling_start:touch motion
+[3649405.595]profiling_end:touch motion
+[3649405.724]  -> wl_touch@23.motion(738088812, 0, 944.000000, 883.000000)
+[3649406.724]profiling_start:client process
+[3649420.183]profiling_start:touch hardware motion
+[3649420.358]profiling_end:touch hardware motion
+[3649420.477]profiling_start:touch motion
+[3649420.584]profiling_end:touch motion
+[3649420.714]  -> wl_touch@23.motion(738088827, 0, 944.000000, 884.000000)
+[3649421.750]profiling_start:client process
+[3649440.186]profiling_start:touch hardware motion
+[3649440.370]profiling_end:touch hardware motion
+[3649440.526]profiling_start:touch motion
+[3649440.656]profiling_end:touch motion
+[3649440.796]  -> wl_touch@23.motion(738088847, 0, 944.000000, 886.000000)
+[3649441.769]profiling_start:client process
+[3649445.257] wl_surface@26.frame(new id wl_callback@25)
+[3649445.748] wl_surface@26.attach(wl_buffer@32, 0, 0)
+[3649446.554] wl_surface@26.damage(0, 0, 1920, 1080)
+[3649447.523] wl_surface@26.commit()
+[3649447.758]profiling_end:client process
+[3649447.859]profiling_start:wcommit
+[3649447.963]profiling_start:wcommit_26
+[3649448.077]profiling_end:wcommit_26
+[3649448.229]profiling_end:wcommit
+[3649460.300]profiling_end:graphic hardware
+[3649460.467]profiling_start:weston
+[3649466.574]  -> wl_buffer@32.release()
+[3649467.216]profiling_end:weston
+[3649474.162]profiling_start:graphic hardware
+[3649474.326]profiling_start:touch hardware motion
+[3649474.451]profiling_end:touch hardware motion
+[3649474.554]profiling_start:touch motion
+[3649474.717]profiling_end:touch motion
+[3649474.853]  -> wl_touch@23.motion(738088866, 0, 943.000000, 888.000000)
+[3649475.810]profiling_start:client process
+[3649475.922]  -> wl_callback@25.done(245830754)
+[3649476.245]  -> wl_display@1.delete_id(25)
+[3649476.991]profiling_end:graphic hardware
+[3649484.186]profiling_start:touch hardware motion
+[3649484.358]profiling_end:touch hardware motion
+[3649484.477]profiling_start:touch motion
+[3649484.583]profiling_end:touch motion
+[3649484.712]  -> wl_touch@23.motion(738088891, 0, 943.000000, 889.000000)
+[3649485.762]profiling_start:client process
+[3649514.183]profiling_start:touch hardware motion
+[3649514.375]profiling_end:touch hardware motion
+[3649514.495]profiling_start:touch motion
+[3649514.604]profiling_end:touch motion
+[3649514.769]  -> wl_touch@23.motion(738088921, 0, 943.000000, 891.000000)
+[3649515.783]profiling_start:client process
+[3649553.183]profiling_start:touch hardware motion
+[3649553.365]profiling_end:touch hardware motion
+[3649553.485]profiling_start:touch motion
+[3649553.594]profiling_end:touch motion
+[3649553.758]  -> wl_touch@23.motion(738088960, 0, 942.000000, 892.000000)
+[3649554.728]profiling_start:client process
+[3649593.181]profiling_start:touch hardware motion
+[3649593.370]profiling_end:touch hardware motion
+[3649593.491]profiling_start:touch motion
+[3649593.634]profiling_end:touch motion
+[3649593.751]  -> wl_touch@23.motion(738089000, 0, 942.000000, 894.000000)
+[3649594.704]profiling_start:client process
+[3649637.191]profiling_start:touch hardware motion
+[3649637.403]profiling_end:touch hardware motion
+[3649637.527]profiling_start:touch motion
+[3649637.637]profiling_end:touch motion
+[3649637.803]  -> wl_touch@23.motion(738089044, 0, 942.000000, 895.000000)
+[3649638.796]profiling_start:client process
+[3649682.184]profiling_start:touch hardware motion
+[3649682.376]profiling_end:touch hardware motion
+[3649682.497]profiling_start:touch motion
+[3649682.605]profiling_end:touch motion
+[3649682.774]  -> wl_touch@23.motion(738089089, 0, 942.000000, 897.000000)
+[3649683.767]profiling_start:client process
+[3649687.198]profiling_start:touch hardware motion
+[3649687.376]profiling_end:touch hardware motion
+[3649687.497]profiling_start:touch motion
+[3649687.604]profiling_end:touch motion
+[3649687.738]  -> wl_touch@23.motion(738089094, 0, 942.000000, 899.000000)
+[3649688.726]profiling_start:client process
+[3649697.191]profiling_start:touch hardware motion
+[3649697.372]profiling_end:touch hardware motion
+[3649697.492]profiling_start:touch motion
+[3649697.601]profiling_end:touch motion
+[3649697.765]  -> wl_touch@23.motion(738089104, 0, 942.000000, 900.000000)
+[3649698.764]profiling_start:client process
+[3649721.185]profiling_start:touch hardware motion
+[3649721.371]profiling_end:touch hardware motion
+[3649721.492]profiling_start:touch motion
+[3649721.601]profiling_end:touch motion
+[3649721.734]  -> wl_touch@23.motion(738089128, 0, 942.000000, 901.000000)
+[3649722.787]profiling_start:client process
+[3649766.217]profiling_start:touch hardware motion
+[3649766.438]profiling_end:touch hardware motion
+[3649766.563]profiling_start:touch motion
+[3649766.728]profiling_end:touch motion
+[3649766.877]  -> wl_touch@23.motion(738089173, 0, 942.000000, 902.000000)
+[3649767.880]profiling_start:client process
+[3649800.215]profiling_start:touch hardware motion
+[3649800.501]profiling_end:touch hardware motion
+[3649800.624]profiling_start:touch motion
+[3649800.732]profiling_end:touch motion
+[3649800.905]  -> wl_touch@23.motion(738089207, 0, 941.000000, 904.000000)
+[3649801.950]profiling_start:client process
+[3649830.212]profiling_start:touch hardware motion
+[3649830.433]profiling_end:touch hardware motion
+[3649830.558]profiling_start:touch motion
+[3649830.666]profiling_end:touch motion
+[3649830.838]  -> wl_touch@23.motion(738089237, 0, 941.000000, 906.000000)
+[3649831.864]profiling_start:client process
+[3649855.206]profiling_start:touch hardware motion
+[3649859.171]profiling_end:touch hardware motion
+[3649859.391]profiling_start:touch motion
+[3649859.521]profiling_end:touch motion
+[3649859.653]  -> wl_touch@23.motion(738089262, 0, 941.000000, 907.000000)
+[3649860.835]profiling_start:client process
+[3649879.221]profiling_start:touch hardware motion
+[3649879.453]profiling_end:touch hardware motion
+[3649879.576]profiling_start:touch motion
+[3649879.688]profiling_end:touch motion
+[3649879.820]  -> wl_touch@23.motion(738089286, 0, 941.000000, 909.000000)
+[3649880.821]profiling_start:client process
+[3649899.210]profiling_start:touch hardware motion
+[3649899.278]profiling_end:touch hardware motion
+[3649899.297]profiling_start:touch motion
+[3649899.320]profiling_end:touch motion
+[3649899.344]  -> wl_touch@23.motion(738089306, 0, 941.000000, 910.000000)
+[3649899.447]profiling_start:client process
+[3649914.213]profiling_start:touch hardware motion
+[3649914.273]profiling_end:touch hardware motion
+[3649914.292]profiling_start:touch motion
+[3649914.314]profiling_end:touch motion
+[3649914.339]  -> wl_touch@23.motion(738089321, 0, 941.000000, 912.000000)
+[3649914.442]profiling_start:client process
+[3649934.218]profiling_start:touch hardware motion
+[3649934.279]profiling_end:touch hardware motion
+[3649934.298]profiling_start:touch motion
+[3649934.320]profiling_end:touch motion
+[3649934.345]  -> wl_touch@23.motion(738089341, 0, 940.000000, 913.000000)
+[3649934.446]profiling_start:client process
+[3649949.212]profiling_start:touch hardware motion
+[3649949.272]profiling_end:touch hardware motion
+[3649949.291]profiling_start:touch motion
+[3649949.314]profiling_end:touch motion
+[3649949.339]  -> wl_touch@23.motion(738089356, 0, 940.000000, 915.000000)
+[3649949.442]profiling_start:client process
+[3649968.215]profiling_start:touch hardware motion
+[3649968.273]profiling_end:touch hardware motion
+[3649968.293]profiling_start:touch motion
+[3649968.315]profiling_end:touch motion
+[3649968.340]  -> wl_touch@23.motion(738089375, 0, 940.000000, 917.000000)
+[3649968.442]profiling_start:client process
+[3649983.218]profiling_start:touch hardware motion
+[3649983.278]profiling_end:touch hardware motion
+[3649983.297]profiling_start:touch motion
+[3649983.320]profiling_end:touch motion
+[3649983.344]  -> wl_touch@23.motion(738089390, 0, 939.000000, 918.000000)
+[3649983.446]profiling_start:client process
+[3650003.212]profiling_start:touch hardware motion
+[3650003.281]profiling_end:touch hardware motion
+[3650003.301]profiling_start:touch motion
+[3650003.323]profiling_end:touch motion
+[3650003.348]  -> wl_touch@23.motion(738089410, 0, 939.000000, 920.000000)
+[3650003.451]profiling_start:client process
+[3650023.210]profiling_start:touch hardware motion
+[3650023.268]profiling_end:touch hardware motion
+[3650023.288]profiling_start:touch motion
+[3650023.310]profiling_end:touch motion
+[3650023.334]  -> wl_touch@23.motion(738089430, 0, 938.000000, 921.000000)
+[3650023.437]profiling_start:client process
+[3650042.286]profiling_start:touch hardware motion
+[3650042.342]profiling_end:touch hardware motion
+[3650042.361]profiling_start:touch motion
+[3650042.384]profiling_end:touch motion
+[3650042.408]  -> wl_touch@23.motion(738089449, 0, 938.000000, 923.000000)
+[3650042.511]profiling_start:client process
+[3650062.218]profiling_start:touch hardware motion
+[3650062.305]profiling_end:touch hardware motion
+[3650062.324]profiling_start:touch motion
+[3650062.347]profiling_end:touch motion
+[3650062.372]  -> wl_touch@23.motion(738089469, 0, 938.000000, 924.000000)
+[3650062.475]profiling_start:client process
+[3650062.734] wl_surface@15.frame(new id wl_callback@25)
+[3650062.809] wl_surface@15.attach(wl_buffer@27, 0, 0)
+[3650062.889] wl_surface@15.damage(0, 0, 1920, 1080)
+[3650062.994] wl_surface@15.commit()
+[3650063.027]profiling_end:client process
+[3650063.045]profiling_start:wcommit
+[3650063.061]profiling_start:wcommit_15
+[3650063.093]profiling_end:wcommit_15
+[3650063.111]profiling_end:wcommit
+[3650076.979]profiling_end:graphic hardware
+[3650077.043]profiling_start:weston
+[3650083.080]  -> wl_buffer@27.release()
+[3650089.668]profiling_end:weston
+[3650089.898]profiling_start:graphic hardware
+[3650090.041]profiling_start:touch hardware motion
+[3650090.189]profiling_end:touch hardware motion
+[3650095.189]profiling_start:touch motion
+[3650095.428]profiling_end:touch motion
+[3650095.562]  -> wl_touch@23.motion(738089489, 0, 938.000000, 926.000000)
+[3650096.599]profiling_start:client process
+[3650096.759]  -> wl_callback@25.done(245831371)
+[3650097.092]  -> wl_display@1.delete_id(25)
+[3650110.315]profiling_end:graphic hardware
+[3650112.217]profiling_start:touch hardware motion
+[3650112.273]profiling_end:touch hardware motion
+[3650112.292]profiling_start:touch motion
+[3650112.314]profiling_end:touch motion
+[3650112.340]  -> wl_touch@23.motion(738089519, 0, 938.000000, 928.000000)
+[3650112.442]profiling_start:client process
+[3650141.223]profiling_start:touch hardware motion
+[3650141.279]profiling_end:touch hardware motion
+[3650141.298]profiling_start:touch motion
+[3650141.321]profiling_end:touch motion
+[3650141.347]  -> wl_touch@23.motion(738089548, 0, 938.000000, 929.000000)
+[3650141.449]profiling_start:client process
+[3650176.221]profiling_start:touch hardware motion
+[3650176.277]profiling_end:touch hardware motion
+[3650176.296]profiling_start:touch motion
+[3650176.319]profiling_end:touch motion
+[3650176.344]  -> wl_touch@23.motion(738089583, 0, 938.000000, 931.000000)
+[3650176.447]profiling_start:client process
+[3650220.214]profiling_start:touch hardware motion
+[3650220.274]profiling_end:touch hardware motion
+[3650220.294]profiling_start:touch motion
+[3650220.316]profiling_end:touch motion
+[3650220.341]  -> wl_touch@23.motion(738089627, 0, 938.000000, 932.000000)
+[3650220.445]profiling_start:client process
+[3650220.699] wl_surface@26.frame(new id wl_callback@30)
+[3650220.774] wl_surface@26.attach(wl_buffer@33, 0, 0)
+[3650220.854] wl_surface@26.damage(0, 0, 1920, 1080)
+[3650220.960] wl_surface@26.commit()
+[3650220.993]profiling_end:client process
+[3650221.010]profiling_start:wcommit
+[3650221.027]profiling_start:wcommit_26
+[3650221.059]profiling_end:wcommit_26
+[3650221.117]profiling_end:wcommit
+[3650226.971]profiling_end:graphic hardware
+[3650227.026]profiling_start:weston
+[3650236.438]  -> wl_buffer@33.release()
+[3650244.536]profiling_end:weston
+[3650244.770]profiling_start:graphic hardware
+[3650244.910]  -> wl_callback@30.done(245831521)
+[3650245.388]  -> wl_display@1.delete_id(30)
+[3650260.306]profiling_end:graphic hardware
+[3650260.394]profiling_start:touch hardware motion
+[3650260.415]profiling_end:touch hardware motion
+[3650260.432]profiling_start:touch motion
+[3650260.453]profiling_end:touch motion
+[3650260.476]  -> wl_touch@23.motion(738089657, 0, 938.000000, 934.000000)
+[3650260.578]profiling_start:client process
+[3650260.596]profiling_start:touch hardware motion
+[3650260.613]profiling_end:touch hardware motion
+[3650260.629]profiling_start:touch motion
+[3650260.647]profiling_end:touch motion
+[3650260.667]  -> wl_touch@23.motion(738089662, 0, 938.000000, 935.000000)
+[3650260.767]profiling_start:client process
+[3650265.219]profiling_start:touch hardware motion
+[3650265.275]profiling_end:touch hardware motion
+[3650265.294]profiling_start:touch motion
+[3650265.316]profiling_end:touch motion
+[3650265.341]  -> wl_touch@23.motion(738089672, 0, 938.000000, 936.000000)
+[3650265.476]profiling_start:client process
+[3650299.217]profiling_start:touch hardware motion
+[3650299.276]profiling_end:touch hardware motion
+[3650299.295]profiling_start:touch motion
+[3650299.317]profiling_end:touch motion
+[3650299.342]  -> wl_touch@23.motion(738089706, 0, 938.000000, 937.000000)
+[3650299.443]profiling_start:client process
+[3650369.214]profiling_start:touch hardware motion
+[3650369.271]profiling_end:touch hardware motion
+[3650369.291]profiling_start:touch motion
+[3650369.313]profiling_end:touch motion
+[3650369.338]  -> wl_touch@23.motion(738089776, 0, 938.000000, 939.000000)
+[3650369.440]profiling_start:client process
+[3650428.211]profiling_start:touch hardware motion
+[3650428.267]profiling_end:touch hardware motion
+[3650428.287]profiling_start:touch motion
+[3650428.309]profiling_end:touch motion
+[3650428.333]  -> wl_touch@23.motion(738089835, 0, 939.000000, 940.000000)
+[3650428.436]profiling_start:client process
+[3650513.216]profiling_start:touch hardware motion
+[3650513.275]profiling_end:touch hardware motion
+[3650513.295]profiling_start:touch motion
+[3650513.317]profiling_end:touch motion
+[3650513.342]  -> wl_touch@23.motion(738089920, 0, 939.000000, 942.000000)
+[3650513.445]profiling_start:client process
+[3650706.214]profiling_start:touch hardware motion
+[3650706.273]profiling_end:touch hardware motion
+[3650706.293]profiling_start:touch motion
+[3650706.316]profiling_end:touch motion
+[3650706.340]  -> wl_touch@23.motion(738090113, 0, 937.000000, 941.000000)
+[3650706.444]profiling_start:client process
+[3650735.215]profiling_start:touch hardware motion
+[3650735.272]profiling_end:touch hardware motion
+[3650735.292]profiling_start:touch motion
+[3650735.314]profiling_end:touch motion
+[3650735.339]  -> wl_touch@23.motion(738090142, 0, 934.000000, 939.000000)
+[3650735.442]profiling_start:client process
+[3650740.213]profiling_start:touch hardware motion
+[3650740.270]profiling_end:touch hardware motion
+[3650740.289]profiling_start:touch motion
+[3650740.311]profiling_end:touch motion
+[3650740.335]  -> wl_touch@23.motion(738090147, 0, 932.000000, 936.000000)
+[3650740.438]profiling_start:client process
+[3650769.218]profiling_start:touch hardware motion
+[3650769.276]profiling_end:touch hardware motion
+[3650769.295]profiling_start:touch motion
+[3650769.318]profiling_end:touch motion
+[3650769.342]  -> wl_touch@23.motion(738090176, 0, 932.000000, 931.000000)
+[3650769.444]profiling_start:client process
+[3650770.201]profiling_start:touch hardware up
+[3650770.254]profiling_end:touch hardware up
+[3650770.272]profiling_start:touch up
+[3650770.290]profiling_end:touch up
+[3650770.313]  -> wl_touch@23.up(22, 738090177, 0)
+[3650770.390]profiling_start:client process
+[3651487.336] wl_surface@15.frame(new id wl_callback@30)
+[3651487.442] wl_surface@15.attach(wl_buffer@28, 0, 0)
+[3651487.524] wl_surface@15.damage(0, 0, 1920, 1080)
+[3651487.622] wl_surface@15.commit()
+[3651487.655]profiling_end:client process
+[3651487.673]profiling_start:wcommit
+[3651487.689]profiling_start:wcommit_15
+[3651487.722]profiling_end:wcommit_15
+[3651487.740]profiling_end:wcommit
+[3651487.759] wl_surface@26.frame(new id wl_callback@25)
+[3651487.811] wl_surface@26.attach(wl_buffer@32, 0, 0)
+[3651487.890] wl_surface@26.damage(0, 0, 1920, 1080)
+[3651487.985] wl_surface@26.commit()
+[3651488.016]profiling_end:client process
+[3651488.034]profiling_start:wcommit
+[3651488.050]profiling_start:wcommit_26
+[3651488.069]profiling_end:wcommit_26
+[3651488.087]profiling_end:wcommit
+[3651493.966]profiling_end:graphic hardware
+[3651494.026]profiling_start:weston
+[3651500.257]  -> wl_buffer@32.release()
+[3651507.017]  -> wl_buffer@28.release()
+[3709275.971]profiling_end:graphic hardware

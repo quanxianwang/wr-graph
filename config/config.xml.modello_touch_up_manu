@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <profile>
+		<file>PR3/modello_motion/stderr.log</file>
+    </profile>
+    <fps_item>	
+		<fps>touch hardware up</fps>
+        <fps>touch up</fps>
+        <fps>client process</fps>
+        <fps>wcommit</fps>
+        <fps>weston</fps>
+        <fps>graphic hardware</fps>
+    </fps_item>
+    <frame_item>	
+		<frame>touch hardware up</frame>
+        <frame>touch up</frame>
+        <frame>client process</frame>
+        <frame>wcommit</frame>
+        <frame>weston</frame>
+    </frame_item>
+</config>

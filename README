@@ -1,0 +1,181 @@
+Wayland Rendering Performance Analysis Tool
+
+Copyright (C) 2014 Intel Corporation
+Author: 
+      Quanxian Wang <quanxian.wang@intel.com>
+      Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+
+License
+-------
+General Public License v2.0
+
+Overview
+--------
+
+This tool monitors rendering performance based on the rendering log. It will show the picture
+including hardware rendering, software rendering and the rendering of every key path. This tool is
+helpful to address the performance issue. The original objective is to find the latency and smooth 
+issue in Tizen IVI. However it could be also used for any system which using wayland/weston as compositor.
+
+Principle of Rendering Process
+--------
+
+Rendering process, it includes software and hardware rendering. Software rendering will
+prepare the rendering buffer for hardware. Hardware rendering will communicate with hardware
+and put the software rendering buffer into hardware frame buffer. 
+
+Software rendering and hardware rendering could be executed at the same time. Hardware is rendering, at the
+same time, software rendering could prepare the next rendering buffer for next rendering in hardware. But
+they must be synced. When software rendering buffer is ready, it must wait for preivous hardware rendering 
+end event and then push the buffer into hardware. Generally hardware rendering has fixed refresh rate(60FPS).
+It will refresh the framebuffer 60 times in one second whatever software rendering buffer is ready or not.
+If software rendering want to be synced with hardware rendeirng, it must be ready in 16ms after getting the
+hardware page flip event. 16ms turns to be the key matrix. From customer's view, display will be shown natually
+and smoothly. Otherwise, flicker, latency, dragging, iand slow response will be.
+
+Dictionary:
+     A: client rendering
+     B: client commit
+     C: weston commit
+     D: 1st page flip
+     E: weston rendering
+     F: issue page flip
+     G: hardware rendering
+     H: 2nd page flip
+     I: touch down event
+
+Features
+--------
+
+  * Weston Software Rendering monitor (FPS)
+    Monitor weston software rendering frequency. To get the best effect with hardware limit,
+    It should be less than 16ms.
+
+  * Weston Hardware Rendering monitor (FPS)
+    Monitor hardware rendering frequency. Generally it should be 16ms based on refresh rate.
+
+  * one frame cycle (rendering cycle for one frame)
+     This picture descripte the whole time of one complete rendering from client to server and
+     shown on the monitor. It will includes below key paths. Also it will tell you how much time
+     cost in every path and give reviewer a sense if there is some rendering performance issue and
+     where the issue is.
+
+     General Software Rendering FPS = A + B + C + D + E + F
+     General Hardware Rendering FPS = G + H
+
+  * Touch Rendering Monitor
+    Touch down rendering
+    Touch motion rendering
+    Touch up rendering
+
+    One Touch Rendering Cycle = 
+         I + A + B + C + D + E + F + G + H
+    
+    One Touch Software Rendering Cyle = 
+         I + A + B + C + D + E + F (<16ms)
+
+    One Touch Hardware Rendering Cyle = 
+         G + H (=16ms)
+
+    as well up and motion event.
+
+  * Weston terminal touch drag rendering monitor
+    Drag weston terminal windows around. This tool provides
+    a simple rendering performance data using a picture.
+  * Weston simple egl apps rendering monitor
+    Run weston-simple-egl, tools will monitor the performance of it.
+
+Feature Planned
+  * wayland/weston pointer monitor
+  * wayland/weston VA monitor (Video Accelation)
+
+Requirements
+------------
+
+Software package requirements
+  * python (>=2.7)
+  * python-wxgtk2.8 - wxWidgets Cross-platform C++ GUI toolkit (wxPython binding)
+  * python-wxglade - GUI designer written in Python with wxPython
+  * python-wxmpl - Painless matplotlib embedding in wxPython
+  * python-wxtools - wxWidgets Cross-platform C++ GUI toolkit (wxPython common files)
+  * python-wxglade - GUI designer written in Python with wxPython
+  * python-wxversion - wxWidgets Cross-platform C++ GUI toolkit (wxPython version selector)
+  * python-cairo
+  * python-gi-cairo
+
+Software patch requirements
+  * software log patch for rendering. (weston, apps)
+  * hardware log patch for rendering. (weston)
+  * touchh log patch for rendering. (weston)
+
+Software configure requirements
+  * Require journalctl to be enabled and log with any limit.
+
+Git Repo:
+-----
+github.git/wl_perf2
+
+Usage
+-----
+
+1)  Install packages depended
+    Ubuntu:
+    apt-get install python python-wx pycairo
+
+2)  collect Weston log from target machine (Tizen IVI)
+  * Install news weston packages
+      http://quanxian-devel.bj.intel.com/weston/e-graph
+      rpm  -ivh --force weston weston-1.5.0.0.i686.rpm weston-clients-1.5.0-0.i686.rpm
+
+  * Edit file /usr/lib/system/user/weston.service
+      [Service]
+      Environment=WAYLAND_DEBUG=1
+
+  * Enable journal output(system default has enable it)
+      Set the log level to all instead of 1000 lines in 30s.
+
+  * Reboot machine
+
+  * Goto Modello UI and move your finger
+
+  * journalctl >weston.log
+
+3)  configure config.xml
+    cd e-graph;
+    cp config.xml.modello config.xml
+
+4)  run the tools to show picture
+    ./gui.py
+
+
+Data Structure to store event
+
+Orig
+wlog{client_id}{tagname} = start_time;
+
+Converted data for drawing:
+wlog{client_id}{tagname} = (start_time, duration);
+
+For Example:
+Log:
+[2709654.348]touch_down_start@weston
+[2709664.348]touch_down_end@weston
+[2709674.348]client_rendering_start@9
+[2709684.348]client_rendering_end@9
+[2709694.348]wl_surface_commit@9
+[2709696.348]weston_commit@9
+
+Original Data will be
+wlog[weston][touch_down_start] = 2709654.348
+wlog[weston][touch_down_end] = 2709664.348
+wlog[9][client_rendering_start] = 2709674.348
+wlog[9][client_rendering_end] = 2709684.348
+wlog[9][wl_surface_commit] = 2709694.348
+wlog[9][weston_commit] = 2709696.348
+
+
+Converted to be
+wlog[weston][touch_down] = (2709654.348, 10)
+wlog[9][client_rendering] = (2709684.348, 10)
+wlog[9][wl_surface_commit] = (2709694.348, 20)
+wlog[9][weston_commit] = (2709714.348)

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <profile>
+		<file>PR3/egl/stderr.log</file>
+    </profile>
+    <fps_item>	
+        <fps>client</fps>
+        <fps>MESA</fps>
+        <fps>wcommit</fps>
+        <fps>weston</fps>
+        <fps>graphic hardware</fps>
+    </fps_item>
+	<frame_item>	
+        <frame>client</frame>
+        <frame>MESA</frame>
+        <frame>wcommit</frame>
+        <frame>weston</frame>
+    </frame_item>
+</config>

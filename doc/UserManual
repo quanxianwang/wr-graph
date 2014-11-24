@@ -1,0 +1,98 @@
+User Manual
+
+The program could be configured and user can decide what to show and how to
+show the chart. So first step is to know how to write the config file and
+familiar with important tag's meaning.
+Below is the config file format introduction.
+
+CONFIG FILE FORMAT
+------------------
+File name:    config.xml
+<profile>     this is the debug part information printed with WAYLAND_DEBUG env
+              and the information printed using macros in profile_analyzer.h
+    <file>    this tag defines the debug log file(could be multiple)
+    <xxxxx>   event name's tag
+              value between <xxx></xxx> is a regular expression to parse log file
+              currently specify [time] and [ID](optional)
+
+<fps>         this tag specifies which event to calculate as fps.(optional)
+              you should use the one that is passed as msg to macro.
+
+Before starting the program, please make sure the config.xml is writtend correctly.
+Here are some suggestions:
+1. Make sure at least one filename is assigned.
+   filename can be either absolute or relative(relative root is program's directory)
+2. Below <profile> tag, you can extend any type of log you want. Just a regular
+   expression to tell the program how to parse it.
+   For example:
+        <button>                                event name tag
+        \[\ *(?P&lt;time&gt;[0-9]+\.[0-9]+)\]   match [124.234] so 124.234 is time
+        \ *->\ *wl_touch@                       event's specified expression
+        (?P&lt;id&gt;[0-9]+)                    match id
+        \.button
+        </button>
+   that means butten event. regular expression contains time and id group.
+   time is necessary. Id is optional, if has it, then events will be grouped by id.
+
+
+USING PROFILING TOOL IN COMMON C/C++ PROGRAM
+--------------------------------------------
+First include the header file profile_analyzer.h
+1. Use macro ADD_PROFILING_POINT(msg) where you want to record the time point.
+msg will be the name of event's name.
+2. Use macro ADD_PROFILING_START and ADD_PROFILING_END as a pair
+to represent an interval of time.
+Message will be printed to stderr. You can run ./exe 2>logfile and specify
+logfile in config.xml.
+The program will automatically add event's in the chart.
+
+
+GUI
+---
+
+Run: ./gui.py
+Initially the window will show a chart from all event's earliest time to latest time.
+window layout is like this:
+---------------------------------------------------------
+-  ---------------------------------  ----------------  -
+-  -                               -  -      2       -  -
+-  -                               -  -              -  -
+-  -                               -  -              -  -
+-  -                               -  -              -  -
+-  -                               -  -      3       -  -
+-  -              5                -  -              -  -
+-  -                               -  -              -  -
+-  -                               -  -              -  -
+-  -                               -  -              -  -
+-  -                               -  -              -  -
+-  ---------------------------------  -      4       -  -
+-  --------------                     -              -  -
+-  -     1      -                     ----------------  -
+-  --------------                                       -
+---------------------------------------------------------
+Following are several features you can use:
+1. Below the image box, there are two text box to input time. Events shown in chart use
+   absolute time. So you can type in two time point to view all recorded events happend
+   during that interval.
+   View button will reset zoom information and save button can save current chart into
+   a png file using two time point as filename.
+2. If you have assigned the fps event, it will be shown on chart by default.
+   The chart have double y-axis and share one timeline(x-axis).
+   On right part, you can switch fps through checkbox.
+3. Below fps checkbox are a group of event checkboxes. Checking them or not will
+   show/hide corresponding events, you can get rid of unnecessary ones.
+4. Below 3, tooltip is shown here.
+   If you move on an exact time, it will show the time point.
+   If your cursor is between two events, it will show time span.
+   If your cursor is in a time interval, it will show the interval.
+   Also, fps information will be shown.
+5. The gantt chart image box.
+   a. You can drag mouse left button on the image to zoom in your interested area.
+      The image would be redrawn and more detailed information will show.
+      Click mouse right button could zoom out to last image.
+      You could go back anytime until whichever level.
+   b. You can drag mouse in event labels' area to rearrange labels' positions.
+      The label would be placed below new label under the cursor.
+      After zooming in, rearranged labels would be preserved.
+      After zooming out, due to more labels may be added, they would be appended at end.
+

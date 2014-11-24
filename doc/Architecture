@@ -1,0 +1,46 @@
+cairochart.py
+-------------
+This file is modified by cairoplot(http://cairoplot.sourceforge.net/).
+It use pycairo to render. Currently it render a specified chart, the chart
+have combined gantt chart and dot-line chart into one class.
+First the cairo surface would be created, and all rendering would be done
+on it. When calling render() function, it will complete plot, axis, background
+and so on rendering.
+
+When the event have start and end time, it would be rendered as a rectangle.
+Else a single line could represent it.
+
+
+analyze.py
+----------
+It first parse the config.xml file to generate array of events with only meta data.
+Then it read in from log file(s) and parse it line by line, finding which event matches
+and analyze it to get time information. Finally the analyzer class got arrays of data.
+When about to render to image, it would rearrange the data so as to pass to cairochart
+class. Some other options(such as which event to draw or not) and color information is
+also computed here.
+In the initialization stage, a lot of data preprocessing is done. When draw_chart()
+function is called, it'll filter the existing data and render a cairochart class.
+
+
+gui.py
+------
+Like many other gui programs, this class provide the framework and layout of main window.
+
+Some feature's detailed description:
+zooming:    Use a list to store current chart related information, such as image,
+            label and its color, intervals respectively. When zooming in or out, it acts like
+            a stack using above mentions several lists.
+            addShowImage, delShowImage, refreshShowImage function provide convenient operations.
+tooltip:    When drawing chart, every line/rectangle's pixel positions are stored.
+            Use stored event position to compare to cursor position, this method has a higher
+            precision, but additional memory usage is required.
+rubberband: When dragging mouse left button, a renctangle would be shown.
+            It generate a bitmap and draws on it every motion time, so it's inefficient.
+            Could be improved in future.
+dragging:   dragging using middle mouse button can move chart toward left/right.
+            Current method is redraw everytime. It's inefficient and may be improved in future.
+rearranging
+labels:     Labels could be dragged to rearrange position.
+            After zooming in, positions are reserved and after zooming out,
+            the labels not arranged in this level would be appended at end.

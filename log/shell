@@ -1,0 +1,34 @@
+#!/bin/bash
+
+
+#TARGET_DIR=/home/zhangxiaoyan/work/tizen/perfomance/e-graph/log/mine_test/test
+TARGET_DIR=.
+TARGET_FILE=$1
+TARGET_STRING='touch hardware down'
+
+
+handle_file() {
+	echo "handling $1..."
+	FIRST_MATCH_LINE=$(grep -n -m 1 "$TARGET_STRING" $1)
+
+	if [ "$FIRST_MATCH_LINE" ]
+	then
+		FIRST_NUM=$(echo $FIRST_MATCH_LINE | cut -d ':' -f1 )
+		echo $FIRST_NUM
+
+		sed -n -e "$FIRST_NUM,\$p" $1 > $1.new
+        cp $1.new $1
+        rm -f $1.new
+	else
+		echo "No $TARGET_STRING, so skip $1..."
+	fi
+}
+
+cd $TARGET_DIR
+echo $TARGET_FILE
+cat $TARGET_FILE | grep -E "profiling" > $TARGET_FILE.tmp
+cp $TARGET_FILE.tmp $TARGET_FILE
+rm -f $TARGET_FILE.tmp
+handle_file $TARGET_FILE
+
+exit 0

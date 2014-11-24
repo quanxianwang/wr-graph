@@ -1,0 +1,42 @@
+What is it?
+-----------
+This is a tool to visualize log information from weston originally.
+It's extended and can be used in common c/c++ programs.
+
+It use Python and Cairo to draw pictures, wxpython to show window.
+
+SOFTWARE DEPENDENCY REQUIREMENT
+-------------------------------
+Python2.7
+python-cairo
+wxpython
+
+LICENSE
+-------
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version.
+
+SOURCE CODE
+-----------
+config.xml:          an xml file to direct parser how to parse log file
+*.log:               log files
+profile_analyzer.h:  header file used by c/c++ program
+analyze.py:          Analyze class python file
+cairochart.py:       specified class to draw gantt chart, using pycairo
+                     (modified by cairoplot project)
+series.py:           series class used by cairochart.py
+                     (clone from cairoplot project)
+cli.py:              a command line interface script
+gui.py:              a script to show window which is friendlly to use
+
+EXECUTE METHOD
+--------------
+To run the command script:    ./cli.py start_time end_time
+example:                      ./cli.py 0 6000
+It means from 0 to 6000 millisecond. Time is relative time.
+Result is saved as a png file using start and end time as filename.
+
+To run the gui script:        ./gui.py
+About gui related usage can refer to User Manual document.

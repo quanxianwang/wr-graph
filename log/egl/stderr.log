@@ -1,0 +1,3791 @@
+[161418.000]profiling_id:9
+[161418.313]profiling_start:client_9
+[161418.842]profiling_end:client_9
+[161418.897]profiling_start:MESA_9
+[161422.136]profiling_end:MESA_9
+[161422.156]profiling_start:wcommit_9
+[161422.264]profiling_end:wcommit_9
+[161433.432]profiling_end:graphic hardware
+[161433.483]profiling_start:weston
+[161433.812]profiling_end:weston
+[161433.845]profiling_start:graphic hardware
+[161434.779]profiling_start:client_9
+[161435.294]profiling_end:client_9
+[161435.363]profiling_start:MESA_9
+[161437.249]profiling_end:MESA_9
+[161437.314]profiling_start:wcommit_9
+[161437.542]profiling_end:wcommit_9
+[161450.151]profiling_end:graphic hardware
+[161450.330]profiling_start:weston
+[161451.019]profiling_end:weston
+[161451.091]profiling_start:graphic hardware
+[161451.993]profiling_start:client_9
+[161452.470]profiling_end:client_9
+[161452.526]profiling_start:MESA_9
+[161454.898]profiling_end:MESA_9
+[161454.952]profiling_start:wcommit_9
+[161455.156]profiling_end:wcommit_9
+[161466.759]profiling_end:graphic hardware
+[161466.856]profiling_start:weston
+[161467.637]profiling_end:weston
+[161467.710]profiling_start:graphic hardware
+[161468.869]profiling_start:client_9
+[161469.398]profiling_end:client_9
+[161469.453]profiling_start:MESA_9
+[161471.885]profiling_end:MESA_9
+[161471.938]profiling_start:wcommit_9
+[161472.141]profiling_end:wcommit_9
+[161483.437]profiling_end:graphic hardware
+[161483.535]profiling_start:weston
+[161484.325]profiling_end:weston
+[161484.408]profiling_start:graphic hardware
+[161485.624]profiling_start:client_9
+[161486.029]profiling_end:client_9
+[161486.083]profiling_start:MESA_9
+[161488.526]profiling_end:MESA_9
+[161488.578]profiling_start:wcommit_9
+[161488.782]profiling_end:wcommit_9
+[161500.101]profiling_end:graphic hardware
+[161500.286]profiling_start:weston
+[161500.971]profiling_end:weston
+[161501.043]profiling_start:graphic hardware
+[161502.384]profiling_start:client_9
+[161502.798]profiling_end:client_9
+[161502.853]profiling_start:MESA_9
+[161504.933]profiling_end:MESA_9
+[161504.986]profiling_start:wcommit_9
+[161505.227]profiling_end:wcommit_9
+[161516.483]profiling_end:graphic hardware
+[161516.555]profiling_start:weston
+[161517.335]profiling_end:weston
+[161517.421]profiling_start:graphic hardware
+[161518.664]profiling_start:client_9
+[161519.268]profiling_end:client_9
+[161519.327]profiling_start:MESA_9
+[161521.399]profiling_end:MESA_9
+[161521.452]profiling_start:wcommit_9
+[161521.646]profiling_end:wcommit_9
+[161533.423]profiling_end:graphic hardware
+[161533.521]profiling_start:weston
+[161534.306]profiling_end:weston
+[161534.390]profiling_start:graphic hardware
+[161535.698]profiling_start:client_9
+[161536.113]profiling_end:client_9
+[161536.168]profiling_start:MESA_9
+[161538.620]profiling_end:MESA_9
+[161538.674]profiling_start:wcommit_9
+[161538.878]profiling_end:wcommit_9
+[161550.082]profiling_end:graphic hardware
+[161550.263]profiling_start:weston
+[161550.952]profiling_end:weston
+[161551.023]profiling_start:graphic hardware
+[161552.067]profiling_start:client_9
+[161552.416]profiling_end:client_9
+[161552.471]profiling_start:MESA_9
+[161554.847]profiling_end:MESA_9
+[161554.899]profiling_start:wcommit_9
+[161555.104]profiling_end:wcommit_9
+[161566.730]profiling_end:graphic hardware
+[161566.827]profiling_start:weston
+[161567.609]profiling_end:weston
+[161567.683]profiling_start:graphic hardware
+[161568.837]profiling_start:client_9
+[161569.360]profiling_end:client_9
+[161569.416]profiling_start:MESA_9
+[161571.841]profiling_end:MESA_9
+[161571.893]profiling_start:wcommit_9
+[161572.096]profiling_end:wcommit_9
+[161583.391]profiling_end:graphic hardware
+[161583.489]profiling_start:weston
+[161584.271]profiling_end:weston
+[161584.360]profiling_start:graphic hardware
+[161585.607]profiling_start:client_9
+[161586.014]profiling_end:client_9
+[161586.068]profiling_start:MESA_9
+[161588.504]profiling_end:MESA_9
+[161588.557]profiling_start:wcommit_9
+[161588.763]profiling_end:wcommit_9
+[161600.064]profiling_end:graphic hardware
+[161600.162]profiling_start:weston
+[161600.933]profiling_end:weston
+[161601.004]profiling_start:graphic hardware
+[161602.305]profiling_start:client_9
+[161602.730]profiling_end:client_9
+[161602.785]profiling_start:MESA_9
+[161605.141]profiling_end:MESA_9
+[161605.233]profiling_start:wcommit_9
+[161605.451]profiling_end:wcommit_9
+[161616.713]profiling_end:graphic hardware
+[161616.813]profiling_start:weston
+[161617.596]profiling_end:weston
+[161617.671]profiling_start:graphic hardware
+[161618.825]profiling_start:client_9
+[161619.347]profiling_end:client_9
+[161619.403]profiling_start:MESA_9
+[161621.832]profiling_end:MESA_9
+[161621.884]profiling_start:wcommit_9
+[161622.086]profiling_end:wcommit_9
+[161633.389]profiling_end:graphic hardware
+[161633.486]profiling_start:weston
+[161634.167]profiling_end:weston
+[161634.354]profiling_start:graphic hardware
+[161635.604]profiling_start:client_9
+[161636.016]profiling_end:client_9
+[161636.070]profiling_start:MESA_9
+[161638.576]profiling_end:MESA_9
+[161638.631]profiling_start:wcommit_9
+[161638.836]profiling_end:wcommit_9
+[161650.052]profiling_end:graphic hardware
+[161650.150]profiling_start:weston
+[161650.922]profiling_end:weston
+[161650.995]profiling_start:graphic hardware
+[161652.110]profiling_start:client_9
+[161652.604]profiling_end:client_9
+[161652.714]profiling_start:MESA_9
+[161655.106]profiling_end:MESA_9
+[161655.159]profiling_start:wcommit_9
+[161655.417]profiling_end:wcommit_9
+[161666.696]profiling_end:graphic hardware
+[161666.795]profiling_start:weston
+[161667.576]profiling_end:weston
+[161667.650]profiling_start:graphic hardware
+[161668.805]profiling_start:client_9
+[161669.335]profiling_end:client_9
+[161669.391]profiling_start:MESA_9
+[161671.805]profiling_end:MESA_9
+[161671.857]profiling_start:wcommit_9
+[161672.062]profiling_end:wcommit_9
+[161683.370]profiling_end:graphic hardware
+[161683.467]profiling_start:weston
+[161684.147]profiling_end:weston
+[161684.333]profiling_start:graphic hardware
+[161685.575]profiling_start:client_9
+[161685.984]profiling_end:client_9
+[161686.039]profiling_start:MESA_9
+[161688.093]profiling_end:MESA_9
+[161688.144]profiling_start:wcommit_9
+[161688.391]profiling_end:wcommit_9
+[161699.756]profiling_end:graphic hardware
+[161699.828]profiling_start:weston
+[161700.569]profiling_end:weston
+[161700.643]profiling_start:graphic hardware
+[161701.655]profiling_start:client_9
+[161702.069]profiling_end:client_9
+[161702.125]profiling_start:MESA_9
+[161704.976]profiling_end:MESA_9
+[161705.033]profiling_start:wcommit_9
+[161705.349]profiling_end:wcommit_9
+[161716.339]profiling_end:graphic hardware
+[161716.439]profiling_start:weston
+[161717.399]profiling_end:weston
+[161717.593]profiling_start:graphic hardware
+[161718.840]profiling_start:client_9
+[161719.372]profiling_end:client_9
+[161719.432]profiling_start:MESA_9
+[161721.632]profiling_end:MESA_9
+[161721.688]profiling_start:wcommit_9
+[161721.897]profiling_end:wcommit_9
+[161733.055]profiling_end:graphic hardware
+[161733.137]profiling_start:weston
+[161733.884]profiling_end:weston
+[161733.971]profiling_start:graphic hardware
+[161735.313]profiling_start:client_9
+[161735.751]profiling_end:client_9
+[161735.809]profiling_start:MESA_9
+[161737.943]profiling_end:MESA_9
+[161737.987]profiling_start:wcommit_9
+[161738.150]profiling_end:wcommit_9
+[161749.706]profiling_end:graphic hardware
+[161749.767]profiling_start:weston
+[161750.415]profiling_end:weston
+[161750.559]profiling_start:graphic hardware
+[161751.714]profiling_start:client_9
+[161752.136]profiling_end:client_9
+[161752.294]profiling_start:MESA_9
+[161754.460]profiling_end:MESA_9
+[161754.514]profiling_start:wcommit_9
+[161754.710]profiling_end:wcommit_9
+[161766.663]profiling_end:graphic hardware
+[161766.761]profiling_start:weston
+[161767.547]profiling_end:weston
+[161767.621]profiling_start:graphic hardware
+[161768.799]profiling_start:client_9
+[161769.341]profiling_end:client_9
+[161769.403]profiling_start:MESA_9
+[161771.872]profiling_end:MESA_9
+[161771.924]profiling_start:wcommit_9
+[161772.128]profiling_end:wcommit_9
+[161783.342]profiling_end:graphic hardware
+[161783.440]profiling_start:weston
+[161784.123]profiling_end:weston
+[161784.304]profiling_start:graphic hardware
+[161785.637]profiling_start:client_9
+[161786.060]profiling_end:client_9
+[161786.119]profiling_start:MESA_9
+[161788.812]profiling_end:MESA_9
+[161788.865]profiling_start:wcommit_9
+[161789.068]profiling_end:wcommit_9
+[161800.001]profiling_end:graphic hardware
+[161800.099]profiling_start:weston
+[161800.868]profiling_end:weston
+[161800.941]profiling_start:graphic hardware
+[161801.962]profiling_start:client_9
+[161802.146]profiling_end:client_9
+[161802.164]profiling_start:MESA_9
+[161804.515]profiling_end:MESA_9
+[161804.567]profiling_start:wcommit_9
+[161804.771]profiling_end:wcommit_9
+[161816.649]profiling_end:graphic hardware
+[161816.747]profiling_start:weston
+[161817.532]profiling_end:weston
+[161817.606]profiling_start:graphic hardware
+[161818.742]profiling_start:client_9
+[161819.148]profiling_end:client_9
+[161819.301]profiling_start:MESA_9
+[161821.667]profiling_end:MESA_9
+[161821.719]profiling_start:wcommit_9
+[161821.921]profiling_end:wcommit_9
+[161833.323]profiling_end:graphic hardware
+[161833.420]profiling_start:weston
+[161834.101]profiling_end:weston
+[161834.278]profiling_start:graphic hardware
+[161835.607]profiling_start:client_9
+[161836.021]profiling_end:client_9
+[161836.076]profiling_start:MESA_9
+[161838.517]profiling_end:MESA_9
+[161838.569]profiling_start:wcommit_9
+[161838.772]profiling_end:wcommit_9
+[161849.983]profiling_end:graphic hardware
+[161850.080]profiling_start:weston
+[161850.852]profiling_end:weston
+[161850.925]profiling_start:graphic hardware
+[161852.128]profiling_start:client_9
+[161852.647]profiling_end:client_9
+[161852.702]profiling_start:MESA_9
+[161855.123]profiling_end:MESA_9
+[161855.211]profiling_start:wcommit_9
+[161855.433]profiling_end:wcommit_9
+[161866.631]profiling_end:graphic hardware
+[161866.729]profiling_start:weston
+[161867.510]profiling_end:weston
+[161867.584]profiling_start:graphic hardware
+[161868.728]profiling_start:client_9
+[161869.138]profiling_end:client_9
+[161869.292]profiling_start:MESA_9
+[161871.662]profiling_end:MESA_9
+[161871.715]profiling_start:wcommit_9
+[161871.918]profiling_end:wcommit_9
+[161883.282]profiling_end:graphic hardware
+[161883.379]profiling_start:weston
+[161884.061]profiling_end:weston
+[161884.133]profiling_start:graphic hardware
+[161885.484]profiling_start:client_9
+[161885.890]profiling_end:client_9
+[161885.945]profiling_start:MESA_9
+[161888.392]profiling_end:MESA_9
+[161888.446]profiling_start:wcommit_9
+[161888.652]profiling_end:wcommit_9
+[161899.966]profiling_end:graphic hardware
+[161900.063]profiling_start:weston
+[161900.832]profiling_end:weston
+[161900.906]profiling_start:graphic hardware
+[161902.123]profiling_start:client_9
+[161902.642]profiling_end:client_9
+[161902.698]profiling_start:MESA_9
+[161905.079]profiling_end:MESA_9
+[161905.131]profiling_start:wcommit_9
+[161905.383]profiling_end:wcommit_9
+[161916.616]profiling_end:graphic hardware
+[161916.712]profiling_start:weston
+[161917.497]profiling_end:weston
+[161917.571]profiling_start:graphic hardware
+[161918.725]profiling_start:client_9
+[161919.134]profiling_end:client_9
+[161919.301]profiling_start:MESA_9
+[161921.693]profiling_end:MESA_9
+[161921.746]profiling_start:wcommit_9
+[161921.951]profiling_end:wcommit_9
+[161933.287]profiling_end:graphic hardware
+[161933.385]profiling_start:weston
+[161934.068]profiling_end:weston
+[161934.140]profiling_start:graphic hardware
+[161935.587]profiling_start:client_9
+[161935.999]profiling_end:client_9
+[161936.054]profiling_start:MESA_9
+[161938.498]profiling_end:MESA_9
+[161938.551]profiling_start:wcommit_9
+[161938.756]profiling_end:wcommit_9
+[161949.950]profiling_end:graphic hardware
+[161950.047]profiling_start:weston
+[161950.819]profiling_end:weston
+[161950.893]profiling_start:graphic hardware
+[161952.072]profiling_start:client_9
+[161952.590]profiling_end:client_9
+[161952.645]profiling_start:MESA_9
+[161955.052]profiling_end:MESA_9
+[161955.105]profiling_start:wcommit_9
+[161955.359]profiling_end:wcommit_9
+[161966.595]profiling_end:graphic hardware
+[161966.750]profiling_start:weston
+[161967.535]profiling_end:weston
+[161967.609]profiling_start:graphic hardware
+[161968.766]profiling_start:client_9
+[161969.273]profiling_end:client_9
+[161969.343]profiling_start:MESA_9
+[161971.763]profiling_end:MESA_9
+[161971.815]profiling_start:wcommit_9
+[161972.018]profiling_end:wcommit_9
+[161983.275]profiling_end:graphic hardware
+[161983.374]profiling_start:weston
+[161984.057]profiling_end:weston
+[161984.127]profiling_start:graphic hardware
+[161985.487]profiling_start:client_9
+[161985.895]profiling_end:client_9
+[161985.949]profiling_start:MESA_9
+[161988.020]profiling_end:MESA_9
+[161988.072]profiling_start:wcommit_9
+[161988.323]profiling_end:wcommit_9
+[161999.660]profiling_end:graphic hardware
+[161999.731]profiling_start:weston
+[162000.469]profiling_end:weston
+[162000.543]profiling_start:graphic hardware
+[162001.671]profiling_start:client_9
+[162002.086]profiling_end:client_9
+[162002.141]profiling_start:MESA_9
+[162004.436]profiling_end:MESA_9
+[162004.489]profiling_start:wcommit_9
+[162004.681]profiling_end:wcommit_9
+[162016.578]profiling_end:graphic hardware
+[162016.676]profiling_start:weston
+[162017.456]profiling_end:weston
+[162017.529]profiling_start:graphic hardware
+[162018.694]profiling_start:client_9
+[162019.100]profiling_end:client_9
+[162019.155]profiling_start:MESA_9
+[162021.562]profiling_end:MESA_9
+[162021.616]profiling_start:wcommit_9
+[162021.821]profiling_end:wcommit_9
+[162033.256]profiling_end:graphic hardware
+[162033.354]profiling_start:weston
+[162034.036]profiling_end:weston
+[162034.106]profiling_start:graphic hardware
+[162035.479]profiling_start:client_9
+[162035.892]profiling_end:client_9
+[162035.947]profiling_start:MESA_9
+[162038.415]profiling_end:MESA_9
+[162038.467]profiling_start:wcommit_9
+[162038.671]profiling_end:wcommit_9
+[162049.917]profiling_end:graphic hardware
+[162050.015]profiling_start:weston
+[162050.789]profiling_end:weston
+[162050.863]profiling_start:graphic hardware
+[162051.971]profiling_start:client_9
+[162052.475]profiling_end:client_9
+[162052.530]profiling_start:MESA_9
+[162054.919]profiling_end:MESA_9
+[162054.973]profiling_start:wcommit_9
+[162055.213]profiling_end:wcommit_9
+[162066.578]profiling_end:graphic hardware
+[162066.677]profiling_start:weston
+[162067.456]profiling_end:weston
+[162067.528]profiling_start:graphic hardware
+[162068.688]profiling_start:client_9
+[162069.099]profiling_end:client_9
+[162069.154]profiling_start:MESA_9
+[162071.771]profiling_end:MESA_9
+[162071.824]profiling_start:wcommit_9
+[162072.029]profiling_end:wcommit_9
+[162083.270]profiling_end:graphic hardware
+[162083.368]profiling_start:weston
+[162084.054]profiling_end:weston
+[162084.128]profiling_start:graphic hardware
+[162085.486]profiling_start:client_9
+[162085.894]profiling_end:client_9
+[162085.948]profiling_start:MESA_9
+[162088.399]profiling_end:MESA_9
+[162088.452]profiling_start:wcommit_9
+[162088.656]profiling_end:wcommit_9
+[162099.905]profiling_end:graphic hardware
+[162100.003]profiling_start:weston
+[162100.775]profiling_end:weston
+[162100.848]profiling_start:graphic hardware
+[162101.980]profiling_start:client_9
+[162102.490]profiling_end:client_9
+[162102.545]profiling_start:MESA_9
+[162104.919]profiling_end:MESA_9
+[162104.972]profiling_start:wcommit_9
+[162105.211]profiling_end:wcommit_9
+[162116.546]profiling_end:graphic hardware
+[162116.645]profiling_start:weston
+[162117.432]profiling_end:weston
+[162117.505]profiling_start:graphic hardware
+[162118.722]profiling_start:client_9
+[162119.128]profiling_end:client_9
+[162119.240]profiling_start:MESA_9
+[162121.287]profiling_end:MESA_9
+[162121.342]profiling_start:wcommit_9
+[162121.540]profiling_end:wcommit_9
+[162132.853]profiling_end:graphic hardware
+[162132.949]profiling_start:weston
+[162133.674]profiling_end:weston
+[162133.749]profiling_start:graphic hardware
+[162134.892]profiling_start:client_9
+[162135.411]profiling_end:client_9
+[162135.467]profiling_start:MESA_9
+[162137.781]profiling_end:MESA_9
+[162137.823]profiling_start:wcommit_9
+[162137.984]profiling_end:wcommit_9
+[162149.879]profiling_end:graphic hardware
+[162149.960]profiling_start:weston
+[162150.687]profiling_end:weston
+[162150.761]profiling_start:graphic hardware
+[162151.928]profiling_start:client_9
+[162152.431]profiling_end:client_9
+[162152.487]profiling_start:MESA_9
+[162154.878]profiling_end:MESA_9
+[162154.931]profiling_start:wcommit_9
+[162155.133]profiling_end:wcommit_9
+[162166.529]profiling_end:graphic hardware
+[162166.627]profiling_start:weston
+[162167.410]profiling_end:weston
+[162167.495]profiling_start:graphic hardware
+[162168.711]profiling_start:client_9
+[162169.122]profiling_end:client_9
+[162169.215]profiling_start:MESA_9
+[162171.548]profiling_end:MESA_9
+[162171.601]profiling_start:wcommit_9
+[162171.866]profiling_end:wcommit_9
+[162183.282]profiling_end:graphic hardware
+[162183.379]profiling_start:weston
+[162184.074]profiling_end:weston
+[162184.145]profiling_start:graphic hardware
+[162185.463]profiling_start:client_9
+[162185.868]profiling_end:client_9
+[162185.924]profiling_start:MESA_9
+[162188.368]profiling_end:MESA_9
+[162188.403]profiling_start:wcommit_9
+[162188.541]profiling_end:wcommit_9
+[162199.843]profiling_end:graphic hardware
+[162199.913]profiling_start:weston
+[162200.577]profiling_end:weston
+[162200.653]profiling_start:graphic hardware
+[162201.784]profiling_start:client_9
+[162202.312]profiling_end:client_9
+[162202.370]profiling_start:MESA_9
+[162204.745]profiling_end:MESA_9
+[162204.797]profiling_start:wcommit_9
+[162205.002]profiling_end:wcommit_9
+[162216.527]profiling_end:graphic hardware
+[162216.625]profiling_start:weston
+[162217.411]profiling_end:weston
+[162217.494]profiling_start:graphic hardware
+[162218.715]profiling_start:client_9
+[162219.123]profiling_end:client_9
+[162219.219]profiling_start:MESA_9
+[162221.551]profiling_end:MESA_9
+[162221.603]profiling_start:wcommit_9
+[162221.806]profiling_end:wcommit_9
+[162233.164]profiling_end:graphic hardware
+[162233.342]profiling_start:weston
+[162234.025]profiling_end:weston
+[162234.096]profiling_start:graphic hardware
+[162235.416]profiling_start:client_9
+[162235.830]profiling_end:client_9
+[162235.885]profiling_start:MESA_9
+[162238.349]profiling_end:MESA_9
+[162238.383]profiling_start:wcommit_9
+[162238.519]profiling_end:wcommit_9
+[162249.860]profiling_end:graphic hardware
+[162249.930]profiling_start:weston
+[162250.608]profiling_end:weston
+[162250.683]profiling_start:graphic hardware
+[162251.835]profiling_start:client_9
+[162252.355]profiling_end:client_9
+[162252.411]profiling_start:MESA_9
+[162254.788]profiling_end:MESA_9
+[162254.840]profiling_start:wcommit_9
+[162255.045]profiling_end:wcommit_9
+[162266.488]profiling_end:graphic hardware
+[162266.585]profiling_start:weston
+[162267.368]profiling_end:weston
+[162267.450]profiling_start:graphic hardware
+[162268.690]profiling_start:client_9
+[162269.103]profiling_end:client_9
+[162269.157]profiling_start:MESA_9
+[162271.513]profiling_end:MESA_9
+[162271.565]profiling_start:wcommit_9
+[162271.768]profiling_end:wcommit_9
+[162283.172]profiling_end:graphic hardware
+[162283.348]profiling_start:weston
+[162284.032]profiling_end:weston
+[162284.104]profiling_start:graphic hardware
+[162285.488]profiling_start:client_9
+[162285.898]profiling_end:client_9
+[162285.953]profiling_start:MESA_9
+[162288.390]profiling_end:MESA_9
+[162288.424]profiling_start:wcommit_9
+[162288.561]profiling_end:wcommit_9
+[162299.862]profiling_end:graphic hardware
+[162299.932]profiling_start:weston
+[162300.601]profiling_end:weston
+[162300.675]profiling_start:graphic hardware
+[162301.817]profiling_start:client_9
+[162302.344]profiling_end:client_9
+[162302.402]profiling_start:MESA_9
+[162304.769]profiling_end:MESA_9
+[162304.821]profiling_start:wcommit_9
+[162305.024]profiling_end:wcommit_9
+[162316.472]profiling_end:graphic hardware
+[162316.569]profiling_start:weston
+[162317.358]profiling_end:weston
+[162317.445]profiling_start:graphic hardware
+[162318.685]profiling_start:client_9
+[162319.091]profiling_end:client_9
+[162319.147]profiling_start:MESA_9
+[162321.535]profiling_end:MESA_9
+[162321.587]profiling_start:wcommit_9
+[162321.790]profiling_end:wcommit_9
+[162333.157]profiling_end:graphic hardware
+[162333.335]profiling_start:weston
+[162334.021]profiling_end:weston
+[162334.093]profiling_start:graphic hardware
+[162335.415]profiling_start:client_9
+[162335.831]profiling_end:client_9
+[162335.887]profiling_start:MESA_9
+[162338.343]profiling_end:MESA_9
+[162338.377]profiling_start:wcommit_9
+[162338.514]profiling_end:wcommit_9
+[162349.845]profiling_end:graphic hardware
+[162349.915]profiling_start:weston
+[162350.581]profiling_end:weston
+[162350.658]profiling_start:graphic hardware
+[162351.802]profiling_start:client_9
+[162352.375]profiling_end:client_9
+[162352.432]profiling_start:MESA_9
+[162354.800]profiling_end:MESA_9
+[162354.853]profiling_start:wcommit_9
+[162355.058]profiling_end:wcommit_9
+[162366.478]profiling_end:graphic hardware
+[162366.576]profiling_start:weston
+[162367.363]profiling_end:weston
+[162367.448]profiling_start:graphic hardware
+[162368.662]profiling_start:client_9
+[162369.075]profiling_end:client_9
+[162369.130]profiling_start:MESA_9
+[162371.504]profiling_end:MESA_9
+[162371.557]profiling_start:wcommit_9
+[162371.761]profiling_end:wcommit_9
+[162383.138]profiling_end:graphic hardware
+[162383.317]profiling_start:weston
+[162384.005]profiling_end:weston
+[162384.077]profiling_start:graphic hardware
+[162385.419]profiling_start:client_9
+[162385.827]profiling_end:client_9
+[162385.881]profiling_start:MESA_9
+[162388.378]profiling_end:MESA_9
+[162388.415]profiling_start:wcommit_9
+[162388.553]profiling_end:wcommit_9
+[162399.824]profiling_end:graphic hardware
+[162399.894]profiling_start:weston
+[162400.548]profiling_end:weston
+[162400.621]profiling_start:graphic hardware
+[162401.775]profiling_start:client_9
+[162402.288]profiling_end:client_9
+[162402.357]profiling_start:MESA_9
+[162404.732]profiling_end:MESA_9
+[162404.784]profiling_start:wcommit_9
+[162404.989]profiling_end:wcommit_9
+[162416.439]profiling_end:graphic hardware
+[162416.538]profiling_start:weston
+[162417.326]profiling_end:weston
+[162417.414]profiling_start:graphic hardware
+[162418.636]profiling_start:client_9
+[162419.043]profiling_end:client_9
+[162419.099]profiling_start:MESA_9
+[162421.477]profiling_end:MESA_9
+[162421.530]profiling_start:wcommit_9
+[162421.736]profiling_end:wcommit_9
+[162432.869]profiling_end:graphic hardware
+[162432.966]profiling_start:weston
+[162433.740]profiling_end:weston
+[162433.816]profiling_start:graphic hardware
+[162434.917]profiling_start:client_9
+[162435.396]profiling_end:client_9
+[162435.417]profiling_start:MESA_9
+[162437.131]profiling_end:MESA_9
+[162437.279]profiling_start:wcommit_9
+[162437.422]profiling_end:wcommit_9
+[162449.764]profiling_end:graphic hardware
+[162449.827]profiling_start:weston
+[162450.382]profiling_end:weston
+[162450.457]profiling_start:graphic hardware
+[162450.996]profiling_start:client_9
+[162451.154]profiling_end:client_9
+[162451.221]profiling_start:MESA_9
+[162452.910]profiling_end:MESA_9
+[162452.963]profiling_start:wcommit_9
+[162453.168]profiling_end:wcommit_9
+[162466.426]profiling_end:graphic hardware
+[162466.523]profiling_start:weston
+[162467.314]profiling_end:weston
+[162467.397]profiling_start:graphic hardware
+[162467.922]profiling_start:client_9
+[162468.072]profiling_end:client_9
+[162468.090]profiling_start:MESA_9
+[162469.807]profiling_end:MESA_9
+[162469.859]profiling_start:wcommit_9
+[162470.064]profiling_end:wcommit_9
+[162483.092]profiling_end:graphic hardware
+[162483.276]profiling_start:weston
+[162483.964]profiling_end:weston
+[162484.038]profiling_start:graphic hardware
+[162484.624]profiling_start:client_9
+[162484.768]profiling_end:client_9
+[162484.786]profiling_start:MESA_9
+[162486.500]profiling_end:MESA_9
+[162486.553]profiling_start:wcommit_9
+[162486.759]profiling_end:wcommit_9
+[162499.798]profiling_end:graphic hardware
+[162499.895]profiling_start:weston
+[162500.677]profiling_end:weston
+[162500.753]profiling_start:graphic hardware
+[162501.344]profiling_start:client_9
+[162501.498]profiling_end:client_9
+[162501.516]profiling_start:MESA_9
+[162503.154]profiling_end:MESA_9
+[162503.252]profiling_start:wcommit_9
+[162503.459]profiling_end:wcommit_9
+[162516.433]profiling_end:graphic hardware
+[162516.531]profiling_start:weston
+[162517.328]profiling_end:weston
+[162517.411]profiling_start:graphic hardware
+[162518.391]profiling_start:client_9
+[162518.574]profiling_end:client_9
+[162518.592]profiling_start:MESA_9
+[162520.299]profiling_end:MESA_9
+[162520.353]profiling_start:wcommit_9
+[162520.556]profiling_end:wcommit_9
+[162533.089]profiling_end:graphic hardware
+[162533.282]profiling_start:weston
+[162533.970]profiling_end:weston
+[162534.042]profiling_start:graphic hardware
+[162534.635]profiling_start:client_9
+[162534.783]profiling_end:client_9
+[162534.801]profiling_start:MESA_9
+[162536.450]profiling_end:MESA_9
+[162536.503]profiling_start:wcommit_9
+[162536.706]profiling_end:wcommit_9
+[162549.759]profiling_end:graphic hardware
+[162549.857]profiling_start:weston
+[162550.639]profiling_end:weston
+[162550.714]profiling_start:graphic hardware
+[162551.640]profiling_start:client_9
+[162551.820]profiling_end:client_9
+[162551.838]profiling_start:MESA_9
+[162553.509]profiling_end:MESA_9
+[162553.562]profiling_start:wcommit_9
+[162553.766]profiling_end:wcommit_9
+[162566.081]profiling_end:graphic hardware
+[162566.354]profiling_start:weston
+[162567.048]profiling_end:weston
+[162567.122]profiling_start:graphic hardware
+[162567.979]profiling_start:client_9
+[162568.163]profiling_end:client_9
+[162568.227]profiling_start:MESA_9
+[162568.937]profiling_end:MESA_9
+[162568.955]profiling_start:wcommit_9
+[162569.031]profiling_end:wcommit_9
+[162582.699]profiling_end:graphic hardware
+[162582.727]profiling_start:weston
+[162583.003]profiling_end:weston
+[162583.033]profiling_start:graphic hardware
+[162583.756]profiling_start:client_9
+[162583.935]profiling_end:client_9
+[162583.954]profiling_start:MESA_9
+[162585.542]profiling_end:MESA_9
+[162585.595]profiling_start:wcommit_9
+[162585.791]profiling_end:wcommit_9
+[162599.745]profiling_end:graphic hardware
+[162599.847]profiling_start:weston
+[162600.631]profiling_end:weston
+[162600.706]profiling_start:graphic hardware
+[162601.866]profiling_start:client_9
+[162602.388]profiling_end:client_9
+[162602.443]profiling_start:MESA_9
+[162604.896]profiling_end:MESA_9
+[162604.948]profiling_start:wcommit_9
+[162605.151]profiling_end:wcommit_9
+[162616.400]profiling_end:graphic hardware
+[162616.498]profiling_start:weston
+[162617.285]profiling_end:weston
+[162617.370]profiling_start:graphic hardware
+[162618.612]profiling_start:client_9
+[162619.019]profiling_end:client_9
+[162619.074]profiling_start:MESA_9
+[162621.463]profiling_end:MESA_9
+[162621.516]profiling_start:wcommit_9
+[162621.722]profiling_end:wcommit_9
+[162633.060]profiling_end:graphic hardware
+[162633.158]profiling_start:weston
+[162633.928]profiling_end:weston
+[162633.999]profiling_start:graphic hardware
+[162635.379]profiling_start:client_9
+[162635.794]profiling_end:client_9
+[162635.849]profiling_start:MESA_9
+[162638.303]profiling_end:MESA_9
+[162638.363]profiling_start:wcommit_9
+[162638.500]profiling_end:wcommit_9
+[162649.704]profiling_end:graphic hardware
+[162649.775]profiling_start:weston
+[162650.373]profiling_end:weston
+[162650.446]profiling_start:graphic hardware
+[162651.657]profiling_start:client_9
+[162652.062]profiling_end:client_9
+[162652.118]profiling_start:MESA_9
+[162654.496]profiling_end:MESA_9
+[162654.549]profiling_start:wcommit_9
+[162654.752]profiling_end:wcommit_9
+[162666.389]profiling_end:graphic hardware
+[162666.486]profiling_start:weston
+[162667.271]profiling_end:weston
+[162667.359]profiling_start:graphic hardware
+[162668.576]profiling_start:client_9
+[162668.988]profiling_end:client_9
+[162669.043]profiling_start:MESA_9
+[162671.447]profiling_end:MESA_9
+[162671.500]profiling_start:wcommit_9
+[162671.704]profiling_end:wcommit_9
+[162683.048]profiling_end:graphic hardware
+[162683.145]profiling_start:weston
+[162683.917]profiling_end:weston
+[162683.989]profiling_start:graphic hardware
+[162685.279]profiling_start:client_9
+[162685.698]profiling_end:client_9
+[162685.752]profiling_start:MESA_9
+[162688.214]profiling_end:MESA_9
+[162688.280]profiling_start:wcommit_9
+[162688.486]profiling_end:wcommit_9
+[162699.712]profiling_end:graphic hardware
+[162699.810]profiling_start:weston
+[162700.592]profiling_end:weston
+[162700.667]profiling_start:graphic hardware
+[162701.803]profiling_start:client_9
+[162702.333]profiling_end:client_9
+[162702.390]profiling_start:MESA_9
+[162704.759]profiling_end:MESA_9
+[162704.812]profiling_start:wcommit_9
+[162705.014]profiling_end:wcommit_9
+[162716.342]profiling_end:graphic hardware
+[162716.498]profiling_start:weston
+[162717.285]profiling_end:weston
+[162717.372]profiling_start:graphic hardware
+[162718.610]profiling_start:client_9
+[162719.019]profiling_end:client_9
+[162719.074]profiling_start:MESA_9
+[162721.448]profiling_end:MESA_9
+[162721.500]profiling_start:wcommit_9
+[162721.706]profiling_end:wcommit_9
+[162733.026]profiling_end:graphic hardware
+[162733.123]profiling_start:weston
+[162733.898]profiling_end:weston
+[162733.972]profiling_start:graphic hardware
+[162735.217]profiling_start:client_9
+[162735.643]profiling_end:client_9
+[162735.697]profiling_start:MESA_9
+[162737.967]profiling_end:MESA_9
+[162738.008]profiling_start:wcommit_9
+[162738.170]profiling_end:wcommit_9
+[162749.670]profiling_end:graphic hardware
+[162749.751]profiling_start:weston
+[162750.433]profiling_end:weston
+[162750.508]profiling_start:graphic hardware
+[162751.725]profiling_start:client_9
+[162752.132]profiling_end:client_9
+[162752.243]profiling_start:MESA_9
+[162754.567]profiling_end:MESA_9
+[162754.619]profiling_start:wcommit_9
+[162754.824]profiling_end:wcommit_9
+[162766.343]profiling_end:graphic hardware
+[162766.442]profiling_start:weston
+[162767.123]profiling_end:weston
+[162767.303]profiling_start:graphic hardware
+[162768.580]profiling_start:client_9
+[162768.990]profiling_end:client_9
+[162769.104]profiling_start:MESA_9
+[162771.497]profiling_end:MESA_9
+[162771.550]profiling_start:wcommit_9
+[162771.755]profiling_end:wcommit_9
+[162783.012]profiling_end:graphic hardware
+[162783.109]profiling_start:weston
+[162783.877]profiling_end:weston
+[162783.951]profiling_start:graphic hardware
+[162785.266]profiling_start:client_9
+[162785.689]profiling_end:client_9
+[162785.745]profiling_start:MESA_9
+[162788.153]profiling_end:MESA_9
+[162788.255]profiling_start:wcommit_9
+[162788.462]profiling_end:wcommit_9
+[162799.657]profiling_end:graphic hardware
+[162799.754]profiling_start:weston
+[162800.539]profiling_end:weston
+[162800.613]profiling_start:graphic hardware
+[162801.750]profiling_start:client_9
+[162802.164]profiling_end:client_9
+[162802.329]profiling_start:MESA_9
+[162804.742]profiling_end:MESA_9
+[162804.794]profiling_start:wcommit_9
+[162804.998]profiling_end:wcommit_9
+[162816.334]profiling_end:graphic hardware
+[162816.431]profiling_start:weston
+[162817.115]profiling_end:weston
+[162817.296]profiling_start:graphic hardware
+[162818.553]profiling_start:client_9
+[162818.961]profiling_end:client_9
+[162819.016]profiling_start:MESA_9
+[162821.489]profiling_end:MESA_9
+[162821.542]profiling_start:wcommit_9
+[162821.747]profiling_end:wcommit_9
+[162832.994]profiling_end:graphic hardware
+[162833.092]profiling_start:weston
+[162833.862]profiling_end:weston
+[162833.935]profiling_start:graphic hardware
+[162835.168]profiling_start:client_9
+[162835.688]profiling_end:client_9
+[162835.743]profiling_start:MESA_9
+[162838.159]profiling_end:MESA_9
+[162838.260]profiling_start:wcommit_9
+[162838.469]profiling_end:wcommit_9
+[162849.654]profiling_end:graphic hardware
+[162849.751]profiling_start:weston
+[162850.537]profiling_end:weston
+[162850.611]profiling_start:graphic hardware
+[162851.759]profiling_start:client_9
+[162852.169]profiling_end:client_9
+[162852.332]profiling_start:MESA_9
+[162854.719]profiling_end:MESA_9
+[162854.772]profiling_start:wcommit_9
+[162854.976]profiling_end:wcommit_9
+[162866.316]profiling_end:graphic hardware
+[162866.414]profiling_start:weston
+[162867.097]profiling_end:weston
+[162867.168]profiling_start:graphic hardware
+[162868.550]profiling_start:client_9
+[162868.961]profiling_end:client_9
+[162869.016]profiling_start:MESA_9
+[162871.421]profiling_end:MESA_9
+[162871.474]profiling_start:wcommit_9
+[162871.679]profiling_end:wcommit_9
+[162882.979]profiling_end:graphic hardware
+[162883.076]profiling_start:weston
+[162883.848]profiling_end:weston
+[162883.923]profiling_start:graphic hardware
+[162885.170]profiling_start:client_9
+[162885.688]profiling_end:client_9
+[162885.744]profiling_start:MESA_9
+[162888.146]profiling_end:MESA_9
+[162888.237]profiling_start:wcommit_9
+[162888.455]profiling_end:wcommit_9
+[162899.625]profiling_end:graphic hardware
+[162899.722]profiling_start:weston
+[162900.507]profiling_end:weston
+[162900.581]profiling_start:graphic hardware
+[162901.734]profiling_start:client_9
+[162902.145]profiling_end:client_9
+[162902.299]profiling_start:MESA_9
+[162904.780]profiling_end:MESA_9
+[162904.833]profiling_start:wcommit_9
+[162905.038]profiling_end:wcommit_9
+[162916.276]profiling_end:graphic hardware
+[162916.374]profiling_start:weston
+[162917.056]profiling_end:weston
+[162917.126]profiling_start:graphic hardware
+[162918.493]profiling_start:client_9
+[162918.899]profiling_end:client_9
+[162918.954]profiling_start:MESA_9
+[162921.322]profiling_end:MESA_9
+[162921.375]profiling_start:wcommit_9
+[162921.639]profiling_end:wcommit_9
+[162932.958]profiling_end:graphic hardware
+[162933.055]profiling_start:weston
+[162933.837]profiling_end:weston
+[162933.910]profiling_start:graphic hardware
+[162935.106]profiling_start:client_9
+[162935.625]profiling_end:client_9
+[162935.680]profiling_start:MESA_9
+[162938.111]profiling_end:MESA_9
+[162938.164]profiling_start:wcommit_9
+[162938.418]profiling_end:wcommit_9
+[162949.610]profiling_end:graphic hardware
+[162949.708]profiling_start:weston
+[162950.492]profiling_end:weston
+[162950.565]profiling_start:graphic hardware
+[162951.698]profiling_start:client_9
+[162952.102]profiling_end:client_9
+[162952.158]profiling_start:MESA_9
+[162954.706]profiling_end:MESA_9
+[162954.758]profiling_start:wcommit_9
+[162954.963]profiling_end:wcommit_9
+[162966.285]profiling_end:graphic hardware
+[162966.383]profiling_start:weston
+[162967.064]profiling_end:weston
+[162967.135]profiling_start:graphic hardware
+[162968.640]profiling_start:client_9
+[162969.062]profiling_end:client_9
+[162969.117]profiling_start:MESA_9
+[162971.511]profiling_end:MESA_9
+[162971.563]profiling_start:wcommit_9
+[162971.766]profiling_end:wcommit_9
+[162982.944]profiling_end:graphic hardware
+[162983.043]profiling_start:weston
+[162983.813]profiling_end:weston
+[162983.888]profiling_start:graphic hardware
+[162985.126]profiling_start:client_9
+[162985.638]profiling_end:client_9
+[162985.694]profiling_start:MESA_9
+[162987.699]profiling_end:MESA_9
+[162987.739]profiling_start:wcommit_9
+[162987.894]profiling_end:wcommit_9
+[162999.291]profiling_end:graphic hardware
+[162999.348]profiling_start:weston
+[162999.859]profiling_end:weston
+[162999.916]profiling_start:graphic hardware
+[163000.981]profiling_start:client_9
+[163001.492]profiling_end:client_9
+[163001.546]profiling_start:MESA_9
+[163003.625]profiling_end:MESA_9
+[163003.678]profiling_start:wcommit_9
+[163003.872]profiling_end:wcommit_9
+[163016.268]profiling_end:graphic hardware
+[163016.366]profiling_start:weston
+[163017.050]profiling_end:weston
+[163017.122]profiling_start:graphic hardware
+[163018.494]profiling_start:client_9
+[163018.900]profiling_end:client_9
+[163018.956]profiling_start:MESA_9
+[163021.347]profiling_end:MESA_9
+[163021.399]profiling_start:wcommit_9
+[163021.603]profiling_end:wcommit_9
+[163032.923]profiling_end:graphic hardware
+[163033.020]profiling_start:weston
+[163033.789]profiling_end:weston
+[163033.862]profiling_start:graphic hardware
+[163035.113]profiling_start:client_9
+[163035.631]profiling_end:client_9
+[163035.687]profiling_start:MESA_9
+[163038.104]profiling_end:MESA_9
+[163038.157]profiling_start:wcommit_9
+[163038.413]profiling_end:wcommit_9
+[163049.575]profiling_end:graphic hardware
+[163049.672]profiling_start:weston
+[163050.456]profiling_end:weston
+[163050.531]profiling_start:graphic hardware
+[163051.745]profiling_start:client_9
+[163052.153]profiling_end:client_9
+[163052.318]profiling_start:MESA_9
+[163054.735]profiling_end:MESA_9
+[163054.788]profiling_start:wcommit_9
+[163054.993]profiling_end:wcommit_9
+[163066.271]profiling_end:graphic hardware
+[163066.368]profiling_start:weston
+[163067.051]profiling_end:weston
+[163067.123]profiling_start:graphic hardware
+[163068.481]profiling_start:client_9
+[163068.895]profiling_end:client_9
+[163068.950]profiling_start:MESA_9
+[163071.341]profiling_end:MESA_9
+[163071.393]profiling_start:wcommit_9
+[163071.596]profiling_end:wcommit_9
+[163082.911]profiling_end:graphic hardware
+[163083.009]profiling_start:weston
+[163083.781]profiling_end:weston
+[163083.854]profiling_start:graphic hardware
+[163084.964]profiling_start:client_9
+[163085.468]profiling_end:client_9
+[163085.521]profiling_start:MESA_9
+[163087.830]profiling_end:MESA_9
+[163087.871]profiling_start:wcommit_9
+[163088.035]profiling_end:wcommit_9
+[163099.555]profiling_end:graphic hardware
+[163099.637]profiling_start:weston
+[163100.288]profiling_end:weston
+[163100.368]profiling_start:graphic hardware
+[163101.627]profiling_start:client_9
+[163102.039]profiling_end:client_9
+[163102.095]profiling_start:MESA_9
+[163104.477]profiling_end:MESA_9
+[163104.529]profiling_start:wcommit_9
+[163104.733]profiling_end:wcommit_9
+[163116.292]profiling_end:graphic hardware
+[163116.389]profiling_start:weston
+[163117.081]profiling_end:weston
+[163117.153]profiling_start:graphic hardware
+[163118.409]profiling_start:client_9
+[163118.817]profiling_end:client_9
+[163118.871]profiling_start:MESA_9
+[163120.737]profiling_end:MESA_9
+[163120.756]profiling_start:wcommit_9
+[163120.838]profiling_end:wcommit_9
+[163132.879]profiling_end:graphic hardware
+[163132.991]profiling_start:weston
+[163133.740]profiling_end:weston
+[163133.816]profiling_start:graphic hardware
+[163134.961]profiling_start:client_9
+[163135.418]profiling_end:client_9
+[163135.472]profiling_start:MESA_9
+[163137.851]profiling_end:MESA_9
+[163137.893]profiling_start:wcommit_9
+[163138.058]profiling_end:wcommit_9
+[163149.522]profiling_end:graphic hardware
+[163149.602]profiling_start:weston
+[163150.168]profiling_end:weston
+[163150.312]profiling_start:graphic hardware
+[163151.514]profiling_start:client_9
+[163151.922]profiling_end:client_9
+[163151.977]profiling_start:MESA_9
+[163154.372]profiling_end:MESA_9
+[163154.425]profiling_start:wcommit_9
+[163154.629]profiling_end:wcommit_9
+[163166.171]profiling_end:graphic hardware
+[163166.519]profiling_start:weston
+[163167.309]profiling_end:weston
+[163167.395]profiling_start:graphic hardware
+[163168.472]profiling_start:client_9
+[163168.885]profiling_end:client_9
+[163168.940]profiling_start:MESA_9
+[163170.736]profiling_end:MESA_9
+[163170.754]profiling_start:wcommit_9
+[163170.836]profiling_end:wcommit_9
+[163182.859]profiling_end:graphic hardware
+[163182.970]profiling_start:weston
+[163183.721]profiling_end:weston
+[163183.793]profiling_start:graphic hardware
+[163184.921]profiling_start:client_9
+[163185.369]profiling_end:client_9
+[163185.424]profiling_start:MESA_9
+[163187.818]profiling_end:MESA_9
+[163187.859]profiling_start:wcommit_9
+[163188.022]profiling_end:wcommit_9
+[163199.503]profiling_end:graphic hardware
+[163199.584]profiling_start:weston
+[163200.147]profiling_end:weston
+[163200.303]profiling_start:graphic hardware
+[163201.267]profiling_start:client_9
+[163201.693]profiling_end:client_9
+[163201.748]profiling_start:MESA_9
+[163204.117]profiling_end:MESA_9
+[163204.170]profiling_start:wcommit_9
+[163204.426]profiling_end:wcommit_9
+[163216.456]profiling_end:graphic hardware
+[163216.561]profiling_start:weston
+[163217.350]profiling_end:weston
+[163217.426]profiling_start:graphic hardware
+[163218.458]profiling_start:client_9
+[163218.867]profiling_end:client_9
+[163218.922]profiling_start:MESA_9
+[163220.722]profiling_end:MESA_9
+[163220.739]profiling_start:wcommit_9
+[163220.822]profiling_end:wcommit_9
+[163232.847]profiling_end:graphic hardware
+[163232.957]profiling_start:weston
+[163233.675]profiling_end:weston
+[163233.748]profiling_start:graphic hardware
+[163234.871]profiling_start:client_9
+[163235.323]profiling_end:client_9
+[163235.377]profiling_start:MESA_9
+[163237.719]profiling_end:MESA_9
+[163237.760]profiling_start:wcommit_9
+[163237.922]profiling_end:wcommit_9
+[163249.715]profiling_end:graphic hardware
+[163249.798]profiling_start:weston
+[163250.499]profiling_end:weston
+[163250.583]profiling_start:graphic hardware
+[163251.802]profiling_start:client_9
+[163252.325]profiling_end:client_9
+[163252.382]profiling_start:MESA_9
+[163254.766]profiling_end:MESA_9
+[163254.819]profiling_start:wcommit_9
+[163255.022]profiling_end:wcommit_9
+[163265.898]profiling_end:graphic hardware
+[163265.970]profiling_start:weston
+[163266.735]profiling_end:weston
+[163266.811]profiling_start:graphic hardware
+[163267.906]profiling_start:client_9
+[163268.396]profiling_end:client_9
+[163268.431]profiling_start:MESA_9
+[163270.426]profiling_end:MESA_9
+[163270.460]profiling_start:wcommit_9
+[163270.596]profiling_end:wcommit_9
+[163282.800]profiling_end:graphic hardware
+[163282.870]profiling_start:weston
+[163283.517]profiling_end:weston
+[163283.593]profiling_start:graphic hardware
+[163284.592]profiling_start:client_9
+[163284.873]profiling_end:client_9
+[163284.908]profiling_start:MESA_9
+[163287.164]profiling_end:MESA_9
+[163287.326]profiling_start:wcommit_9
+[163287.487]profiling_end:wcommit_9
+[163299.466]profiling_end:graphic hardware
+[163299.536]profiling_start:weston
+[163300.019]profiling_end:weston
+[163300.068]profiling_start:graphic hardware
+[163301.367]profiling_start:client_9
+[163301.781]profiling_end:client_9
+[163301.835]profiling_start:MESA_9
+[163304.220]profiling_end:MESA_9
+[163304.286]profiling_start:wcommit_9
+[163304.490]profiling_end:wcommit_9
+[163316.122]profiling_end:graphic hardware
+[163316.423]profiling_start:weston
+[163317.112]profiling_end:weston
+[163317.296]profiling_start:graphic hardware
+[163318.454]profiling_start:client_9
+[163318.862]profiling_end:client_9
+[163318.917]profiling_start:MESA_9
+[163320.774]profiling_end:MESA_9
+[163320.792]profiling_start:wcommit_9
+[163320.875]profiling_end:wcommit_9
+[163332.789]profiling_end:graphic hardware
+[163332.979]profiling_start:weston
+[163333.519]profiling_end:weston
+[163333.593]profiling_start:graphic hardware
+[163334.790]profiling_start:client_9
+[163335.333]profiling_end:client_9
+[163335.390]profiling_start:MESA_9
+[163337.818]profiling_end:MESA_9
+[163337.871]profiling_start:wcommit_9
+[163338.073]profiling_end:wcommit_9
+[163349.470]profiling_end:graphic hardware
+[163349.567]profiling_start:weston
+[163350.366]profiling_end:weston
+[163350.451]profiling_start:graphic hardware
+[163351.644]profiling_start:client_9
+[163352.050]profiling_end:client_9
+[163352.105]profiling_start:MESA_9
+[163354.543]profiling_end:MESA_9
+[163354.597]profiling_start:wcommit_9
+[163354.800]profiling_end:wcommit_9
+[163366.106]profiling_end:graphic hardware
+[163366.399]profiling_start:weston
+[163367.086]profiling_end:weston
+[163367.158]profiling_start:graphic hardware
+[163368.405]profiling_start:client_9
+[163368.818]profiling_end:client_9
+[163368.873]profiling_start:MESA_9
+[163370.673]profiling_end:MESA_9
+[163370.691]profiling_start:wcommit_9
+[163370.773]profiling_end:wcommit_9
+[163382.796]profiling_end:graphic hardware
+[163382.906]profiling_start:weston
+[163383.535]profiling_end:weston
+[163383.609]profiling_start:graphic hardware
+[163384.747]profiling_start:client_9
+[163385.151]profiling_end:client_9
+[163385.315]profiling_start:MESA_9
+[163387.675]profiling_end:MESA_9
+[163387.716]profiling_start:wcommit_9
+[163387.879]profiling_end:wcommit_9
+[163399.664]profiling_end:graphic hardware
+[163399.747]profiling_start:weston
+[163400.433]profiling_end:weston
+[163400.516]profiling_start:graphic hardware
+[163401.676]profiling_start:client_9
+[163402.086]profiling_end:client_9
+[163402.141]profiling_start:MESA_9
+[163404.567]profiling_end:MESA_9
+[163404.619]profiling_start:wcommit_9
+[163404.823]profiling_end:wcommit_9
+[163416.111]profiling_end:graphic hardware
+[163416.428]profiling_start:weston
+[163417.116]profiling_end:weston
+[163417.301]profiling_start:graphic hardware
+[163418.428]profiling_start:client_9
+[163418.836]profiling_end:client_9
+[163418.891]profiling_start:MESA_9
+[163420.752]profiling_end:MESA_9
+[163420.770]profiling_start:wcommit_9
+[163420.853]profiling_end:wcommit_9
+[163432.782]profiling_end:graphic hardware
+[163432.893]profiling_start:weston
+[163433.523]profiling_end:weston
+[163433.598]profiling_start:graphic hardware
+[163434.700]profiling_start:client_9
+[163435.112]profiling_end:client_9
+[163435.168]profiling_start:MESA_9
+[163437.637]profiling_end:MESA_9
+[163437.679]profiling_start:wcommit_9
+[163437.842]profiling_end:wcommit_9
+[163449.390]profiling_end:graphic hardware
+[163449.470]profiling_start:weston
+[163450.028]profiling_end:weston
+[163450.084]profiling_start:graphic hardware
+[163451.001]profiling_start:client_9
+[163451.481]profiling_end:client_9
+[163451.536]profiling_start:MESA_9
+[163454.016]profiling_end:MESA_9
+[163454.069]profiling_start:wcommit_9
+[163454.324]profiling_end:wcommit_9
+[163466.102]profiling_end:graphic hardware
+[163466.470]profiling_start:weston
+[163467.156]profiling_end:weston
+[163467.349]profiling_start:graphic hardware
+[163468.441]profiling_start:client_9
+[163468.925]profiling_end:client_9
+[163468.982]profiling_start:MESA_9
+[163470.824]profiling_end:MESA_9
+[163470.842]profiling_start:wcommit_9
+[163470.924]profiling_end:wcommit_9
+[163482.774]profiling_end:graphic hardware
+[163482.883]profiling_start:weston
+[163483.513]profiling_end:weston
+[163483.587]profiling_start:graphic hardware
+[163484.728]profiling_start:client_9
+[163485.135]profiling_end:client_9
+[163485.288]profiling_start:MESA_9
+[163487.666]profiling_end:MESA_9
+[163487.707]profiling_start:wcommit_9
+[163487.869]profiling_end:wcommit_9
+[163499.406]profiling_end:graphic hardware
+[163499.487]profiling_start:weston
+[163500.050]profiling_end:weston
+[163500.108]profiling_start:graphic hardware
+[163501.076]profiling_start:client_9
+[163501.595]profiling_end:client_9
+[163501.651]profiling_start:MESA_9
+[163503.687]profiling_end:MESA_9
+[163503.740]profiling_start:wcommit_9
+[163503.937]profiling_end:wcommit_9
+[163515.802]profiling_end:graphic hardware
+[163515.875]profiling_start:weston
+[163516.621]profiling_end:weston
+[163516.695]profiling_start:graphic hardware
+[163517.816]profiling_start:client_9
+[163518.339]profiling_end:client_9
+[163518.396]profiling_start:MESA_9
+[163520.462]profiling_end:MESA_9
+[163520.514]profiling_start:wcommit_9
+[163520.708]profiling_end:wcommit_9
+[163532.467]profiling_end:graphic hardware
+[163532.540]profiling_start:weston
+[163533.305]profiling_end:weston
+[163533.391]profiling_start:graphic hardware
+[163534.604]profiling_start:client_9
+[163535.018]profiling_end:client_9
+[163535.073]profiling_start:MESA_9
+[163537.091]profiling_end:MESA_9
+[163537.145]profiling_start:wcommit_9
+[163537.426]profiling_end:wcommit_9
+[163549.102]profiling_end:graphic hardware
+[163549.159]profiling_start:weston
+[163550.015]profiling_end:weston
+[163550.087]profiling_start:graphic hardware
+[163551.375]profiling_start:client_9
+[163551.784]profiling_end:client_9
+[163551.839]profiling_start:MESA_9
+[163554.162]profiling_end:MESA_9
+[163554.270]profiling_start:wcommit_9
+[163554.477]profiling_end:wcommit_9
+[163565.789]profiling_end:graphic hardware
+[163565.862]profiling_start:weston
+[163566.638]profiling_end:weston
+[163566.713]profiling_start:graphic hardware
+[163567.828]profiling_start:client_9
+[163568.353]profiling_end:client_9
+[163568.410]profiling_start:MESA_9
+[163570.785]profiling_end:MESA_9
+[163570.826]profiling_start:wcommit_9
+[163570.989]profiling_end:wcommit_9
+[163582.430]profiling_end:graphic hardware
+[163582.487]profiling_start:weston
+[163583.037]profiling_end:weston
+[163583.096]profiling_start:graphic hardware
+[163584.404]profiling_start:client_9
+[163584.810]profiling_end:client_9
+[163584.866]profiling_start:MESA_9
+[163587.291]profiling_end:MESA_9
+[163587.356]profiling_start:wcommit_9
+[163587.561]profiling_end:wcommit_9
+[163599.411]profiling_end:graphic hardware
+[163599.509]profiling_start:weston
+[163600.308]profiling_end:weston
+[163600.394]profiling_start:graphic hardware
+[163601.609]profiling_start:client_9
+[163602.022]profiling_end:client_9
+[163602.077]profiling_start:MESA_9
+[163604.522]profiling_end:MESA_9
+[163604.574]profiling_start:wcommit_9
+[163604.780]profiling_end:wcommit_9
+[163616.053]profiling_end:graphic hardware
+[163616.149]profiling_start:weston
+[163616.988]profiling_end:weston
+[163617.060]profiling_start:graphic hardware
+[163618.366]profiling_start:client_9
+[163618.776]profiling_end:client_9
+[163618.830]profiling_start:MESA_9
+[163620.653]profiling_end:MESA_9
+[163620.671]profiling_start:wcommit_9
+[163620.754]profiling_end:wcommit_9
+[163632.765]profiling_end:graphic hardware
+[163632.875]profiling_start:weston
+[163633.522]profiling_end:weston
+[163633.596]profiling_start:graphic hardware
+[163634.726]profiling_start:client_9
+[163635.138]profiling_end:client_9
+[163635.240]profiling_start:MESA_9
+[163637.572]profiling_end:MESA_9
+[163637.614]profiling_start:wcommit_9
+[163637.777]profiling_end:wcommit_9
+[163649.337]profiling_end:graphic hardware
+[163649.418]profiling_start:weston
+[163649.982]profiling_end:weston
+[163650.040]profiling_start:graphic hardware
+[163651.349]profiling_start:client_9
+[163651.759]profiling_end:client_9
+[163651.813]profiling_start:MESA_9
+[163653.838]profiling_end:MESA_9
+[163653.891]profiling_start:wcommit_9
+[163654.088]profiling_end:wcommit_9
+[163665.750]profiling_end:graphic hardware
+[163665.823]profiling_start:weston
+[163666.572]profiling_end:weston
+[163666.647]profiling_start:graphic hardware
+[163667.772]profiling_start:client_9
+[163668.286]profiling_end:client_9
+[163668.356]profiling_start:MESA_9
+[163670.465]profiling_end:MESA_9
+[163670.506]profiling_start:wcommit_9
+[163670.712]profiling_end:wcommit_9
+[163682.746]profiling_end:graphic hardware
+[163682.844]profiling_start:weston
+[163683.586]profiling_end:weston
+[163683.659]profiling_start:graphic hardware
+[163684.613]profiling_start:client_9
+[163685.019]profiling_end:client_9
+[163685.076]profiling_start:MESA_9
+[163687.502]profiling_end:MESA_9
+[163687.555]profiling_start:wcommit_9
+[163687.759]profiling_end:wcommit_9
+[163699.336]profiling_end:graphic hardware
+[163699.434]profiling_start:weston
+[163700.123]profiling_end:weston
+[163700.306]profiling_start:graphic hardware
+[163701.566]profiling_start:client_9
+[163701.980]profiling_end:client_9
+[163702.035]profiling_start:MESA_9
+[163704.427]profiling_end:MESA_9
+[163704.480]profiling_start:wcommit_9
+[163704.684]profiling_end:wcommit_9
+[163716.019]profiling_end:graphic hardware
+[163716.117]profiling_start:weston
+[163716.923]profiling_end:weston
+[163716.997]profiling_start:graphic hardware
+[163718.335]profiling_start:client_9
+[163718.742]profiling_end:client_9
+[163718.798]profiling_start:MESA_9
+[163720.608]profiling_end:MESA_9
+[163720.626]profiling_start:wcommit_9
+[163720.708]profiling_end:wcommit_9
+[163732.684]profiling_end:graphic hardware
+[163732.794]profiling_start:weston
+[163733.270]profiling_end:weston
+[163733.304]profiling_start:graphic hardware
+[163734.524]profiling_start:client_9
+[163734.935]profiling_end:client_9
+[163734.991]profiling_start:MESA_9
+[163737.502]profiling_end:MESA_9
+[163737.556]profiling_start:wcommit_9
+[163737.759]profiling_end:wcommit_9
+[163749.309]profiling_end:graphic hardware
+[163749.407]profiling_start:weston
+[163750.093]profiling_end:weston
+[163750.166]profiling_start:graphic hardware
+[163751.142]profiling_start:client_9
+[163751.620]profiling_end:client_9
+[163751.676]profiling_start:MESA_9
+[163754.026]profiling_end:MESA_9
+[163754.078]profiling_start:wcommit_9
+[163754.332]profiling_end:wcommit_9
+[163766.000]profiling_end:graphic hardware
+[163766.097]profiling_start:weston
+[163766.893]profiling_end:weston
+[163766.966]profiling_start:graphic hardware
+[163768.795]profiling_start:client_9
+[163769.326]profiling_end:client_9
+[163769.383]profiling_start:MESA_9
+[163771.142]profiling_end:MESA_9
+[163771.160]profiling_start:wcommit_9
+[163771.266]profiling_end:wcommit_9
+[163782.307]profiling_end:graphic hardware
+[163782.402]profiling_start:weston
+[163783.087]profiling_end:weston
+[163783.163]profiling_start:graphic hardware
+[163783.796]profiling_start:client_9
+[163783.979]profiling_end:client_9
+[163783.998]profiling_start:MESA_9
+[163785.346]profiling_end:MESA_9
+[163785.399]profiling_start:wcommit_9
+[163785.597]profiling_end:wcommit_9
+[163799.019]profiling_end:graphic hardware
+[163799.077]profiling_start:weston
+[163799.848]profiling_end:weston
+[163799.924]profiling_start:graphic hardware
+[163800.855]profiling_start:client_9
+[163801.374]profiling_end:client_9
+[163801.430]profiling_start:MESA_9
+[163803.451]profiling_end:MESA_9
+[163803.504]profiling_start:wcommit_9
+[163803.697]profiling_end:wcommit_9
+[163815.983]profiling_end:graphic hardware
+[163816.084]profiling_start:weston
+[163816.865]profiling_end:weston
+[163816.939]profiling_start:graphic hardware
+[163818.307]profiling_start:client_9
+[163818.726]profiling_end:client_9
+[163818.782]profiling_start:MESA_9
+[163820.592]profiling_end:MESA_9
+[163820.609]profiling_start:wcommit_9
+[163820.692]profiling_end:wcommit_9
+[163832.651]profiling_end:graphic hardware
+[163832.766]profiling_start:weston
+[163833.236]profiling_end:weston
+[163833.269]profiling_start:graphic hardware
+[163834.472]profiling_start:client_9
+[163834.887]profiling_end:client_9
+[163834.942]profiling_start:MESA_9
+[163837.471]profiling_end:MESA_9
+[163837.525]profiling_start:wcommit_9
+[163837.729]profiling_end:wcommit_9
+[163849.285]profiling_end:graphic hardware
+[163849.386]profiling_start:weston
+[163850.080]profiling_end:weston
+[163850.151]profiling_start:graphic hardware
+[163851.533]profiling_start:client_9
+[163851.941]profiling_end:client_9
+[163851.996]profiling_start:MESA_9
+[163854.403]profiling_end:MESA_9
+[163854.455]profiling_start:wcommit_9
+[163854.660]profiling_end:wcommit_9
+[163865.967]profiling_end:graphic hardware
+[163866.065]profiling_start:weston
+[163866.841]profiling_end:weston
+[163866.914]profiling_start:graphic hardware
+[163868.280]profiling_start:client_9
+[163868.708]profiling_end:client_9
+[163868.761]profiling_start:MESA_9
+[163870.572]profiling_end:MESA_9
+[163870.590]profiling_start:wcommit_9
+[163870.673]profiling_end:wcommit_9
+[163882.633]profiling_end:graphic hardware
+[163882.743]profiling_start:weston
+[163883.167]profiling_end:weston
+[163883.247]profiling_start:graphic hardware
+[163884.373]profiling_start:client_9
+[163884.780]profiling_end:client_9
+[163884.893]profiling_start:MESA_9
+[163887.364]profiling_end:MESA_9
+[163887.475]profiling_start:wcommit_9
+[163887.684]profiling_end:wcommit_9
+[163899.268]profiling_end:graphic hardware
+[163899.366]profiling_start:weston
+[163900.056]profiling_end:weston
+[163900.126]profiling_start:graphic hardware
+[163901.494]profiling_start:client_9
+[163901.908]profiling_end:client_9
+[163901.963]profiling_start:MESA_9
+[163904.367]profiling_end:MESA_9
+[163904.421]profiling_start:wcommit_9
+[163904.624]profiling_end:wcommit_9
+[163915.950]profiling_end:graphic hardware
+[163916.048]profiling_start:weston
+[163916.834]profiling_end:weston
+[163916.907]profiling_start:graphic hardware
+[163918.166]profiling_start:client_9
+[163918.678]profiling_end:client_9
+[163918.733]profiling_start:MESA_9
+[163920.564]profiling_end:MESA_9
+[163920.582]profiling_start:wcommit_9
+[163920.665]profiling_end:wcommit_9
+[163932.655]profiling_end:graphic hardware
+[163932.721]profiling_start:weston
+[163933.035]profiling_end:weston
+[163933.065]profiling_start:graphic hardware
+[163933.896]profiling_start:client_9
+[163934.380]profiling_end:client_9
+[163934.435]profiling_start:MESA_9
+[163936.956]profiling_end:MESA_9
+[163937.009]profiling_start:wcommit_9
+[163937.306]profiling_end:wcommit_9
+[163949.261]profiling_end:graphic hardware
+[163949.342]profiling_start:weston
+[163949.909]profiling_end:weston
+[163949.965]profiling_start:graphic hardware
+[163951.137]profiling_start:client_9
+[163951.653]profiling_end:client_9
+[163951.708]profiling_start:MESA_9
+[163954.085]profiling_end:MESA_9
+[163954.138]profiling_start:wcommit_9
+[163954.394]profiling_end:wcommit_9
+[163965.665]profiling_end:graphic hardware
+[163965.736]profiling_start:weston
+[163966.514]profiling_end:weston
+[163966.591]profiling_start:graphic hardware
+[163967.717]profiling_start:client_9
+[163968.130]profiling_end:client_9
+[163968.283]profiling_start:MESA_9
+[163970.410]profiling_end:MESA_9
+[163970.452]profiling_start:wcommit_9
+[163970.607]profiling_end:wcommit_9
+[163982.595]profiling_end:graphic hardware
+[163982.692]profiling_start:weston
+[163983.435]profiling_end:weston
+[163983.508]profiling_start:graphic hardware
+[163984.491]profiling_start:client_9
+[163984.897]profiling_end:client_9
+[163984.952]profiling_start:MESA_9
+[163987.025]profiling_end:MESA_9
+[163987.078]profiling_start:wcommit_9
+[163987.378]profiling_end:wcommit_9
+[163998.949]profiling_end:graphic hardware
+[163999.006]profiling_start:weston
+[163999.687]profiling_end:weston
+[163999.761]profiling_start:graphic hardware
+[164000.946]profiling_start:client_9
+[164001.459]profiling_end:client_9
+[164001.515]profiling_start:MESA_9
+[164003.589]profiling_end:MESA_9
+[164003.640]profiling_start:wcommit_9
+[164003.835]profiling_end:wcommit_9
+[164015.921]profiling_end:graphic hardware
+[164016.020]profiling_start:weston
+[164016.805]profiling_end:weston
+[164016.878]profiling_start:graphic hardware
+[164018.279]profiling_start:client_9
+[164018.701]profiling_end:client_9
+[164018.756]profiling_start:MESA_9
+[164020.664]profiling_end:MESA_9
+[164020.682]profiling_start:wcommit_9
+[164020.765]profiling_end:wcommit_9
+[164032.584]profiling_end:graphic hardware
+[164032.694]profiling_start:weston
+[164033.116]profiling_end:weston
+[164033.148]profiling_start:graphic hardware
+[164034.341]profiling_start:client_9
+[164034.756]profiling_end:client_9
+[164034.812]profiling_start:MESA_9
+[164037.155]profiling_end:MESA_9
+[164037.312]profiling_start:wcommit_9
+[164037.521]profiling_end:wcommit_9
+[164049.281]profiling_end:graphic hardware
+[164049.379]profiling_start:weston
+[164050.066]profiling_end:weston
+[164050.137]profiling_start:graphic hardware
+[164051.410]profiling_start:client_9
+[164051.820]profiling_end:client_9
+[164051.874]profiling_start:MESA_9
+[164054.225]profiling_end:MESA_9
+[164054.292]profiling_start:wcommit_9
+[164054.500]profiling_end:wcommit_9
+[164065.901]profiling_end:graphic hardware
+[164065.999]profiling_start:weston
+[164066.783]profiling_end:weston
+[164066.855]profiling_start:graphic hardware
+[164068.002]profiling_start:client_9
+[164068.486]profiling_end:client_9
+[164068.530]profiling_start:MESA_9
+[164070.128]profiling_end:MESA_9
+[164070.146]profiling_start:wcommit_9
+[164070.252]profiling_end:wcommit_9
+[164082.569]profiling_end:graphic hardware
+[164082.680]profiling_start:weston
+[164083.102]profiling_end:weston
+[164083.133]profiling_start:graphic hardware
+[164084.358]profiling_start:client_9
+[164084.764]profiling_end:client_9
+[164084.818]profiling_start:MESA_9
+[164087.262]profiling_end:MESA_9
+[164087.332]profiling_start:wcommit_9
+[164087.540]profiling_end:wcommit_9
+[164099.543]profiling_end:graphic hardware
+[164099.640]profiling_start:weston
+[164100.370]profiling_end:weston
+[164100.443]profiling_start:graphic hardware
+[164101.674]profiling_start:client_9
+[164102.087]profiling_end:client_9
+[164102.142]profiling_start:MESA_9
+[164104.571]profiling_end:MESA_9
+[164104.624]profiling_start:wcommit_9
+[164104.830]profiling_end:wcommit_9
+[164115.666]profiling_end:graphic hardware
+[164115.740]profiling_start:weston
+[164116.514]profiling_end:weston
+[164116.591]profiling_start:graphic hardware
+[164117.687]profiling_start:client_9
+[164118.093]profiling_end:client_9
+[164118.148]profiling_start:MESA_9
+[164120.361]profiling_end:MESA_9
+[164120.403]profiling_start:wcommit_9
+[164120.560]profiling_end:wcommit_9
+[164132.541]profiling_end:graphic hardware
+[164132.638]profiling_start:weston
+[164133.390]profiling_end:weston
+[164133.462]profiling_start:graphic hardware
+[164134.700]profiling_start:client_9
+[164135.114]profiling_end:client_9
+[164135.169]profiling_start:MESA_9
+[164137.553]profiling_end:MESA_9
+[164137.593]profiling_start:wcommit_9
+[164137.756]profiling_end:wcommit_9
+[164149.168]profiling_end:graphic hardware
+[164149.519]profiling_start:weston
+[164150.256]profiling_end:weston
+[164150.337]profiling_start:graphic hardware
+[164151.563]profiling_start:client_9
+[164151.970]profiling_end:client_9
+[164152.025]profiling_start:MESA_9
+[164154.430]profiling_end:MESA_9
+[164154.482]profiling_start:wcommit_9
+[164154.687]profiling_end:wcommit_9
+[164165.872]profiling_end:graphic hardware
+[164165.970]profiling_start:weston
+[164166.755]profiling_end:weston
+[164166.829]profiling_start:graphic hardware
+[164168.048]profiling_start:client_9
+[164168.529]profiling_end:client_9
+[164168.572]profiling_start:MESA_9
+[164170.192]profiling_end:MESA_9
+[164170.215]profiling_start:wcommit_9
+[164170.298]profiling_end:wcommit_9
+[164182.517]profiling_end:graphic hardware
+[164182.628]profiling_start:weston
+[164183.080]profiling_end:weston
+[164183.112]profiling_start:graphic hardware
+[164184.118]profiling_start:client_9
+[164184.628]profiling_end:client_9
+[164184.683]profiling_start:MESA_9
+[164187.060]profiling_end:MESA_9
+[164187.113]profiling_start:wcommit_9
+[164187.417]profiling_end:wcommit_9
+[164199.480]profiling_end:graphic hardware
+[164199.578]profiling_start:weston
+[164200.305]profiling_end:weston
+[164200.385]profiling_start:graphic hardware
+[164201.618]profiling_start:client_9
+[164202.032]profiling_end:client_9
+[164202.087]profiling_start:MESA_9
+[164204.497]profiling_end:MESA_9
+[164204.550]profiling_start:wcommit_9
+[164204.753]profiling_end:wcommit_9
+[164215.855]profiling_end:graphic hardware
+[164216.020]profiling_start:weston
+[164216.805]profiling_end:weston
+[164216.879]profiling_start:graphic hardware
+[164218.274]profiling_start:client_9
+[164218.695]profiling_end:client_9
+[164218.750]profiling_start:MESA_9
+[164220.564]profiling_end:MESA_9
+[164220.582]profiling_start:wcommit_9
+[164220.664]profiling_end:wcommit_9
+[164232.499]profiling_end:graphic hardware
+[164232.609]profiling_start:weston
+[164233.063]profiling_end:weston
+[164233.093]profiling_start:graphic hardware
+[164233.891]profiling_start:client_9
+[164234.412]profiling_end:client_9
+[164234.469]profiling_start:MESA_9
+[164236.843]profiling_end:MESA_9
+[164236.896]profiling_start:wcommit_9
+[164237.098]profiling_end:wcommit_9
+[164249.162]profiling_end:graphic hardware
+[164249.530]profiling_start:weston
+[164250.264]profiling_end:weston
+[164250.345]profiling_start:graphic hardware
+[164251.587]profiling_start:client_9
+[164251.996]profiling_end:client_9
+[164252.052]profiling_start:MESA_9
+[164254.490]profiling_end:MESA_9
+[164254.542]profiling_start:wcommit_9
+[164254.747]profiling_end:wcommit_9
+[164265.837]profiling_end:graphic hardware
+[164265.934]profiling_start:weston
+[164266.722]profiling_end:weston
+[164266.795]profiling_start:graphic hardware
+[164267.945]profiling_start:client_9
+[164268.458]profiling_end:client_9
+[164268.513]profiling_start:MESA_9
+[164270.948]profiling_end:MESA_9
+[164271.002]profiling_start:wcommit_9
+[164271.244]profiling_end:wcommit_9
+[164282.712]profiling_end:graphic hardware
+[164282.818]profiling_start:weston
+[164283.611]profiling_end:weston
+[164283.694]profiling_start:graphic hardware
+[164284.837]profiling_start:client_9
+[164285.356]profiling_end:client_9
+[164285.413]profiling_start:MESA_9
+[164287.855]profiling_end:MESA_9
+[164287.908]profiling_start:wcommit_9
+[164288.114]profiling_end:wcommit_9
+[164299.133]profiling_end:graphic hardware
+[164299.442]profiling_start:weston
+[164300.127]profiling_end:weston
+[164300.250]profiling_start:graphic hardware
+[164301.513]profiling_start:client_9
+[164301.927]profiling_end:client_9
+[164301.981]profiling_start:MESA_9
+[164304.437]profiling_end:MESA_9
+[164304.489]profiling_start:wcommit_9
+[164304.691]profiling_end:wcommit_9
+[164315.821]profiling_end:graphic hardware
+[164315.918]profiling_start:weston
+[164316.708]profiling_end:weston
+[164316.782]profiling_start:graphic hardware
+[164317.907]profiling_start:client_9
+[164318.415]profiling_end:client_9
+[164318.471]profiling_start:MESA_9
+[164320.994]profiling_end:MESA_9
+[164321.045]profiling_start:wcommit_9
+[164321.288]profiling_end:wcommit_9
+[164332.481]profiling_end:graphic hardware
+[164332.579]profiling_start:weston
+[164333.383]profiling_end:weston
+[164333.466]profiling_start:graphic hardware
+[164334.670]profiling_start:client_9
+[164335.085]profiling_end:client_9
+[164335.139]profiling_start:MESA_9
+[164337.579]profiling_end:MESA_9
+[164337.632]profiling_start:wcommit_9
+[164337.835]profiling_end:wcommit_9
+[164349.118]profiling_end:graphic hardware
+[164349.413]profiling_start:weston
+[164350.101]profiling_end:weston
+[164350.224]profiling_start:graphic hardware
+[164351.497]profiling_start:client_9
+[164351.906]profiling_end:client_9
+[164351.961]profiling_start:MESA_9
+[164354.329]profiling_end:MESA_9
+[164354.382]profiling_start:wcommit_9
+[164354.586]profiling_end:wcommit_9
+[164365.801]profiling_end:graphic hardware
+[164365.900]profiling_start:weston
+[164366.690]profiling_end:weston
+[164366.763]profiling_start:graphic hardware
+[164367.902]profiling_start:client_9
+[164368.417]profiling_end:client_9
+[164368.472]profiling_start:MESA_9
+[164370.932]profiling_end:MESA_9
+[164370.985]profiling_start:wcommit_9
+[164371.227]profiling_end:wcommit_9
+[164382.465]profiling_end:graphic hardware
+[164382.563]profiling_start:weston
+[164383.367]profiling_end:weston
+[164383.453]profiling_start:graphic hardware
+[164384.667]profiling_start:client_9
+[164385.073]profiling_end:client_9
+[164385.128]profiling_start:MESA_9
+[164387.566]profiling_end:MESA_9
+[164387.619]profiling_start:wcommit_9
+[164387.822]profiling_end:wcommit_9
+[164399.112]profiling_end:graphic hardware
+[164399.408]profiling_start:weston
+[164400.094]profiling_end:weston
+[164400.166]profiling_start:graphic hardware
+[164401.481]profiling_start:client_9
+[164401.895]profiling_end:client_9
+[164401.950]profiling_start:MESA_9
+[164404.348]profiling_end:MESA_9
+[164404.402]profiling_start:wcommit_9
+[164404.606]profiling_end:wcommit_9
+[164415.843]profiling_end:graphic hardware
+[164415.940]profiling_start:weston
+[164416.722]profiling_end:weston
+[164416.798]profiling_start:graphic hardware
+[164417.719]profiling_start:client_9
+[164418.101]profiling_end:client_9
+[164418.157]profiling_start:MESA_9
+[164420.562]profiling_end:MESA_9
+[164420.603]profiling_start:wcommit_9
+[164420.816]profiling_end:wcommit_9
+[164432.660]profiling_end:graphic hardware
+[164432.741]profiling_start:weston
+[164433.433]profiling_end:weston
+[164433.514]profiling_start:graphic hardware
+[164434.710]profiling_start:client_9
+[164435.121]profiling_end:client_9
+[164435.217]profiling_start:MESA_9
+[164437.670]profiling_end:MESA_9
+[164437.722]profiling_start:wcommit_9
+[164437.926]profiling_end:wcommit_9
+[164449.108]profiling_end:graphic hardware
+[164449.423]profiling_start:weston
+[164450.112]profiling_end:weston
+[164450.238]profiling_start:graphic hardware
+[164451.503]profiling_start:client_9
+[164451.909]profiling_end:client_9
+[164451.963]profiling_start:MESA_9
+[164454.368]profiling_end:MESA_9
+[164454.421]profiling_start:wcommit_9
+[164454.627]profiling_end:wcommit_9
+[164465.773]profiling_end:graphic hardware
+[164465.871]profiling_start:weston
+[164466.663]profiling_end:weston
+[164466.736]profiling_start:graphic hardware
+[164467.684]profiling_start:client_9
+[164468.096]profiling_end:client_9
+[164468.150]profiling_start:MESA_9
+[164470.544]profiling_end:MESA_9
+[164470.586]profiling_start:wcommit_9
+[164470.748]profiling_end:wcommit_9
+[164482.647]profiling_end:graphic hardware
+[164482.735]profiling_start:weston
+[164483.427]profiling_end:weston
+[164483.512]profiling_start:graphic hardware
+[164484.689]profiling_start:client_9
+[164485.094]profiling_end:client_9
+[164485.149]profiling_start:MESA_9
+[164487.619]profiling_end:MESA_9
+[164487.671]profiling_start:wcommit_9
+[164487.875]profiling_end:wcommit_9
+[164499.095]profiling_end:graphic hardware
+[164499.394]profiling_start:weston
+[164500.082]profiling_end:weston
+[164500.153]profiling_start:graphic hardware
+[164501.096]profiling_start:client_9
+[164501.609]profiling_end:client_9
+[164501.665]profiling_start:MESA_9
+[164504.045]profiling_end:MESA_9
+[164504.097]profiling_start:wcommit_9
+[164504.350]profiling_end:wcommit_9
+[164515.756]profiling_end:graphic hardware
+[164515.853]profiling_start:weston
+[164516.647]profiling_end:weston
+[164516.723]profiling_start:graphic hardware
+[164517.851]profiling_start:client_9
+[164518.366]profiling_end:client_9
+[164518.423]profiling_start:MESA_9
+[164520.850]profiling_end:MESA_9
+[164520.903]profiling_start:wcommit_9
+[164521.104]profiling_end:wcommit_9
+[164532.633]profiling_end:graphic hardware
+[164532.739]profiling_start:weston
+[164533.541]profiling_end:weston
+[164533.624]profiling_start:graphic hardware
+[164534.639]profiling_start:client_9
+[164535.051]profiling_end:client_9
+[164535.106]profiling_start:MESA_9
+[164537.498]profiling_end:MESA_9
+[164537.539]profiling_start:wcommit_9
+[164537.702]profiling_end:wcommit_9
+[164549.066]profiling_end:graphic hardware
+[164549.147]profiling_start:weston
+[164549.999]profiling_end:weston
+[164550.072]profiling_start:graphic hardware
+[164551.371]profiling_start:client_9
+[164551.779]profiling_end:client_9
+[164551.834]profiling_start:MESA_9
+[164554.269]profiling_end:MESA_9
+[164554.323]profiling_start:wcommit_9
+[164554.528]profiling_end:wcommit_9
+[164565.743]profiling_end:graphic hardware
+[164565.842]profiling_start:weston
+[164566.631]profiling_end:weston
+[164566.709]profiling_start:graphic hardware
+[164567.836]profiling_start:client_9
+[164568.361]profiling_end:client_9
+[164568.418]profiling_start:MESA_9
+[164570.844]profiling_end:MESA_9
+[164570.896]profiling_start:wcommit_9
+[164571.099]profiling_end:wcommit_9
+[164582.615]profiling_end:graphic hardware
+[164582.720]profiling_start:weston
+[164584.400]profiling_end:weston
+[164584.493]profiling_start:graphic hardware
+[164585.709]profiling_start:client_9
+[164586.217]profiling_end:client_9
+[164586.286]profiling_start:MESA_9
+[164588.725]profiling_end:MESA_9
+[164588.766]profiling_start:wcommit_9
+[164588.927]profiling_end:wcommit_9
+[164599.036]profiling_end:graphic hardware
+[164599.118]profiling_start:weston
+[164599.944]profiling_end:weston
+[164600.026]profiling_start:graphic hardware
+[164601.256]profiling_start:client_9
+[164601.679]profiling_end:client_9
+[164601.734]profiling_start:MESA_9
+[164604.094]profiling_end:MESA_9
+[164604.146]profiling_start:wcommit_9
+[164604.400]profiling_end:wcommit_9
+[164615.451]profiling_end:graphic hardware
+[164615.523]profiling_start:weston
+[164616.301]profiling_end:weston
+[164616.389]profiling_start:graphic hardware
+[164617.610]profiling_start:client_9
+[164618.015]profiling_end:client_9
+[164618.070]profiling_start:MESA_9
+[164620.508]profiling_end:MESA_9
+[164620.561]profiling_start:wcommit_9
+[164620.766]profiling_end:wcommit_9
+[164632.104]profiling_end:graphic hardware
+[164632.387]profiling_start:weston
+[164633.057]profiling_end:weston
+[164633.132]profiling_start:graphic hardware
+[164634.426]profiling_start:client_9
+[164634.841]profiling_end:client_9
+[164634.896]profiling_start:MESA_9
+[164636.917]profiling_end:MESA_9
+[164637.027]profiling_start:wcommit_9
+[164637.329]profiling_end:wcommit_9
+[164648.712]profiling_end:graphic hardware
+[164648.758]profiling_start:weston
+[164649.280]profiling_end:weston
+[164649.361]profiling_start:graphic hardware
+[164650.597]profiling_start:client_9
+[164651.001]profiling_end:client_9
+[164651.057]profiling_start:MESA_9
+[164653.438]profiling_end:MESA_9
+[164653.490]profiling_start:wcommit_9
+[164653.695]profiling_end:wcommit_9
+[164665.440]profiling_end:graphic hardware
+[164665.513]profiling_start:weston
+[164666.292]profiling_end:weston
+[164666.382]profiling_start:graphic hardware
+[164667.599]profiling_start:client_9
+[164668.010]profiling_end:client_9
+[164668.066]profiling_start:MESA_9
+[164670.500]profiling_end:MESA_9
+[164670.554]profiling_start:wcommit_9
+[164670.757]profiling_end:wcommit_9
+[164682.576]profiling_end:graphic hardware
+[164682.681]profiling_start:weston
+[164683.469]profiling_end:weston
+[164683.553]profiling_start:graphic hardware
+[164684.704]profiling_start:client_9
+[164685.109]profiling_end:client_9
+[164685.165]profiling_start:MESA_9
+[164687.691]profiling_end:MESA_9
+[164687.743]profiling_start:wcommit_9
+[164687.948]profiling_end:wcommit_9
+[164699.031]profiling_end:graphic hardware
+[164699.129]profiling_start:weston
+[164699.949]profiling_end:weston
+[164700.021]profiling_start:graphic hardware
+[164701.313]profiling_start:client_9
+[164701.740]profiling_end:client_9
+[164701.796]profiling_start:MESA_9
+[164704.225]profiling_end:MESA_9
+[164704.290]profiling_start:wcommit_9
+[164704.496]profiling_end:wcommit_9
+[164715.693]profiling_end:graphic hardware
+[164715.791]profiling_start:weston
+[164716.590]profiling_end:weston
+[164716.666]profiling_start:graphic hardware
+[164717.618]profiling_start:client_9
+[164718.026]profiling_end:client_9
+[164718.081]profiling_start:MESA_9
+[164720.567]profiling_end:MESA_9
+[164720.608]profiling_start:wcommit_9
+[164720.772]profiling_end:wcommit_9
+[164732.562]profiling_end:graphic hardware
+[164732.644]profiling_start:weston
+[164733.314]profiling_end:weston
+[164733.403]profiling_start:graphic hardware
+[164734.635]profiling_start:client_9
+[164735.049]profiling_end:client_9
+[164735.103]profiling_start:MESA_9
+[164737.541]profiling_end:MESA_9
+[164737.594]profiling_start:wcommit_9
+[164737.799]profiling_end:wcommit_9
+[164749.014]profiling_end:graphic hardware
+[164749.112]profiling_start:weston
+[164749.921]profiling_end:weston
+[164749.997]profiling_start:graphic hardware
+[164751.378]profiling_start:client_9
+[164751.786]profiling_end:client_9
+[164751.841]profiling_start:MESA_9
+[164754.295]profiling_end:MESA_9
+[164754.349]profiling_start:wcommit_9
+[164754.556]profiling_end:wcommit_9
+[164765.678]profiling_end:graphic hardware
+[164765.775]profiling_start:weston
+[164766.568]profiling_end:weston
+[164766.645]profiling_start:graphic hardware
+[164767.767]profiling_start:client_9
+[164768.274]profiling_end:client_9
+[164768.345]profiling_start:MESA_9
+[164770.459]profiling_end:MESA_9
+[164770.501]profiling_start:wcommit_9
+[164770.657]profiling_end:wcommit_9
+[164782.540]profiling_end:graphic hardware
+[164782.623]profiling_start:weston
+[164783.269]profiling_end:weston
+[164783.347]profiling_start:graphic hardware
+[164784.595]profiling_start:client_9
+[164785.003]profiling_end:client_9
+[164785.059]profiling_start:MESA_9
+[164787.508]profiling_end:MESA_9
+[164787.561]profiling_start:wcommit_9
+[164787.766]profiling_end:wcommit_9
+[164799.265]profiling_end:graphic hardware
+[164799.370]profiling_start:weston
+[164800.056]profiling_end:weston
+[164800.126]profiling_start:graphic hardware
+[164801.474]profiling_start:client_9
+[164801.889]profiling_end:client_9
+[164801.944]profiling_start:MESA_9
+[164804.026]profiling_end:MESA_9
+[164804.079]profiling_start:wcommit_9
+[164804.327]profiling_end:wcommit_9
+[164815.649]profiling_end:graphic hardware
+[164815.746]profiling_start:weston
+[164816.490]profiling_end:weston
+[164816.564]profiling_start:graphic hardware
+[164817.712]profiling_start:client_9
+[164818.119]profiling_end:client_9
+[164818.266]profiling_start:MESA_9
+[164820.645]profiling_end:MESA_9
+[164820.686]profiling_start:wcommit_9
+[164820.848]profiling_end:wcommit_9
+[164832.528]profiling_end:graphic hardware
+[164832.610]profiling_start:weston
+[164833.169]profiling_end:weston
+[164833.344]profiling_start:graphic hardware
+[164834.593]profiling_start:client_9
+[164835.005]profiling_end:client_9
+[164835.061]profiling_start:MESA_9
+[164837.510]profiling_end:MESA_9
+[164837.563]profiling_start:wcommit_9
+[164837.768]profiling_end:wcommit_9
+[164848.979]profiling_end:graphic hardware
+[164849.077]profiling_start:weston
+[164849.856]profiling_end:weston
+[164849.929]profiling_start:graphic hardware
+[164851.114]profiling_start:client_9
+[164851.627]profiling_end:client_9
+[164851.683]profiling_start:MESA_9
+[164854.123]profiling_end:MESA_9
+[164854.211]profiling_start:wcommit_9
+[164854.434]profiling_end:wcommit_9
+[164865.641]profiling_end:graphic hardware
+[164865.738]profiling_start:weston
+[164866.533]profiling_end:weston
+[164866.608]profiling_start:graphic hardware
+[164867.824]profiling_start:client_9
+[164868.354]profiling_end:client_9
+[164868.412]profiling_start:MESA_9
+[164870.844]profiling_end:MESA_9
+[164870.896]profiling_start:wcommit_9
+[164871.098]profiling_end:wcommit_9
+[164882.281]profiling_end:graphic hardware
+[164882.378]profiling_start:weston
+[164883.068]profiling_end:weston
+[164883.138]profiling_start:graphic hardware
+[164884.511]profiling_start:client_9
+[164884.916]profiling_end:client_9
+[164884.972]profiling_start:MESA_9
+[164887.426]profiling_end:MESA_9
+[164887.479]profiling_start:wcommit_9
+[164887.683]profiling_end:wcommit_9
+[164898.954]profiling_end:graphic hardware
+[164899.052]profiling_start:weston
+[164899.827]profiling_end:weston
+[164899.901]profiling_start:graphic hardware
+[164900.691]profiling_start:client_9
+[164901.079]profiling_end:client_9
+[164901.135]profiling_start:MESA_9
+[164903.542]profiling_end:MESA_9
+[164903.596]profiling_start:wcommit_9
+[164903.799]profiling_end:wcommit_9
+[164915.658]profiling_end:graphic hardware
+[164915.756]profiling_start:weston
+[164916.559]profiling_end:weston
+[164916.633]profiling_start:graphic hardware
+[164917.775]profiling_start:client_9
+[164918.282]profiling_end:client_9
+[164918.352]profiling_start:MESA_9
+[164920.797]profiling_end:MESA_9
+[164920.850]profiling_start:wcommit_9
+[164921.054]profiling_end:wcommit_9
+[164932.287]profiling_end:graphic hardware
+[164932.384]profiling_start:weston
+[164933.074]profiling_end:weston
+[164933.145]profiling_start:graphic hardware
+[164934.494]profiling_start:client_9
+[164934.909]profiling_end:client_9
+[164934.964]profiling_start:MESA_9
+[164937.408]profiling_end:MESA_9
+[164937.461]profiling_start:wcommit_9
+[164937.663]profiling_end:wcommit_9
+[164948.920]profiling_end:graphic hardware
+[164949.018]profiling_start:weston
+[164949.799]profiling_end:weston
+[164949.871]profiling_start:graphic hardware
+[164950.788]profiling_start:client_9
+[164951.246]profiling_end:client_9
+[164951.314]profiling_start:MESA_9
+[164953.717]profiling_end:MESA_9
+[164953.770]profiling_start:wcommit_9
+[164953.973]profiling_end:wcommit_9
+[164965.341]profiling_end:graphic hardware
+[164965.414]profiling_start:weston
+[164966.147]profiling_end:weston
+[164966.338]profiling_start:graphic hardware
+[164967.566]profiling_start:client_9
+[164967.981]profiling_end:client_9
+[164968.037]profiling_start:MESA_9
+[164970.484]profiling_end:MESA_9
+[164970.537]profiling_start:wcommit_9
+[164970.742]profiling_end:wcommit_9
+[164982.254]profiling_end:graphic hardware
+[164982.352]profiling_start:weston
+[164983.931]profiling_end:weston
+[164984.019]profiling_start:graphic hardware
+[164984.814]profiling_start:client_9
+[164985.273]profiling_end:client_9
+[164985.329]profiling_start:MESA_9
+[164987.300]profiling_end:MESA_9
+[164987.369]profiling_start:wcommit_9
+[164987.450]profiling_end:wcommit_9
+[164998.649]profiling_end:graphic hardware
+[164998.744]profiling_start:weston
+[164999.540]profiling_end:weston
+[164999.615]profiling_start:graphic hardware
+[165000.532]profiling_start:client_9
+[165000.717]profiling_end:client_9
+[165000.763]profiling_start:MESA_9
+[165002.242]profiling_end:MESA_9
+[165002.308]profiling_start:wcommit_9
+[165002.504]profiling_end:wcommit_9
+[165015.645]profiling_end:graphic hardware
+[165015.746]profiling_start:weston
+[165016.546]profiling_end:weston
+[165016.619]profiling_start:graphic hardware
+[165017.542]profiling_start:client_9
+[165017.722]profiling_end:client_9
+[165017.741]profiling_start:MESA_9
+[165019.104]profiling_end:MESA_9
+[165019.156]profiling_start:wcommit_9
+[165019.415]profiling_end:wcommit_9
+[165032.494]profiling_end:graphic hardware
+[165032.561]profiling_start:weston
+[165032.987]profiling_end:weston
+[165033.032]profiling_start:graphic hardware
+[165033.912]profiling_start:client_9
+[165034.094]profiling_end:client_9
+[165034.113]profiling_start:MESA_9
+[165036.323]profiling_end:MESA_9
+[165036.376]profiling_start:wcommit_9
+[165036.581]profiling_end:wcommit_9
+[165048.889]profiling_end:graphic hardware
+[165048.990]profiling_start:weston
+[165049.779]profiling_end:weston
+[165049.851]profiling_start:graphic hardware
+[165050.992]profiling_start:client_9
+[165051.442]profiling_end:client_9
+[165051.498]profiling_start:MESA_9
+[165053.891]profiling_end:MESA_9
+[165053.944]profiling_start:wcommit_9
+[165054.151]profiling_end:wcommit_9
+[165065.619]profiling_end:graphic hardware
+[165065.720]profiling_start:weston
+[165066.516]profiling_end:weston
+[165066.589]profiling_start:graphic hardware
+[165067.722]profiling_start:client_9
+[165068.134]profiling_end:client_9
+[165068.295]profiling_start:MESA_9
+[165070.793]profiling_end:MESA_9
+[165070.846]profiling_start:wcommit_9
+[165071.050]profiling_end:wcommit_9
+[165082.285]profiling_end:graphic hardware
+[165082.383]profiling_start:weston
+[165083.079]profiling_end:weston
+[165083.149]profiling_start:graphic hardware
+[165084.525]profiling_start:client_9
+[165084.932]profiling_end:client_9
+[165084.986]profiling_start:MESA_9
+[165087.418]profiling_end:MESA_9
+[165087.471]profiling_start:wcommit_9
+[165087.675]profiling_end:wcommit_9
+[165098.897]profiling_end:graphic hardware
+[165098.996]profiling_start:weston
+[165099.776]profiling_end:weston
+[165099.847]profiling_start:graphic hardware
+[165100.965]profiling_start:client_9
+[165101.424]profiling_end:client_9
+[165101.478]profiling_start:MESA_9
+[165103.889]profiling_end:MESA_9
+[165103.941]profiling_start:wcommit_9
+[165104.142]profiling_end:wcommit_9
+[165115.288]profiling_end:graphic hardware
+[165115.361]profiling_start:weston
+[165116.039]profiling_end:weston
+[165116.116]profiling_start:graphic hardware
+[165117.457]profiling_start:client_9
+[165117.866]profiling_end:client_9
+[165117.922]profiling_start:MESA_9
+[165119.981]profiling_end:MESA_9
+[165120.034]profiling_start:wcommit_9
+[165120.268]profiling_end:wcommit_9
+[165132.015]profiling_end:graphic hardware
+[165132.105]profiling_start:weston
+[165132.811]profiling_end:weston
+[165132.895]profiling_start:graphic hardware
+[165134.053]profiling_start:client_9
+[165134.588]profiling_end:client_9
+[165134.644]profiling_start:MESA_9
+[165137.055]profiling_end:MESA_9
+[165137.108]profiling_start:wcommit_9
+[165137.413]profiling_end:wcommit_9
+[165148.882]profiling_end:graphic hardware
+[165148.979]profiling_start:weston
+[165149.765]profiling_end:weston
+[165149.838]profiling_start:graphic hardware
+[165150.982]profiling_start:client_9
+[165151.436]profiling_end:client_9
+[165151.492]profiling_start:MESA_9
+[165153.521]profiling_end:MESA_9
+[165153.573]profiling_start:wcommit_9
+[165153.768]profiling_end:wcommit_9
+[165165.310]profiling_end:graphic hardware
+[165165.383]profiling_start:weston
+[165166.031]profiling_end:weston
+[165166.102]profiling_start:graphic hardware
+[165167.460]profiling_start:client_9
+[165167.873]profiling_end:client_9
+[165167.929]profiling_start:MESA_9
+[165170.361]profiling_end:MESA_9
+[165170.415]profiling_start:wcommit_9
+[165170.689]profiling_end:wcommit_9
+[165182.509]profiling_end:graphic hardware
+[165182.608]profiling_start:weston
+[165183.336]profiling_end:weston
+[165183.409]profiling_start:graphic hardware
+[165184.627]profiling_start:client_9
+[165185.033]profiling_end:client_9
+[165185.089]profiling_start:MESA_9
+[165187.469]profiling_end:MESA_9
+[165187.501]profiling_start:wcommit_9
+[165187.640]profiling_end:wcommit_9
+[165198.852]profiling_end:graphic hardware
+[165198.923]profiling_start:weston
+[165199.601]profiling_end:weston
+[165199.675]profiling_start:graphic hardware
+[165200.576]profiling_start:client_9
+[165200.959]profiling_end:client_9
+[165201.013]profiling_start:MESA_9
+[165203.559]profiling_end:MESA_9
+[165203.612]profiling_start:wcommit_9
+[165203.816]profiling_end:wcommit_9
+[165215.533]profiling_end:graphic hardware
+[165215.631]profiling_start:weston
+[165216.427]profiling_end:weston
+[165216.502]profiling_start:graphic hardware
+[165217.708]profiling_start:client_9
+[165218.117]profiling_end:client_9
+[165218.212]profiling_start:MESA_9
+[165220.599]profiling_end:MESA_9
+[165220.652]profiling_start:wcommit_9
+[165220.857]profiling_end:wcommit_9
+[165232.474]profiling_end:graphic hardware
+[165232.572]profiling_start:weston
+[165233.302]profiling_end:weston
+[165233.382]profiling_start:graphic hardware
+[165234.609]profiling_start:client_9
+[165235.023]profiling_end:client_9
+[165235.079]profiling_start:MESA_9
+[165237.463]profiling_end:MESA_9
+[165237.497]profiling_start:wcommit_9
+[165237.634]profiling_end:wcommit_9
+[165248.826]profiling_end:graphic hardware
+[165248.895]profiling_start:weston
+[165249.541]profiling_end:weston
+[165249.615]profiling_start:graphic hardware
+[165250.726]profiling_start:client_9
+[165251.132]profiling_end:client_9
+[165251.300]profiling_start:MESA_9
+[165253.703]profiling_end:MESA_9
+[165253.756]profiling_start:wcommit_9
+[165253.961]profiling_end:wcommit_9
+[165265.516]profiling_end:graphic hardware
+[165265.613]profiling_start:weston
+[165266.403]profiling_end:weston
+[165266.475]profiling_start:graphic hardware
+[165267.686]profiling_start:client_9
+[165268.101]profiling_end:client_9
+[165268.156]profiling_start:MESA_9
+[165270.273]profiling_end:MESA_9
+[165270.342]profiling_start:wcommit_9
+[165270.500]profiling_end:wcommit_9
+[165282.139]profiling_end:graphic hardware
+[165282.480]profiling_start:weston
+[165283.167]profiling_end:weston
+[165283.288]profiling_start:graphic hardware
+[165284.659]profiling_start:client_9
+[165285.067]profiling_end:client_9
+[165285.122]profiling_start:MESA_9
+[165287.558]profiling_end:MESA_9
+[165287.611]profiling_start:wcommit_9
+[165287.816]profiling_end:wcommit_9
+[165298.829]profiling_end:graphic hardware
+[165298.928]profiling_start:weston
+[165299.714]profiling_end:weston
+[165299.786]profiling_start:graphic hardware
+[165300.939]profiling_start:client_9
+[165301.451]profiling_end:client_9
+[165301.506]profiling_start:MESA_9
+[165303.874]profiling_end:MESA_9
+[165303.926]profiling_start:wcommit_9
+[165304.130]profiling_end:wcommit_9
+[165315.493]profiling_end:graphic hardware
+[165315.591]profiling_start:weston
+[165316.390]profiling_end:weston
+[165316.473]profiling_start:graphic hardware
+[165317.670]profiling_start:client_9
+[165318.076]profiling_end:client_9
+[165318.130]profiling_start:MESA_9
+[165320.524]profiling_end:MESA_9
+[165320.565]profiling_start:wcommit_9
+[165320.728]profiling_end:wcommit_9
+[165332.140]profiling_end:graphic hardware
+[165332.476]profiling_start:weston
+[165333.163]profiling_end:weston
+[165333.312]profiling_start:graphic hardware
+[165334.545]profiling_start:client_9
+[165334.958]profiling_end:client_9
+[165335.011]profiling_start:MESA_9
+[165337.436]profiling_end:MESA_9
+[165337.470]profiling_start:wcommit_9
+[165337.607]profiling_end:wcommit_9
+[165348.800]profiling_end:graphic hardware
+[165348.871]profiling_start:weston
+[165349.522]profiling_end:weston
+[165349.595]profiling_start:graphic hardware
+[165350.730]profiling_start:client_9
+[165351.134]profiling_end:client_9
+[165351.289]profiling_start:MESA_9
+[165353.441]profiling_end:MESA_9
+[165353.495]profiling_start:wcommit_9
+[165353.700]profiling_end:wcommit_9
+[165365.484]profiling_end:graphic hardware
+[165365.582]profiling_start:weston
+[165366.377]profiling_end:weston
+[165366.459]profiling_start:graphic hardware
+[165367.668]profiling_start:client_9
+[165368.081]profiling_end:client_9
+[165368.136]profiling_start:MESA_9
+[165370.568]profiling_end:MESA_9
+[165370.622]profiling_start:wcommit_9
+[165370.825]profiling_end:wcommit_9
+[165382.129]profiling_end:graphic hardware
+[165382.311]profiling_start:weston
+[165383.005]profiling_end:weston
+[165383.075]profiling_start:graphic hardware
+[165384.342]profiling_start:client_9
+[165384.749]profiling_end:client_9
+[165384.803]profiling_start:MESA_9
+[165387.163]profiling_end:MESA_9
+[165387.367]profiling_start:wcommit_9
+[165387.509]profiling_end:wcommit_9
+[165399.039]profiling_end:graphic hardware
+[165399.116]profiling_start:weston
+[165399.839]profiling_end:weston
+[165399.911]profiling_start:graphic hardware
+[165401.120]profiling_start:client_9
+[165401.639]profiling_end:client_9
+[165401.694]profiling_start:MESA_9
+[165404.091]profiling_end:MESA_9
+[165404.144]profiling_start:wcommit_9
+[165404.398]profiling_end:wcommit_9
+[165415.458]profiling_end:graphic hardware
+[165415.555]profiling_start:weston
+[165416.356]profiling_end:weston
+[165416.442]profiling_start:graphic hardware
+[165417.638]profiling_start:client_9
+[165418.045]profiling_end:client_9
+[165418.101]profiling_start:MESA_9
+[165420.596]profiling_end:MESA_9
+[165420.649]profiling_start:wcommit_9
+[165420.852]profiling_end:wcommit_9
+[165432.095]profiling_end:graphic hardware
+[165432.437]profiling_start:weston
+[165433.121]profiling_end:weston
+[165433.239]profiling_start:graphic hardware
+[165434.126]profiling_start:client_9
+[165434.640]profiling_end:client_9
+[165434.696]profiling_start:MESA_9
+[165437.077]profiling_end:MESA_9
+[165437.129]profiling_start:wcommit_9
+[165437.414]profiling_end:wcommit_9
+[165449.007]profiling_end:graphic hardware
+[165449.085]profiling_start:weston
+[165449.796]profiling_end:weston
+[165449.869]profiling_start:graphic hardware
+[165451.054]profiling_start:client_9
+[165451.581]profiling_end:client_9
+[165451.637]profiling_start:MESA_9
+[165454.033]profiling_end:MESA_9
+[165454.086]profiling_start:wcommit_9
+[165454.338]profiling_end:wcommit_9
+[165465.659]profiling_end:graphic hardware
+[165465.763]profiling_start:weston
+[165466.556]profiling_end:weston
+[165466.639]profiling_start:graphic hardware
+[165467.786]profiling_start:client_9
+[165468.314]profiling_end:client_9
+[165468.373]profiling_start:MESA_9
+[165470.810]profiling_end:MESA_9
+[165470.863]profiling_start:wcommit_9
+[165471.067]profiling_end:wcommit_9
+[165482.080]profiling_end:graphic hardware
+[165482.399]profiling_start:weston
+[165483.091]profiling_end:weston
+[165483.162]profiling_start:graphic hardware
+[165484.473]profiling_start:client_9
+[165484.879]profiling_end:client_9
+[165484.935]profiling_start:MESA_9
+[165487.375]profiling_end:MESA_9
+[165487.409]profiling_start:wcommit_9
+[165487.546]profiling_end:wcommit_9
+[165498.746]profiling_end:graphic hardware
+[165498.817]profiling_start:weston
+[165499.447]profiling_end:weston
+[165499.520]profiling_start:graphic hardware
+[165500.555]profiling_start:client_9
+[165500.968]profiling_end:client_9
+[165501.022]profiling_start:MESA_9
+[165503.427]profiling_end:MESA_9
+[165503.480]profiling_start:wcommit_9
+[165503.686]profiling_end:wcommit_9
+[165515.424]profiling_end:graphic hardware
+[165515.522]profiling_start:weston
+[165516.322]profiling_end:weston
+[165516.409]profiling_start:graphic hardware
+[165517.608]profiling_start:client_9
+[165518.016]profiling_end:client_9
+[165518.071]profiling_start:MESA_9
+[165520.121]profiling_end:MESA_9
+[165520.207]profiling_start:wcommit_9
+[165520.421]profiling_end:wcommit_9
+[165531.813]profiling_end:graphic hardware
+[165531.886]profiling_start:weston
+[165532.638]profiling_end:weston
+[165532.712]profiling_start:graphic hardware
+[165533.881]profiling_start:client_9
+[165534.388]profiling_end:client_9
+[165534.443]profiling_start:MESA_9
+[165536.589]profiling_end:MESA_9
+[165536.642]profiling_start:wcommit_9
+[165536.836]profiling_end:wcommit_9
+[165548.484]profiling_end:graphic hardware
+[165548.556]profiling_start:weston
+[165549.301]profiling_end:weston
+[165549.380]profiling_start:graphic hardware
+[165550.600]profiling_start:client_9
+[165551.010]profiling_end:client_9
+[165551.065]profiling_start:MESA_9
+[165553.484]profiling_end:MESA_9
+[165553.537]profiling_start:wcommit_9
+[165553.741]profiling_end:wcommit_9
+[165565.624]profiling_end:graphic hardware
+[165565.728]profiling_start:weston
+[165566.513]profiling_end:weston
+[165566.596]profiling_start:graphic hardware
+[165567.728]profiling_start:client_9
+[165568.141]profiling_end:client_9
+[165568.294]profiling_start:MESA_9
+[165570.745]profiling_end:MESA_9
+[165570.797]profiling_start:wcommit_9
+[165571.000]profiling_end:wcommit_9
+[165582.044]profiling_end:graphic hardware
+[165582.142]profiling_start:weston
+[165582.954]profiling_end:weston
+[165583.026]profiling_start:graphic hardware
+[165584.335]profiling_start:client_9
+[165584.749]profiling_end:client_9
+[165584.804]profiling_start:MESA_9
+[165587.166]profiling_end:MESA_9
+[165587.333]profiling_start:wcommit_9
+[165587.472]profiling_end:wcommit_9
+[165598.714]profiling_end:graphic hardware
+[165598.783]profiling_start:weston
+[165599.396]profiling_end:weston
+[165599.467]profiling_start:graphic hardware
+[165600.674]profiling_start:client_9
+[165601.086]profiling_end:client_9
+[165601.142]profiling_start:MESA_9
+[165603.607]profiling_end:MESA_9
+[165603.659]profiling_start:wcommit_9
+[165603.862]profiling_end:wcommit_9
+[165615.393]profiling_end:graphic hardware
+[165615.491]profiling_start:weston
+[165616.288]profiling_end:weston
+[165616.375]profiling_start:graphic hardware
+[165617.593]profiling_start:client_9
+[165618.003]profiling_end:client_9
+[165618.058]profiling_start:MESA_9
+[165620.505]profiling_end:MESA_9
+[165620.558]profiling_start:wcommit_9
+[165620.764]profiling_end:wcommit_9
+[165632.055]profiling_end:graphic hardware
+[165632.153]profiling_start:weston
+[165633.000]profiling_end:weston
+[165633.071]profiling_start:graphic hardware
+[165634.387]profiling_start:client_9
+[165634.802]profiling_end:client_9
+[165634.856]profiling_start:MESA_9
+[165637.302]profiling_end:MESA_9
+[165637.362]profiling_start:wcommit_9
+[165637.500]profiling_end:wcommit_9
+[165648.694]profiling_end:graphic hardware
+[165648.765]profiling_start:weston
+[165649.333]profiling_end:weston
+[165649.405]profiling_start:graphic hardware
+[165650.607]profiling_start:client_9
+[165651.014]profiling_end:client_9
+[165651.069]profiling_start:MESA_9
+[165653.477]profiling_end:MESA_9
+[165653.529]profiling_start:wcommit_9
+[165653.732]profiling_end:wcommit_9
+[165665.591]profiling_end:graphic hardware
+[165665.696]profiling_start:weston
+[165666.485]profiling_end:weston
+[165666.569]profiling_start:graphic hardware
+[165667.719]profiling_start:client_9
+[165668.130]profiling_end:client_9
+[165668.282]profiling_start:MESA_9
+[165670.740]profiling_end:MESA_9
+[165670.794]profiling_start:wcommit_9
+[165670.999]profiling_end:wcommit_9
+[165682.030]profiling_end:graphic hardware
+[165682.128]profiling_start:weston
+[165682.901]profiling_end:weston
+[165682.977]profiling_start:graphic hardware
+[165683.852]profiling_start:client_9
+[165684.464]profiling_end:client_9
+[165684.522]profiling_start:MESA_9
+[165686.901]profiling_end:MESA_9
+[165686.954]profiling_start:wcommit_9
+[165687.158]profiling_end:wcommit_9
+[165698.418]profiling_end:graphic hardware
+[165698.464]profiling_start:weston
+[165698.932]profiling_end:weston
+[165698.981]profiling_start:graphic hardware
+[165700.116]profiling_start:client_9
+[165700.692]profiling_end:client_9
+[165700.749]profiling_start:MESA_9
+[165702.769]profiling_end:MESA_9
+[165702.820]profiling_start:wcommit_9
+[165703.013]profiling_end:wcommit_9
+[165715.568]profiling_end:graphic hardware
+[165715.672]profiling_start:weston
+[165716.478]profiling_end:weston
+[165716.563]profiling_start:graphic hardware
+[165717.704]profiling_start:client_9
+[165718.110]profiling_end:client_9
+[165718.165]profiling_start:MESA_9
+[165720.716]profiling_end:MESA_9
+[165720.768]profiling_start:wcommit_9
+[165720.971]profiling_end:wcommit_9
+[165731.782]profiling_end:graphic hardware
+[165731.855]profiling_start:weston
+[165732.624]profiling_end:weston
+[165732.698]profiling_start:graphic hardware
+[165733.651]profiling_start:client_9
+[165734.060]profiling_end:client_9
+[165734.115]profiling_start:MESA_9
+[165736.534]profiling_end:MESA_9
+[165736.586]profiling_start:wcommit_9
+[165736.790]profiling_end:wcommit_9
+[165748.495]profiling_end:graphic hardware
+[165748.568]profiling_start:weston
+[165749.350]profiling_end:weston
+[165749.430]profiling_start:graphic hardware
+[165750.619]profiling_start:client_9
+[165751.026]profiling_end:client_9
+[165751.082]profiling_start:MESA_9
+[165753.496]profiling_end:MESA_9
+[165753.549]profiling_start:wcommit_9
+[165753.755]profiling_end:wcommit_9
+[165765.102]profiling_end:graphic hardware
+[165765.363]profiling_start:weston
+[165766.038]profiling_end:weston
+[165766.110]profiling_start:graphic hardware
+[165767.405]profiling_start:client_9
+[165767.821]profiling_end:client_9
+[165767.877]profiling_start:MESA_9
+[165770.307]profiling_end:MESA_9
+[165770.368]profiling_start:wcommit_9
+[165770.507]profiling_end:wcommit_9
+[165781.708]profiling_end:graphic hardware
+[165781.755]profiling_start:weston
+[165782.297]profiling_end:weston
+[165782.350]profiling_start:graphic hardware
+[165783.569]profiling_start:client_9
+[165783.977]profiling_end:client_9
+[165784.032]profiling_start:MESA_9
+[165786.430]profiling_end:MESA_9
+[165786.483]profiling_start:wcommit_9
+[165786.688]profiling_end:wcommit_9
+[165798.482]profiling_end:graphic hardware
+[165798.555]profiling_start:weston
+[165799.332]profiling_end:weston
+[165799.412]profiling_start:graphic hardware
+[165800.621]profiling_start:client_9
+[165801.033]profiling_end:client_9
+[165801.089]profiling_start:MESA_9
+[165803.496]profiling_end:MESA_9
+[165803.549]profiling_start:wcommit_9
+[165803.752]profiling_end:wcommit_9
+[165815.086]profiling_end:graphic hardware
+[165815.159]profiling_start:weston
+[165816.008]profiling_end:weston
+[165816.083]profiling_start:graphic hardware
+[165817.371]profiling_start:client_9
+[165817.779]profiling_end:client_9
+[165817.833]profiling_start:MESA_9
+[165820.348]profiling_end:MESA_9
+[165820.383]profiling_start:wcommit_9
+[165820.521]profiling_end:wcommit_9
+[165831.688]profiling_end:graphic hardware
+[165831.735]profiling_start:weston
+[165832.276]profiling_end:weston
+[165832.328]profiling_start:graphic hardware
+[165833.519]profiling_start:client_9
+[165833.930]profiling_end:client_9
+[165833.986]profiling_start:MESA_9
+[165836.437]profiling_end:MESA_9
+[165836.489]profiling_start:wcommit_9
+[165836.694]profiling_end:wcommit_9
+[165848.407]profiling_end:graphic hardware
+[165848.481]profiling_start:weston
+[165849.156]profiling_end:weston
+[165849.346]profiling_start:graphic hardware
+[165850.572]profiling_start:client_9
+[165850.978]profiling_end:client_9
+[165851.033]profiling_start:MESA_9
+[165853.426]profiling_end:MESA_9
+[165853.479]profiling_start:wcommit_9
+[165853.685]profiling_end:wcommit_9
+[165865.069]profiling_end:graphic hardware
+[165865.142]profiling_start:weston
+[165865.896]profiling_end:weston
+[165865.973]profiling_start:graphic hardware
+[165867.152]profiling_start:client_9
+[165867.673]profiling_end:client_9
+[165867.727]profiling_start:MESA_9
+[165869.983]profiling_end:MESA_9
+[165870.024]profiling_start:wcommit_9
+[165870.217]profiling_end:wcommit_9
+[165881.705]profiling_end:graphic hardware
+[165881.762]profiling_start:weston
+[165882.414]profiling_end:weston
+[165882.488]profiling_start:graphic hardware
+[165883.676]profiling_start:client_9
+[165884.082]profiling_end:client_9
+[165884.136]profiling_start:MESA_9
+[165886.526]profiling_end:MESA_9
+[165886.579]profiling_start:wcommit_9
+[165886.783]profiling_end:wcommit_9
+[165898.393]profiling_end:graphic hardware
+[165898.466]profiling_start:weston
+[165899.141]profiling_end:weston
+[165899.331]profiling_start:graphic hardware
+[165900.566]profiling_start:client_9
+[165900.981]profiling_end:client_9
+[165901.037]profiling_start:MESA_9
+[165903.428]profiling_end:MESA_9
+[165903.480]profiling_start:wcommit_9
+[165903.683]profiling_end:wcommit_9
+[165915.051]profiling_end:graphic hardware
+[165915.124]profiling_start:weston
+[165915.962]profiling_end:weston
+[165916.041]profiling_start:graphic hardware
+[165917.337]profiling_start:client_9
+[165917.744]profiling_end:client_9
+[165917.800]profiling_start:MESA_9
+[165920.234]profiling_end:MESA_9
+[165920.298]profiling_start:wcommit_9
+[165920.505]profiling_end:wcommit_9
+[165931.712]profiling_end:graphic hardware
+[165931.786]profiling_start:weston
+[165932.561]profiling_end:weston
+[165932.638]profiling_start:graphic hardware
+[165933.739]profiling_start:client_9
+[165934.149]profiling_end:client_9
+[165934.311]profiling_start:MESA_9
+[165936.713]profiling_end:MESA_9
+[165936.768]profiling_start:wcommit_9
+[165936.972]profiling_end:wcommit_9
+[165948.379]profiling_end:graphic hardware
+[165948.452]profiling_start:weston
+[165949.124]profiling_end:weston
+[165949.309]profiling_start:graphic hardware
+[165950.550]profiling_start:client_9
+[165950.958]profiling_end:client_9
+[165951.014]profiling_start:MESA_9
+[165953.409]profiling_end:MESA_9
+[165953.461]profiling_start:wcommit_9
+[165953.665]profiling_end:wcommit_9
+[165965.031]profiling_end:graphic hardware
+[165965.104]profiling_start:weston
+[165965.939]profiling_end:weston
+[165966.017]profiling_start:graphic hardware
+[165967.304]profiling_start:client_9
+[165967.731]profiling_end:client_9
+[165967.787]profiling_start:MESA_9
+[165970.225]profiling_end:MESA_9
+[165970.289]profiling_start:wcommit_9
+[165970.496]profiling_end:wcommit_9
+[165981.693]profiling_end:graphic hardware
+[165981.766]profiling_start:weston
+[165982.542]profiling_end:weston
+[165982.621]profiling_start:graphic hardware
+[165983.639]profiling_start:client_9
+[165984.049]profiling_end:client_9
+[165984.104]profiling_start:MESA_9
+[165986.211]profiling_end:MESA_9
+[165986.279]profiling_start:wcommit_9
+[165986.477]profiling_end:wcommit_9
+[165998.327]profiling_end:graphic hardware
+[165998.399]profiling_start:weston
+[165999.046]profiling_end:weston
+[165999.115]profiling_start:graphic hardware
+[166000.464]profiling_start:client_9
+[166000.880]profiling_end:client_9
+[166000.934]profiling_start:MESA_9
+[166002.959]profiling_end:MESA_9
+[166003.011]profiling_start:wcommit_9
+[166003.251]profiling_end:wcommit_9
+[166015.501]profiling_end:graphic hardware
+[166015.606]profiling_start:weston
+[166016.392]profiling_end:weston
+[166016.467]profiling_start:graphic hardware
+[166017.697]profiling_start:client_9
+[166018.105]profiling_end:client_9
+[166018.160]profiling_start:MESA_9
+[166020.595]profiling_end:MESA_9
+[166020.649]profiling_start:wcommit_9
+[166020.854]profiling_end:wcommit_9
+[166031.926]profiling_end:graphic hardware
+[166032.024]profiling_start:weston
+[166032.804]profiling_end:weston
+[166032.878]profiling_start:graphic hardware
+[166033.873]profiling_start:client_9
+[166034.391]profiling_end:client_9
+[166034.447]profiling_start:MESA_9
+[166036.831]profiling_end:MESA_9
+[166036.884]profiling_start:wcommit_9
+[166037.087]profiling_end:wcommit_9
+[166048.541]profiling_end:graphic hardware
+[166048.612]profiling_start:weston
+[166049.098]profiling_end:weston
+[166049.146]profiling_start:graphic hardware
+[166050.442]profiling_start:client_9
+[166050.849]profiling_end:client_9
+[166050.905]profiling_start:MESA_9
+[166053.313]profiling_end:MESA_9
+[166053.367]profiling_start:wcommit_9
+[166053.570]profiling_end:wcommit_9
+[166065.547]profiling_end:graphic hardware
+[166065.644]profiling_start:weston
+[166066.375]profiling_end:weston
+[166066.446]profiling_start:graphic hardware
+[166067.681]profiling_start:client_9
+[166068.095]profiling_end:client_9
+[166068.149]profiling_start:MESA_9
+[166070.497]profiling_end:MESA_9
+[166070.531]profiling_start:wcommit_9
+[166070.667]profiling_end:wcommit_9
+[166081.888]profiling_end:graphic hardware
+[166081.958]profiling_start:weston
+[166082.652]profiling_end:weston
+[166082.725]profiling_start:graphic hardware
+[166083.850]profiling_start:client_9
+[166084.312]profiling_end:client_9
+[166084.370]profiling_start:MESA_9
+[166086.776]profiling_end:MESA_9
+[166086.829]profiling_start:wcommit_9
+[166087.033]profiling_end:wcommit_9
+[166098.569]profiling_end:graphic hardware
+[166098.668]profiling_start:weston
+[166099.454]profiling_end:weston
+[166099.529]profiling_start:graphic hardware
+[166100.721]profiling_start:client_9
+[166101.135]profiling_end:client_9
+[166101.234]profiling_start:MESA_9
+[166103.564]profiling_end:MESA_9
+[166103.617]profiling_start:wcommit_9
+[166103.820]profiling_end:wcommit_9
+[166115.535]profiling_end:graphic hardware
+[166115.632]profiling_start:weston
+[166116.362]profiling_end:weston
+[166116.436]profiling_start:graphic hardware
+[166117.667]profiling_start:client_9
+[166118.077]profiling_end:client_9
+[166118.234]profiling_start:MESA_9
+[166120.266]profiling_end:MESA_9
+[166120.340]profiling_start:wcommit_9
+[166120.471]profiling_end:wcommit_9
+[166131.605]profiling_end:graphic hardware
+[166131.678]profiling_start:weston
+[166132.587]profiling_end:weston
+[166132.675]profiling_start:graphic hardware
+[166133.801]profiling_start:client_9
+[166134.342]profiling_end:client_9
+[166134.399]profiling_start:MESA_9
+[166136.742]profiling_end:MESA_9
+[166136.853]profiling_start:wcommit_9
+[166137.061]profiling_end:wcommit_9
+[166148.561]profiling_end:graphic hardware
+[166148.659]profiling_start:weston
+[166149.451]profiling_end:weston
+[166149.524]profiling_start:graphic hardware
+[166150.674]profiling_start:client_9
+[166151.083]profiling_end:client_9
+[166151.139]profiling_start:MESA_9
+[166153.598]profiling_end:MESA_9
+[166153.652]profiling_start:wcommit_9
+[166153.859]profiling_end:wcommit_9
+[166165.279]profiling_end:graphic hardware
+[166165.376]profiling_start:weston
+[166166.062]profiling_end:weston
+[166166.132]profiling_start:graphic hardware
+[166167.070]profiling_start:client_9
+[166167.559]profiling_end:client_9
+[166167.614]profiling_start:MESA_9
+[166169.903]profiling_end:MESA_9
+[166169.943]profiling_start:wcommit_9
+[166170.105]profiling_end:wcommit_9
+[166181.862]profiling_end:graphic hardware
+[166181.943]profiling_start:weston
+[166182.686]profiling_end:weston
+[166182.760]profiling_start:graphic hardware
+[166183.867]profiling_start:client_9
+[166184.327]profiling_end:client_9
+[166184.383]profiling_start:MESA_9
+[166186.774]profiling_end:MESA_9
+[166186.827]profiling_start:wcommit_9
+[166187.032]profiling_end:wcommit_9
+[166198.535]profiling_end:graphic hardware
+[166198.633]profiling_start:weston
+[166199.425]profiling_end:weston
+[166199.498]profiling_start:graphic hardware
+[166200.707]profiling_start:client_9
+[166201.120]profiling_end:client_9
+[166201.215]profiling_start:MESA_9
+[166203.540]profiling_end:MESA_9
+[166203.593]profiling_start:wcommit_9
+[166203.796]profiling_end:wcommit_9
+[166215.502]profiling_end:graphic hardware
+[166215.600]profiling_start:weston
+[166216.330]profiling_end:weston
+[166216.403]profiling_start:graphic hardware
+[166217.377]profiling_start:client_9
+[166217.785]profiling_end:client_9
+[166217.840]profiling_start:MESA_9
+[166220.292]profiling_end:MESA_9
+[166220.359]profiling_start:wcommit_9
+[166220.497]profiling_end:wcommit_9
+[166231.809]profiling_end:graphic hardware
+[166231.879]profiling_start:weston
+[166232.537]profiling_end:weston
+[166232.611]profiling_start:graphic hardware
+[166233.759]profiling_start:client_9
+[166234.268]profiling_end:client_9
+[166234.338]profiling_start:MESA_9
+[166236.734]profiling_end:MESA_9
+[166236.787]profiling_start:wcommit_9
+[166236.991]profiling_end:wcommit_9
+[166248.552]profiling_end:graphic hardware
+[166248.649]profiling_start:weston
+[166249.438]profiling_end:weston
+[166249.513]profiling_start:graphic hardware
+[166250.708]profiling_start:client_9
+[166251.114]profiling_end:client_9
+[166251.170]profiling_start:MESA_9
+[166253.722]profiling_end:MESA_9
+[166253.774]profiling_start:wcommit_9
+[166253.979]profiling_end:wcommit_9
+[166265.054]profiling_end:graphic hardware
+[166265.152]profiling_start:weston
+[166265.899]profiling_end:weston
+[166265.973]profiling_start:graphic hardware
+[166267.154]profiling_start:client_9
+[166267.674]profiling_end:client_9
+[166267.729]profiling_start:MESA_9
+[166269.986]profiling_end:MESA_9
+[166270.026]profiling_start:wcommit_9
+[166270.219]profiling_end:wcommit_9
+[166281.572]profiling_end:graphic hardware
+[166281.628]profiling_start:weston
+[166282.265]profiling_end:weston
+[166282.341]profiling_start:graphic hardware
+[166283.572]profiling_start:client_9
+[166283.980]profiling_end:client_9
+[166284.035]profiling_start:MESA_9
+[166286.423]profiling_end:MESA_9
+[166286.475]profiling_start:wcommit_9
+[166286.679]profiling_end:wcommit_9
+[166298.259]profiling_end:graphic hardware
+[166298.334]profiling_start:weston
+[166299.009]profiling_end:weston
+[166299.081]profiling_start:graphic hardware
+[166300.430]profiling_start:client_9
+[166300.845]profiling_end:client_9
+[166300.898]profiling_start:MESA_9
+[166302.935]profiling_end:MESA_9
+[166302.988]profiling_start:wcommit_9
+[166303.219]profiling_end:wcommit_9
+[166314.883]profiling_end:graphic hardware
+[166314.959]profiling_start:weston
+[166315.701]profiling_end:weston
+[166315.777]profiling_start:graphic hardware
+[166316.911]profiling_start:client_9
+[166317.396]profiling_end:client_9
+[166317.431]profiling_start:MESA_9
+[166319.519]profiling_end:MESA_9
+[166319.561]profiling_start:wcommit_9
+[166319.725]profiling_end:wcommit_9
+[166331.525]profiling_end:graphic hardware
+[166331.588]profiling_start:weston
+[166332.139]profiling_end:weston
+[166342.401]profiling_start:graphic hardware
+[166342.922]profiling_start:client_9
+[166343.295]profiling_end:client_9
+[166343.331]profiling_start:MESA_9
+[166344.561]profiling_end:MESA_9
+[166344.595]profiling_start:wcommit_9
+[166344.845]profiling_end:wcommit_9
+[166348.288]profiling_end:graphic hardware
+[166348.367]profiling_start:weston
+[166348.742]profiling_end:weston
+[166348.781]profiling_start:graphic hardware
+[166349.393]profiling_start:client_9
+[166349.714]profiling_end:client_9
+[166349.756]profiling_start:MESA_9
+[166351.063]profiling_end:MESA_9
+[166351.089]profiling_start:wcommit_9
+[166351.214]profiling_end:wcommit_9
+[166364.796]profiling_end:graphic hardware
+[166364.831]profiling_start:weston
+[166365.248]profiling_end:weston
+[166365.290]profiling_start:graphic hardware
+[166366.104]profiling_start:client_9
+[166366.568]profiling_end:client_9
+[166366.622]profiling_start:MESA_9
+[166368.707]profiling_end:MESA_9
+[166368.759]profiling_start:wcommit_9
+[166368.955]profiling_end:wcommit_9
+[166381.555]profiling_end:graphic hardware
+[166381.628]profiling_start:weston
+[166382.379]profiling_end:weston
+[166382.452]profiling_start:graphic hardware
+[166383.632]profiling_start:client_9
+[166384.040]profiling_end:client_9
+[166384.095]profiling_start:MESA_9
+[166386.099]profiling_end:MESA_9
+[166386.151]profiling_start:wcommit_9
+[166386.399]profiling_end:wcommit_9
+[166398.243]profiling_end:graphic hardware
+[166398.316]profiling_start:weston
+[166398.962]profiling_end:weston
+[166399.030]profiling_start:graphic hardware
+[166400.443]profiling_start:client_9
+[166400.859]profiling_end:client_9
+[166400.914]profiling_start:MESA_9
+[166402.972]profiling_end:MESA_9
+[166403.025]profiling_start:wcommit_9
+[166403.259]profiling_end:wcommit_9
+[166414.878]profiling_end:graphic hardware
+[166414.951]profiling_start:weston
+[166415.688]profiling_end:weston
+[166415.763]profiling_start:graphic hardware
+[166416.890]profiling_start:client_9
+[166417.390]profiling_end:client_9
+[166417.446]profiling_start:MESA_9
+[166419.514]profiling_end:MESA_9
+[166419.555]profiling_start:wcommit_9
+[166419.711]profiling_end:wcommit_9
+[166431.518]profiling_end:graphic hardware
+[166431.575]profiling_start:weston
+[166432.095]profiling_end:weston
+[166432.151]profiling_start:graphic hardware
+[166433.461]profiling_start:client_9
+[166433.875]profiling_end:client_9
+[166433.931]profiling_start:MESA_9
+[166435.984]profiling_end:MESA_9
+[166436.035]profiling_start:wcommit_9
+[166436.269]profiling_end:wcommit_9
+[166448.241]profiling_end:graphic hardware
+[166448.328]profiling_start:weston
+[166449.009]profiling_end:weston
+[166449.081]profiling_start:graphic hardware
+[166450.431]profiling_start:client_9
+[166450.841]profiling_end:client_9
+[166450.895]profiling_start:MESA_9
+[166452.930]profiling_end:MESA_9
+[166452.983]profiling_start:wcommit_9
+[166453.216]profiling_end:wcommit_9
+[166464.836]profiling_end:graphic hardware
+[166464.910]profiling_start:weston
+[166465.712]profiling_end:weston
+[166465.788]profiling_start:graphic hardware
+[166466.606]profiling_start:client_9
+[166466.985]profiling_end:client_9
+[166467.039]profiling_start:MESA_9
+[166469.097]profiling_end:MESA_9
+[166469.149]profiling_start:wcommit_9
+[166469.417]profiling_end:wcommit_9
+[166481.517]profiling_end:graphic hardware
+[166481.592]profiling_start:weston
+[166482.290]profiling_end:weston
+[166482.367]profiling_start:graphic hardware
+[166483.586]profiling_start:client_9
+[166483.993]profiling_end:client_9
+[166484.049]profiling_start:MESA_9
+[166486.271]profiling_end:MESA_9
+[166486.325]profiling_start:wcommit_9
+[166486.520]profiling_end:wcommit_9
+[166498.232]profiling_end:graphic hardware
+[166498.305]profiling_start:weston
+[166498.946]profiling_end:weston
+[166499.015]profiling_start:graphic hardware
+[166500.001]profiling_start:client_9
+[166500.521]profiling_end:client_9
+[166500.577]profiling_start:MESA_9
+[166502.665]profiling_end:MESA_9
+[166502.717]profiling_start:wcommit_9
+[166502.910]profiling_end:wcommit_9
+[166514.819]profiling_end:graphic hardware
+[166514.893]profiling_start:weston
+[166515.637]profiling_end:weston
+[166515.713]profiling_start:graphic hardware
+[166516.864]profiling_start:client_9
+[166517.378]profiling_end:client_9
+[166517.434]profiling_start:MESA_9
+[166519.503]profiling_end:MESA_9
+[166519.544]profiling_start:wcommit_9
+[166519.699]profiling_end:wcommit_9
+[166531.487]profiling_end:graphic hardware
+[166531.544]profiling_start:weston
+[166532.063]profiling_end:weston
+[166532.119]profiling_start:graphic hardware
+[166533.429]profiling_start:client_9
+[166533.843]profiling_end:client_9
+[166533.898]profiling_start:MESA_9
+[166536.872]profiling_end:MESA_9
+[166536.926]profiling_start:wcommit_9
+[166537.126]profiling_end:wcommit_9
+[166548.120]profiling_end:graphic hardware
+[166548.168]profiling_start:weston
+[166549.086]profiling_end:weston
+[166549.157]profiling_start:graphic hardware
+[166550.451]profiling_start:client_9
+[166550.861]profiling_end:client_9
+[166550.916]profiling_start:MESA_9
+[166552.979]profiling_end:MESA_9
+[166553.032]profiling_start:wcommit_9
+[166553.263]profiling_end:wcommit_9
+[166564.803]profiling_end:graphic hardware
+[166564.876]profiling_start:weston
+[166565.626]profiling_end:weston
+[166565.701]profiling_start:graphic hardware
+[166566.840]profiling_start:client_9
+[166567.363]profiling_end:client_9
+[166567.419]profiling_start:MESA_9
+[166569.540]profiling_end:MESA_9
+[166569.582]profiling_start:wcommit_9
+[166569.737]profiling_end:wcommit_9
+[166581.465]profiling_end:graphic hardware
+[166581.523]profiling_start:weston
+[166582.049]profiling_end:weston
+[166582.105]profiling_start:graphic hardware
+[166583.410]profiling_start:client_9
+[166583.818]profiling_end:client_9
+[166583.873]profiling_start:MESA_9
+[166585.929]profiling_end:MESA_9
+[166585.982]profiling_start:wcommit_9
+[166586.214]profiling_end:wcommit_9
+[166598.142]profiling_end:graphic hardware
+[166598.466]profiling_start:weston
+[166599.110]profiling_end:weston
+[166599.234]profiling_start:graphic hardware
+[166600.475]profiling_start:client_9
+[166600.891]profiling_end:client_9
+[166600.946]profiling_start:MESA_9
+[166602.997]profiling_end:MESA_9
+[166603.049]profiling_start:wcommit_9
+[166603.281]profiling_end:wcommit_9
+[166614.814]profiling_end:graphic hardware
+[166614.886]profiling_start:weston
+[166615.629]profiling_end:weston
+[166615.706]profiling_start:graphic hardware
+[166616.651]profiling_start:client_9
+[166617.058]profiling_end:client_9
+[166617.114]profiling_start:MESA_9
+[166618.778]profiling_end:MESA_9
+[166618.819]profiling_start:wcommit_9
+[166618.975]profiling_end:wcommit_9
+[166631.454]profiling_end:graphic hardware
+[166631.511]profiling_start:weston
+[166632.031]profiling_end:weston
+[166632.086]profiling_start:graphic hardware
+[166633.076]profiling_start:client_9
+[166633.453]profiling_end:client_9
+[166633.508]profiling_start:MESA_9
+[166635.567]profiling_end:MESA_9
+[166635.620]profiling_start:wcommit_9
+[166635.816]profiling_end:wcommit_9
+[166648.124]profiling_end:graphic hardware
+[166648.280]profiling_start:weston
+[166648.926]profiling_end:weston
+[166648.995]profiling_start:graphic hardware
+[166649.928]profiling_start:client_9
+[166650.368]profiling_end:client_9
+[166650.422]profiling_start:MESA_9
+[166652.540]profiling_end:MESA_9
+[166652.595]profiling_start:wcommit_9
+[166652.790]profiling_end:wcommit_9
+[166664.802]profiling_end:graphic hardware
+[166664.875]profiling_start:weston
+[166665.620]profiling_end:weston
+[166665.694]profiling_start:graphic hardware
+[166666.819]profiling_start:client_9
+[166667.355]profiling_end:client_9
+[166667.411]profiling_start:MESA_9
+[166669.565]profiling_end:MESA_9
+[166669.606]profiling_start:wcommit_9
+[166669.759]profiling_end:wcommit_9
+[166681.434]profiling_end:graphic hardware
+[166681.491]profiling_start:weston
+[166682.018]profiling_end:weston
+[166682.073]profiling_start:graphic hardware
+[166683.389]profiling_start:client_9
+[166683.796]profiling_end:client_9
+[166683.851]profiling_start:MESA_9
+[166685.904]profiling_end:MESA_9
+[166685.957]profiling_start:wcommit_9
+[166686.151]profiling_end:wcommit_9
+[166698.093]profiling_end:graphic hardware
+[166698.166]profiling_start:weston
+[166699.006]profiling_end:weston
+[166699.075]profiling_start:graphic hardware
+[166700.003]profiling_start:client_9
+[166700.526]profiling_end:client_9
+[166700.581]profiling_start:MESA_9
+[166702.611]profiling_end:MESA_9
+[166702.663]profiling_start:wcommit_9
+[166702.858]profiling_end:wcommit_9
+[166714.782]profiling_end:graphic hardware
+[166714.857]profiling_start:weston
+[166715.548]profiling_end:weston
+[166715.623]profiling_start:graphic hardware
+[166716.789]profiling_start:client_9
+[166717.301]profiling_end:client_9
+[166717.369]profiling_start:MESA_9
+[166719.494]profiling_end:MESA_9
+[166719.546]profiling_start:wcommit_9
+[166719.741]profiling_end:wcommit_9
+[166731.520]profiling_end:graphic hardware
+[166731.593]profiling_start:weston
+[166732.336]profiling_end:weston
+[166732.411]profiling_start:graphic hardware
+[166733.555]profiling_start:client_9
+[166733.968]profiling_end:client_9
+[166734.024]profiling_start:MESA_9
+[166736.112]profiling_end:MESA_9
+[166736.165]profiling_start:wcommit_9
+[166736.415]profiling_end:wcommit_9
+[166748.105]profiling_end:graphic hardware
+[166748.287]profiling_start:weston
+[166748.962]profiling_end:weston
+[166749.035]profiling_start:graphic hardware
+[166750.308]profiling_start:client_9
+[166750.729]profiling_end:client_9
+[166750.784]profiling_start:MESA_9
+[166752.876]profiling_end:MESA_9
+[166752.929]profiling_start:wcommit_9
+[166753.125]profiling_end:wcommit_9
+[166764.783]profiling_end:graphic hardware
+[166764.856]profiling_start:weston
+[166765.592]profiling_end:weston
+[166765.666]profiling_start:graphic hardware
+[166766.808]profiling_start:client_9
+[166767.336]profiling_end:client_9
+[166767.392]profiling_start:MESA_9
+[166769.460]profiling_end:MESA_9
+[166769.501]profiling_start:wcommit_9
+[166769.655]profiling_end:wcommit_9
+[166781.384]profiling_end:graphic hardware
+[166781.441]profiling_start:weston
+[166781.950]profiling_end:weston
+[166782.007]profiling_start:graphic hardware
+[166783.285]profiling_start:client_9
+[166783.708]profiling_end:client_9
+[166783.763]profiling_start:MESA_9
+[166785.884]profiling_end:MESA_9
+[166785.937]profiling_start:wcommit_9
+[166786.133]profiling_end:wcommit_9
+[166798.078]profiling_end:graphic hardware
+[166798.152]profiling_start:weston
+[166798.870]profiling_end:weston
+[166798.942]profiling_start:graphic hardware
+[166800.100]profiling_start:client_9
+[166800.622]profiling_end:client_9
+[166800.677]profiling_start:MESA_9
+[166802.770]profiling_end:MESA_9
+[166802.824]profiling_start:wcommit_9
+[166803.020]profiling_end:wcommit_9
+[166814.780]profiling_end:graphic hardware
+[166814.852]profiling_start:weston
+[166815.590]profiling_end:weston
+[166815.666]profiling_start:graphic hardware
+[166816.803]profiling_start:client_9
+[166817.382]profiling_end:client_9
+[166817.440]profiling_start:MESA_9
+[166819.511]profiling_end:MESA_9
+[166819.552]profiling_start:wcommit_9
+[166819.706]profiling_end:wcommit_9
+[166831.571]profiling_end:graphic hardware
+[166831.628]profiling_start:weston
+[166832.137]profiling_end:weston
+[166832.284]profiling_start:graphic hardware
+[166833.519]profiling_start:client_9
+[166833.932]profiling_end:client_9
+[166833.988]profiling_start:MESA_9
+[166836.034]profiling_end:MESA_9
+[166836.086]profiling_start:wcommit_9
+[166836.331]profiling_end:wcommit_9
+[166848.064]profiling_end:graphic hardware
+[166848.136]profiling_start:weston
+[166848.855]profiling_end:weston
+[166848.926]profiling_start:graphic hardware
+[166850.083]profiling_start:client_9
+[166850.597]profiling_end:client_9
+[166850.652]profiling_start:MESA_9
+[166852.752]profiling_end:MESA_9
+[166852.804]profiling_start:wcommit_9
+[166853.000]profiling_end:wcommit_9
+[166864.751]profiling_end:graphic hardware
+[166864.839]profiling_start:weston
+[166865.610]profiling_end:weston
+[166865.688]profiling_start:graphic hardware
+[166866.840]profiling_start:client_9
+[166867.361]profiling_end:client_9
+[166867.418]profiling_start:MESA_9
+[166869.493]profiling_end:MESA_9
+[166869.534]profiling_start:wcommit_9
+[166869.689]profiling_end:wcommit_9
+[166881.396]profiling_end:graphic hardware
+[166881.453]profiling_start:weston
+[166881.966]profiling_end:weston
+[166882.021]profiling_start:graphic hardware
+[166883.272]profiling_start:client_9
+[166883.693]profiling_end:client_9
+[166883.747]profiling_start:MESA_9
+[166885.760]profiling_end:MESA_9
+[166885.871]profiling_start:wcommit_9
+[166886.071]profiling_end:wcommit_9
+[166898.050]profiling_end:graphic hardware
+[166898.124]profiling_start:weston
+[166898.839]profiling_end:weston
+[166898.911]profiling_start:graphic hardware
+[166900.065]profiling_start:client_9
+[166900.586]profiling_end:client_9
+[166900.642]profiling_start:MESA_9
+[166902.746]profiling_end:MESA_9
+[166902.799]profiling_start:wcommit_9
+[166902.993]profiling_end:wcommit_9
+[166914.737]profiling_end:graphic hardware
+[166914.809]profiling_start:weston
+[166915.551]profiling_end:weston
+[166915.627]profiling_start:graphic hardware
+[166916.795]profiling_start:client_9
+[166917.314]profiling_end:client_9
+[166917.372]profiling_start:MESA_9
+[166919.555]profiling_end:MESA_9
+[166919.597]profiling_start:wcommit_9
+[166919.750]profiling_end:wcommit_9
+[166931.392]profiling_end:graphic hardware
+[166931.449]profiling_start:weston
+[166931.960]profiling_end:weston
+[166932.016]profiling_start:graphic hardware
+[166933.268]profiling_start:client_9
+[166933.694]profiling_end:client_9
+[166933.749]profiling_start:MESA_9
+[166935.793]profiling_end:MESA_9
+[166935.846]profiling_start:wcommit_9
+[166936.040]profiling_end:wcommit_9
+[166948.049]profiling_end:graphic hardware
+[166948.122]profiling_start:weston
+[166948.848]profiling_end:weston
+[166948.921]profiling_start:graphic hardware
+[166950.078]profiling_start:client_9
+[166950.609]profiling_end:client_9
+[166950.664]profiling_start:MESA_9
+[166952.894]profiling_end:MESA_9
+[166952.947]profiling_start:wcommit_9
+[166953.140]profiling_end:wcommit_9
+[166964.719]profiling_end:graphic hardware
+[166964.793]profiling_start:weston
+[166965.525]profiling_end:weston
+[166965.599]profiling_start:graphic hardware
+[166966.769]profiling_start:client_9
+[166967.277]profiling_end:client_9
+[166967.348]profiling_start:MESA_9
+[166969.558]profiling_end:MESA_9
+[166969.599]profiling_start:wcommit_9
+[166969.752]profiling_end:wcommit_9
+[166981.388]profiling_end:graphic hardware
+[166981.445]profiling_start:weston
+[166981.957]profiling_end:weston
+[166982.013]profiling_start:graphic hardware
+[166983.172]profiling_start:client_9
+[166983.688]profiling_end:client_9
+[166983.742]profiling_start:MESA_9
+[166985.755]profiling_end:MESA_9
+[166985.807]profiling_start:wcommit_9
+[166986.001]profiling_end:wcommit_9
+[166998.008]profiling_end:graphic hardware
+[166998.081]profiling_start:weston
+[166998.793]profiling_end:weston
+[166998.865]profiling_start:graphic hardware
+[167000.086]profiling_start:client_9
+[167000.609]profiling_end:client_9
+[167000.665]profiling_start:MESA_9
+[167002.742]profiling_end:MESA_9
+[167002.795]profiling_start:wcommit_9
+[167002.988]profiling_end:wcommit_9
+[167014.702]profiling_end:graphic hardware
+[167014.776]profiling_start:weston
+[167015.519]profiling_end:weston
+[167015.594]profiling_start:graphic hardware
+[167016.757]profiling_start:client_9
+[167017.163]profiling_end:client_9
+[167017.329]profiling_start:MESA_9
+[167019.544]profiling_end:MESA_9
+[167019.586]profiling_start:wcommit_9
+[167019.740]profiling_end:wcommit_9
+[167031.535]profiling_end:graphic hardware
+[167031.592]profiling_start:weston
+[167032.153]profiling_end:weston
+[167032.337]profiling_start:graphic hardware
+[167033.510]profiling_start:client_9
+[167033.923]profiling_end:client_9
+[167033.978]profiling_start:MESA_9
+[167036.022]profiling_end:MESA_9
+[167036.074]profiling_start:wcommit_9
+[167036.324]profiling_end:wcommit_9
+[167047.996]profiling_end:graphic hardware
+[167048.069]profiling_start:weston
+[167048.795]profiling_end:weston
+[167048.868]profiling_start:graphic hardware
+[167050.005]profiling_start:client_9
+[167050.522]profiling_end:client_9
+[167050.578]profiling_start:MESA_9
+[167052.657]profiling_end:MESA_9
+[167052.709]profiling_start:wcommit_9
+[167052.904]profiling_end:wcommit_9
+[167064.685]profiling_end:graphic hardware
+[167064.759]profiling_start:weston
+[167065.496]profiling_end:weston
+[167065.570]profiling_start:graphic hardware
+[167066.743]profiling_start:client_9
+[167067.156]profiling_end:client_9
+[167067.319]profiling_start:MESA_9
+[167069.537]profiling_end:MESA_9
+[167069.579]profiling_start:wcommit_9
+[167069.732]profiling_end:wcommit_9
+[167081.372]profiling_end:graphic hardware
+[167081.429]profiling_start:weston
+[167081.942]profiling_end:weston
+[167081.997]profiling_start:graphic hardware
+[167083.155]profiling_start:client_9
+[167083.666]profiling_end:client_9
+[167083.722]profiling_start:MESA_9
+[167085.769]profiling_end:MESA_9
+[167085.822]profiling_start:wcommit_9
+[167086.018]profiling_end:wcommit_9
+[167098.010]profiling_end:graphic hardware
+[167098.083]profiling_start:weston
+[167098.801]profiling_end:weston
+[167098.875]profiling_start:graphic hardware
+[167100.106]profiling_start:client_9
+[167100.628]profiling_end:client_9
+[167100.683]profiling_start:MESA_9
+[167102.813]profiling_end:MESA_9
+[167102.866]profiling_start:wcommit_9
+[167103.062]profiling_end:wcommit_9
+[167114.631]profiling_end:graphic hardware
+[167114.718]profiling_start:weston
+[167115.491]profiling_end:weston
+[167115.566]profiling_start:graphic hardware
+[167116.703]profiling_start:client_9
+[167117.110]profiling_end:client_9
+[167117.165]profiling_start:MESA_9
+[167119.448]profiling_end:MESA_9
+[167119.489]profiling_start:wcommit_9
+[167119.645]profiling_end:wcommit_9
+[167131.362]profiling_end:graphic hardware
+[167131.436]profiling_start:weston
+[167132.067]profiling_end:weston
+[167132.137]profiling_start:graphic hardware
+[167133.530]profiling_start:client_9
+[167133.946]profiling_end:client_9
+[167134.001]profiling_start:MESA_9
+[167136.046]profiling_end:MESA_9
+[167136.099]profiling_start:wcommit_9
+[167136.344]profiling_end:wcommit_9
+[167147.958]profiling_end:graphic hardware
+[167148.030]profiling_start:weston
+[167148.765]profiling_end:weston
+[167148.838]profiling_start:graphic hardware
+[167149.931]profiling_start:client_9
+[167150.447]profiling_end:client_9
+[167150.502]profiling_start:MESA_9
+[167152.582]profiling_end:MESA_9
+[167152.635]profiling_start:wcommit_9
+[167152.832]profiling_end:wcommit_9
+[167164.651]profiling_end:graphic hardware
+[167164.724]profiling_start:weston
+[167165.462]profiling_end:weston
+[167165.535]profiling_start:graphic hardware
+[167166.706]profiling_start:client_9
+[167167.120]profiling_end:client_9
+[167167.270]profiling_start:MESA_9
+[167168.947]profiling_end:MESA_9
+[167168.999]profiling_start:wcommit_9
+[167169.230]profiling_end:wcommit_9
+[167181.321]profiling_end:graphic hardware
+[167181.394]profiling_start:weston
+[167182.034]profiling_end:weston
+[167182.105]profiling_start:graphic hardware
+[167183.073]profiling_start:client_9
+[167183.420]profiling_end:client_9
+[167183.475]profiling_start:MESA_9
+[167185.555]profiling_end:MESA_9
+[167185.608]profiling_start:wcommit_9
+[167185.804]profiling_end:wcommit_9
+[167197.973]profiling_end:graphic hardware
+[167198.046]profiling_start:weston
+[167198.764]profiling_end:weston
+[167198.836]profiling_start:graphic hardware
+[167199.964]profiling_start:client_9
+[167200.476]profiling_end:client_9
+[167200.532]profiling_start:MESA_9
+[167202.581]profiling_end:MESA_9
+[167202.634]profiling_start:wcommit_9
+[167202.827]profiling_end:wcommit_9
+[167214.635]profiling_end:graphic hardware
+[167214.708]profiling_start:weston
+[167215.522]profiling_end:weston
+[167215.599]profiling_start:graphic hardware
+[167216.768]profiling_start:client_9
+[167217.269]profiling_end:client_9
+[167217.339]profiling_start:MESA_9
+[167219.537]profiling_end:MESA_9
+[167219.579]profiling_start:wcommit_9
+[167219.733]profiling_end:wcommit_9
+[167231.266]profiling_end:graphic hardware
+[167231.323]profiling_start:weston
+[167231.836]profiling_end:weston
+[167231.890]profiling_start:graphic hardware
+[167232.920]profiling_start:client_9
+[167233.431]profiling_end:client_9
+[167233.543]profiling_start:MESA_9
+[167235.649]profiling_end:MESA_9
+[167235.702]profiling_start:wcommit_9
+[167235.896]profiling_end:wcommit_9
+[167247.957]profiling_end:graphic hardware
+[167248.029]profiling_start:weston
+[167248.753]profiling_end:weston
+[167248.826]profiling_start:graphic hardware
+[167249.967]profiling_start:client_9
+[167250.473]profiling_end:client_9
+[167250.527]profiling_start:MESA_9
+[167252.576]profiling_end:MESA_9
+[167252.628]profiling_start:wcommit_9
+[167252.823]profiling_end:wcommit_9
+[167264.620]profiling_end:graphic hardware
+[167264.692]profiling_start:weston
+[167265.421]profiling_end:weston
+[167265.495]profiling_start:graphic hardware
+[167266.692]profiling_start:client_9
+[167267.105]profiling_end:client_9
+[167267.161]profiling_start:MESA_9
+[167268.877]profiling_end:MESA_9
+[167268.929]profiling_start:wcommit_9
+[167269.124]profiling_end:wcommit_9
+[167281.280]profiling_end:graphic hardware
+[167281.355]profiling_start:weston
+[167281.996]profiling_end:weston
+[167282.067]profiling_start:graphic hardware
+[167283.034]profiling_start:client_9
+[167283.281]profiling_end:client_9
+[167283.337]profiling_start:MESA_9
+[167285.493]profiling_end:MESA_9
+[167285.544]profiling_start:wcommit_9
+[167285.740]profiling_end:wcommit_9
+[167297.941]profiling_end:graphic hardware
+[167298.014]profiling_start:weston
+[167298.741]profiling_end:weston
+[167298.815]profiling_start:graphic hardware
+[167299.966]profiling_start:client_9
+[167300.481]profiling_end:client_9
+[167300.536]profiling_start:MESA_9
+[167302.558]profiling_end:MESA_9
+[167302.610]profiling_start:wcommit_9
+[167302.807]profiling_end:wcommit_9
+[167314.720]profiling_end:graphic hardware
+[167314.794]profiling_start:weston
+[167315.484]profiling_end:weston
+[167315.566]profiling_start:graphic hardware
+[167316.731]profiling_start:client_9
+[167317.135]profiling_end:client_9
+[167317.296]profiling_start:MESA_9
+[167319.356]profiling_end:MESA_9
+[167319.398]profiling_start:wcommit_9
+[167319.553]profiling_end:wcommit_9
+[167331.243]profiling_end:graphic hardware
+[167331.300]profiling_start:weston
+[167331.814]profiling_end:weston
+[167331.869]profiling_start:graphic hardware
+[167332.810]profiling_start:client_9
+[167333.144]profiling_end:client_9
+[167333.285]profiling_start:MESA_9
+[167335.164]profiling_end:MESA_9
+[167335.317]profiling_start:wcommit_9
+[167335.515]profiling_end:wcommit_9
+[167347.923]profiling_end:graphic hardware
+[167347.996]profiling_start:weston
+[167348.733]profiling_end:weston
+[167348.810]profiling_start:graphic hardware
+[167349.957]profiling_start:client_9
+[167350.479]profiling_end:client_9
+[167350.534]profiling_start:MESA_9
+[167352.598]profiling_end:MESA_9
+[167352.652]profiling_start:wcommit_9
+[167352.846]profiling_end:wcommit_9
+[167364.589]profiling_end:graphic hardware
+[167364.663]profiling_start:weston
+[167365.393]profiling_end:weston
+[167365.468]profiling_start:graphic hardware
+[167366.661]profiling_start:client_9
+[167367.077]profiling_end:client_9
+[167367.132]profiling_start:MESA_9
+[167368.059]profiling_end:MESA_9
+[167368.078]profiling_start:wcommit_9
+[167368.159]profiling_end:wcommit_9
+[167381.261]profiling_end:graphic hardware
+[167381.351]profiling_start:weston
+[167382.020]profiling_end:weston
+[167382.094]profiling_start:graphic hardware
+[167383.062]profiling_start:client_9
+[167383.404]profiling_end:client_9
+[167383.460]profiling_start:MESA_9
+[167385.542]profiling_end:MESA_9
+[167385.596]profiling_start:wcommit_9
+[167385.790]profiling_end:wcommit_9
+[167397.912]profiling_end:graphic hardware
+[167397.985]profiling_start:weston
+[167398.711]profiling_end:weston
+[167398.785]profiling_start:graphic hardware
+[167399.958]profiling_start:client_9
+[167400.468]profiling_end:client_9
+[167400.523]profiling_start:MESA_9
+[167402.580]profiling_end:MESA_9
+[167402.633]profiling_start:wcommit_9
+[167402.827]profiling_end:wcommit_9
+[167414.568]profiling_end:graphic hardware
+[167414.641]profiling_start:weston
+[167415.328]profiling_end:weston
+[167415.401]profiling_start:graphic hardware
+[167416.608]profiling_start:client_9
+[167417.015]profiling_end:client_9
+[167417.070]profiling_start:MESA_9
+[167418.972]profiling_end:MESA_9
+[167419.023]profiling_start:wcommit_9
+[167419.256]profiling_end:wcommit_9
+[167431.265]profiling_end:graphic hardware
+[167431.340]profiling_start:weston
+[167431.986]profiling_end:weston
+[167432.054]profiling_start:graphic hardware
+[167432.698]profiling_start:client_9
+[167432.881]profiling_end:client_9
+[167432.900]profiling_start:MESA_9
+[167434.504]profiling_end:MESA_9
+[167434.557]profiling_start:wcommit_9
+[167434.752]profiling_end:wcommit_9
+[167447.897]profiling_end:graphic hardware
+[167447.969]profiling_start:weston
+[167448.697]profiling_end:weston
+[167448.771]profiling_start:graphic hardware
+[167449.947]profiling_start:client_9
+[167450.460]profiling_end:client_9
+[167450.515]profiling_start:MESA_9
+[167452.571]profiling_end:MESA_9
+[167452.624]profiling_start:wcommit_9
+[167452.820]profiling_end:wcommit_9
+[167464.557]profiling_end:graphic hardware
+[167464.630]profiling_start:weston
+[167465.361]profiling_end:weston
+[167465.438]profiling_start:graphic hardware
+[167466.631]profiling_start:client_9
+[167467.045]profiling_end:client_9
+[167467.100]profiling_start:MESA_9
+[167468.916]profiling_end:MESA_9
+[167468.969]profiling_start:wcommit_9
+[167469.165]profiling_end:wcommit_9
+[167481.274]profiling_end:graphic hardware
+[167481.346]profiling_start:weston
+[167481.990]profiling_end:weston
+[167482.058]profiling_start:graphic hardware
+[167483.042]profiling_start:client_9
+[167483.374]profiling_end:client_9
+[167483.429]profiling_start:MESA_9
+[167485.508]profiling_end:MESA_9
+[167485.561]profiling_start:wcommit_9
+[167485.756]profiling_end:wcommit_9
+[167497.877]profiling_end:graphic hardware
+[167497.949]profiling_start:weston
+[167498.676]profiling_end:weston
+[167498.750]profiling_start:graphic hardware
+[167499.941]profiling_start:client_9
+[167500.458]profiling_end:client_9
+[167500.513]profiling_start:MESA_9
+[167502.565]profiling_end:MESA_9
+[167502.617]profiling_start:wcommit_9
+[167502.809]profiling_end:wcommit_9
+[167514.538]profiling_end:graphic hardware
+[167514.611]profiling_start:weston
+[167515.345]profiling_end:weston
+[167515.421]profiling_start:graphic hardware
+[167516.693]profiling_start:client_9
+[167517.101]profiling_end:client_9
+[167517.158]profiling_start:MESA_9
+[167518.916]profiling_end:MESA_9
+[167518.968]profiling_start:wcommit_9
+[167519.162]profiling_end:wcommit_9
+[167531.268]profiling_end:graphic hardware
+[167531.341]profiling_start:weston
+[167531.981]profiling_end:weston
+[167532.050]profiling_start:graphic hardware
+[167533.034]profiling_start:client_9
+[167533.363]profiling_end:client_9
+[167533.417]profiling_start:MESA_9
+[167535.679]profiling_end:MESA_9
+[167535.732]profiling_start:wcommit_9
+[167535.926]profiling_end:wcommit_9
+[167547.863]profiling_end:graphic hardware
+[167547.936]profiling_start:weston
+[167548.688]profiling_end:weston
+[167548.763]profiling_start:graphic hardware
+[167549.939]profiling_start:client_9
+[167550.450]profiling_end:client_9
+[167550.505]profiling_start:MESA_9
+[167552.527]profiling_end:MESA_9
+[167552.581]profiling_start:wcommit_9
+[167552.776]profiling_end:wcommit_9
+[167564.487]profiling_end:graphic hardware
+[167564.560]profiling_start:weston
+[167565.291]profiling_end:weston
+[167565.373]profiling_start:graphic hardware
+[167566.599]profiling_start:client_9
+[167567.013]profiling_end:client_9
+[167567.069]profiling_start:MESA_9
+[167568.762]profiling_end:MESA_9
+[167568.815]profiling_start:wcommit_9
+[167569.011]profiling_end:wcommit_9
+[167581.252]profiling_end:graphic hardware
+[167581.325]profiling_start:weston
+[167581.961]profiling_end:weston
+[167582.030]profiling_start:graphic hardware
+[167582.972]profiling_start:client_9
+[167583.152]profiling_end:client_9
+[167583.171]profiling_start:MESA_9
+[167585.211]profiling_end:MESA_9
+[167585.278]profiling_start:wcommit_9
+[167585.477]profiling_end:wcommit_9
+[167597.843]profiling_end:graphic hardware
+[167597.915]profiling_start:weston
+[167598.648]profiling_end:weston
+[167598.722]profiling_start:graphic hardware
+[167599.876]profiling_start:client_9
+[167600.399]profiling_end:client_9
+[167600.453]profiling_start:MESA_9
+[167602.525]profiling_end:MESA_9
+[167602.578]profiling_start:wcommit_9
+[167602.772]profiling_end:wcommit_9
+[167614.502]profiling_end:graphic hardware
+[167614.578]profiling_start:weston
+[167615.317]profiling_end:weston
+[167615.391]profiling_start:graphic hardware
+[167616.690]profiling_start:client_9
+[167617.098]profiling_end:client_9
+[167617.154]profiling_start:MESA_9
+[167618.947]profiling_end:MESA_9
+[167619.001]profiling_start:wcommit_9
+[167619.235]profiling_end:wcommit_9
+[167631.160]profiling_end:graphic hardware
+[167631.306]profiling_start:weston
+[167631.945]profiling_end:weston
+[167632.014]profiling_start:graphic hardware
+[167632.932]profiling_start:client_9
+[167633.115]profiling_end:client_9
+[167633.134]profiling_start:MESA_9
+[167635.136]profiling_end:MESA_9
+[167635.230]profiling_start:wcommit_9
+[167635.499]profiling_end:wcommit_9
+[167647.829]profiling_end:graphic hardware
+[167647.902]profiling_start:weston
+[167648.639]profiling_end:weston
+[167648.714]profiling_start:graphic hardware
+[167649.874]profiling_start:client_9
+[167650.391]profiling_end:client_9
+[167650.447]profiling_start:MESA_9
+[167652.566]profiling_end:MESA_9
+[167652.619]profiling_start:wcommit_9
+[167652.813]profiling_end:wcommit_9
+[167664.491]profiling_end:graphic hardware
+[167664.565]profiling_start:weston
+[167665.296]profiling_end:weston
+[167665.372]profiling_start:graphic hardware
+[167666.594]profiling_start:client_9
+[167667.009]profiling_end:client_9
+[167667.065]profiling_start:MESA_9
+[167668.872]profiling_end:MESA_9
+[167668.925]profiling_start:wcommit_9
+[167669.121]profiling_end:wcommit_9
+[167681.152]profiling_end:graphic hardware
+[167681.300]profiling_start:weston
+[167681.942]profiling_end:weston
+[167682.012]profiling_start:graphic hardware
+[167682.928]profiling_start:client_9
+[167683.109]profiling_end:client_9
+[167683.128]profiling_start:MESA_9
+[167685.076]profiling_end:MESA_9
+[167685.128]profiling_start:wcommit_9
+[167685.373]profiling_end:wcommit_9
+[167697.816]profiling_end:graphic hardware
+[167697.888]profiling_start:weston
+[167698.619]profiling_end:weston
+[167698.692]profiling_start:graphic hardware
+[167699.829]profiling_start:client_9
+[167700.352]profiling_end:client_9
+[167700.409]profiling_start:MESA_9
+[167702.572]profiling_end:MESA_9
+[167702.624]profiling_start:wcommit_9
+[167702.817]profiling_end:wcommit_9
+[167714.474]profiling_end:graphic hardware
+[167714.547]profiling_start:weston
+[167715.281]profiling_end:weston
+[167715.366]profiling_start:graphic hardware
+[167716.580]profiling_start:client_9
+[167716.991]profiling_end:client_9
+[167717.045]profiling_start:MESA_9
+[167718.859]profiling_end:MESA_9
+[167718.913]profiling_start:wcommit_9
+[167719.107]profiling_end:wcommit_9
+[167731.152]profiling_end:graphic hardware
+[167731.297]profiling_start:weston
+[167731.930]profiling_end:weston
+[167731.999]profiling_start:graphic hardware

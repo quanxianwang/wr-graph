@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <profile>
+		<file>PR3/touch/stderr.log</file>
+    </profile>
+    <fps_item>	
+        <fps>touch hardware up</fps>
+        <fps>shell touch up</fps>
+        <fps>weston</fps>
+        <fps>graphic hardware</fps>
+    </fps_item>
+    <frame_item>	
+        <frame>touch hardware up</frame>
+        <frame>shell touch up</frame>
+        <frame>weston</frame>
+    </frame_item>
+</config>

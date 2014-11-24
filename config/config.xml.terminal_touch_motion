@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <profile>
+		<file>PR3/touch/stderr.log</file>
+    </profile>
+    <fps_item>	
+        <fps>touch hardware motion</fps>
+        <fps>shell touch motion</fps>
+        <fps>weston</fps>
+        <fps>graphic hardware</fps>
+    </fps_item>
+    <frame_item>	
+        <frame>touch hardware motion</frame>
+        <frame>shell touch motion</frame>
+        <frame>weston</frame>
+    </frame_item>
+    <smooth_item>	
+        <smooth>touch hardware motion</smooth>
+        <smooth>shell touch motion</smooth>
+        <smooth>weston</smooth>
+    </smooth_item>
+</config>

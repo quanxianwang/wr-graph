@@ -1,0 +1,3440 @@
+[2709654.348]profiling_start:touch hardware down
+[2709654.797]profiling_end:touch hardware down
+[2709654.849]profiling_start:touch down
+[2709656.555]profiling_end:touch down
+[2709656.612]profiling_start:client touch down
+[2709656.663]profiling_end:client touch down
+[2709656.708]profiling_start:shell process
+[2709657.207]profiling_end:shell process
+[2709659.776]profiling_end:graphic hardware
+[2709659.853]profiling_start:weston
+[2709660.790]profiling_end:weston
+[2709660.874]profiling_start:graphic hardware
+[2709676.813]profiling_end:graphic hardware
+[2709676.983]profiling_start:touch hardware motion
+[2709677.039]profiling_end:touch hardware motion
+[2709677.089]profiling_start:shell touch motion
+[2709677.150]profiling_end:shell touch motion
+[2709693.108]profiling_end:graphic hardware
+[2709693.185]profiling_start:weston
+[2709694.193]profiling_end:weston
+[2709694.327]profiling_start:graphic hardware
+[2709694.403]profiling_start:touch hardware motion
+[2709694.453]profiling_end:touch hardware motion
+[2709694.500]profiling_start:shell touch motion
+[2709694.547]profiling_end:shell touch motion
+[2709694.595]profiling_start:touch hardware motion
+[2709694.641]profiling_end:touch hardware motion
+[2709694.686]profiling_start:shell touch motion
+[2709694.731]profiling_end:shell touch motion
+[2709694.778]profiling_start:touch hardware motion
+[2709694.824]profiling_end:touch hardware motion
+[2709694.867]profiling_start:shell touch motion
+[2709694.912]profiling_end:shell touch motion
+[2709709.864]profiling_end:graphic hardware
+[2709709.941]profiling_start:weston
+[2709710.958]profiling_end:weston
+[2709711.033]profiling_start:graphic hardware
+[2709711.107]profiling_start:touch hardware motion
+[2709711.158]profiling_end:touch hardware motion
+[2709711.207]profiling_start:shell touch motion
+[2709711.319]profiling_end:shell touch motion
+[2709711.437]profiling_start:touch hardware motion
+[2709711.489]profiling_end:touch hardware motion
+[2709711.534]profiling_start:shell touch motion
+[2709711.581]profiling_end:shell touch motion
+[2709711.628]profiling_start:touch hardware motion
+[2709711.675]profiling_end:touch hardware motion
+[2709711.720]profiling_start:shell touch motion
+[2709711.764]profiling_end:shell touch motion
+[2709726.456]profiling_end:graphic hardware
+[2709726.531]profiling_start:weston
+[2709727.567]profiling_end:weston
+[2709727.653]profiling_start:graphic hardware
+[2709727.818]profiling_start:touch hardware motion
+[2709727.871]profiling_end:touch hardware motion
+[2709727.918]profiling_start:shell touch motion
+[2709727.966]profiling_end:shell touch motion
+[2709728.013]profiling_start:touch hardware motion
+[2709728.060]profiling_end:touch hardware motion
+[2709728.105]profiling_start:shell touch motion
+[2709728.150]profiling_end:shell touch motion
+[2709728.198]profiling_start:touch hardware motion
+[2709728.306]profiling_end:touch hardware motion
+[2709728.355]profiling_start:shell touch motion
+[2709728.401]profiling_end:shell touch motion
+[2709728.449]profiling_start:touch hardware motion
+[2709728.495]profiling_end:touch hardware motion
+[2709728.539]profiling_start:shell touch motion
+[2709728.583]profiling_end:shell touch motion
+[2709743.143]profiling_end:graphic hardware
+[2709743.330]profiling_start:weston
+[2709744.348]profiling_end:weston
+[2709744.436]profiling_start:graphic hardware
+[2709744.511]profiling_start:touch hardware motion
+[2709744.562]profiling_end:touch hardware motion
+[2709744.610]profiling_start:shell touch motion
+[2709744.659]profiling_end:shell touch motion
+[2709744.706]profiling_start:touch hardware motion
+[2709744.753]profiling_end:touch hardware motion
+[2709744.798]profiling_start:shell touch motion
+[2709744.843]profiling_end:shell touch motion
+[2709744.889]profiling_start:touch hardware motion
+[2709744.935]profiling_end:touch hardware motion
+[2709744.980]profiling_start:shell touch motion
+[2709745.025]profiling_end:shell touch motion
+[2709759.859]profiling_end:graphic hardware
+[2709759.935]profiling_start:weston
+[2709760.966]profiling_end:weston
+[2709761.042]profiling_start:graphic hardware
+[2709761.115]profiling_start:touch hardware motion
+[2709761.165]profiling_end:touch hardware motion
+[2709761.213]profiling_start:shell touch motion
+[2709761.323]profiling_end:shell touch motion
+[2709761.374]profiling_start:touch hardware motion
+[2709761.422]profiling_end:touch hardware motion
+[2709761.466]profiling_start:shell touch motion
+[2709761.512]profiling_end:shell touch motion
+[2709761.558]profiling_start:touch hardware motion
+[2709761.604]profiling_end:touch hardware motion
+[2709761.649]profiling_start:shell touch motion
+[2709761.693]profiling_end:shell touch motion
+[2709776.451]profiling_end:graphic hardware
+[2709776.527]profiling_start:weston
+[2709777.630]profiling_end:weston
+[2709777.718]profiling_start:graphic hardware
+[2709777.794]profiling_start:touch hardware motion
+[2709777.845]profiling_end:touch hardware motion
+[2709777.892]profiling_start:shell touch motion
+[2709777.938]profiling_end:shell touch motion
+[2709777.985]profiling_start:touch hardware motion
+[2709778.030]profiling_end:touch hardware motion
+[2709778.075]profiling_start:shell touch motion
+[2709778.120]profiling_end:shell touch motion
+[2709778.167]profiling_start:touch hardware motion
+[2709778.213]profiling_end:touch hardware motion
+[2709778.322]profiling_start:shell touch motion
+[2709778.372]profiling_end:shell touch motion
+[2709778.420]profiling_start:touch hardware motion
+[2709778.466]profiling_end:touch hardware motion
+[2709778.510]profiling_start:shell touch motion
+[2709778.555]profiling_end:shell touch motion
+[2709793.146]profiling_end:graphic hardware
+[2709793.329]profiling_start:weston
+[2709794.330]profiling_end:weston
+[2709794.417]profiling_start:graphic hardware
+[2709794.493]profiling_start:touch hardware motion
+[2709794.544]profiling_end:touch hardware motion
+[2709794.592]profiling_start:shell touch motion
+[2709794.639]profiling_end:shell touch motion
+[2709794.686]profiling_start:touch hardware motion
+[2709794.732]profiling_end:touch hardware motion
+[2709794.777]profiling_start:shell touch motion
+[2709794.822]profiling_end:shell touch motion
+[2709794.869]profiling_start:touch hardware motion
+[2709794.915]profiling_end:touch hardware motion
+[2709795.016]profiling_start:shell touch motion
+[2709795.066]profiling_end:shell touch motion
+[2709810.125]profiling_end:graphic hardware
+[2709810.305]profiling_start:weston
+[2709811.320]profiling_end:weston
+[2709811.404]profiling_start:graphic hardware
+[2709811.480]profiling_start:touch hardware motion
+[2709811.531]profiling_end:touch hardware motion
+[2709811.579]profiling_start:shell touch motion
+[2709811.626]profiling_end:shell touch motion
+[2709811.675]profiling_start:touch hardware motion
+[2709811.824]profiling_end:touch hardware motion
+[2709811.872]profiling_start:shell touch motion
+[2709811.918]profiling_end:shell touch motion
+[2709811.966]profiling_start:touch hardware motion
+[2709812.012]profiling_end:touch hardware motion
+[2709812.057]profiling_start:shell touch motion
+[2709812.103]profiling_end:shell touch motion
+[2709812.158]profiling_start:touch hardware motion
+[2709812.205]profiling_end:touch hardware motion
+[2709812.368]profiling_start:shell touch motion
+[2709812.418]profiling_end:shell touch motion
+[2709826.428]profiling_end:graphic hardware
+[2709826.455]profiling_start:weston
+[2709826.869]profiling_end:weston
+[2709826.904]profiling_start:graphic hardware
+[2709826.931]profiling_start:touch hardware motion
+[2709826.948]profiling_end:touch hardware motion
+[2709826.964]profiling_start:shell touch motion
+[2709826.980]profiling_end:shell touch motion
+[2709826.996]profiling_start:touch hardware motion
+[2709827.011]profiling_end:touch hardware motion
+[2709827.026]profiling_start:shell touch motion
+[2709827.041]profiling_end:shell touch motion
+[2709827.057]profiling_start:touch hardware motion
+[2709827.072]profiling_end:touch hardware motion
+[2709827.087]profiling_start:shell touch motion
+[2709827.102]profiling_end:shell touch motion
+[2709843.099]profiling_end:graphic hardware
+[2709843.129]profiling_start:weston
+[2709843.979]profiling_end:weston
+[2709844.055]profiling_start:graphic hardware
+[2709844.130]profiling_start:touch hardware motion
+[2709844.180]profiling_end:touch hardware motion
+[2709844.275]profiling_start:shell touch motion
+[2709844.338]profiling_end:shell touch motion
+[2709844.388]profiling_start:touch hardware motion
+[2709844.437]profiling_end:touch hardware motion
+[2709844.481]profiling_start:shell touch motion
+[2709844.526]profiling_end:shell touch motion
+[2709844.573]profiling_start:touch hardware motion
+[2709844.619]profiling_end:touch hardware motion
+[2709844.663]profiling_start:shell touch motion
+[2709844.709]profiling_end:shell touch motion
+[2709859.855]profiling_end:graphic hardware
+[2709859.930]profiling_start:weston
+[2709861.051]profiling_end:weston
+[2709861.138]profiling_start:graphic hardware
+[2709861.216]profiling_start:touch hardware motion
+[2709861.327]profiling_end:touch hardware motion
+[2709861.376]profiling_start:shell touch motion
+[2709861.424]profiling_end:shell touch motion
+[2709861.472]profiling_start:touch hardware motion
+[2709861.518]profiling_end:touch hardware motion
+[2709861.563]profiling_start:shell touch motion
+[2709861.607]profiling_end:shell touch motion
+[2709861.654]profiling_start:touch hardware motion
+[2709861.700]profiling_end:touch hardware motion
+[2709861.745]profiling_start:shell touch motion
+[2709861.789]profiling_end:shell touch motion
+[2709861.836]profiling_start:touch hardware motion
+[2709861.882]profiling_end:touch hardware motion
+[2709861.927]profiling_start:shell touch motion
+[2709861.972]profiling_end:shell touch motion
+[2709876.451]profiling_end:graphic hardware
+[2709876.525]profiling_start:weston
+[2709877.572]profiling_end:weston
+[2709877.657]profiling_start:graphic hardware
+[2709877.731]profiling_start:touch hardware motion
+[2709877.781]profiling_end:touch hardware motion
+[2709877.829]profiling_start:shell touch motion
+[2709877.876]profiling_end:shell touch motion
+[2709877.923]profiling_start:touch hardware motion
+[2709877.969]profiling_end:touch hardware motion
+[2709878.014]profiling_start:shell touch motion
+[2709878.060]profiling_end:shell touch motion
+[2709878.107]profiling_start:touch hardware motion
+[2709878.153]profiling_end:touch hardware motion
+[2709878.197]profiling_start:shell touch motion
+[2709878.287]profiling_end:shell touch motion
+[2709893.177]profiling_end:graphic hardware
+[2709893.332]profiling_start:weston
+[2709894.312]profiling_end:weston
+[2709894.456]profiling_start:graphic hardware
+[2709894.537]profiling_start:touch hardware motion
+[2709894.588]profiling_end:touch hardware motion
+[2709894.636]profiling_start:shell touch motion
+[2709894.684]profiling_end:shell touch motion
+[2709894.731]profiling_start:touch hardware motion
+[2709894.778]profiling_end:touch hardware motion
+[2709894.822]profiling_start:shell touch motion
+[2709894.867]profiling_end:shell touch motion
+[2709894.914]profiling_start:touch hardware motion
+[2709894.960]profiling_end:touch hardware motion
+[2709895.004]profiling_start:shell touch motion
+[2709895.050]profiling_end:shell touch motion
+[2709909.861]profiling_end:graphic hardware
+[2709909.937]profiling_start:weston
+[2709911.041]profiling_end:weston
+[2709911.119]profiling_start:graphic hardware
+[2709911.198]profiling_start:touch hardware motion
+[2709911.313]profiling_end:touch hardware motion
+[2709911.364]profiling_start:shell touch motion
+[2709911.413]profiling_end:shell touch motion
+[2709911.462]profiling_start:touch hardware motion
+[2709911.509]profiling_end:touch hardware motion
+[2709911.554]profiling_start:shell touch motion
+[2709911.599]profiling_end:shell touch motion
+[2709911.647]profiling_start:touch hardware motion
+[2709911.692]profiling_end:touch hardware motion
+[2709911.737]profiling_start:shell touch motion
+[2709911.781]profiling_end:shell touch motion
+[2709911.829]profiling_start:touch hardware motion
+[2709911.875]profiling_end:touch hardware motion
+[2709911.920]profiling_start:shell touch motion
+[2709911.965]profiling_end:shell touch motion
+[2709926.450]profiling_end:graphic hardware
+[2709926.525]profiling_start:weston
+[2709927.569]profiling_end:weston
+[2709927.655]profiling_start:graphic hardware
+[2709927.730]profiling_start:touch hardware motion
+[2709927.780]profiling_end:touch hardware motion
+[2709927.828]profiling_start:shell touch motion
+[2709927.875]profiling_end:shell touch motion
+[2709927.925]profiling_start:touch hardware motion
+[2709927.972]profiling_end:touch hardware motion
+[2709928.017]profiling_start:shell touch motion
+[2709928.063]profiling_end:shell touch motion
+[2709928.109]profiling_start:touch hardware motion
+[2709928.156]profiling_end:touch hardware motion
+[2709928.201]profiling_start:shell touch motion
+[2709928.302]profiling_end:shell touch motion
+[2709943.195]profiling_end:graphic hardware
+[2709943.345]profiling_start:weston
+[2709944.324]profiling_end:weston
+[2709944.409]profiling_start:graphic hardware
+[2709944.485]profiling_start:touch hardware motion
+[2709944.535]profiling_end:touch hardware motion
+[2709944.583]profiling_start:shell touch motion
+[2709944.630]profiling_end:shell touch motion
+[2709944.679]profiling_start:touch hardware motion
+[2709944.823]profiling_end:touch hardware motion
+[2709944.872]profiling_start:shell touch motion
+[2709944.918]profiling_end:shell touch motion
+[2709944.966]profiling_start:touch hardware motion
+[2709945.012]profiling_end:touch hardware motion
+[2709945.056]profiling_start:shell touch motion
+[2709945.102]profiling_end:shell touch motion
+[2709945.157]profiling_start:touch hardware motion
+[2709945.204]profiling_end:touch hardware motion
+[2709945.300]profiling_start:shell touch motion
+[2709945.349]profiling_end:shell touch motion
+[2709959.921]profiling_end:graphic hardware
+[2709959.996]profiling_start:weston
+[2709961.033]profiling_end:weston
+[2709961.109]profiling_start:graphic hardware
+[2709961.185]profiling_start:touch hardware motion
+[2709961.285]profiling_end:touch hardware motion
+[2709961.347]profiling_start:shell touch motion
+[2709961.396]profiling_end:shell touch motion
+[2709961.444]profiling_start:touch hardware motion
+[2709961.491]profiling_end:touch hardware motion
+[2709961.536]profiling_start:shell touch motion
+[2709961.581]profiling_end:shell touch motion
+[2709961.629]profiling_start:touch hardware motion
+[2709961.674]profiling_end:touch hardware motion
+[2709961.719]profiling_start:shell touch motion
+[2709961.763]profiling_end:shell touch motion
+[2709976.533]profiling_end:graphic hardware
+[2709976.632]profiling_start:weston
+[2709977.686]profiling_end:weston
+[2709977.774]profiling_start:graphic hardware
+[2709977.849]profiling_start:touch hardware motion
+[2709977.900]profiling_end:touch hardware motion
+[2709977.948]profiling_start:shell touch motion
+[2709977.995]profiling_end:shell touch motion
+[2709978.043]profiling_start:touch hardware motion
+[2709978.160]profiling_end:touch hardware motion
+[2709978.211]profiling_start:shell touch motion
+[2709978.320]profiling_end:shell touch motion
+[2709978.371]profiling_start:touch hardware motion
+[2709978.418]profiling_end:touch hardware motion
+[2709978.464]profiling_start:shell touch motion
+[2709978.509]profiling_end:shell touch motion
+[2709993.475]profiling_end:graphic hardware
+[2709993.574]profiling_start:weston
+[2709994.645]profiling_end:weston
+[2709994.825]profiling_start:graphic hardware
+[2709994.907]profiling_start:touch hardware motion
+[2709994.958]profiling_end:touch hardware motion
+[2709995.004]profiling_start:shell touch motion
+[2709995.051]profiling_end:shell touch motion
+[2709995.100]profiling_start:touch hardware motion
+[2709995.146]profiling_end:touch hardware motion
+[2709995.190]profiling_start:shell touch motion
+[2709995.288]profiling_end:shell touch motion
+[2709995.351]profiling_start:touch hardware motion
+[2709995.399]profiling_end:touch hardware motion
+[2709995.444]profiling_start:shell touch motion
+[2709995.490]profiling_end:shell touch motion
+[2709995.537]profiling_start:touch hardware motion
+[2709995.584]profiling_end:touch hardware motion
+[2709995.629]profiling_start:shell touch motion
+[2709995.674]profiling_end:shell touch motion
+[2710009.911]profiling_end:graphic hardware
+[2710009.986]profiling_start:weston
+[2710011.011]profiling_end:weston
+[2710011.087]profiling_start:graphic hardware
+[2710011.162]profiling_start:touch hardware motion
+[2710011.214]profiling_end:touch hardware motion
+[2710011.324]profiling_start:shell touch motion
+[2710011.375]profiling_end:shell touch motion
+[2710011.424]profiling_start:touch hardware motion
+[2710011.471]profiling_end:touch hardware motion
+[2710011.515]profiling_start:shell touch motion
+[2710011.560]profiling_end:shell touch motion
+[2710011.607]profiling_start:touch hardware motion
+[2710011.653]profiling_end:touch hardware motion
+[2710011.697]profiling_start:shell touch motion
+[2710011.742]profiling_end:shell touch motion
+[2710026.532]profiling_end:graphic hardware
+[2710026.631]profiling_start:weston
+[2710027.699]profiling_end:weston
+[2710027.787]profiling_start:graphic hardware
+[2710027.862]profiling_start:touch hardware motion
+[2710027.911]profiling_end:touch hardware motion
+[2710027.960]profiling_start:shell touch motion
+[2710028.008]profiling_end:shell touch motion
+[2710028.055]profiling_start:touch hardware motion
+[2710028.102]profiling_end:touch hardware motion
+[2710028.147]profiling_start:shell touch motion
+[2710028.192]profiling_end:shell touch motion
+[2710028.288]profiling_start:touch hardware motion
+[2710028.346]profiling_end:touch hardware motion
+[2710028.392]profiling_start:shell touch motion
+[2710028.438]profiling_end:shell touch motion
+[2710043.180]profiling_end:graphic hardware
+[2710043.334]profiling_start:weston
+[2710044.421]profiling_end:weston
+[2710044.507]profiling_start:graphic hardware
+[2710044.585]profiling_start:touch hardware motion
+[2710044.636]profiling_end:touch hardware motion
+[2710044.683]profiling_start:shell touch motion
+[2710044.730]profiling_end:shell touch motion
+[2710044.778]profiling_start:touch hardware motion
+[2710044.824]profiling_end:touch hardware motion
+[2710044.868]profiling_start:shell touch motion
+[2710044.913]profiling_end:shell touch motion
+[2710044.959]profiling_start:touch hardware motion
+[2710045.005]profiling_end:touch hardware motion
+[2710045.049]profiling_start:shell touch motion
+[2710045.095]profiling_end:shell touch motion
+[2710045.142]profiling_start:touch hardware motion
+[2710045.188]profiling_end:touch hardware motion
+[2710045.272]profiling_start:shell touch motion
+[2710045.332]profiling_end:shell touch motion
+[2710059.793]profiling_end:graphic hardware
+[2710059.869]profiling_start:weston
+[2710060.901]profiling_end:weston
+[2710060.985]profiling_start:graphic hardware
+[2710061.059]profiling_start:touch hardware motion
+[2710061.109]profiling_end:touch hardware motion
+[2710061.156]profiling_start:shell touch motion
+[2710061.203]profiling_end:shell touch motion
+[2710061.311]profiling_start:touch hardware motion
+[2710061.360]profiling_end:touch hardware motion
+[2710061.407]profiling_start:shell touch motion
+[2710061.452]profiling_end:shell touch motion
+[2710061.500]profiling_start:touch hardware motion
+[2710061.547]profiling_end:touch hardware motion
+[2710061.651]profiling_start:shell touch motion
+[2710061.701]profiling_end:shell touch motion
+[2710076.780]profiling_end:graphic hardware
+[2710076.880]profiling_start:weston
+[2710077.928]profiling_end:weston
+[2710078.013]profiling_start:graphic hardware
+[2710078.087]profiling_start:touch hardware motion
+[2710078.139]profiling_end:touch hardware motion
+[2710078.188]profiling_start:shell touch motion
+[2710078.286]profiling_end:shell touch motion
+[2710078.349]profiling_start:touch hardware motion
+[2710078.396]profiling_end:touch hardware motion
+[2710078.441]profiling_start:shell touch motion
+[2710078.487]profiling_end:shell touch motion
+[2710078.534]profiling_start:touch hardware motion
+[2710078.579]profiling_end:touch hardware motion
+[2710078.623]profiling_start:shell touch motion
+[2710078.668]profiling_end:shell touch motion
+[2710093.189]profiling_end:graphic hardware
+[2710093.341]profiling_start:weston
+[2710094.425]profiling_end:weston
+[2710094.513]profiling_start:graphic hardware
+[2710094.588]profiling_start:touch hardware motion
+[2710094.638]profiling_end:touch hardware motion
+[2710094.686]profiling_start:shell touch motion
+[2710094.733]profiling_end:shell touch motion
+[2710094.782]profiling_start:touch hardware motion
+[2710094.827]profiling_end:touch hardware motion
+[2710094.872]profiling_start:shell touch motion
+[2710094.917]profiling_end:shell touch motion
+[2710094.964]profiling_start:touch hardware motion
+[2710095.009]profiling_end:touch hardware motion
+[2710095.053]profiling_start:shell touch motion
+[2710095.098]profiling_end:shell touch motion
+[2710109.794]profiling_end:graphic hardware
+[2710109.871]profiling_start:weston
+[2710110.897]profiling_end:weston
+[2710110.985]profiling_start:graphic hardware
+[2710111.058]profiling_start:touch hardware motion
+[2710111.108]profiling_end:touch hardware motion
+[2710111.156]profiling_start:shell touch motion
+[2710111.203]profiling_end:shell touch motion
+[2710111.314]profiling_start:touch hardware motion
+[2710111.364]profiling_end:touch hardware motion
+[2710111.410]profiling_start:shell touch motion
+[2710111.455]profiling_end:shell touch motion
+[2710111.502]profiling_start:touch hardware motion
+[2710111.548]profiling_end:touch hardware motion
+[2710111.592]profiling_start:shell touch motion
+[2710111.637]profiling_end:shell touch motion
+[2710126.552]profiling_end:graphic hardware
+[2710126.628]profiling_start:weston
+[2710127.661]profiling_end:weston
+[2710127.839]profiling_start:graphic hardware
+[2710127.917]profiling_start:touch hardware motion
+[2710127.968]profiling_end:touch hardware motion
+[2710128.014]profiling_start:shell touch motion
+[2710128.062]profiling_end:shell touch motion
+[2710128.109]profiling_start:touch hardware motion
+[2710128.155]profiling_end:touch hardware motion
+[2710128.201]profiling_start:shell touch motion
+[2710128.310]profiling_end:shell touch motion
+[2710128.362]profiling_start:touch hardware motion
+[2710128.409]profiling_end:touch hardware motion
+[2710128.453]profiling_start:shell touch motion
+[2710128.498]profiling_end:shell touch motion
+[2710128.545]profiling_start:touch hardware motion
+[2710128.590]profiling_end:touch hardware motion
+[2710128.635]profiling_start:shell touch motion
+[2710128.680]profiling_end:shell touch motion
+[2710143.112]profiling_end:graphic hardware
+[2710143.187]profiling_start:weston
+[2710144.183]profiling_end:weston
+[2710144.303]profiling_start:graphic hardware
+[2710144.391]profiling_start:touch hardware motion
+[2710144.442]profiling_end:touch hardware motion
+[2710144.488]profiling_start:shell touch motion
+[2710144.536]profiling_end:shell touch motion
+[2710144.584]profiling_start:touch hardware motion
+[2710144.630]profiling_end:touch hardware motion
+[2710144.675]profiling_start:shell touch motion
+[2710144.720]profiling_end:shell touch motion
+[2710144.767]profiling_start:touch hardware motion
+[2710144.813]profiling_end:touch hardware motion
+[2710144.858]profiling_start:shell touch motion
+[2710144.902]profiling_end:shell touch motion
+[2710159.856]profiling_end:graphic hardware
+[2710159.933]profiling_start:weston
+[2710160.967]profiling_end:weston
+[2710161.043]profiling_start:graphic hardware
+[2710161.118]profiling_start:touch hardware motion
+[2710161.169]profiling_end:touch hardware motion
+[2710161.217]profiling_start:shell touch motion
+[2710161.389]profiling_end:shell touch motion
+[2710161.443]profiling_start:touch hardware motion
+[2710161.490]profiling_end:touch hardware motion
+[2710161.536]profiling_start:shell touch motion
+[2710161.581]profiling_end:shell touch motion
+[2710161.629]profiling_start:touch hardware motion
+[2710161.674]profiling_end:touch hardware motion
+[2710161.719]profiling_start:shell touch motion
+[2710161.764]profiling_end:shell touch motion
+[2710176.449]profiling_end:graphic hardware
+[2710176.525]profiling_start:weston
+[2710177.563]profiling_end:weston
+[2710177.648]profiling_start:graphic hardware
+[2710177.814]profiling_start:touch hardware motion
+[2710177.868]profiling_end:touch hardware motion
+[2710177.916]profiling_start:shell touch motion
+[2710177.964]profiling_end:shell touch motion
+[2710178.012]profiling_start:touch hardware motion
+[2710178.058]profiling_end:touch hardware motion
+[2710178.101]profiling_start:shell touch motion
+[2710178.148]profiling_end:shell touch motion
+[2710178.194]profiling_start:touch hardware motion
+[2710178.291]profiling_end:touch hardware motion
+[2710178.350]profiling_start:shell touch motion
+[2710178.397]profiling_end:shell touch motion
+[2710178.445]profiling_start:touch hardware motion
+[2710178.491]profiling_end:touch hardware motion
+[2710178.535]profiling_start:shell touch motion
+[2710178.580]profiling_end:shell touch motion
+[2710193.110]profiling_end:graphic hardware
+[2710193.185]profiling_start:weston
+[2710194.190]profiling_end:weston
+[2710194.320]profiling_start:graphic hardware
+[2710194.397]profiling_start:touch hardware motion
+[2710194.448]profiling_end:touch hardware motion
+[2710194.496]profiling_start:shell touch motion
+[2710194.544]profiling_end:shell touch motion
+[2710194.591]profiling_start:touch hardware motion
+[2710194.638]profiling_end:touch hardware motion
+[2710194.682]profiling_start:shell touch motion
+[2710194.728]profiling_end:shell touch motion
+[2710194.775]profiling_start:touch hardware motion
+[2710194.820]profiling_end:touch hardware motion
+[2710194.864]profiling_start:shell touch motion
+[2710194.909]profiling_end:shell touch motion
+[2710209.860]profiling_end:graphic hardware
+[2710209.937]profiling_start:weston
+[2710210.952]profiling_end:weston
+[2710211.028]profiling_start:graphic hardware
+[2710211.104]profiling_start:touch hardware motion
+[2710211.156]profiling_end:touch hardware motion
+[2710211.204]profiling_start:shell touch motion
+[2710211.314]profiling_end:shell touch motion
+[2710211.367]profiling_start:touch hardware motion
+[2710211.415]profiling_end:touch hardware motion
+[2710211.460]profiling_start:shell touch motion
+[2710211.506]profiling_end:shell touch motion
+[2710211.554]profiling_start:touch hardware motion
+[2710211.599]profiling_end:touch hardware motion
+[2710211.644]profiling_start:shell touch motion
+[2710211.779]profiling_end:shell touch motion
+[2710211.841]profiling_start:touch hardware motion
+[2710211.890]profiling_end:touch hardware motion
+[2710211.935]profiling_start:shell touch motion
+[2710211.979]profiling_end:shell touch motion
+[2710226.524]profiling_end:graphic hardware
+[2710226.598]profiling_start:weston
+[2710227.710]profiling_end:weston
+[2710227.797]profiling_start:graphic hardware
+[2710227.872]profiling_start:touch hardware motion
+[2710227.923]profiling_end:touch hardware motion
+[2710227.970]profiling_start:shell touch motion
+[2710228.017]profiling_end:shell touch motion
+[2710228.065]profiling_start:touch hardware motion
+[2710228.110]profiling_end:touch hardware motion
+[2710228.155]profiling_start:shell touch motion
+[2710228.200]profiling_end:shell touch motion
+[2710228.304]profiling_start:touch hardware motion
+[2710228.354]profiling_end:touch hardware motion
+[2710228.401]profiling_start:shell touch motion
+[2710228.447]profiling_end:shell touch motion
+[2710243.182]profiling_end:graphic hardware
+[2710243.335]profiling_start:weston
+[2710244.312]profiling_end:weston
+[2710244.396]profiling_start:graphic hardware
+[2710244.470]profiling_start:touch hardware motion
+[2710244.521]profiling_end:touch hardware motion
+[2710244.568]profiling_start:shell touch motion
+[2710244.615]profiling_end:shell touch motion
+[2710244.663]profiling_start:touch hardware motion
+[2710244.709]profiling_end:touch hardware motion
+[2710244.754]profiling_start:shell touch motion
+[2710244.799]profiling_end:shell touch motion
+[2710244.845]profiling_start:touch hardware motion
+[2710244.948]profiling_end:touch hardware motion
+[2710244.998]profiling_start:shell touch motion
+[2710245.043]profiling_end:shell touch motion
+[2710259.843]profiling_end:graphic hardware
+[2710259.920]profiling_start:weston
+[2710260.915]profiling_end:weston
+[2710260.990]profiling_start:graphic hardware
+[2710261.065]profiling_start:touch hardware motion
+[2710261.117]profiling_end:touch hardware motion
+[2710261.165]profiling_start:shell touch motion
+[2710261.213]profiling_end:shell touch motion
+[2710261.326]profiling_start:touch hardware motion
+[2710261.374]profiling_end:touch hardware motion
+[2710261.419]profiling_start:shell touch motion
+[2710261.465]profiling_end:shell touch motion
+[2710261.512]profiling_start:touch hardware motion
+[2710261.557]profiling_end:touch hardware motion
+[2710261.603]profiling_start:shell touch motion
+[2710261.648]profiling_end:shell touch motion
+[2710261.794]profiling_start:touch hardware motion
+[2710261.847]profiling_end:touch hardware motion
+[2710261.894]profiling_start:shell touch motion
+[2710261.940]profiling_end:shell touch motion
+[2710276.522]profiling_end:graphic hardware
+[2710276.597]profiling_start:weston
+[2710277.687]profiling_end:weston
+[2710277.774]profiling_start:graphic hardware
+[2710277.850]profiling_start:touch hardware motion
+[2710277.900]profiling_end:touch hardware motion
+[2710277.947]profiling_start:shell touch motion
+[2710277.994]profiling_end:shell touch motion
+[2710278.042]profiling_start:touch hardware motion
+[2710278.088]profiling_end:touch hardware motion
+[2710278.133]profiling_start:shell touch motion
+[2710278.177]profiling_end:shell touch motion
+[2710278.266]profiling_start:touch hardware motion
+[2710278.329]profiling_end:touch hardware motion
+[2710278.375]profiling_start:shell touch motion
+[2710278.421]profiling_end:shell touch motion
+[2710293.175]profiling_end:graphic hardware
+[2710293.330]profiling_start:weston
+[2710294.306]profiling_end:weston
+[2710294.391]profiling_start:graphic hardware
+[2710294.466]profiling_start:touch hardware motion
+[2710294.518]profiling_end:touch hardware motion
+[2710294.566]profiling_start:shell touch motion
+[2710294.613]profiling_end:shell touch motion
+[2710294.660]profiling_start:touch hardware motion
+[2710294.707]profiling_end:touch hardware motion
+[2710294.752]profiling_start:shell touch motion
+[2710294.797]profiling_end:shell touch motion
+[2710294.845]profiling_start:touch hardware motion
+[2710294.891]profiling_end:touch hardware motion
+[2710294.935]profiling_start:shell touch motion
+[2710294.980]profiling_end:shell touch motion
+[2710309.857]profiling_end:graphic hardware
+[2710309.934]profiling_start:weston
+[2710311.035]profiling_end:weston
+[2710311.112]profiling_start:graphic hardware
+[2710311.186]profiling_start:touch hardware motion
+[2710311.290]profiling_end:touch hardware motion
+[2710311.352]profiling_start:shell touch motion
+[2710311.402]profiling_end:shell touch motion
+[2710311.451]profiling_start:touch hardware motion
+[2710311.499]profiling_end:touch hardware motion
+[2710311.544]profiling_start:shell touch motion
+[2710311.591]profiling_end:shell touch motion
+[2710311.638]profiling_start:touch hardware motion
+[2710311.685]profiling_end:touch hardware motion
+[2710311.729]profiling_start:shell touch motion
+[2710311.775]profiling_end:shell touch motion
+[2710326.438]profiling_end:graphic hardware
+[2710326.515]profiling_start:weston
+[2710327.561]profiling_end:weston
+[2710327.646]profiling_start:graphic hardware
+[2710327.721]profiling_start:touch hardware motion
+[2710327.771]profiling_end:touch hardware motion
+[2710327.819]profiling_start:shell touch motion
+[2710327.866]profiling_end:shell touch motion
+[2710327.914]profiling_start:touch hardware motion
+[2710327.960]profiling_end:touch hardware motion
+[2710328.005]profiling_start:shell touch motion
+[2710328.051]profiling_end:shell touch motion
+[2710328.098]profiling_start:touch hardware motion
+[2710328.143]profiling_end:touch hardware motion
+[2710328.187]profiling_start:shell touch motion
+[2710328.277]profiling_end:shell touch motion
+[2710343.323]profiling_end:graphic hardware
+[2710343.399]profiling_start:weston
+[2710344.370]profiling_end:weston
+[2710344.453]profiling_start:graphic hardware
+[2710344.523]profiling_start:touch hardware motion
+[2710344.574]profiling_end:touch hardware motion
+[2710344.680]profiling_start:shell touch motion
+[2710344.732]profiling_end:shell touch motion
+[2710359.917]profiling_end:graphic hardware
+[2710359.994]profiling_start:weston
+[2710360.988]profiling_end:weston
+[2710361.065]profiling_start:graphic hardware
+[2710361.137]profiling_start:touch hardware motion
+[2710361.187]profiling_end:touch hardware motion
+[2710361.285]profiling_start:shell touch motion
+[2710361.348]profiling_end:shell touch motion
+[2710361.397]profiling_start:touch hardware up
+[2710361.457]profiling_end:touch hardware up
+[2710361.505]profiling_start:shell touch up
+[2710361.552]profiling_end:shell touch up
+[2710376.554]profiling_end:graphic hardware
+[2710376.627]profiling_start:weston
+[2710377.571]profiling_end:weston
+[2710377.655]profiling_start:graphic hardware
+[2710393.322]profiling_end:graphic hardware
+[2710905.396]profiling_start:touch hardware down
+[2710905.847]profiling_end:touch hardware down
+[2710905.899]profiling_start:touch down
+[2710907.762]profiling_end:touch down
+[2710907.812]profiling_start:client touch down
+[2710907.861]profiling_end:client touch down
+[2710907.906]profiling_start:shell process
+[2710908.436]profiling_end:shell process
+[2710909.887]profiling_end:graphic hardware
+[2710909.963]profiling_start:weston
+[2710910.897]profiling_end:weston
+[2710910.983]profiling_start:graphic hardware
+[2710926.526]profiling_end:graphic hardware
+[2710958.931]profiling_start:touch hardware motion
+[2710959.031]profiling_end:touch hardware motion
+[2710959.084]profiling_start:shell touch motion
+[2710959.148]profiling_end:shell touch motion
+[2710959.738]profiling_end:graphic hardware
+[2710959.796]profiling_start:weston
+[2710960.782]profiling_end:weston
+[2710960.871]profiling_start:graphic hardware
+[2710976.472]profiling_end:graphic hardware
+[2710976.594]profiling_start:touch hardware motion
+[2710976.631]profiling_end:touch hardware motion
+[2710976.663]profiling_start:shell touch motion
+[2710976.703]profiling_end:shell touch motion
+[2710976.736]profiling_start:touch hardware motion
+[2710976.766]profiling_end:touch hardware motion
+[2710976.795]profiling_start:shell touch motion
+[2710976.823]profiling_end:shell touch motion
+[2710976.854]profiling_start:touch hardware motion
+[2710976.883]profiling_end:touch hardware motion
+[2710976.912]profiling_start:shell touch motion
+[2710976.940]profiling_end:shell touch motion
+[2710993.179]profiling_end:graphic hardware
+[2710993.334]profiling_start:weston
+[2710994.443]profiling_end:weston
+[2710994.531]profiling_start:graphic hardware
+[2710994.606]profiling_start:touch hardware motion
+[2710994.656]profiling_end:touch hardware motion
+[2710994.704]profiling_start:shell touch motion
+[2710994.751]profiling_end:shell touch motion
+[2710994.798]profiling_start:touch hardware motion
+[2710994.844]profiling_end:touch hardware motion
+[2710994.889]profiling_start:shell touch motion
+[2710994.935]profiling_end:shell touch motion
+[2710994.983]profiling_start:touch hardware motion
+[2710995.029]profiling_end:touch hardware motion
+[2710995.073]profiling_start:shell touch motion
+[2710995.118]profiling_end:shell touch motion
+[2710995.166]profiling_start:touch hardware motion
+[2710995.212]profiling_end:touch hardware motion
+[2710995.310]profiling_start:shell touch motion
+[2710995.358]profiling_end:shell touch motion
+[2711009.860]profiling_end:graphic hardware
+[2711009.936]profiling_start:weston
+[2711010.932]profiling_end:weston
+[2711011.017]profiling_start:graphic hardware
+[2711011.091]profiling_start:touch hardware motion
+[2711011.141]profiling_end:touch hardware motion
+[2711011.190]profiling_start:shell touch motion
+[2711011.288]profiling_end:shell touch motion
+[2711011.351]profiling_start:touch hardware motion
+[2711011.400]profiling_end:touch hardware motion
+[2711011.446]profiling_start:shell touch motion
+[2711011.550]profiling_end:shell touch motion
+[2711011.602]profiling_start:touch hardware motion
+[2711011.648]profiling_end:touch hardware motion
+[2711011.693]profiling_start:shell touch motion
+[2711011.738]profiling_end:shell touch motion
+[2711026.510]profiling_end:graphic hardware
+[2711026.586]profiling_start:weston
+[2711027.599]profiling_end:weston
+[2711027.683]profiling_start:graphic hardware
+[2711027.860]profiling_start:touch hardware motion
+[2711027.911]profiling_end:touch hardware motion
+[2711027.959]profiling_start:shell touch motion
+[2711028.007]profiling_end:shell touch motion
+[2711028.056]profiling_start:touch hardware motion
+[2711028.101]profiling_end:touch hardware motion
+[2711028.146]profiling_start:shell touch motion
+[2711028.191]profiling_end:shell touch motion
+[2711028.289]profiling_start:touch hardware motion
+[2711028.349]profiling_end:touch hardware motion
+[2711028.396]profiling_start:shell touch motion
+[2711028.442]profiling_end:shell touch motion
+[2711028.490]profiling_start:touch hardware motion
+[2711028.536]profiling_end:touch hardware motion
+[2711028.580]profiling_start:shell touch motion
+[2711028.625]profiling_end:shell touch motion
+[2711043.096]profiling_end:graphic hardware
+[2711043.171]profiling_start:weston
+[2711044.174]profiling_end:weston
+[2711044.296]profiling_start:graphic hardware
+[2711044.384]profiling_start:touch hardware motion
+[2711044.434]profiling_end:touch hardware motion
+[2711044.482]profiling_start:shell touch motion
+[2711044.530]profiling_end:shell touch motion
+[2711044.578]profiling_start:touch hardware motion
+[2711044.625]profiling_end:touch hardware motion
+[2711044.670]profiling_start:shell touch motion
+[2711044.715]profiling_end:shell touch motion
+[2711044.762]profiling_start:touch hardware motion
+[2711044.809]profiling_end:touch hardware motion
+[2711044.854]profiling_start:shell touch motion
+[2711044.899]profiling_end:shell touch motion
+[2711059.848]profiling_end:graphic hardware
+[2711059.947]profiling_start:weston
+[2711061.006]profiling_end:weston
+[2711061.093]profiling_start:graphic hardware
+[2711061.169]profiling_start:touch hardware motion
+[2711061.267]profiling_end:touch hardware motion
+[2711061.330]profiling_start:shell touch motion
+[2711061.379]profiling_end:shell touch motion
+[2711061.427]profiling_start:touch hardware motion
+[2711061.473]profiling_end:touch hardware motion
+[2711061.518]profiling_start:shell touch motion
+[2711061.565]profiling_end:shell touch motion
+[2711061.612]profiling_start:touch hardware motion
+[2711061.657]profiling_end:touch hardware motion
+[2711061.701]profiling_start:shell touch motion
+[2711061.747]profiling_end:shell touch motion
+[2711076.435]profiling_end:graphic hardware
+[2711076.510]profiling_start:weston
+[2711077.551]profiling_end:weston
+[2711077.636]profiling_start:graphic hardware
+[2711077.802]profiling_start:touch hardware motion
+[2711077.858]profiling_end:touch hardware motion
+[2711077.906]profiling_start:shell touch motion
+[2711077.955]profiling_end:shell touch motion
+[2711078.003]profiling_start:touch hardware motion
+[2711078.050]profiling_end:touch hardware motion
+[2711078.095]profiling_start:shell touch motion
+[2711078.139]profiling_end:shell touch motion
+[2711078.186]profiling_start:touch hardware motion
+[2711078.282]profiling_end:touch hardware motion
+[2711078.341]profiling_start:shell touch motion
+[2711078.388]profiling_end:shell touch motion
+[2711078.436]profiling_start:touch hardware motion
+[2711078.482]profiling_end:touch hardware motion
+[2711078.527]profiling_start:shell touch motion
+[2711078.573]profiling_end:shell touch motion
+[2711093.096]profiling_end:graphic hardware
+[2711093.172]profiling_start:weston
+[2711094.179]profiling_end:weston
+[2711094.302]profiling_start:graphic hardware
+[2711094.389]profiling_start:touch hardware motion
+[2711094.440]profiling_end:touch hardware motion
+[2711094.488]profiling_start:shell touch motion
+[2711094.535]profiling_end:shell touch motion
+[2711094.583]profiling_start:touch hardware motion
+[2711094.629]profiling_end:touch hardware motion
+[2711094.674]profiling_start:shell touch motion
+[2711094.718]profiling_end:shell touch motion
+[2711094.766]profiling_start:touch hardware motion
+[2711094.811]profiling_end:touch hardware motion
+[2711094.855]profiling_start:shell touch motion
+[2711094.900]profiling_end:shell touch motion
+[2711110.107]profiling_end:graphic hardware
+[2711110.207]profiling_start:weston
+[2711111.296]profiling_end:weston
+[2711111.380]profiling_start:graphic hardware
+[2711111.453]profiling_start:touch hardware motion
+[2711111.504]profiling_end:touch hardware motion
+[2711111.551]profiling_start:shell touch motion
+[2711111.599]profiling_end:shell touch motion
+[2711111.648]profiling_start:touch hardware motion
+[2711111.792]profiling_end:touch hardware motion
+[2711111.844]profiling_start:shell touch motion
+[2711111.890]profiling_end:shell touch motion
+[2711111.945]profiling_start:touch hardware motion
+[2711111.992]profiling_end:touch hardware motion
+[2711112.037]profiling_start:shell touch motion
+[2711112.082]profiling_end:shell touch motion
+[2711126.493]profiling_end:graphic hardware
+[2711126.568]profiling_start:weston
+[2711127.681]profiling_end:weston
+[2711127.768]profiling_start:graphic hardware
+[2711127.842]profiling_start:touch hardware motion
+[2711127.892]profiling_end:touch hardware motion
+[2711127.939]profiling_start:shell touch motion
+[2711127.986]profiling_end:shell touch motion
+[2711128.033]profiling_start:touch hardware motion
+[2711128.081]profiling_end:touch hardware motion
+[2711128.126]profiling_start:shell touch motion
+[2711128.170]profiling_end:shell touch motion
+[2711128.218]profiling_start:touch hardware motion
+[2711128.323]profiling_end:touch hardware motion
+[2711128.371]profiling_start:shell touch motion
+[2711128.417]profiling_end:shell touch motion
+[2711143.137]profiling_end:graphic hardware
+[2711143.319]profiling_start:weston
+[2711144.336]profiling_end:weston
+[2711144.424]profiling_start:graphic hardware
+[2711144.498]profiling_start:touch hardware motion
+[2711144.547]profiling_end:touch hardware motion
+[2711144.594]profiling_start:shell touch motion
+[2711144.642]profiling_end:shell touch motion
+[2711144.691]profiling_start:touch hardware motion
+[2711144.737]profiling_end:touch hardware motion
+[2711144.782]profiling_start:shell touch motion
+[2711144.827]profiling_end:shell touch motion
+[2711159.865]profiling_end:graphic hardware
+[2711159.963]profiling_start:weston
+[2711160.981]profiling_end:weston
+[2711161.058]profiling_start:graphic hardware
+[2711161.134]profiling_start:touch hardware motion
+[2711161.184]profiling_end:touch hardware motion
+[2711161.282]profiling_start:shell touch motion
+[2711161.344]profiling_end:shell touch motion
+[2711161.393]profiling_start:touch hardware motion
+[2711161.440]profiling_end:touch hardware motion
+[2711161.485]profiling_start:shell touch motion
+[2711161.531]profiling_end:shell touch motion
+[2711161.578]profiling_start:touch hardware motion
+[2711161.623]profiling_end:touch hardware motion
+[2711161.668]profiling_start:shell touch motion
+[2711161.806]profiling_end:shell touch motion
+[2711161.866]profiling_start:touch hardware motion
+[2711161.914]profiling_end:touch hardware motion
+[2711161.960]profiling_start:shell touch motion
+[2711162.006]profiling_end:shell touch motion
+[2711176.501]profiling_end:graphic hardware
+[2711176.577]profiling_start:weston
+[2711177.584]profiling_end:weston
+[2711177.670]profiling_start:graphic hardware
+[2711177.746]profiling_start:touch hardware motion
+[2711177.795]profiling_end:touch hardware motion
+[2711177.844]profiling_start:shell touch motion
+[2711177.891]profiling_end:shell touch motion
+[2711177.939]profiling_start:touch hardware motion
+[2711177.985]profiling_end:touch hardware motion
+[2711178.031]profiling_start:shell touch motion
+[2711178.077]profiling_end:shell touch motion
+[2711178.124]profiling_start:touch hardware motion
+[2711178.170]profiling_end:touch hardware motion
+[2711178.215]profiling_start:shell touch motion
+[2711178.316]profiling_end:shell touch motion
+[2711193.155]profiling_end:graphic hardware
+[2711193.306]profiling_start:weston
+[2711194.287]profiling_end:weston
+[2711194.372]profiling_start:graphic hardware
+[2711194.447]profiling_start:touch hardware motion
+[2711194.497]profiling_end:touch hardware motion
+[2711194.543]profiling_start:shell touch motion
+[2711194.591]profiling_end:shell touch motion
+[2711194.640]profiling_start:touch hardware motion
+[2711194.685]profiling_end:touch hardware motion
+[2711194.730]profiling_start:shell touch motion
+[2711194.776]profiling_end:shell touch motion
+[2711194.822]profiling_start:touch hardware motion
+[2711194.867]profiling_end:touch hardware motion
+[2711194.969]profiling_start:shell touch motion
+[2711195.019]profiling_end:shell touch motion
+[2711209.838]profiling_end:graphic hardware
+[2711209.914]profiling_start:weston
+[2711211.033]profiling_end:weston
+[2711211.111]profiling_start:graphic hardware
+[2711211.188]profiling_start:touch hardware motion
+[2711211.291]profiling_end:touch hardware motion
+[2711211.352]profiling_start:shell touch motion
+[2711211.402]profiling_end:shell touch motion
+[2711211.450]profiling_start:touch hardware motion
+[2711211.497]profiling_end:touch hardware motion
+[2711211.543]profiling_start:shell touch motion
+[2711211.589]profiling_end:shell touch motion
+[2711211.636]profiling_start:touch hardware motion
+[2711211.683]profiling_end:touch hardware motion
+[2711211.727]profiling_start:shell touch motion
+[2711211.772]profiling_end:shell touch motion
+[2711211.819]profiling_start:touch hardware motion
+[2711211.864]profiling_end:touch hardware motion
+[2711211.909]profiling_start:shell touch motion
+[2711211.954]profiling_end:shell touch motion
+[2711226.433]profiling_end:graphic hardware
+[2711226.507]profiling_start:weston
+[2711227.576]profiling_end:weston
+[2711227.661]profiling_start:graphic hardware
+[2711227.738]profiling_start:touch hardware motion
+[2711227.788]profiling_end:touch hardware motion
+[2711227.836]profiling_start:shell touch motion
+[2711227.883]profiling_end:shell touch motion
+[2711227.930]profiling_start:touch hardware motion
+[2711227.976]profiling_end:touch hardware motion
+[2711228.021]profiling_start:shell touch motion
+[2711228.066]profiling_end:shell touch motion
+[2711228.113]profiling_start:touch hardware motion
+[2711228.158]profiling_end:touch hardware motion
+[2711228.203]profiling_start:shell touch motion
+[2711228.304]profiling_end:shell touch motion
+[2711243.427]profiling_end:graphic hardware
+[2711243.525]profiling_start:weston
+[2711244.599]profiling_end:weston
+[2711244.684]profiling_start:graphic hardware
+[2711244.760]profiling_start:touch hardware motion
+[2711244.810]profiling_end:touch hardware motion
+[2711244.858]profiling_start:shell touch motion
+[2711244.906]profiling_end:shell touch motion
+[2711244.954]profiling_start:touch hardware motion
+[2711245.000]profiling_end:touch hardware motion
+[2711245.044]profiling_start:shell touch motion
+[2711245.090]profiling_end:shell touch motion
+[2711245.137]profiling_start:touch hardware motion
+[2711245.183]profiling_end:touch hardware motion
+[2711245.274]profiling_start:shell touch motion
+[2711245.334]profiling_end:shell touch motion
+[2711259.835]profiling_end:graphic hardware
+[2711259.910]profiling_start:weston
+[2711261.048]profiling_end:weston
+[2711261.127]profiling_start:graphic hardware
+[2711261.204]profiling_start:touch hardware motion
+[2711261.318]profiling_end:touch hardware motion
+[2711261.368]profiling_start:shell touch motion
+[2711261.415]profiling_end:shell touch motion
+[2711261.464]profiling_start:touch hardware motion
+[2711261.510]profiling_end:touch hardware motion
+[2711261.554]profiling_start:shell touch motion
+[2711261.599]profiling_end:shell touch motion
+[2711261.647]profiling_start:touch hardware motion
+[2711261.693]profiling_end:touch hardware motion
+[2711261.738]profiling_start:shell touch motion
+[2711261.782]profiling_end:shell touch motion
+[2711261.829]profiling_start:touch hardware motion
+[2711261.875]profiling_end:touch hardware motion
+[2711261.919]profiling_start:shell touch motion
+[2711261.963]profiling_end:shell touch motion
+[2711276.781]profiling_end:graphic hardware
+[2711276.881]profiling_start:weston
+[2711277.956]profiling_end:weston
+[2711278.041]profiling_start:graphic hardware
+[2711278.117]profiling_start:touch hardware motion
+[2711278.168]profiling_end:touch hardware motion
+[2711278.215]profiling_start:shell touch motion
+[2711278.324]profiling_end:shell touch motion
+[2711278.375]profiling_start:touch hardware motion
+[2711278.423]profiling_end:touch hardware motion
+[2711278.469]profiling_start:shell touch motion
+[2711278.514]profiling_end:shell touch motion
+[2711278.562]profiling_start:touch hardware motion
+[2711278.608]profiling_end:touch hardware motion
+[2711278.652]profiling_start:shell touch motion
+[2711278.696]profiling_end:shell touch motion
+[2711293.157]profiling_end:graphic hardware
+[2711293.314]profiling_start:weston
+[2711294.290]profiling_end:weston
+[2711294.434]profiling_start:graphic hardware
+[2711294.512]profiling_start:touch hardware motion
+[2711294.563]profiling_end:touch hardware motion
+[2711294.611]profiling_start:shell touch motion
+[2711294.659]profiling_end:shell touch motion
+[2711294.803]profiling_start:touch hardware motion
+[2711294.855]profiling_end:touch hardware motion
+[2711294.902]profiling_start:shell touch motion
+[2711294.948]profiling_end:shell touch motion
+[2711294.996]profiling_start:touch hardware motion
+[2711295.042]profiling_end:touch hardware motion
+[2711295.087]profiling_start:shell touch motion
+[2711295.131]profiling_end:shell touch motion
+[2711295.185]profiling_start:touch hardware motion
+[2711295.276]profiling_end:touch hardware motion
+[2711295.335]profiling_start:shell touch motion
+[2711295.383]profiling_end:shell touch motion
+[2711309.891]profiling_end:graphic hardware
+[2711309.965]profiling_start:weston
+[2711311.045]profiling_end:weston
+[2711311.131]profiling_start:graphic hardware
+[2711311.206]profiling_start:touch hardware motion
+[2711311.315]profiling_end:touch hardware motion
+[2711311.365]profiling_start:shell touch motion
+[2711311.413]profiling_end:shell touch motion
+[2711311.460]profiling_start:touch hardware motion
+[2711311.506]profiling_end:touch hardware motion
+[2711311.550]profiling_start:shell touch motion
+[2711311.595]profiling_end:shell touch motion
+[2711311.642]profiling_start:touch hardware motion
+[2711311.689]profiling_end:touch hardware motion
+[2711311.734]profiling_start:shell touch motion
+[2711311.777]profiling_end:shell touch motion
+[2711326.482]profiling_end:graphic hardware
+[2711326.559]profiling_start:weston
+[2711327.554]profiling_end:weston
+[2711327.637]profiling_start:graphic hardware
+[2711327.712]profiling_start:touch hardware motion
+[2711327.764]profiling_end:touch hardware motion
+[2711327.811]profiling_start:shell touch motion
+[2711327.858]profiling_end:shell touch motion
+[2711327.905]profiling_start:touch hardware motion
+[2711327.951]profiling_end:touch hardware motion
+[2711327.996]profiling_start:shell touch motion
+[2711328.041]profiling_end:shell touch motion
+[2711328.088]profiling_start:touch hardware motion
+[2711328.134]profiling_end:touch hardware motion
+[2711328.178]profiling_start:shell touch motion
+[2711328.265]profiling_end:shell touch motion
+[2711343.171]profiling_end:graphic hardware
+[2711343.326]profiling_start:weston
+[2711344.361]profiling_end:weston
+[2711344.447]profiling_start:graphic hardware
+[2711344.523]profiling_start:touch hardware motion
+[2711344.574]profiling_end:touch hardware motion
+[2711344.621]profiling_start:shell touch motion
+[2711344.669]profiling_end:shell touch motion
+[2711344.717]profiling_start:touch hardware motion
+[2711344.761]profiling_end:touch hardware motion
+[2711344.806]profiling_start:shell touch motion
+[2711344.852]profiling_end:shell touch motion
+[2711344.899]profiling_start:touch hardware motion
+[2711344.945]profiling_end:touch hardware motion
+[2711344.990]profiling_start:shell touch motion
+[2711345.034]profiling_end:shell touch motion
+[2711345.082]profiling_start:touch hardware motion
+[2711345.128]profiling_end:touch hardware motion
+[2711345.173]profiling_start:shell touch motion
+[2711345.258]profiling_end:shell touch motion
+[2711359.760]profiling_end:graphic hardware
+[2711359.848]profiling_start:weston
+[2711360.874]profiling_end:weston
+[2711360.960]profiling_start:graphic hardware
+[2711361.034]profiling_start:touch hardware motion
+[2711361.086]profiling_end:touch hardware motion
+[2711361.134]profiling_start:shell touch motion
+[2711361.181]profiling_end:shell touch motion
+[2711361.275]profiling_start:touch hardware motion
+[2711361.336]profiling_end:touch hardware motion
+[2711361.382]profiling_start:shell touch motion
+[2711361.428]profiling_end:shell touch motion
+[2711361.475]profiling_start:touch hardware motion
+[2711361.522]profiling_end:touch hardware motion
+[2711361.568]profiling_start:shell touch motion
+[2711361.612]profiling_end:shell touch motion
+[2711376.530]profiling_end:graphic hardware
+[2711376.605]profiling_start:weston
+[2711377.636]profiling_end:weston
+[2711377.722]profiling_start:graphic hardware
+[2711377.798]profiling_start:touch hardware motion
+[2711377.849]profiling_end:touch hardware motion
+[2711377.896]profiling_start:shell touch motion
+[2711377.944]profiling_end:shell touch motion
+[2711377.991]profiling_start:touch hardware motion
+[2711378.097]profiling_end:touch hardware motion
+[2711378.148]profiling_start:shell touch motion
+[2711378.194]profiling_end:shell touch motion
+[2711378.290]profiling_start:touch hardware motion
+[2711378.349]profiling_end:touch hardware motion
+[2711378.396]profiling_start:shell touch motion
+[2711378.442]profiling_end:shell touch motion
+[2711393.172]profiling_end:graphic hardware
+[2711393.329]profiling_start:weston
+[2711394.405]profiling_end:weston
+[2711394.490]profiling_start:graphic hardware
+[2711394.567]profiling_start:touch hardware motion
+[2711394.616]profiling_end:touch hardware motion
+[2711394.664]profiling_start:shell touch motion
+[2711394.711]profiling_end:shell touch motion
+[2711394.758]profiling_start:touch hardware motion
+[2711394.803]profiling_end:touch hardware motion
+[2711394.848]profiling_start:shell touch motion
+[2711394.893]profiling_end:shell touch motion
+[2711394.939]profiling_start:touch hardware motion
+[2711394.984]profiling_end:touch hardware motion
+[2711395.028]profiling_start:shell touch motion
+[2711395.072]profiling_end:shell touch motion
+[2711395.119]profiling_start:touch hardware motion
+[2711395.164]profiling_end:touch hardware motion
+[2711395.209]profiling_start:shell touch motion
+[2711395.306]profiling_end:shell touch motion
+[2711409.755]profiling_end:graphic hardware
+[2711409.845]profiling_start:weston
+[2711410.888]profiling_end:weston
+[2711410.973]profiling_start:graphic hardware
+[2711411.047]profiling_start:touch hardware motion
+[2711411.099]profiling_end:touch hardware motion
+[2711411.147]profiling_start:shell touch motion
+[2711411.194]profiling_end:shell touch motion
+[2711411.291]profiling_start:touch hardware motion
+[2711411.350]profiling_end:touch hardware motion
+[2711411.396]profiling_start:shell touch motion
+[2711411.442]profiling_end:shell touch motion
+[2711411.489]profiling_start:touch hardware motion
+[2711411.536]profiling_end:touch hardware motion
+[2711411.580]profiling_start:shell touch motion
+[2711411.625]profiling_end:shell touch motion
+[2711426.533]profiling_end:graphic hardware
+[2711426.609]profiling_start:weston
+[2711427.640]profiling_end:weston
+[2711427.818]profiling_start:graphic hardware
+[2711427.898]profiling_start:touch hardware motion
+[2711427.949]profiling_end:touch hardware motion
+[2711427.996]profiling_start:shell touch motion
+[2711428.043]profiling_end:shell touch motion
+[2711428.090]profiling_start:touch hardware motion
+[2711428.137]profiling_end:touch hardware motion
+[2711428.183]profiling_start:shell touch motion
+[2711428.273]profiling_end:shell touch motion
+[2711428.336]profiling_start:touch hardware motion
+[2711428.384]profiling_end:touch hardware motion
+[2711428.430]profiling_start:shell touch motion
+[2711428.475]profiling_end:shell touch motion
+[2711428.521]profiling_start:touch hardware motion
+[2711428.568]profiling_end:touch hardware motion
+[2711428.612]profiling_start:shell touch motion
+[2711428.656]profiling_end:shell touch motion
+[2711443.093]profiling_end:graphic hardware
+[2711443.168]profiling_start:weston
+[2711444.172]profiling_end:weston
+[2711444.341]profiling_start:graphic hardware
+[2711444.430]profiling_start:touch hardware motion
+[2711444.482]profiling_end:touch hardware motion
+[2711444.530]profiling_start:shell touch motion
+[2711444.578]profiling_end:shell touch motion
+[2711444.626]profiling_start:touch hardware motion
+[2711444.672]profiling_end:touch hardware motion
+[2711444.717]profiling_start:shell touch motion
+[2711444.762]profiling_end:shell touch motion
+[2711444.809]profiling_start:touch hardware motion
+[2711444.856]profiling_end:touch hardware motion
+[2711444.900]profiling_start:shell touch motion
+[2711444.946]profiling_end:shell touch motion
+[2711459.843]profiling_end:graphic hardware
+[2711459.920]profiling_start:weston
+[2711460.930]profiling_end:weston
+[2711461.006]profiling_start:graphic hardware
+[2711461.079]profiling_start:touch hardware motion
+[2711461.130]profiling_end:touch hardware motion
+[2711461.179]profiling_start:shell touch motion
+[2711461.278]profiling_end:shell touch motion
+[2711461.342]profiling_start:touch hardware motion
+[2711461.391]profiling_end:touch hardware motion
+[2711461.437]profiling_start:shell touch motion
+[2711461.483]profiling_end:shell touch motion
+[2711476.426]profiling_end:graphic hardware
+[2711476.501]profiling_start:weston
+[2711477.598]profiling_end:weston
+[2711477.681]profiling_start:graphic hardware
+[2711477.851]profiling_start:touch hardware motion
+[2711477.903]profiling_end:touch hardware motion
+[2711477.950]profiling_start:shell touch motion
+[2711477.996]profiling_end:shell touch motion
+[2711478.044]profiling_start:touch hardware motion
+[2711478.091]profiling_end:touch hardware motion
+[2711478.136]profiling_start:shell touch motion
+[2711478.181]profiling_end:shell touch motion
+[2711478.275]profiling_start:touch hardware motion
+[2711478.336]profiling_end:touch hardware motion
+[2711478.383]profiling_start:shell touch motion
+[2711478.429]profiling_end:shell touch motion
+[2711478.477]profiling_start:touch hardware motion
+[2711478.522]profiling_end:touch hardware motion
+[2711478.566]profiling_start:shell touch motion
+[2711478.611]profiling_end:shell touch motion
+[2711493.092]profiling_end:graphic hardware
+[2711493.167]profiling_start:weston
+[2711494.177]profiling_end:weston
+[2711494.298]profiling_start:graphic hardware
+[2711494.385]profiling_start:touch hardware motion
+[2711494.437]profiling_end:touch hardware motion
+[2711494.484]profiling_start:shell touch motion
+[2711494.532]profiling_end:shell touch motion
+[2711494.578]profiling_start:touch hardware motion
+[2711494.624]profiling_end:touch hardware motion
+[2711494.670]profiling_start:shell touch motion
+[2711494.715]profiling_end:shell touch motion
+[2711494.762]profiling_start:touch hardware motion
+[2711494.807]profiling_end:touch hardware motion
+[2711494.852]profiling_start:shell touch motion
+[2711494.897]profiling_end:shell touch motion
+[2711509.817]profiling_end:graphic hardware
+[2711509.894]profiling_start:weston
+[2711510.927]profiling_end:weston
+[2711511.010]profiling_start:graphic hardware
+[2711511.085]profiling_start:touch hardware motion
+[2711511.136]profiling_end:touch hardware motion
+[2711511.183]profiling_start:shell touch motion
+[2711511.279]profiling_end:shell touch motion
+[2711511.341]profiling_start:touch hardware motion
+[2711511.388]profiling_end:touch hardware motion
+[2711511.435]profiling_start:shell touch motion
+[2711511.479]profiling_end:shell touch motion
+[2711511.526]profiling_start:touch hardware motion
+[2711511.571]profiling_end:touch hardware motion
+[2711511.616]profiling_start:shell touch motion
+[2711511.661]profiling_end:shell touch motion
+[2711511.809]profiling_start:touch hardware motion
+[2711511.860]profiling_end:touch hardware motion
+[2711511.905]profiling_start:shell touch motion
+[2711511.951]profiling_end:shell touch motion
+[2711526.497]profiling_end:graphic hardware
+[2711526.571]profiling_start:weston
+[2711527.644]profiling_end:weston
+[2711527.731]profiling_start:graphic hardware
+[2711527.806]profiling_start:touch hardware motion
+[2711527.857]profiling_end:touch hardware motion
+[2711527.904]profiling_start:shell touch motion
+[2711527.951]profiling_end:shell touch motion
+[2711527.999]profiling_start:touch hardware motion
+[2711528.046]profiling_end:touch hardware motion
+[2711528.090]profiling_start:shell touch motion
+[2711528.135]profiling_end:shell touch motion
+[2711528.183]profiling_start:touch hardware motion
+[2711528.276]profiling_end:touch hardware motion
+[2711528.335]profiling_start:shell touch motion
+[2711528.383]profiling_end:shell touch motion
+[2711543.169]profiling_end:graphic hardware
+[2711543.325]profiling_start:weston
+[2711544.271]profiling_end:weston
+[2711544.354]profiling_start:graphic hardware
+[2711544.428]profiling_start:touch hardware motion
+[2711544.479]profiling_end:touch hardware motion
+[2711544.526]profiling_start:shell touch motion
+[2711544.574]profiling_end:shell touch motion
+[2711544.622]profiling_start:touch hardware motion
+[2711544.668]profiling_end:touch hardware motion
+[2711544.712]profiling_start:shell touch motion
+[2711544.757]profiling_end:shell touch motion
+[2711544.805]profiling_start:touch hardware motion
+[2711544.850]profiling_end:touch hardware motion
+[2711544.896]profiling_start:shell touch motion
+[2711544.941]profiling_end:shell touch motion
+[2711559.846]profiling_end:graphic hardware
+[2711559.921]profiling_start:weston
+[2711560.943]profiling_end:weston
+[2711561.019]profiling_start:graphic hardware
+[2711561.094]profiling_start:touch hardware motion
+[2711561.146]profiling_end:touch hardware motion
+[2711561.193]profiling_start:shell touch motion
+[2711561.350]profiling_end:shell touch motion
+[2711561.412]profiling_start:touch hardware motion
+[2711561.461]profiling_end:touch hardware motion
+[2711561.506]profiling_start:shell touch motion
+[2711561.552]profiling_end:shell touch motion
+[2711561.599]profiling_start:touch hardware motion
+[2711561.646]profiling_end:touch hardware motion
+[2711561.781]profiling_start:shell touch motion
+[2711561.835]profiling_end:shell touch motion
+[2711561.892]profiling_start:touch hardware motion
+[2711561.940]profiling_end:touch hardware motion
+[2711561.986]profiling_start:shell touch motion
+[2711562.031]profiling_end:shell touch motion
+[2711576.495]profiling_end:graphic hardware
+[2711576.570]profiling_start:weston
+[2711577.687]profiling_end:weston
+[2711577.774]profiling_start:graphic hardware
+[2711577.849]profiling_start:touch hardware motion
+[2711577.900]profiling_end:touch hardware motion
+[2711577.948]profiling_start:shell touch motion
+[2711577.996]profiling_end:shell touch motion
+[2711578.044]profiling_start:touch hardware motion
+[2711578.090]profiling_end:touch hardware motion
+[2711578.136]profiling_start:shell touch motion
+[2711578.181]profiling_end:shell touch motion
+[2711578.275]profiling_start:touch hardware motion
+[2711578.336]profiling_end:touch hardware motion
+[2711578.382]profiling_start:shell touch motion
+[2711578.427]profiling_end:shell touch motion
+[2711593.160]profiling_end:graphic hardware
+[2711593.316]profiling_start:weston
+[2711594.293]profiling_end:weston
+[2711594.376]profiling_start:graphic hardware
+[2711594.452]profiling_start:touch hardware motion
+[2711594.502]profiling_end:touch hardware motion
+[2711594.551]profiling_start:shell touch motion
+[2711594.599]profiling_end:shell touch motion
+[2711594.647]profiling_start:touch hardware motion
+[2711594.693]profiling_end:touch hardware motion
+[2711594.737]profiling_start:shell touch motion
+[2711594.783]profiling_end:shell touch motion
+[2711594.829]profiling_start:touch hardware motion
+[2711594.875]profiling_end:touch hardware motion
+[2711594.919]profiling_start:shell touch motion
+[2711594.964]profiling_end:shell touch motion
+[2711609.849]profiling_end:graphic hardware
+[2711609.925]profiling_start:weston
+[2711610.940]profiling_end:weston
+[2711611.016]profiling_start:graphic hardware
+[2711611.089]profiling_start:touch hardware motion
+[2711611.141]profiling_end:touch hardware motion
+[2711611.188]profiling_start:shell touch motion
+[2711611.286]profiling_end:shell touch motion
+[2711611.349]profiling_start:touch hardware motion
+[2711611.398]profiling_end:touch hardware motion
+[2711611.444]profiling_start:shell touch motion
+[2711611.489]profiling_end:shell touch motion
+[2711626.528]profiling_end:graphic hardware
+[2711626.601]profiling_start:weston
+[2711627.616]profiling_end:weston
+[2711627.699]profiling_start:graphic hardware
+[2711643.194]profiling_end:graphic hardware
+[2711643.412]profiling_start:touch hardware motion
+[2711643.470]profiling_end:touch hardware motion
+[2711643.518]profiling_start:shell touch motion
+[2711643.579]profiling_end:shell touch motion
+[2711643.630]profiling_start:touch hardware up
+[2711643.689]profiling_end:touch hardware up
+[2711643.737]profiling_start:shell touch up
+[2711643.784]profiling_end:shell touch up
+[2711659.836]profiling_end:graphic hardware
+[2711659.910]profiling_start:weston
+[2711660.928]profiling_end:weston
+[2711661.004]profiling_start:graphic hardware
+[2711676.529]profiling_end:graphic hardware
+[2712181.531]profiling_start:touch hardware down
+[2712181.980]profiling_end:touch hardware down
+[2712182.033]profiling_start:touch down
+[2712183.792]profiling_end:touch down
+[2712183.842]profiling_start:client touch down
+[2712183.891]profiling_end:client touch down
+[2712183.936]profiling_start:shell process
+[2712184.462]profiling_end:shell process
+[2712193.404]profiling_end:graphic hardware
+[2712193.453]profiling_start:weston
+[2712193.847]profiling_end:weston
+[2712193.879]profiling_start:graphic hardware
+[2712209.725]profiling_end:graphic hardware
+[2712249.824]profiling_start:touch hardware motion
+[2712249.875]profiling_end:touch hardware motion
+[2712249.893]profiling_start:shell touch motion
+[2712249.919]profiling_end:shell touch motion
+[2712259.877]profiling_end:graphic hardware
+[2712259.953]profiling_start:weston
+[2712260.934]profiling_end:weston
+[2712261.020]profiling_start:graphic hardware
+[2712261.092]profiling_start:touch hardware motion
+[2712261.143]profiling_end:touch hardware motion
+[2712261.190]profiling_start:shell touch motion
+[2712261.290]profiling_end:shell touch motion
+[2712276.495]profiling_end:graphic hardware
+[2712276.594]profiling_start:weston
+[2712277.667]profiling_end:weston
+[2712277.753]profiling_start:graphic hardware
+[2712277.828]profiling_start:touch hardware motion
+[2712277.878]profiling_end:touch hardware motion
+[2712277.926]profiling_start:shell touch motion
+[2712277.973]profiling_end:shell touch motion
+[2712278.020]profiling_start:touch hardware motion
+[2712278.067]profiling_end:touch hardware motion
+[2712278.112]profiling_start:shell touch motion
+[2712278.157]profiling_end:shell touch motion
+[2712278.205]profiling_start:touch hardware motion
+[2712278.312]profiling_end:touch hardware motion
+[2712278.360]profiling_start:shell touch motion
+[2712278.406]profiling_end:shell touch motion
+[2712293.154]profiling_end:graphic hardware
+[2712293.307]profiling_start:weston
+[2712294.203]profiling_end:weston
+[2712294.335]profiling_start:graphic hardware
+[2712294.411]profiling_start:touch hardware motion
+[2712294.463]profiling_end:touch hardware motion
+[2712294.511]profiling_start:shell touch motion
+[2712294.558]profiling_end:shell touch motion
+[2712294.607]profiling_start:touch hardware motion
+[2712294.654]profiling_end:touch hardware motion
+[2712294.789]profiling_start:shell touch motion
+[2712294.842]profiling_end:shell touch motion
+[2712294.892]profiling_start:touch hardware motion
+[2712294.939]profiling_end:touch hardware motion
+[2712294.984]profiling_start:shell touch motion
+[2712295.028]profiling_end:shell touch motion
+[2712295.083]profiling_start:touch hardware motion
+[2712295.130]profiling_end:touch hardware motion
+[2712295.175]profiling_start:shell touch motion
+[2712295.260]profiling_end:shell touch motion
+[2712309.744]profiling_end:graphic hardware
+[2712309.831]profiling_start:weston
+[2712310.831]profiling_end:weston
+[2712310.916]profiling_start:graphic hardware
+[2712310.991]profiling_start:touch hardware motion
+[2712311.043]profiling_end:touch hardware motion
+[2712311.091]profiling_start:shell touch motion
+[2712311.140]profiling_end:shell touch motion
+[2712311.188]profiling_start:touch hardware motion
+[2712311.284]profiling_end:touch hardware motion
+[2712311.344]profiling_start:shell touch motion
+[2712311.391]profiling_end:shell touch motion
+[2712311.440]profiling_start:touch hardware motion
+[2712311.486]profiling_end:touch hardware motion
+[2712311.531]profiling_start:shell touch motion
+[2712311.576]profiling_end:shell touch motion
+[2712326.765]profiling_end:graphic hardware
+[2712326.864]profiling_start:weston
+[2712327.924]profiling_end:weston
+[2712328.008]profiling_start:graphic hardware
+[2712328.085]profiling_start:touch hardware motion
+[2712328.136]profiling_end:touch hardware motion
+[2712328.185]profiling_start:shell touch motion
+[2712328.281]profiling_end:shell touch motion
+[2712328.344]profiling_start:touch hardware motion
+[2712328.393]profiling_end:touch hardware motion
+[2712328.440]profiling_start:shell touch motion
+[2712328.485]profiling_end:shell touch motion
+[2712328.534]profiling_start:touch hardware motion
+[2712328.579]profiling_end:touch hardware motion
+[2712328.625]profiling_start:shell touch motion
+[2712328.670]profiling_end:shell touch motion
+[2712328.826]profiling_start:touch hardware motion
+[2712328.878]profiling_end:touch hardware motion
+[2712328.923]profiling_start:shell touch motion
+[2712328.969]profiling_end:shell touch motion
+[2712343.171]profiling_end:graphic hardware
+[2712343.326]profiling_start:weston
+[2712344.404]profiling_end:weston
+[2712344.490]profiling_start:graphic hardware
+[2712344.565]profiling_start:touch hardware motion
+[2712344.678]profiling_end:touch hardware motion
+[2712344.729]profiling_start:shell touch motion
+[2712344.779]profiling_end:shell touch motion
+[2712344.827]profiling_start:touch hardware motion
+[2712344.873]profiling_end:touch hardware motion
+[2712344.919]profiling_start:shell touch motion
+[2712344.964]profiling_end:shell touch motion
+[2712345.011]profiling_start:touch hardware motion
+[2712345.056]profiling_end:touch hardware motion
+[2712345.101]profiling_start:shell touch motion
+[2712345.147]profiling_end:shell touch motion
+[2712359.743]profiling_end:graphic hardware
+[2712359.832]profiling_start:weston
+[2712360.867]profiling_end:weston
+[2712360.953]profiling_start:graphic hardware
+[2712361.027]profiling_start:touch hardware motion
+[2712361.079]profiling_end:touch hardware motion
+[2712361.127]profiling_start:shell touch motion
+[2712361.174]profiling_end:shell touch motion
+[2712361.269]profiling_start:touch hardware motion
+[2712361.330]profiling_end:touch hardware motion
+[2712361.377]profiling_start:shell touch motion
+[2712361.423]profiling_end:shell touch motion
+[2712361.470]profiling_start:touch hardware motion
+[2712361.516]profiling_end:touch hardware motion
+[2712361.562]profiling_start:shell touch motion
+[2712361.606]profiling_end:shell touch motion
+[2712376.510]profiling_end:graphic hardware
+[2712376.608]profiling_start:weston
+[2712377.677]profiling_end:weston
+[2712377.762]profiling_start:graphic hardware
+[2712377.838]profiling_start:touch hardware motion
+[2712377.887]profiling_end:touch hardware motion
+[2712377.935]profiling_start:shell touch motion
+[2712377.983]profiling_end:shell touch motion
+[2712378.031]profiling_start:touch hardware motion
+[2712378.078]profiling_end:touch hardware motion
+[2712378.123]profiling_start:shell touch motion
+[2712378.168]profiling_end:shell touch motion
+[2712378.215]profiling_start:touch hardware motion
+[2712378.322]profiling_end:touch hardware motion
+[2712378.370]profiling_start:shell touch motion
+[2712378.417]profiling_end:shell touch motion
+[2712393.074]profiling_end:graphic hardware
+[2712393.148]profiling_start:weston
+[2712394.173]profiling_end:weston
+[2712394.297]profiling_start:graphic hardware
+[2712394.388]profiling_start:touch hardware motion
+[2712394.440]profiling_end:touch hardware motion
+[2712394.488]profiling_start:shell touch motion
+[2712394.537]profiling_end:shell touch motion
+[2712394.585]profiling_start:touch hardware motion
+[2712394.631]profiling_end:touch hardware motion
+[2712394.676]profiling_start:shell touch motion
+[2712394.721]profiling_end:shell touch motion
+[2712394.768]profiling_start:touch hardware motion
+[2712394.814]profiling_end:touch hardware motion
+[2712394.860]profiling_start:shell touch motion
+[2712394.905]profiling_end:shell touch motion
+[2712394.953]profiling_start:touch hardware motion
+[2712394.998]profiling_end:touch hardware motion
+[2712395.043]profiling_start:shell touch motion
+[2712395.088]profiling_end:shell touch motion
+[2712410.108]profiling_end:graphic hardware
+[2712410.207]profiling_start:weston
+[2712411.294]profiling_end:weston
+[2712411.379]profiling_start:graphic hardware
+[2712411.453]profiling_start:touch hardware motion
+[2712411.503]profiling_end:touch hardware motion
+[2712411.551]profiling_start:shell touch motion
+[2712411.598]profiling_end:shell touch motion
+[2712411.646]profiling_start:touch hardware motion
+[2712411.692]profiling_end:touch hardware motion
+[2712411.737]profiling_start:shell touch motion
+[2712411.782]profiling_end:shell touch motion
+[2712426.472]profiling_end:graphic hardware
+[2712426.548]profiling_start:weston
+[2712427.583]profiling_end:weston
+[2712427.668]profiling_start:graphic hardware
+[2712427.839]profiling_start:touch hardware motion
+[2712427.893]profiling_end:touch hardware motion
+[2712427.941]profiling_start:shell touch motion
+[2712427.988]profiling_end:shell touch motion
+[2712428.036]profiling_start:touch hardware motion
+[2712428.083]profiling_end:touch hardware motion
+[2712428.128]profiling_start:shell touch motion
+[2712428.174]profiling_end:shell touch motion
+[2712428.266]profiling_start:touch hardware motion
+[2712428.328]profiling_end:touch hardware motion
+[2712428.376]profiling_start:shell touch motion
+[2712428.422]profiling_end:shell touch motion
+[2712428.469]profiling_start:touch hardware motion
+[2712428.516]profiling_end:touch hardware motion
+[2712428.561]profiling_start:shell touch motion
+[2712428.665]profiling_end:shell touch motion
+[2712443.076]profiling_end:graphic hardware
+[2712443.152]profiling_start:weston
+[2712444.176]profiling_end:weston
+[2712444.346]profiling_start:graphic hardware
+[2712444.436]profiling_start:touch hardware motion
+[2712444.487]profiling_end:touch hardware motion
+[2712444.534]profiling_start:shell touch motion
+[2712444.582]profiling_end:shell touch motion
+[2712444.630]profiling_start:touch hardware motion
+[2712444.678]profiling_end:touch hardware motion
+[2712444.723]profiling_start:shell touch motion
+[2712444.768]profiling_end:shell touch motion
+[2712444.815]profiling_start:touch hardware motion
+[2712444.861]profiling_end:touch hardware motion
+[2712444.907]profiling_start:shell touch motion
+[2712444.953]profiling_end:shell touch motion
+[2712460.108]profiling_end:graphic hardware
+[2712460.208]profiling_start:weston
+[2712461.213]profiling_end:weston
+[2712461.341]profiling_start:graphic hardware
+[2712461.417]profiling_start:touch hardware motion
+[2712461.467]profiling_end:touch hardware motion
+[2712461.515]profiling_start:shell touch motion
+[2712461.563]profiling_end:shell touch motion
+[2712461.611]profiling_start:touch hardware motion
+[2712461.657]profiling_end:touch hardware motion
+[2712461.702]profiling_start:shell touch motion
+[2712461.748]profiling_end:shell touch motion
+[2712461.795]profiling_start:touch hardware motion
+[2712461.841]profiling_end:touch hardware motion
+[2712461.886]profiling_start:shell touch motion
+[2712461.930]profiling_end:shell touch motion
+[2712476.474]profiling_end:graphic hardware
+[2712476.551]profiling_start:weston
+[2712477.675]profiling_end:weston
+[2712477.762]profiling_start:graphic hardware
+[2712477.840]profiling_start:touch hardware motion
+[2712477.891]profiling_end:touch hardware motion
+[2712477.940]profiling_start:shell touch motion
+[2712477.987]profiling_end:shell touch motion
+[2712478.035]profiling_start:touch hardware motion
+[2712478.081]profiling_end:touch hardware motion
+[2712478.126]profiling_start:shell touch motion
+[2712478.171]profiling_end:shell touch motion
+[2712478.261]profiling_start:touch hardware motion
+[2712478.324]profiling_end:touch hardware motion
+[2712478.371]profiling_start:shell touch motion
+[2712478.417]profiling_end:shell touch motion
+[2712478.465]profiling_start:touch hardware motion
+[2712478.512]profiling_end:touch hardware motion
+[2712478.557]profiling_start:shell touch motion
+[2712478.603]profiling_end:shell touch motion
+[2712493.112]profiling_end:graphic hardware
+[2712493.209]profiling_start:weston
+[2712494.307]profiling_end:weston
+[2712494.394]profiling_start:graphic hardware
+[2712494.469]profiling_start:touch hardware motion
+[2712494.519]profiling_end:touch hardware motion
+[2712494.567]profiling_start:shell touch motion
+[2712494.615]profiling_end:shell touch motion
+[2712494.663]profiling_start:touch hardware motion
+[2712494.710]profiling_end:touch hardware motion
+[2712494.756]profiling_start:shell touch motion
+[2712494.802]profiling_end:shell touch motion
+[2712494.849]profiling_start:touch hardware motion
+[2712494.895]profiling_end:touch hardware motion
+[2712494.939]profiling_start:shell touch motion
+[2712494.984]profiling_end:shell touch motion
+[2712509.890]profiling_end:graphic hardware
+[2712509.966]profiling_start:weston
+[2712511.000]profiling_end:weston
+[2712511.074]profiling_start:graphic hardware
+[2712511.150]profiling_start:touch hardware motion
+[2712511.203]profiling_end:touch hardware motion
+[2712511.314]profiling_start:shell touch motion
+[2712511.365]profiling_end:shell touch motion
+[2712511.413]profiling_start:touch hardware motion
+[2712511.460]profiling_end:touch hardware motion
+[2712511.505]profiling_start:shell touch motion
+[2712511.550]profiling_end:shell touch motion
+[2712511.597]profiling_start:touch hardware motion
+[2712511.643]profiling_end:touch hardware motion
+[2712511.777]profiling_start:shell touch motion
+[2712511.832]profiling_end:shell touch motion
+[2712511.890]profiling_start:touch hardware motion
+[2712511.938]profiling_end:touch hardware motion
+[2712511.983]profiling_start:shell touch motion
+[2712512.027]profiling_end:shell touch motion
+[2712526.481]profiling_end:graphic hardware
+[2712526.556]profiling_start:weston
+[2712527.685]profiling_end:weston
+[2712527.772]profiling_start:graphic hardware
+[2712527.919]profiling_start:touch hardware motion
+[2712527.972]profiling_end:touch hardware motion
+[2712528.020]profiling_start:shell touch motion
+[2712528.068]profiling_end:shell touch motion
+[2712528.115]profiling_start:touch hardware motion
+[2712528.161]profiling_end:touch hardware motion
+[2712528.207]profiling_start:shell touch motion
+[2712528.314]profiling_end:shell touch motion
+[2712528.365]profiling_start:touch hardware motion
+[2712528.411]profiling_end:touch hardware motion
+[2712528.456]profiling_start:shell touch motion
+[2712528.501]profiling_end:shell touch motion
+[2712543.152]profiling_end:graphic hardware
+[2712543.304]profiling_start:weston
+[2712544.309]profiling_end:weston
+[2712544.393]profiling_start:graphic hardware
+[2712544.467]profiling_start:touch hardware motion
+[2712544.518]profiling_end:touch hardware motion
+[2712544.566]profiling_start:shell touch motion
+[2712544.614]profiling_end:shell touch motion
+[2712544.660]profiling_start:touch hardware motion
+[2712544.707]profiling_end:touch hardware motion
+[2712544.751]profiling_start:shell touch motion
+[2712544.797]profiling_end:shell touch motion
+[2712544.844]profiling_start:touch hardware motion
+[2712544.889]profiling_end:touch hardware motion
+[2712544.934]profiling_start:shell touch motion
+[2712544.980]profiling_end:shell touch motion
+[2712559.863]profiling_end:graphic hardware
+[2712559.939]profiling_start:weston
+[2712561.054]profiling_end:weston
+[2712561.130]profiling_start:graphic hardware
+[2712561.206]profiling_start:touch hardware motion
+[2712561.324]profiling_end:touch hardware motion
+[2712561.374]profiling_start:shell touch motion
+[2712561.422]profiling_end:shell touch motion
+[2712561.470]profiling_start:touch hardware motion
+[2712561.517]profiling_end:touch hardware motion
+[2712561.562]profiling_start:shell touch motion
+[2712561.607]profiling_end:shell touch motion
+[2712561.654]profiling_start:touch hardware motion
+[2712561.701]profiling_end:touch hardware motion
+[2712561.747]profiling_start:shell touch motion
+[2712561.791]profiling_end:shell touch motion
+[2712561.837]profiling_start:touch hardware motion
+[2712561.883]profiling_end:touch hardware motion
+[2712561.928]profiling_start:shell touch motion
+[2712561.972]profiling_end:shell touch motion
+[2712576.406]profiling_end:graphic hardware
+[2712576.481]profiling_start:weston
+[2712577.509]profiling_end:weston
+[2712577.594]profiling_start:graphic hardware
+[2712577.668]profiling_start:touch hardware motion
+[2712577.718]profiling_end:touch hardware motion
+[2712577.765]profiling_start:shell touch motion
+[2712577.813]profiling_end:shell touch motion
+[2712577.861]profiling_start:touch hardware motion
+[2712577.906]profiling_end:touch hardware motion
+[2712577.952]profiling_start:shell touch motion
+[2712577.999]profiling_end:shell touch motion
+[2712578.047]profiling_start:touch hardware motion
+[2712578.093]profiling_end:touch hardware motion
+[2712578.138]profiling_start:shell touch motion
+[2712578.184]profiling_end:shell touch motion
+[2712593.142]profiling_end:graphic hardware
+[2712593.306]profiling_start:weston
+[2712594.292]profiling_end:weston
+[2712594.376]profiling_start:graphic hardware
+[2712594.450]profiling_start:touch hardware motion
+[2712594.502]profiling_end:touch hardware motion
+[2712594.549]profiling_start:shell touch motion
+[2712594.598]profiling_end:shell touch motion
+[2712594.645]profiling_start:touch hardware motion
+[2712594.690]profiling_end:touch hardware motion
+[2712594.736]profiling_start:shell touch motion
+[2712594.781]profiling_end:shell touch motion
+[2712594.828]profiling_start:touch hardware motion
+[2712594.873]profiling_end:touch hardware motion
+[2712594.918]profiling_start:shell touch motion
+[2712594.962]profiling_end:shell touch motion
+[2712609.859]profiling_end:graphic hardware
+[2712609.935]profiling_start:weston
+[2712611.053]profiling_end:weston
+[2712611.130]profiling_start:graphic hardware
+[2712611.207]profiling_start:touch hardware motion
+[2712611.327]profiling_end:touch hardware motion
+[2712611.377]profiling_start:shell touch motion
+[2712611.425]profiling_end:shell touch motion
+[2712611.473]profiling_start:touch hardware motion
+[2712611.519]profiling_end:touch hardware motion
+[2712611.565]profiling_start:shell touch motion
+[2712611.610]profiling_end:shell touch motion
+[2712611.657]profiling_start:touch hardware motion
+[2712611.703]profiling_end:touch hardware motion
+[2712611.807]profiling_start:shell touch motion
+[2712611.857]profiling_end:shell touch motion
+[2712611.906]profiling_start:touch hardware motion
+[2712611.951]profiling_end:touch hardware motion
+[2712611.996]profiling_start:shell touch motion
+[2712612.041]profiling_end:shell touch motion
+[2712626.408]profiling_end:graphic hardware
+[2712626.484]profiling_start:weston
+[2712627.525]profiling_end:weston
+[2712627.610]profiling_start:graphic hardware
+[2712627.686]profiling_start:touch hardware motion
+[2712627.737]profiling_end:touch hardware motion
+[2712627.784]profiling_start:shell touch motion
+[2712627.832]profiling_end:shell touch motion
+[2712627.880]profiling_start:touch hardware motion
+[2712627.927]profiling_end:touch hardware motion
+[2712627.972]profiling_start:shell touch motion
+[2712628.017]profiling_end:shell touch motion
+[2712628.065]profiling_start:touch hardware motion
+[2712628.112]profiling_end:touch hardware motion
+[2712628.157]profiling_start:shell touch motion
+[2712628.203]profiling_end:shell touch motion
+[2712643.171]profiling_end:graphic hardware
+[2712643.334]profiling_start:weston
+[2712644.317]profiling_end:weston
+[2712644.403]profiling_start:graphic hardware
+[2712644.478]profiling_start:touch hardware motion
+[2712644.530]profiling_end:touch hardware motion
+[2712644.577]profiling_start:shell touch motion
+[2712644.626]profiling_end:shell touch motion
+[2712644.674]profiling_start:touch hardware motion
+[2712644.818]profiling_end:touch hardware motion
+[2712644.866]profiling_start:shell touch motion
+[2712644.913]profiling_end:shell touch motion
+[2712644.960]profiling_start:touch hardware motion
+[2712645.006]profiling_end:touch hardware motion
+[2712645.051]profiling_start:shell touch motion
+[2712645.097]profiling_end:shell touch motion
+[2712645.151]profiling_start:touch hardware motion
+[2712645.198]profiling_end:touch hardware motion
+[2712645.289]profiling_start:shell touch motion
+[2712645.347]profiling_end:shell touch motion
+[2712659.952]profiling_end:graphic hardware
+[2712660.030]profiling_start:weston
+[2712661.051]profiling_end:weston
+[2712661.128]profiling_start:graphic hardware
+[2712661.202]profiling_start:touch hardware motion
+[2712661.313]profiling_end:touch hardware motion
+[2712661.363]profiling_start:shell touch motion
+[2712661.411]profiling_end:shell touch motion
+[2712661.459]profiling_start:touch hardware motion
+[2712661.505]profiling_end:touch hardware motion
+[2712661.551]profiling_start:shell touch motion
+[2712661.597]profiling_end:shell touch motion
+[2712661.645]profiling_start:touch hardware motion
+[2712661.690]profiling_end:touch hardware motion
+[2712661.735]profiling_start:shell touch motion
+[2712661.779]profiling_end:shell touch motion
+[2712676.467]profiling_end:graphic hardware
+[2712676.547]profiling_start:weston
+[2712677.576]profiling_end:weston
+[2712677.660]profiling_start:graphic hardware
+[2712677.737]profiling_start:touch hardware motion
+[2712677.788]profiling_end:touch hardware motion
+[2712677.836]profiling_start:shell touch motion
+[2712677.884]profiling_end:shell touch motion
+[2712677.931]profiling_start:touch hardware motion
+[2712677.978]profiling_end:touch hardware motion
+[2712678.023]profiling_start:shell touch motion
+[2712678.068]profiling_end:shell touch motion
+[2712678.114]profiling_start:touch hardware motion
+[2712678.160]profiling_end:touch hardware motion
+[2712678.205]profiling_start:shell touch motion
+[2712678.308]profiling_end:shell touch motion
+[2712693.145]profiling_end:graphic hardware
+[2712693.550]profiling_start:weston
+[2712694.630]profiling_end:weston
+[2712694.810]profiling_start:graphic hardware
+[2712694.891]profiling_start:touch hardware motion
+[2712694.976]profiling_end:touch hardware motion
+[2712695.029]profiling_start:shell touch motion
+[2712695.078]profiling_end:shell touch motion
+[2712695.127]profiling_start:touch hardware motion
+[2712695.173]profiling_end:touch hardware motion
+[2712695.218]profiling_start:shell touch motion
+[2712695.329]profiling_end:shell touch motion
+[2712695.380]profiling_start:touch hardware motion
+[2712695.427]profiling_end:touch hardware motion
+[2712695.473]profiling_start:shell touch motion
+[2712695.518]profiling_end:shell touch motion
+[2712695.565]profiling_start:touch hardware motion
+[2712695.611]profiling_end:touch hardware motion
+[2712695.656]profiling_start:shell touch motion
+[2712695.757]profiling_end:shell touch motion
+[2712709.920]profiling_end:graphic hardware
+[2712709.998]profiling_start:weston
+[2712711.062]profiling_end:weston
+[2712711.137]profiling_start:graphic hardware
+[2712711.213]profiling_start:touch hardware motion
+[2712711.326]profiling_end:touch hardware motion
+[2712711.375]profiling_start:shell touch motion
+[2712711.424]profiling_end:shell touch motion
+[2712711.473]profiling_start:touch hardware motion
+[2712711.519]profiling_end:touch hardware motion
+[2712711.564]profiling_start:shell touch motion
+[2712711.609]profiling_end:shell touch motion
+[2712711.657]profiling_start:touch hardware motion
+[2712711.702]profiling_end:touch hardware motion
+[2712711.747]profiling_start:shell touch motion
+[2712711.792]profiling_end:shell touch motion
+[2712726.479]profiling_end:graphic hardware
+[2712726.557]profiling_start:weston
+[2712727.588]profiling_end:weston
+[2712727.672]profiling_start:graphic hardware
+[2712727.748]profiling_start:touch hardware motion
+[2712727.799]profiling_end:touch hardware motion
+[2712727.846]profiling_start:shell touch motion
+[2712727.895]profiling_end:shell touch motion
+[2712727.943]profiling_start:touch hardware motion
+[2712727.989]profiling_end:touch hardware motion
+[2712728.035]profiling_start:shell touch motion
+[2712728.080]profiling_end:shell touch motion
+[2712728.127]profiling_start:touch hardware motion
+[2712728.174]profiling_end:touch hardware motion
+[2712728.217]profiling_start:shell touch motion
+[2712728.320]profiling_end:shell touch motion
+[2712743.144]profiling_end:graphic hardware
+[2712743.219]profiling_start:weston
+[2712744.371]profiling_end:weston
+[2712744.460]profiling_start:graphic hardware
+[2712744.538]profiling_start:touch hardware motion
+[2712744.588]profiling_end:touch hardware motion
+[2712744.636]profiling_start:shell touch motion
+[2712744.683]profiling_end:shell touch motion
+[2712744.731]profiling_start:touch hardware motion
+[2712744.775]profiling_end:touch hardware motion
+[2712744.819]profiling_start:shell touch motion
+[2712744.863]profiling_end:shell touch motion
+[2712744.910]profiling_start:touch hardware motion
+[2712744.955]profiling_end:touch hardware motion
+[2712744.999]profiling_start:shell touch motion
+[2712745.045]profiling_end:shell touch motion
+[2712745.092]profiling_start:touch hardware motion
+[2712745.138]profiling_end:touch hardware motion
+[2712745.182]profiling_start:shell touch motion
+[2712745.264]profiling_end:shell touch motion
+[2712759.736]profiling_end:graphic hardware
+[2712759.827]profiling_start:weston
+[2712760.845]profiling_end:weston
+[2712760.931]profiling_start:graphic hardware
+[2712761.006]profiling_start:touch hardware motion
+[2712761.058]profiling_end:touch hardware motion
+[2712761.104]profiling_start:shell touch motion
+[2712761.152]profiling_end:shell touch motion
+[2712761.199]profiling_start:touch hardware motion
+[2712761.303]profiling_end:touch hardware motion
+[2712761.354]profiling_start:shell touch motion
+[2712761.400]profiling_end:shell touch motion
+[2712761.449]profiling_start:touch hardware motion
+[2712761.495]profiling_end:touch hardware motion
+[2712761.540]profiling_start:shell touch motion
+[2712761.586]profiling_end:shell touch motion
+[2712776.479]profiling_end:graphic hardware
+[2712776.555]profiling_start:weston
+[2712777.582]profiling_end:weston
+[2712777.665]profiling_start:graphic hardware
+[2712777.740]profiling_start:touch hardware motion
+[2712777.791]profiling_end:touch hardware motion
+[2712777.838]profiling_start:shell touch motion
+[2712777.886]profiling_end:shell touch motion
+[2712777.934]profiling_start:touch hardware motion
+[2712777.980]profiling_end:touch hardware motion
+[2712778.026]profiling_start:shell touch motion
+[2712778.071]profiling_end:shell touch motion
+[2712793.179]profiling_end:graphic hardware
+[2712793.346]profiling_start:weston
+[2712794.408]profiling_end:weston
+[2712794.494]profiling_start:graphic hardware
+[2712794.569]profiling_start:touch hardware motion
+[2712794.621]profiling_end:touch hardware motion
+[2712794.668]profiling_start:shell touch motion
+[2712794.716]profiling_end:shell touch motion
+[2712794.764]profiling_start:touch hardware motion
+[2712794.811]profiling_end:touch hardware motion
+[2712794.856]profiling_start:shell touch motion
+[2712794.902]profiling_end:shell touch motion
+[2712794.949]profiling_start:touch hardware motion
+[2712795.052]profiling_end:touch hardware motion
+[2712795.102]profiling_start:shell touch motion
+[2712795.148]profiling_end:shell touch motion
+[2712809.880]profiling_end:graphic hardware
+[2712809.956]profiling_start:weston
+[2712810.929]profiling_end:weston
+[2712811.004]profiling_start:graphic hardware
+[2712811.075]profiling_start:touch hardware motion
+[2712811.126]profiling_end:touch hardware motion
+[2712811.173]profiling_start:shell touch motion
+[2712811.269]profiling_end:shell touch motion
+[2712826.514]profiling_end:graphic hardware
+[2712826.587]profiling_start:weston
+[2712827.871]profiling_end:weston
+[2712827.960]profiling_start:graphic hardware
+[2712828.031]profiling_start:touch hardware motion
+[2712828.082]profiling_end:touch hardware motion
+[2712828.130]profiling_start:shell touch motion
+[2712828.178]profiling_end:shell touch motion
+[2712828.271]profiling_start:touch hardware up
+[2712828.345]profiling_end:touch hardware up
+[2712828.394]profiling_start:shell touch up
+[2712828.442]profiling_end:shell touch up
+[2712843.177]profiling_end:graphic hardware
+[2712843.331]profiling_start:weston
+[2712844.299]profiling_end:weston
+[2712844.383]profiling_start:graphic hardware
+[2712859.879]profiling_end:graphic hardware
+[2713391.359]profiling_start:touch hardware down
+[2713391.808]profiling_end:touch hardware down
+[2713391.861]profiling_start:touch down
+[2713393.670]profiling_end:touch down
+[2713393.720]profiling_start:client touch down
+[2713393.769]profiling_end:client touch down
+[2713393.814]profiling_start:shell process
+[2713394.142]profiling_end:shell process
+[2713410.108]profiling_end:graphic hardware
+[2713410.157]profiling_start:weston
+[2713411.138]profiling_end:weston
+[2713411.215]profiling_start:graphic hardware
+[2713426.416]profiling_end:graphic hardware
+[2713426.583]profiling_start:touch hardware motion
+[2713426.639]profiling_end:touch hardware motion
+[2713426.689]profiling_start:shell touch motion
+[2713426.750]profiling_end:shell touch motion
+[2713443.045]profiling_end:graphic hardware
+[2713443.119]profiling_start:weston
+[2713444.087]profiling_end:weston
+[2713444.163]profiling_start:graphic hardware
+[2713460.198]profiling_end:graphic hardware
+[2713460.453]profiling_start:touch hardware motion
+[2713460.510]profiling_end:touch hardware motion
+[2713460.560]profiling_start:shell touch motion
+[2713460.621]profiling_end:shell touch motion
+[2713476.507]profiling_end:graphic hardware
+[2713476.605]profiling_start:weston
+[2713477.648]profiling_end:weston
+[2713477.733]profiling_start:graphic hardware
+[2713477.809]profiling_start:touch hardware motion
+[2713477.860]profiling_end:touch hardware motion
+[2713477.907]profiling_start:shell touch motion
+[2713477.954]profiling_end:shell touch motion
+[2713478.003]profiling_start:touch hardware motion
+[2713478.050]profiling_end:touch hardware motion
+[2713478.095]profiling_start:shell touch motion
+[2713478.140]profiling_end:shell touch motion
+[2713478.188]profiling_start:touch hardware motion
+[2713478.281]profiling_end:touch hardware motion
+[2713478.340]profiling_start:shell touch motion
+[2713478.387]profiling_end:shell touch motion
+[2713493.128]profiling_end:graphic hardware
+[2713493.204]profiling_start:weston
+[2713494.403]profiling_end:weston
+[2713494.494]profiling_start:graphic hardware
+[2713494.571]profiling_start:touch hardware motion
+[2713494.622]profiling_end:touch hardware motion
+[2713494.670]profiling_start:shell touch motion
+[2713494.814]profiling_end:shell touch motion
+[2713494.866]profiling_start:touch hardware motion
+[2713494.913]profiling_end:touch hardware motion
+[2713494.960]profiling_start:shell touch motion
+[2713495.007]profiling_end:shell touch motion
+[2713495.055]profiling_start:touch hardware motion
+[2713495.160]profiling_end:touch hardware motion
+[2713495.208]profiling_start:shell touch motion
+[2713495.313]profiling_end:shell touch motion
+[2713495.371]profiling_start:touch hardware motion
+[2713495.419]profiling_end:touch hardware motion
+[2713495.465]profiling_start:shell touch motion
+[2713495.512]profiling_end:shell touch motion
+[2713509.870]profiling_end:graphic hardware
+[2713509.946]profiling_start:weston
+[2713510.976]profiling_end:weston
+[2713511.061]profiling_start:graphic hardware
+[2713511.137]profiling_start:touch hardware motion
+[2713511.187]profiling_end:touch hardware motion
+[2713511.286]profiling_start:shell touch motion
+[2713511.349]profiling_end:shell touch motion
+[2713511.398]profiling_start:touch hardware motion
+[2713511.445]profiling_end:touch hardware motion
+[2713511.489]profiling_start:shell touch motion
+[2713511.534]profiling_end:shell touch motion
+[2713511.582]profiling_start:touch hardware motion
+[2713511.628]profiling_end:touch hardware motion
+[2713511.672]profiling_start:shell touch motion
+[2713511.716]profiling_end:shell touch motion
+[2713526.473]profiling_end:graphic hardware
+[2713526.571]profiling_start:weston
+[2713527.627]profiling_end:weston
+[2713527.712]profiling_start:graphic hardware
+[2713527.788]profiling_start:touch hardware motion
+[2713527.838]profiling_end:touch hardware motion
+[2713527.886]profiling_start:shell touch motion
+[2713527.933]profiling_end:shell touch motion
+[2713527.979]profiling_start:touch hardware motion
+[2713528.026]profiling_end:touch hardware motion
+[2713528.070]profiling_start:shell touch motion
+[2713528.115]profiling_end:shell touch motion
+[2713528.162]profiling_start:touch hardware motion
+[2713528.208]profiling_end:touch hardware motion
+[2713528.311]profiling_start:shell touch motion
+[2713528.360]profiling_end:shell touch motion
+[2713543.418]profiling_end:graphic hardware
+[2713543.517]profiling_start:weston
+[2713544.687]profiling_end:weston
+[2713544.774]profiling_start:graphic hardware
+[2713544.852]profiling_start:touch hardware motion
+[2713544.903]profiling_end:touch hardware motion
+[2713544.951]profiling_start:shell touch motion
+[2713544.999]profiling_end:shell touch motion
+[2713545.047]profiling_start:touch hardware motion
+[2713545.093]profiling_end:touch hardware motion
+[2713545.138]profiling_start:shell touch motion
+[2713545.182]profiling_end:shell touch motion
+[2713545.277]profiling_start:touch hardware motion
+[2713545.337]profiling_end:touch hardware motion
+[2713545.385]profiling_start:shell touch motion
+[2713545.431]profiling_end:shell touch motion
+[2713545.479]profiling_start:touch hardware motion
+[2713545.525]profiling_end:touch hardware motion
+[2713545.570]profiling_start:shell touch motion
+[2713545.614]profiling_end:shell touch motion
+[2713559.721]profiling_end:graphic hardware
+[2713559.810]profiling_start:weston
+[2713560.852]profiling_end:weston
+[2713560.937]profiling_start:graphic hardware
+[2713561.013]profiling_start:touch hardware motion
+[2713561.063]profiling_end:touch hardware motion
+[2713561.112]profiling_start:shell touch motion
+[2713561.159]profiling_end:shell touch motion
+[2713561.208]profiling_start:touch hardware motion
+[2713561.316]profiling_end:touch hardware motion
+[2713561.366]profiling_start:shell touch motion
+[2713561.413]profiling_end:shell touch motion
+[2713561.461]profiling_start:touch hardware motion
+[2713561.507]profiling_end:touch hardware motion
+[2713561.552]profiling_start:shell touch motion
+[2713561.598]profiling_end:shell touch motion
+[2713576.748]profiling_end:graphic hardware
+[2713576.847]profiling_start:weston
+[2713577.911]profiling_end:weston
+[2713577.996]profiling_start:graphic hardware
+[2713578.071]profiling_start:touch hardware motion
+[2713578.122]profiling_end:touch hardware motion
+[2713578.171]profiling_start:shell touch motion
+[2713578.261]profiling_end:shell touch motion
+[2713578.327]profiling_start:touch hardware motion
+[2713578.376]profiling_end:touch hardware motion
+[2713578.421]profiling_start:shell touch motion
+[2713578.466]profiling_end:shell touch motion
+[2713578.513]profiling_start:touch hardware motion
+[2713578.559]profiling_end:touch hardware motion
+[2713578.605]profiling_start:shell touch motion
+[2713578.651]profiling_end:shell touch motion
+[2713578.802]profiling_start:touch hardware motion
+[2713578.855]profiling_end:touch hardware motion
+[2713578.902]profiling_start:shell touch motion
+[2713579.005]profiling_end:shell touch motion
+[2713593.133]profiling_end:graphic hardware
+[2713593.207]profiling_start:weston
+[2713594.376]profiling_end:weston
+[2713594.461]profiling_start:graphic hardware
+[2713594.536]profiling_start:touch hardware motion
+[2713594.587]profiling_end:touch hardware motion
+[2713594.634]profiling_start:shell touch motion
+[2713594.680]profiling_end:shell touch motion
+[2713594.728]profiling_start:touch hardware motion
+[2713594.773]profiling_end:touch hardware motion
+[2713594.817]profiling_start:shell touch motion
+[2713594.863]profiling_end:shell touch motion
+[2713594.910]profiling_start:touch hardware motion
+[2713594.955]profiling_end:touch hardware motion
+[2713594.999]profiling_start:shell touch motion
+[2713595.043]profiling_end:shell touch motion
+[2713609.722]profiling_end:graphic hardware
+[2713609.814]profiling_start:weston
+[2713610.851]profiling_end:weston
+[2713610.937]profiling_start:graphic hardware
+[2713611.009]profiling_start:touch hardware motion
+[2713611.060]profiling_end:touch hardware motion
+[2713611.108]profiling_start:shell touch motion
+[2713611.155]profiling_end:shell touch motion
+[2713611.203]profiling_start:touch hardware motion
+[2713611.311]profiling_end:touch hardware motion
+[2713611.360]profiling_start:shell touch motion
+[2713611.406]profiling_end:shell touch motion
+[2713626.759]profiling_end:graphic hardware
+[2713626.858]profiling_start:weston
+[2713627.904]profiling_end:weston
+[2713627.989]profiling_start:graphic hardware
+[2713628.064]profiling_start:touch hardware motion
+[2713628.115]profiling_end:touch hardware motion
+[2713628.162]profiling_start:shell touch motion
+[2713628.209]profiling_end:shell touch motion
+[2713628.317]profiling_start:touch hardware motion
+[2713628.366]profiling_end:touch hardware motion
+[2713628.413]profiling_start:shell touch motion
+[2713628.458]profiling_end:shell touch motion
+[2713628.505]profiling_start:touch hardware motion
+[2713628.551]profiling_end:touch hardware motion
+[2713628.596]profiling_start:shell touch motion
+[2713628.640]profiling_end:shell touch motion
+[2713643.135]profiling_end:graphic hardware
+[2713643.211]profiling_start:weston
+[2713644.377]profiling_end:weston
+[2713644.463]profiling_start:graphic hardware
+[2713644.540]profiling_start:touch hardware motion
+[2713644.590]profiling_end:touch hardware motion
+[2713644.638]profiling_start:shell touch motion
+[2713644.686]profiling_end:shell touch motion
+[2713644.734]profiling_start:touch hardware motion
+[2713644.780]profiling_end:touch hardware motion
+[2713644.826]profiling_start:shell touch motion
+[2713644.871]profiling_end:shell touch motion
+[2713644.920]profiling_start:touch hardware motion
+[2713644.965]profiling_end:touch hardware motion
+[2713645.009]profiling_start:shell touch motion
+[2713645.053]profiling_end:shell touch motion
+[2713645.100]profiling_start:touch hardware motion
+[2713645.146]profiling_end:touch hardware motion
+[2713645.190]profiling_start:shell touch motion
+[2713645.275]profiling_end:shell touch motion
+[2713659.722]profiling_end:graphic hardware
+[2713659.814]profiling_start:weston
+[2713660.850]profiling_end:weston
+[2713660.935]profiling_start:graphic hardware
+[2713661.010]profiling_start:touch hardware motion
+[2713661.061]profiling_end:touch hardware motion
+[2713661.109]profiling_start:shell touch motion
+[2713661.157]profiling_end:shell touch motion
+[2713661.204]profiling_start:touch hardware motion
+[2713661.311]profiling_end:touch hardware motion
+[2713661.359]profiling_start:shell touch motion
+[2713661.405]profiling_end:shell touch motion
+[2713661.452]profiling_start:touch hardware motion
+[2713661.498]profiling_end:touch hardware motion
+[2713661.543]profiling_start:shell touch motion
+[2713661.587]profiling_end:shell touch motion
+[2713676.461]profiling_end:graphic hardware
+[2713676.537]profiling_start:weston
+[2713677.521]profiling_end:weston
+[2713677.604]profiling_start:graphic hardware
+[2713677.680]profiling_start:touch hardware motion
+[2713677.731]profiling_end:touch hardware motion
+[2713677.779]profiling_start:shell touch motion
+[2713677.826]profiling_end:shell touch motion
+[2713677.872]profiling_start:touch hardware motion
+[2713677.918]profiling_end:touch hardware motion
+[2713677.962]profiling_start:shell touch motion
+[2713678.007]profiling_end:shell touch motion
+[2713678.113]profiling_start:touch hardware motion
+[2713678.163]profiling_end:touch hardware motion
+[2713678.208]profiling_start:shell touch motion
+[2713678.310]profiling_end:shell touch motion
+[2713693.121]profiling_end:graphic hardware
+[2713693.196]profiling_start:weston
+[2713694.207]profiling_end:weston
+[2713694.345]profiling_start:graphic hardware
+[2713694.424]profiling_start:touch hardware motion
+[2713694.474]profiling_end:touch hardware motion
+[2713694.522]profiling_start:shell touch motion
+[2713694.568]profiling_end:shell touch motion
+[2713694.615]profiling_start:touch hardware motion
+[2713694.660]profiling_end:touch hardware motion
+[2713694.704]profiling_start:shell touch motion
+[2713694.749]profiling_end:shell touch motion
+[2713694.796]profiling_start:touch hardware motion
+[2713694.842]profiling_end:touch hardware motion
+[2713694.886]profiling_start:shell touch motion
+[2713694.930]profiling_end:shell touch motion
+[2713694.978]profiling_start:touch hardware motion
+[2713695.023]profiling_end:touch hardware motion
+[2713695.067]profiling_start:shell touch motion
+[2713695.112]profiling_end:shell touch motion
+[2713709.794]profiling_end:graphic hardware
+[2713709.870]profiling_start:weston
+[2713710.899]profiling_end:weston
+[2713710.985]profiling_start:graphic hardware
+[2713711.061]profiling_start:touch hardware motion
+[2713711.112]profiling_end:touch hardware motion
+[2713711.161]profiling_start:shell touch motion
+[2713711.208]profiling_end:shell touch motion
+[2713711.319]profiling_start:touch hardware motion
+[2713711.369]profiling_end:touch hardware motion
+[2713711.414]profiling_start:shell touch motion
+[2713711.461]profiling_end:shell touch motion
+[2713711.509]profiling_start:touch hardware motion
+[2713711.556]profiling_end:touch hardware motion
+[2713711.601]profiling_start:shell touch motion
+[2713711.646]profiling_end:shell touch motion
+[2713726.388]profiling_end:graphic hardware
+[2713726.464]profiling_start:weston
+[2713727.477]profiling_end:weston
+[2713727.561]profiling_start:graphic hardware
+[2713727.635]profiling_start:touch hardware motion
+[2713727.685]profiling_end:touch hardware motion
+[2713727.822]profiling_start:shell touch motion
+[2713727.871]profiling_end:shell touch motion
+[2713727.921]profiling_start:touch hardware motion
+[2713727.968]profiling_end:touch hardware motion
+[2713728.013]profiling_start:shell touch motion
+[2713728.058]profiling_end:shell touch motion
+[2713728.106]profiling_start:touch hardware motion
+[2713728.152]profiling_end:touch hardware motion
+[2713728.197]profiling_start:shell touch motion
+[2713728.290]profiling_end:shell touch motion
+[2713728.358]profiling_start:touch hardware motion
+[2713728.406]profiling_end:touch hardware motion
+[2713728.453]profiling_start:shell touch motion
+[2713728.499]profiling_end:shell touch motion
+[2713743.053]profiling_end:graphic hardware
+[2713743.128]profiling_start:weston
+[2713744.151]profiling_end:weston
+[2713744.282]profiling_start:graphic hardware
+[2713744.373]profiling_start:touch hardware motion
+[2713744.424]profiling_end:touch hardware motion
+[2713744.472]profiling_start:shell touch motion
+[2713744.518]profiling_end:shell touch motion
+[2713744.566]profiling_start:touch hardware motion
+[2713744.611]profiling_end:touch hardware motion
+[2713744.656]profiling_start:shell touch motion
+[2713744.702]profiling_end:shell touch motion
+[2713744.750]profiling_start:touch hardware motion
+[2713744.795]profiling_end:touch hardware motion
+[2713744.840]profiling_start:shell touch motion
+[2713744.885]profiling_end:shell touch motion
+[2713759.848]profiling_end:graphic hardware
+[2713759.924]profiling_start:weston
+[2713760.956]profiling_end:weston
+[2713761.033]profiling_start:graphic hardware
+[2713761.108]profiling_start:touch hardware motion
+[2713761.159]profiling_end:touch hardware motion
+[2713761.206]profiling_start:shell touch motion
+[2713761.316]profiling_end:shell touch motion
+[2713761.367]profiling_start:touch hardware motion
+[2713761.415]profiling_end:touch hardware motion
+[2713761.461]profiling_start:shell touch motion
+[2713761.506]profiling_end:shell touch motion
+[2713761.553]profiling_start:touch hardware motion
+[2713761.600]profiling_end:touch hardware motion
+[2713761.644]profiling_start:shell touch motion
+[2713761.689]profiling_end:shell touch motion
+[2713776.384]profiling_end:graphic hardware
+[2713776.515]profiling_start:weston
+[2713777.639]profiling_end:weston
+[2713777.726]profiling_start:graphic hardware
+[2713777.803]profiling_start:touch hardware motion
+[2713777.854]profiling_end:touch hardware motion
+[2713777.902]profiling_start:shell touch motion
+[2713777.951]profiling_end:shell touch motion
+[2713777.999]profiling_start:touch hardware motion
+[2713778.046]profiling_end:touch hardware motion
+[2713778.092]profiling_start:shell touch motion
+[2713778.137]profiling_end:shell touch motion
+[2713778.185]profiling_start:touch hardware motion
+[2713778.282]profiling_end:touch hardware motion
+[2713778.342]profiling_start:shell touch motion
+[2713778.389]profiling_end:shell touch motion
+[2713778.437]profiling_start:touch hardware motion
+[2713778.483]profiling_end:touch hardware motion
+[2713778.528]profiling_start:shell touch motion
+[2713778.574]profiling_end:shell touch motion
+[2713793.193]profiling_end:graphic hardware
+[2713793.347]profiling_start:weston
+[2713794.328]profiling_end:weston
+[2713794.413]profiling_start:graphic hardware
+[2713794.488]profiling_start:touch hardware motion
+[2713794.538]profiling_end:touch hardware motion
+[2713794.586]profiling_start:shell touch motion
+[2713794.633]profiling_end:shell touch motion
+[2713794.680]profiling_start:touch hardware motion
+[2713794.727]profiling_end:touch hardware motion
+[2713794.772]profiling_start:shell touch motion
+[2713794.818]profiling_end:shell touch motion
+[2713794.864]profiling_start:touch hardware motion
+[2713794.910]profiling_end:touch hardware motion
+[2713794.956]profiling_start:shell touch motion
+[2713795.001]profiling_end:shell touch motion
+[2713809.806]profiling_end:graphic hardware
+[2713809.882]profiling_start:weston
+[2713810.908]profiling_end:weston
+[2713810.994]profiling_start:graphic hardware
+[2713811.068]profiling_start:touch hardware motion
+[2713811.119]profiling_end:touch hardware motion
+[2713811.166]profiling_start:shell touch motion
+[2713811.213]profiling_end:shell touch motion
+[2713811.324]profiling_start:touch hardware motion
+[2713811.374]profiling_end:touch hardware motion
+[2713811.419]profiling_start:shell touch motion
+[2713811.464]profiling_end:shell touch motion
+[2713811.511]profiling_start:touch hardware motion
+[2713811.558]profiling_end:touch hardware motion
+[2713811.602]profiling_start:shell touch motion
+[2713811.646]profiling_end:shell touch motion
+[2713811.788]profiling_start:touch hardware motion
+[2713811.842]profiling_end:touch hardware motion
+[2713811.890]profiling_start:shell touch motion
+[2713811.936]profiling_end:shell touch motion
+[2713826.454]profiling_end:graphic hardware
+[2713826.528]profiling_start:weston
+[2713827.644]profiling_end:weston
+[2713827.730]profiling_start:graphic hardware
+[2713827.804]profiling_start:touch hardware motion
+[2713827.855]profiling_end:touch hardware motion
+[2713827.901]profiling_start:shell touch motion
+[2713827.949]profiling_end:shell touch motion
+[2713827.996]profiling_start:touch hardware motion
+[2713828.042]profiling_end:touch hardware motion
+[2713828.087]profiling_start:shell touch motion
+[2713828.132]profiling_end:shell touch motion
+[2713828.180]profiling_start:touch hardware motion
+[2713828.271]profiling_end:touch hardware motion
+[2713828.331]profiling_start:shell touch motion
+[2713828.379]profiling_end:shell touch motion
+[2713843.109]profiling_end:graphic hardware
+[2713843.185]profiling_start:weston
+[2713844.155]profiling_end:weston
+[2713844.275]profiling_start:graphic hardware
+[2713844.364]profiling_start:touch hardware motion
+[2713844.416]profiling_end:touch hardware motion
+[2713844.463]profiling_start:shell touch motion
+[2713844.512]profiling_end:shell touch motion
+[2713844.559]profiling_start:touch hardware motion
+[2713844.606]profiling_end:touch hardware motion
+[2713844.650]profiling_start:shell touch motion
+[2713844.696]profiling_end:shell touch motion
+[2713844.743]profiling_start:touch hardware motion
+[2713844.788]profiling_end:touch hardware motion
+[2713844.832]profiling_start:shell touch motion
+[2713844.876]profiling_end:shell touch motion
+[2713859.808]profiling_end:graphic hardware
+[2713859.885]profiling_start:weston
+[2713860.973]profiling_end:weston
+[2713861.059]profiling_start:graphic hardware
+[2713861.137]profiling_start:touch hardware motion
+[2713861.188]profiling_end:touch hardware motion
+[2713861.285]profiling_start:shell touch motion
+[2713861.405]profiling_end:shell touch motion
+[2713861.458]profiling_start:touch hardware motion
+[2713861.507]profiling_end:touch hardware motion
+[2713861.552]profiling_start:shell touch motion
+[2713861.596]profiling_end:shell touch motion
+[2713861.643]profiling_start:touch hardware motion
+[2713861.689]profiling_end:touch hardware motion
+[2713861.733]profiling_start:shell touch motion
+[2713861.778]profiling_end:shell touch motion
+[2713861.826]profiling_start:touch hardware motion
+[2713861.871]profiling_end:touch hardware motion
+[2713861.917]profiling_start:shell touch motion
+[2713861.963]profiling_end:shell touch motion
+[2713876.385]profiling_end:graphic hardware
+[2713876.460]profiling_start:weston
+[2713877.502]profiling_end:weston
+[2713877.587]profiling_start:graphic hardware
+[2713877.663]profiling_start:touch hardware motion
+[2713877.714]profiling_end:touch hardware motion
+[2713877.761]profiling_start:shell touch motion
+[2713877.808]profiling_end:shell touch motion
+[2713877.855]profiling_start:touch hardware motion
+[2713877.901]profiling_end:touch hardware motion
+[2713877.947]profiling_start:shell touch motion
+[2713877.993]profiling_end:shell touch motion
+[2713878.041]profiling_start:touch hardware motion
+[2713878.087]profiling_end:touch hardware motion
+[2713878.133]profiling_start:shell touch motion
+[2713878.177]profiling_end:shell touch motion
+[2713893.126]profiling_end:graphic hardware
+[2713893.203]profiling_start:weston
+[2713894.206]profiling_end:weston
+[2713894.336]profiling_start:graphic hardware
+[2713894.411]profiling_start:touch hardware motion
+[2713894.462]profiling_end:touch hardware motion
+[2713894.509]profiling_start:shell touch motion
+[2713894.558]profiling_end:shell touch motion
+[2713894.606]profiling_start:touch hardware motion
+[2713894.653]profiling_end:touch hardware motion
+[2713894.697]profiling_start:shell touch motion
+[2713894.743]profiling_end:shell touch motion
+[2713894.789]profiling_start:touch hardware motion
+[2713894.836]profiling_end:touch hardware motion
+[2713894.880]profiling_start:shell touch motion
+[2713894.925]profiling_end:shell touch motion
+[2713909.841]profiling_end:graphic hardware
+[2713909.918]profiling_start:weston
+[2713911.031]profiling_end:weston
+[2713911.108]profiling_start:graphic hardware
+[2713911.185]profiling_start:touch hardware motion
+[2713911.290]profiling_end:touch hardware motion
+[2713911.352]profiling_start:shell touch motion
+[2713911.401]profiling_end:shell touch motion
+[2713911.450]profiling_start:touch hardware motion
+[2713911.496]profiling_end:touch hardware motion
+[2713911.541]profiling_start:shell touch motion
+[2713911.586]profiling_end:shell touch motion
+[2713911.633]profiling_start:touch hardware motion
+[2713911.680]profiling_end:touch hardware motion
+[2713911.725]profiling_start:shell touch motion
+[2713911.768]profiling_end:shell touch motion
+[2713911.815]profiling_start:touch hardware motion
+[2713911.861]profiling_end:touch hardware motion
+[2713911.907]profiling_start:shell touch motion
+[2713911.951]profiling_end:shell touch motion
+[2713926.383]profiling_end:graphic hardware
+[2713926.458]profiling_start:weston
+[2713927.515]profiling_end:weston
+[2713927.600]profiling_start:graphic hardware
+[2713927.674]profiling_start:touch hardware motion
+[2713927.725]profiling_end:touch hardware motion
+[2713927.772]profiling_start:shell touch motion
+[2713927.819]profiling_end:shell touch motion
+[2713927.867]profiling_start:touch hardware motion
+[2713927.913]profiling_end:touch hardware motion
+[2713927.959]profiling_start:shell touch motion
+[2713928.004]profiling_end:shell touch motion
+[2713928.051]profiling_start:touch hardware motion
+[2713928.097]profiling_end:touch hardware motion
+[2713928.142]profiling_start:shell touch motion
+[2713928.188]profiling_end:shell touch motion
+[2713943.156]profiling_end:graphic hardware
+[2713943.309]profiling_start:weston
+[2713944.298]profiling_end:weston
+[2713944.385]profiling_start:graphic hardware
+[2713944.461]profiling_start:touch hardware motion
+[2713944.512]profiling_end:touch hardware motion
+[2713944.559]profiling_start:shell touch motion
+[2713944.606]profiling_end:shell touch motion
+[2713944.653]profiling_start:touch hardware motion
+[2713944.794]profiling_end:touch hardware motion
+[2713944.845]profiling_start:shell touch motion
+[2713944.893]profiling_end:shell touch motion
+[2713944.998]profiling_start:touch hardware motion
+[2713945.050]profiling_end:touch hardware motion
+[2713945.097]profiling_start:shell touch motion
+[2713945.142]profiling_end:shell touch motion
+[2713945.196]profiling_start:touch hardware motion
+[2713945.283]profiling_end:touch hardware motion
+[2713945.342]profiling_start:shell touch motion
+[2713945.387]profiling_end:shell touch motion
+[2713959.905]profiling_end:graphic hardware
+[2713959.980]profiling_start:weston
+[2713960.995]profiling_end:weston
+[2713961.070]profiling_start:graphic hardware
+[2713961.143]profiling_start:touch hardware motion
+[2713961.193]profiling_end:touch hardware motion
+[2713961.293]profiling_start:shell touch motion
+[2713961.356]profiling_end:shell touch motion
+[2713961.406]profiling_start:touch hardware motion
+[2713961.454]profiling_end:touch hardware motion
+[2713961.500]profiling_start:shell touch motion
+[2713961.544]profiling_end:shell touch motion
+[2713961.591]profiling_start:touch hardware motion
+[2713961.636]profiling_end:touch hardware motion
+[2713961.681]profiling_start:shell touch motion
+[2713961.727]profiling_end:shell touch motion
+[2713976.454]profiling_end:graphic hardware
+[2713976.529]profiling_start:weston
+[2713977.558]profiling_end:weston
+[2713977.644]profiling_start:graphic hardware
+[2713977.718]profiling_start:touch hardware motion
+[2713977.768]profiling_end:touch hardware motion
+[2713977.815]profiling_start:shell touch motion
+[2713977.863]profiling_end:shell touch motion
+[2713977.910]profiling_start:touch hardware motion
+[2713977.956]profiling_end:touch hardware motion
+[2713978.001]profiling_start:shell touch motion
+[2713978.046]profiling_end:shell touch motion
+[2713993.121]profiling_end:graphic hardware
+[2713993.197]profiling_start:weston
+[2713994.201]profiling_end:weston
+[2713994.330]profiling_start:graphic hardware
+[2713994.406]profiling_start:touch hardware motion
+[2713994.458]profiling_end:touch hardware motion
+[2713994.506]profiling_start:shell touch motion
+[2713994.555]profiling_end:shell touch motion
+[2713994.603]profiling_start:touch hardware motion
+[2713994.648]profiling_end:touch hardware motion
+[2713994.781]profiling_start:shell touch motion
+[2713994.835]profiling_end:shell touch motion
+[2713994.884]profiling_start:touch hardware motion
+[2713994.932]profiling_end:touch hardware motion
+[2713994.977]profiling_start:shell touch motion
+[2713995.021]profiling_end:shell touch motion
+[2713995.076]profiling_start:touch hardware motion
+[2713995.122]profiling_end:touch hardware motion
+[2713995.168]profiling_start:shell touch motion
+[2713995.212]profiling_end:shell touch motion
+[2714009.896]profiling_end:graphic hardware
+[2714009.971]profiling_start:weston
+[2714010.985]profiling_end:weston
+[2714011.062]profiling_start:graphic hardware
+[2714011.137]profiling_start:touch hardware motion
+[2714011.188]profiling_end:touch hardware motion
+[2714011.285]profiling_start:shell touch motion
+[2714011.347]profiling_end:shell touch motion
+[2714011.397]profiling_start:touch hardware motion
+[2714011.445]profiling_end:touch hardware motion
+[2714011.489]profiling_start:shell touch motion
+[2714011.534]profiling_end:shell touch motion
+[2714011.581]profiling_start:touch hardware motion
+[2714011.625]profiling_end:touch hardware motion
+[2714011.670]profiling_start:shell touch motion
+[2714011.715]profiling_end:shell touch motion
+[2714026.442]profiling_end:graphic hardware
+[2714026.518]profiling_start:weston
+[2714027.505]profiling_end:weston
+[2714027.589]profiling_start:graphic hardware
+[2714027.666]profiling_start:touch hardware motion
+[2714027.717]profiling_end:touch hardware motion
+[2714027.764]profiling_start:shell touch motion
+[2714027.811]profiling_end:shell touch motion
+[2714027.859]profiling_start:touch hardware motion
+[2714027.905]profiling_end:touch hardware motion
+[2714027.950]profiling_start:shell touch motion
+[2714027.996]profiling_end:shell touch motion
+[2714028.043]profiling_start:touch hardware motion
+[2714028.088]profiling_end:touch hardware motion
+[2714028.133]profiling_start:shell touch motion
+[2714028.177]profiling_end:shell touch motion
+[2714043.121]profiling_end:graphic hardware
+[2714043.197]profiling_start:weston
+[2714044.336]profiling_end:weston
+[2714044.424]profiling_start:graphic hardware
+[2714044.501]profiling_start:touch hardware motion
+[2714044.552]profiling_end:touch hardware motion
+[2714044.658]profiling_start:shell touch motion
+[2714044.711]profiling_end:shell touch motion
+[2714044.760]profiling_start:touch hardware motion
+[2714044.808]profiling_end:touch hardware motion
+[2714044.852]profiling_start:shell touch motion
+[2714044.897]profiling_end:shell touch motion
+[2714044.944]profiling_start:touch hardware motion
+[2714044.990]profiling_end:touch hardware motion
+[2714045.035]profiling_start:shell touch motion
+[2714045.079]profiling_end:shell touch motion
+[2714045.126]profiling_start:touch hardware motion
+[2714045.171]profiling_end:touch hardware motion
+[2714045.215]profiling_start:shell touch motion
+[2714045.313]profiling_end:shell touch motion
+[2714059.714]profiling_end:graphic hardware
+[2714059.790]profiling_start:weston
+[2714060.850]profiling_end:weston
+[2714060.935]profiling_start:graphic hardware
+[2714061.010]profiling_start:touch hardware motion
+[2714061.062]profiling_end:touch hardware motion
+[2714061.110]profiling_start:shell touch motion
+[2714061.158]profiling_end:shell touch motion
+[2714061.207]profiling_start:touch hardware motion
+[2714061.313]profiling_end:touch hardware motion
+[2714061.361]profiling_start:shell touch motion
+[2714061.406]profiling_end:shell touch motion
+[2714061.454]profiling_start:touch hardware motion
+[2714061.501]profiling_end:touch hardware motion
+[2714061.546]profiling_start:shell touch motion
+[2714061.592]profiling_end:shell touch motion
+[2714076.455]profiling_end:graphic hardware
+[2714076.531]profiling_start:weston
+[2714077.563]profiling_end:weston
+[2714077.648]profiling_start:graphic hardware
+[2714077.723]profiling_start:touch hardware motion
+[2714077.773]profiling_end:touch hardware motion
+[2714077.821]profiling_start:shell touch motion
+[2714077.869]profiling_end:shell touch motion
+[2714077.917]profiling_start:touch hardware motion
+[2714077.963]profiling_end:touch hardware motion
+[2714078.009]profiling_start:shell touch motion
+[2714078.054]profiling_end:shell touch motion
+[2714078.101]profiling_start:touch hardware motion
+[2714078.148]profiling_end:touch hardware motion
+[2714078.192]profiling_start:shell touch motion
+[2714078.282]profiling_end:shell touch motion
+[2714093.156]profiling_end:graphic hardware
+[2714093.309]profiling_start:weston
+[2714094.284]profiling_end:weston
+[2714094.370]profiling_start:graphic hardware
+[2714094.442]profiling_start:touch hardware motion
+[2714094.493]profiling_end:touch hardware motion
+[2714094.540]profiling_start:shell touch motion
+[2714094.589]profiling_end:shell touch motion
+[2714109.798]profiling_end:graphic hardware
+[2714109.875]profiling_start:weston
+[2714110.904]profiling_end:weston
+[2714110.989]profiling_start:graphic hardware
+[2714111.062]profiling_start:touch hardware motion
+[2714111.112]profiling_end:touch hardware motion
+[2714111.160]profiling_start:shell touch motion
+[2714111.208]profiling_end:shell touch motion
+[2714111.317]profiling_start:touch hardware up
+[2714111.378]profiling_end:touch hardware up
+[2714111.427]profiling_start:shell touch up
+[2714111.475]profiling_end:shell touch up
+[2714126.490]profiling_end:graphic hardware
+[2714126.563]profiling_start:weston
+[2714127.578]profiling_end:weston
+[2714127.661]profiling_start:graphic hardware
+[2714143.155]profiling_end:graphic hardware
+[2714643.432]profiling_start:touch hardware down
+[2714643.883]profiling_end:touch hardware down
+[2714643.935]profiling_start:touch down
+[2714645.800]profiling_end:touch down
+[2714645.850]profiling_start:client touch down
+[2714645.898]profiling_end:client touch down
+[2714645.943]profiling_start:shell process
+[2714646.475]profiling_end:shell process
+[2714660.060]profiling_end:graphic hardware
+[2714660.158]profiling_start:weston
+[2714661.182]profiling_end:weston
+[2714661.301]profiling_start:graphic hardware
+[2714676.701]profiling_end:graphic hardware
+[2714706.953]profiling_start:touch hardware motion
+[2714707.053]profiling_end:touch hardware motion
+[2714707.106]profiling_start:shell touch motion
+[2714707.171]profiling_end:shell touch motion
+[2714709.675]profiling_end:graphic hardware
+[2714709.743]profiling_start:weston
+[2714710.766]profiling_end:weston
+[2714710.851]profiling_start:graphic hardware
+[2714726.799]profiling_end:graphic hardware
+[2714726.972]profiling_start:touch hardware motion
+[2714727.028]profiling_end:touch hardware motion
+[2714727.077]profiling_start:shell touch motion
+[2714727.138]profiling_end:shell touch motion
+[2714727.189]profiling_start:touch hardware motion
+[2714727.360]profiling_end:touch hardware motion
+[2714727.421]profiling_start:shell touch motion
+[2714727.469]profiling_end:shell touch motion
+[2714727.517]profiling_start:touch hardware motion
+[2714727.563]profiling_end:touch hardware motion
+[2714727.608]profiling_start:shell touch motion
+[2714727.653]profiling_end:shell touch motion
+[2714727.700]profiling_start:touch hardware motion
+[2714727.747]profiling_end:touch hardware motion
+[2714727.793]profiling_start:shell touch motion
+[2714727.837]profiling_end:shell touch motion
+[2714743.094]profiling_end:graphic hardware
+[2714743.171]profiling_start:weston
+[2714744.202]profiling_end:weston
+[2714744.337]profiling_start:graphic hardware
+[2714744.413]profiling_start:touch hardware motion
+[2714744.464]profiling_end:touch hardware motion
+[2714744.511]profiling_start:shell touch motion
+[2714744.559]profiling_end:shell touch motion
+[2714744.607]profiling_start:touch hardware motion
+[2714744.653]profiling_end:touch hardware motion
+[2714744.698]profiling_start:shell touch motion
+[2714744.743]profiling_end:shell touch motion
+[2714744.789]profiling_start:touch hardware motion
+[2714744.835]profiling_end:touch hardware motion
+[2714744.879]profiling_start:shell touch motion
+[2714744.925]profiling_end:shell touch motion
+[2714759.783]profiling_end:graphic hardware
+[2714759.859]profiling_start:weston
+[2714760.894]profiling_end:weston
+[2714760.978]profiling_start:graphic hardware
+[2714761.053]profiling_start:touch hardware motion
+[2714761.104]profiling_end:touch hardware motion
+[2714761.152]profiling_start:shell touch motion
+[2714761.199]profiling_end:shell touch motion
+[2714761.309]profiling_start:touch hardware motion
+[2714761.360]profiling_end:touch hardware motion
+[2714761.406]profiling_start:shell touch motion
+[2714761.452]profiling_end:shell touch motion
+[2714761.499]profiling_start:touch hardware motion
+[2714761.545]profiling_end:touch hardware motion
+[2714761.589]profiling_start:shell touch motion
+[2714761.635]profiling_end:shell touch motion
+[2714776.440]profiling_end:graphic hardware
+[2714776.516]profiling_start:weston
+[2714777.627]profiling_end:weston
+[2714777.714]profiling_start:graphic hardware
+[2714777.791]profiling_start:touch hardware motion
+[2714777.841]profiling_end:touch hardware motion
+[2714777.889]profiling_start:shell touch motion
+[2714777.936]profiling_end:shell touch motion
+[2714777.984]profiling_start:touch hardware motion
+[2714778.031]profiling_end:touch hardware motion
+[2714778.077]profiling_start:shell touch motion
+[2714778.122]profiling_end:shell touch motion
+[2714778.170]profiling_start:touch hardware motion
+[2714778.215]profiling_end:touch hardware motion
+[2714778.320]profiling_start:shell touch motion
+[2714778.369]profiling_end:shell touch motion
+[2714778.418]profiling_start:touch hardware motion
+[2714778.464]profiling_end:touch hardware motion
+[2714778.508]profiling_start:shell touch motion
+[2714778.553]profiling_end:shell touch motion
+[2714793.110]profiling_end:graphic hardware
+[2714793.186]profiling_start:weston
+[2714794.158]profiling_end:weston
+[2714794.281]profiling_start:graphic hardware
+[2714794.372]profiling_start:touch hardware motion
+[2714794.423]profiling_end:touch hardware motion
+[2714794.471]profiling_start:shell touch motion
+[2714794.519]profiling_end:shell touch motion
+[2714794.566]profiling_start:touch hardware motion
+[2714794.613]profiling_end:touch hardware motion
+[2714794.659]profiling_start:shell touch motion
+[2714794.704]profiling_end:shell touch motion
+[2714794.751]profiling_start:touch hardware motion
+[2714794.797]profiling_end:touch hardware motion
+[2714794.842]profiling_start:shell touch motion
+[2714794.885]profiling_end:shell touch motion
+[2714809.783]profiling_end:graphic hardware
+[2714809.860]profiling_start:weston
+[2714810.953]profiling_end:weston
+[2714811.039]profiling_start:graphic hardware
+[2714811.117]profiling_start:touch hardware motion
+[2714811.168]profiling_end:touch hardware motion
+[2714811.215]profiling_start:shell touch motion
+[2714811.331]profiling_end:shell touch motion
+[2714811.382]profiling_start:touch hardware motion
+[2714811.429]profiling_end:touch hardware motion
+[2714811.475]profiling_start:shell touch motion
+[2714811.521]profiling_end:shell touch motion
+[2714811.569]profiling_start:touch hardware motion
+[2714811.615]profiling_end:touch hardware motion
+[2714811.659]profiling_start:shell touch motion
+[2714811.705]profiling_end:shell touch motion
+[2714811.752]profiling_start:touch hardware motion
+[2714811.796]profiling_end:touch hardware motion
+[2714811.840]profiling_start:shell touch motion
+[2714811.886]profiling_end:shell touch motion
+[2714826.364]profiling_end:graphic hardware
+[2714826.439]profiling_start:weston
+[2714827.482]profiling_end:weston
+[2714827.568]profiling_start:graphic hardware
+[2714827.642]profiling_start:touch hardware motion
+[2714827.693]profiling_end:touch hardware motion
+[2714827.741]profiling_start:shell touch motion
+[2714827.788]profiling_end:shell touch motion
+[2714827.836]profiling_start:touch hardware motion
+[2714827.883]profiling_end:touch hardware motion
+[2714827.928]profiling_start:shell touch motion
+[2714827.974]profiling_end:shell touch motion
+[2714828.021]profiling_start:touch hardware motion
+[2714828.067]profiling_end:touch hardware motion
+[2714828.111]profiling_start:shell touch motion
+[2714828.156]profiling_end:shell touch motion
+[2714843.109]profiling_end:graphic hardware
+[2714843.187]profiling_start:weston
+[2714844.190]profiling_end:weston
+[2714844.321]profiling_start:graphic hardware
+[2714844.399]profiling_start:touch hardware motion
+[2714844.450]profiling_end:touch hardware motion
+[2714844.498]profiling_start:shell touch motion
+[2714844.545]profiling_end:shell touch motion
+[2714844.594]profiling_start:touch hardware motion
+[2714844.640]profiling_end:touch hardware motion
+[2714844.685]profiling_start:shell touch motion
+[2714844.729]profiling_end:shell touch motion
+[2714844.776]profiling_start:touch hardware motion
+[2714844.823]profiling_end:touch hardware motion
+[2714844.868]profiling_start:shell touch motion
+[2714844.913]profiling_end:shell touch motion
+[2714859.699]profiling_end:graphic hardware
+[2714859.768]profiling_start:weston
+[2714860.892]profiling_end:weston
+[2714860.978]profiling_start:graphic hardware
+[2714861.052]profiling_start:touch hardware motion
+[2714861.102]profiling_end:touch hardware motion
+[2714861.150]profiling_start:shell touch motion
+[2714861.197]profiling_end:shell touch motion
+[2714861.301]profiling_start:touch hardware motion
+[2714861.362]profiling_end:touch hardware motion
+[2714861.410]profiling_start:shell touch motion
+[2714861.456]profiling_end:shell touch motion
+[2714861.504]profiling_start:touch hardware motion
+[2714861.551]profiling_end:touch hardware motion
+[2714861.596]profiling_start:shell touch motion
+[2714861.641]profiling_end:shell touch motion
+[2714861.688]profiling_start:touch hardware motion
+[2714861.735]profiling_end:touch hardware motion
+[2714861.779]profiling_start:shell touch motion
+[2714861.824]profiling_end:shell touch motion
+[2714876.706]profiling_end:graphic hardware
+[2714876.805]profiling_start:weston
+[2714877.870]profiling_end:weston
+[2714877.955]profiling_start:graphic hardware
+[2714878.030]profiling_start:touch hardware motion
+[2714878.081]profiling_end:touch hardware motion
+[2714878.130]profiling_start:shell touch motion
+[2714878.178]profiling_end:shell touch motion
+[2714878.271]profiling_start:touch hardware motion
+[2714878.332]profiling_end:touch hardware motion
+[2714878.379]profiling_start:shell touch motion
+[2714878.426]profiling_end:shell touch motion
+[2714878.474]profiling_start:touch hardware motion
+[2714878.520]profiling_end:touch hardware motion
+[2714878.566]profiling_start:shell touch motion
+[2714878.609]profiling_end:shell touch motion
+[2714893.034]profiling_end:graphic hardware
+[2714893.111]profiling_start:weston
+[2714894.112]profiling_end:weston
+[2714894.187]profiling_start:graphic hardware
+[2714894.313]profiling_start:touch hardware motion
+[2714894.435]profiling_end:touch hardware motion
+[2714894.487]profiling_start:shell touch motion
+[2714894.535]profiling_end:shell touch motion
+[2714894.583]profiling_start:touch hardware motion
+[2714894.630]profiling_end:touch hardware motion
+[2714894.676]profiling_start:shell touch motion
+[2714894.816]profiling_end:shell touch motion
+[2714894.867]profiling_start:touch hardware motion
+[2714894.914]profiling_end:touch hardware motion
+[2714894.959]profiling_start:shell touch motion
+[2714895.004]profiling_end:shell touch motion
+[2714895.058]profiling_start:touch hardware motion
+[2714895.105]profiling_end:touch hardware motion
+[2714895.150]profiling_start:shell touch motion
+[2714895.195]profiling_end:shell touch motion
+[2714909.868]profiling_end:graphic hardware
+[2714909.966]profiling_start:weston
+[2714911.026]profiling_end:weston
+[2714911.111]profiling_start:graphic hardware
+[2714911.186]profiling_start:touch hardware motion
+[2714911.286]profiling_end:touch hardware motion
+[2714911.348]profiling_start:shell touch motion
+[2714911.395]profiling_end:shell touch motion
+[2714911.443]profiling_start:touch hardware motion
+[2714911.490]profiling_end:touch hardware motion
+[2714911.535]profiling_start:shell touch motion
+[2714911.581]profiling_end:shell touch motion
+[2714911.628]profiling_start:touch hardware motion
+[2714911.673]profiling_end:touch hardware motion
+[2714911.718]profiling_start:shell touch motion
+[2714911.763]profiling_end:shell touch motion
+[2714926.705]profiling_end:graphic hardware
+[2714926.803]profiling_start:weston
+[2714927.871]profiling_end:weston
+[2714927.957]profiling_start:graphic hardware
+[2714928.034]profiling_start:touch hardware motion
+[2714928.084]profiling_end:touch hardware motion
+[2714928.132]profiling_start:shell touch motion
+[2714928.180]profiling_end:shell touch motion
+[2714928.276]profiling_start:touch hardware motion
+[2714928.338]profiling_end:touch hardware motion
+[2714928.385]profiling_start:shell touch motion
+[2714928.431]profiling_end:shell touch motion
+[2714928.479]profiling_start:touch hardware motion
+[2714928.525]profiling_end:touch hardware motion
+[2714928.571]profiling_start:shell touch motion
+[2714928.616]profiling_end:shell touch motion
+[2714943.099]profiling_end:graphic hardware
+[2714943.174]profiling_start:weston
+[2714944.180]profiling_end:weston
+[2714944.301]profiling_start:graphic hardware
+[2714944.389]profiling_start:touch hardware motion
+[2714944.440]profiling_end:touch hardware motion
+[2714944.489]profiling_start:shell touch motion
+[2714944.536]profiling_end:shell touch motion
+[2714944.583]profiling_start:touch hardware motion
+[2714944.630]profiling_end:touch hardware motion
+[2714944.675]profiling_start:shell touch motion
+[2714944.818]profiling_end:shell touch motion
+[2714944.869]profiling_start:touch hardware motion
+[2714944.916]profiling_end:touch hardware motion
+[2714944.960]profiling_start:shell touch motion
+[2714945.007]profiling_end:shell touch motion
+[2714945.061]profiling_start:touch hardware motion
+[2714945.109]profiling_end:touch hardware motion
+[2714945.154]profiling_start:shell touch motion
+[2714945.199]profiling_end:shell touch motion
+[2714959.699]profiling_end:graphic hardware
+[2714959.787]profiling_start:weston
+[2714960.814]profiling_end:weston
+[2714960.898]profiling_start:graphic hardware
+[2714960.974]profiling_start:touch hardware motion
+[2714961.025]profiling_end:touch hardware motion
+[2714961.073]profiling_start:shell touch motion
+[2714961.121]profiling_end:shell touch motion
+[2714961.169]profiling_start:touch hardware motion
+[2714961.215]profiling_end:touch hardware motion
+[2714961.325]profiling_start:shell touch motion
+[2714961.373]profiling_end:shell touch motion
+[2714961.421]profiling_start:touch hardware motion
+[2714961.468]profiling_end:touch hardware motion
+[2714961.513]profiling_start:shell touch motion
+[2714961.557]profiling_end:shell touch motion
+[2714976.708]profiling_end:graphic hardware
+[2714976.808]profiling_start:weston
+[2714977.870]profiling_end:weston
+[2714977.955]profiling_start:graphic hardware
+[2714978.032]profiling_start:touch hardware motion
+[2714978.083]profiling_end:touch hardware motion
+[2714978.131]profiling_start:shell touch motion
+[2714978.179]profiling_end:shell touch motion
+[2714978.272]profiling_start:touch hardware motion
+[2714978.334]profiling_end:touch hardware motion
+[2714978.381]profiling_start:shell touch motion
+[2714978.504]profiling_end:shell touch motion
+[2714978.557]profiling_start:touch hardware motion
+[2714978.604]profiling_end:touch hardware motion
+[2714978.650]profiling_start:shell touch motion
+[2714978.790]profiling_end:shell touch motion
+[2714978.853]profiling_start:touch hardware motion
+[2714978.901]profiling_end:touch hardware motion
+[2714978.947]profiling_start:shell touch motion
+[2714978.993]profiling_end:shell touch motion
+[2714993.096]profiling_end:graphic hardware
+[2714993.172]profiling_start:weston
+[2714994.359]profiling_end:weston
+[2714994.447]profiling_start:graphic hardware
+[2714994.521]profiling_start:touch hardware motion
+[2714994.572]profiling_end:touch hardware motion
+[2714994.620]profiling_start:shell touch motion
+[2714994.668]profiling_end:shell touch motion
+[2714994.716]profiling_start:touch hardware motion
+[2714994.762]profiling_end:touch hardware motion
+[2714994.807]profiling_start:shell touch motion
+[2714994.852]profiling_end:shell touch motion
+[2714994.899]profiling_start:touch hardware motion
+[2714994.944]profiling_end:touch hardware motion
+[2714994.987]profiling_start:shell touch motion
+[2714995.031]profiling_end:shell touch motion
+[2715009.700]profiling_end:graphic hardware
+[2715009.777]profiling_start:weston
+[2715010.846]profiling_end:weston
+[2715010.931]profiling_start:graphic hardware
+[2715011.007]profiling_start:touch hardware motion
+[2715011.058]profiling_end:touch hardware motion
+[2715011.106]profiling_start:shell touch motion
+[2715011.154]profiling_end:shell touch motion
+[2715011.202]profiling_start:touch hardware motion
+[2715011.308]profiling_end:touch hardware motion
+[2715011.358]profiling_start:shell touch motion
+[2715011.404]profiling_end:shell touch motion
+[2715011.452]profiling_start:touch hardware motion
+[2715011.499]profiling_end:touch hardware motion
+[2715011.545]profiling_start:shell touch motion
+[2715011.590]profiling_end:shell touch motion
+[2715026.494]profiling_end:graphic hardware
+[2715026.593]profiling_start:weston
+[2715027.677]profiling_end:weston
+[2715027.764]profiling_start:graphic hardware
+[2715027.840]profiling_start:touch hardware motion
+[2715027.891]profiling_end:touch hardware motion
+[2715027.938]profiling_start:shell touch motion
+[2715027.985]profiling_end:shell touch motion
+[2715028.033]profiling_start:touch hardware motion
+[2715028.079]profiling_end:touch hardware motion
+[2715028.124]profiling_start:shell touch motion
+[2715028.170]profiling_end:shell touch motion
+[2715028.217]profiling_start:touch hardware motion
+[2715028.322]profiling_end:touch hardware motion
+[2715028.369]profiling_start:shell touch motion
+[2715028.414]profiling_end:shell touch motion
+[2715043.030]profiling_end:graphic hardware
+[2715043.106]profiling_start:weston
+[2715044.141]profiling_end:weston
+[2715044.216]profiling_start:graphic hardware
+[2715044.355]profiling_start:touch hardware motion
+[2715044.407]profiling_end:touch hardware motion
+[2715044.454]profiling_start:shell touch motion
+[2715044.503]profiling_end:shell touch motion
+[2715044.551]profiling_start:touch hardware motion
+[2715044.597]profiling_end:touch hardware motion
+[2715044.642]profiling_start:shell touch motion
+[2715044.687]profiling_end:shell touch motion
+[2715044.735]profiling_start:touch hardware motion
+[2715044.781]profiling_end:touch hardware motion
+[2715044.825]profiling_start:shell touch motion
+[2715044.870]profiling_end:shell touch motion
+[2715044.917]profiling_start:touch hardware motion
+[2715044.963]profiling_end:touch hardware motion
+[2715045.008]profiling_start:shell touch motion
+[2715045.052]profiling_end:shell touch motion
+[2715059.775]profiling_end:graphic hardware
+[2715059.851]profiling_start:weston
+[2715060.890]profiling_end:weston
+[2715060.976]profiling_start:graphic hardware
+[2715061.052]profiling_start:touch hardware motion
+[2715061.103]profiling_end:touch hardware motion
+[2715061.151]profiling_start:shell touch motion
+[2715061.197]profiling_end:shell touch motion
+[2715061.297]profiling_start:touch hardware motion
+[2715061.355]profiling_end:touch hardware motion
+[2715061.402]profiling_start:shell touch motion
+[2715061.447]profiling_end:shell touch motion
+[2715061.495]profiling_start:touch hardware motion
+[2715061.542]profiling_end:touch hardware motion
+[2715061.587]profiling_start:shell touch motion
+[2715061.633]profiling_end:shell touch motion
+[2715076.369]profiling_end:graphic hardware
+[2715076.446]profiling_start:weston
+[2715077.491]profiling_end:weston
+[2715077.576]profiling_start:graphic hardware
+[2715077.652]profiling_start:touch hardware motion
+[2715077.789]profiling_end:touch hardware motion
+[2715077.842]profiling_start:shell touch motion
+[2715077.891]profiling_end:shell touch motion
+[2715077.940]profiling_start:touch hardware motion
+[2715077.987]profiling_end:touch hardware motion
+[2715078.033]profiling_start:shell touch motion
+[2715078.078]profiling_end:shell touch motion
+[2715078.126]profiling_start:touch hardware motion
+[2715078.172]profiling_end:touch hardware motion
+[2715078.217]profiling_start:shell touch motion
+[2715078.322]profiling_end:shell touch motion
+[2715078.380]profiling_start:touch hardware motion
+[2715078.429]profiling_end:touch hardware motion
+[2715078.475]profiling_start:shell touch motion
+[2715078.521]profiling_end:shell touch motion
+[2715093.032]profiling_end:graphic hardware
+[2715093.106]profiling_start:weston
+[2715094.121]profiling_end:weston
+[2715094.196]profiling_start:graphic hardware
+[2715094.333]profiling_start:touch hardware motion
+[2715094.385]profiling_end:touch hardware motion
+[2715094.434]profiling_start:shell touch motion
+[2715094.482]profiling_end:shell touch motion
+[2715094.530]profiling_start:touch hardware motion
+[2715094.577]profiling_end:touch hardware motion
+[2715094.622]profiling_start:shell touch motion
+[2715094.667]profiling_end:shell touch motion
+[2715094.715]profiling_start:touch hardware motion
+[2715094.760]profiling_end:touch hardware motion
+[2715094.806]profiling_start:shell touch motion
+[2715094.851]profiling_end:shell touch motion
+[2715109.803]profiling_end:graphic hardware
+[2715109.880]profiling_start:weston
+[2715110.908]profiling_end:weston
+[2715110.992]profiling_start:graphic hardware
+[2715111.067]profiling_start:touch hardware motion
+[2715111.119]profiling_end:touch hardware motion
+[2715111.166]profiling_start:shell touch motion
+[2715111.214]profiling_end:shell touch motion
+[2715111.323]profiling_start:touch hardware motion
+[2715111.372]profiling_end:touch hardware motion
+[2715111.417]profiling_start:shell touch motion
+[2715111.463]profiling_end:shell touch motion
+[2715111.510]profiling_start:touch hardware motion
+[2715111.556]profiling_end:touch hardware motion
+[2715111.599]profiling_start:shell touch motion
+[2715111.643]profiling_end:shell touch motion
+[2715126.442]profiling_end:graphic hardware
+[2715126.518]profiling_start:weston
+[2715127.615]profiling_end:weston
+[2715127.701]profiling_start:graphic hardware
+[2715127.778]profiling_start:touch hardware motion
+[2715127.829]profiling_end:touch hardware motion
+[2715127.877]profiling_start:shell touch motion
+[2715127.923]profiling_end:shell touch motion
+[2715127.971]profiling_start:touch hardware motion
+[2715128.017]profiling_end:touch hardware motion
+[2715128.062]profiling_start:shell touch motion
+[2715128.108]profiling_end:shell touch motion
+[2715128.155]profiling_start:touch hardware motion
+[2715128.200]profiling_end:touch hardware motion
+[2715128.302]profiling_start:shell touch motion
+[2715128.351]profiling_end:shell touch motion
+[2715128.399]profiling_start:touch hardware motion
+[2715128.447]profiling_end:touch hardware motion
+[2715128.492]profiling_start:shell touch motion
+[2715128.537]profiling_end:shell touch motion
+[2715143.086]profiling_end:graphic hardware
+[2715143.165]profiling_start:weston
+[2715144.166]profiling_end:weston
+[2715144.289]profiling_start:graphic hardware
+[2715144.378]profiling_start:touch hardware motion
+[2715144.428]profiling_end:touch hardware motion
+[2715144.475]profiling_start:shell touch motion
+[2715144.523]profiling_end:shell touch motion
+[2715144.571]profiling_start:touch hardware motion
+[2715144.618]profiling_end:touch hardware motion
+[2715144.663]profiling_start:shell touch motion
+[2715144.709]profiling_end:shell touch motion
+[2715144.756]profiling_start:touch hardware motion
+[2715144.801]profiling_end:touch hardware motion
+[2715144.846]profiling_start:shell touch motion
+[2715144.892]profiling_end:shell touch motion
+[2715159.770]profiling_end:graphic hardware
+[2715159.846]profiling_start:weston
+[2715160.878]profiling_end:weston
+[2715160.962]profiling_start:graphic hardware
+[2715161.038]profiling_start:touch hardware motion
+[2715161.147]profiling_end:touch hardware motion
+[2715161.198]profiling_start:shell touch motion
+[2715161.307]profiling_end:shell touch motion
+[2715161.361]profiling_start:touch hardware motion
+[2715161.409]profiling_end:touch hardware motion
+[2715161.454]profiling_start:shell touch motion
+[2715161.500]profiling_end:shell touch motion
+[2715161.547]profiling_start:touch hardware motion
+[2715161.594]profiling_end:touch hardware motion
+[2715161.639]profiling_start:shell touch motion
+[2715161.684]profiling_end:shell touch motion
+[2715161.837]profiling_start:touch hardware motion
+[2715161.886]profiling_end:touch hardware motion
+[2715161.933]profiling_start:shell touch motion
+[2715161.978]profiling_end:shell touch motion
+[2715176.440]profiling_end:graphic hardware
+[2715176.516]profiling_start:weston
+[2715177.647]profiling_end:weston
+[2715177.733]profiling_start:graphic hardware
+[2715177.809]profiling_start:touch hardware motion
+[2715177.859]profiling_end:touch hardware motion
+[2715177.907]profiling_start:shell touch motion
+[2715177.955]profiling_end:shell touch motion
+[2715178.004]profiling_start:touch hardware motion
+[2715178.050]profiling_end:touch hardware motion
+[2715178.094]profiling_start:shell touch motion
+[2715178.140]profiling_end:shell touch motion
+[2715178.187]profiling_start:touch hardware motion
+[2715178.281]profiling_end:touch hardware motion
+[2715178.339]profiling_start:shell touch motion
+[2715178.386]profiling_end:shell touch motion
+[2715193.135]profiling_end:graphic hardware
+[2715193.211]profiling_start:weston
+[2715194.280]profiling_end:weston
+[2715194.367]profiling_start:graphic hardware
+[2715194.442]profiling_start:touch hardware motion
+[2715194.493]profiling_end:touch hardware motion
+[2715194.541]profiling_start:shell touch motion
+[2715194.588]profiling_end:shell touch motion
+[2715194.635]profiling_start:touch hardware motion
+[2715194.682]profiling_end:touch hardware motion
+[2715194.726]profiling_start:shell touch motion
+[2715194.771]profiling_end:shell touch motion
+[2715194.819]profiling_start:touch hardware motion
+[2715194.865]profiling_end:touch hardware motion
+[2715194.909]profiling_start:shell touch motion
+[2715194.955]profiling_end:shell touch motion
+[2715209.767]profiling_end:graphic hardware
+[2715209.844]profiling_start:weston
+[2715210.970]profiling_end:weston
+[2715211.057]profiling_start:graphic hardware
+[2715211.134]profiling_start:touch hardware motion
+[2715211.185]profiling_end:touch hardware motion
+[2715211.287]profiling_start:shell touch motion
+[2715211.348]profiling_end:shell touch motion
+[2715211.398]profiling_start:touch hardware motion
+[2715211.445]profiling_end:touch hardware motion
+[2715211.490]profiling_start:shell touch motion
+[2715211.535]profiling_end:shell touch motion
+[2715211.582]profiling_start:touch hardware motion
+[2715211.628]profiling_end:touch hardware motion
+[2715211.673]profiling_start:shell touch motion
+[2715211.718]profiling_end:shell touch motion
+[2715211.765]profiling_start:touch hardware motion
+[2715211.811]profiling_end:touch hardware motion
+[2715211.856]profiling_start:shell touch motion
+[2715211.901]profiling_end:shell touch motion
+[2715226.362]profiling_end:graphic hardware
+[2715226.437]profiling_start:weston
+[2715227.458]profiling_end:weston
+[2715227.543]profiling_start:graphic hardware
+[2715227.618]profiling_start:touch hardware motion
+[2715227.668]profiling_end:touch hardware motion
+[2715227.716]profiling_start:shell touch motion
+[2715227.763]profiling_end:shell touch motion
+[2715227.812]profiling_start:touch hardware motion
+[2715227.859]profiling_end:touch hardware motion
+[2715227.903]profiling_start:shell touch motion
+[2715227.948]profiling_end:shell touch motion
+[2715227.996]profiling_start:touch hardware motion
+[2715228.042]profiling_end:touch hardware motion
+[2715228.087]profiling_start:shell touch motion
+[2715228.132]profiling_end:shell touch motion
+[2715243.102]profiling_end:graphic hardware
+[2715243.179]profiling_start:weston
+[2715244.181]profiling_end:weston
+[2715244.303]profiling_start:graphic hardware
+[2715244.392]profiling_start:touch hardware motion
+[2715244.443]profiling_end:touch hardware motion
+[2715244.490]profiling_start:shell touch motion
+[2715244.537]profiling_end:shell touch motion
+[2715244.586]profiling_start:touch hardware motion
+[2715244.632]profiling_end:touch hardware motion
+[2715244.677]profiling_start:shell touch motion
+[2715244.780]profiling_end:shell touch motion
+[2715244.834]profiling_start:touch hardware motion
+[2715244.881]profiling_end:touch hardware motion
+[2715244.927]profiling_start:shell touch motion
+[2715244.972]profiling_end:shell touch motion
+[2715259.770]profiling_end:graphic hardware
+[2715259.847]profiling_start:weston
+[2715260.986]profiling_end:weston
+[2715261.072]profiling_start:graphic hardware
+[2715261.150]profiling_start:touch hardware motion
+[2715261.201]profiling_end:touch hardware motion
+[2715261.315]profiling_start:shell touch motion
+[2715261.367]profiling_end:shell touch motion
+[2715261.415]profiling_start:touch hardware motion
+[2715261.463]profiling_end:touch hardware motion
+[2715261.508]profiling_start:shell touch motion
+[2715261.553]profiling_end:shell touch motion
+[2715261.600]profiling_start:touch hardware motion
+[2715261.645]profiling_end:touch hardware motion
+[2715261.690]profiling_start:shell touch motion
+[2715261.734]profiling_end:shell touch motion
+[2715261.782]profiling_start:touch hardware motion
+[2715261.827]profiling_end:touch hardware motion
+[2715261.872]profiling_start:shell touch motion
+[2715261.916]profiling_end:shell touch motion
+[2715276.363]profiling_end:graphic hardware
+[2715276.438]profiling_start:weston
+[2715277.479]profiling_end:weston
+[2715277.564]profiling_start:graphic hardware
+[2715277.639]profiling_start:touch hardware motion
+[2715277.690]profiling_end:touch hardware motion
+[2715277.738]profiling_start:shell touch motion
+[2715277.785]profiling_end:shell touch motion
+[2715277.833]profiling_start:touch hardware motion
+[2715277.879]profiling_end:touch hardware motion
+[2715277.922]profiling_start:shell touch motion
+[2715277.967]profiling_end:shell touch motion
+[2715278.013]profiling_start:touch hardware motion
+[2715278.059]profiling_end:touch hardware motion
+[2715278.104]profiling_start:shell touch motion
+[2715278.149]profiling_end:shell touch motion
+[2715293.128]profiling_end:graphic hardware
+[2715293.205]profiling_start:weston
+[2715294.206]profiling_end:weston
+[2715294.337]profiling_start:graphic hardware
+[2715294.414]profiling_start:touch hardware motion
+[2715294.464]profiling_end:touch hardware motion
+[2715294.512]profiling_start:shell touch motion
+[2715294.558]profiling_end:shell touch motion
+[2715294.605]profiling_start:touch hardware motion
+[2715294.652]profiling_end:touch hardware motion
+[2715294.789]profiling_start:shell touch motion
+[2715294.841]profiling_end:shell touch motion
+[2715294.891]profiling_start:touch hardware motion
+[2715294.938]profiling_end:touch hardware motion
+[2715294.982]profiling_start:shell touch motion
+[2715295.027]profiling_end:shell touch motion
+[2715295.081]profiling_start:touch hardware motion
+[2715295.127]profiling_end:touch hardware motion
+[2715295.173]profiling_start:shell touch motion
+[2715295.258]profiling_end:shell touch motion
+[2715309.834]profiling_end:graphic hardware
+[2715309.910]profiling_start:weston
+[2715310.922]profiling_end:weston
+[2715311.008]profiling_start:graphic hardware
+[2715311.083]profiling_start:touch hardware motion
+[2715311.134]profiling_end:touch hardware motion
+[2715311.182]profiling_start:shell touch motion
+[2715311.276]profiling_end:shell touch motion
+[2715311.339]profiling_start:touch hardware motion
+[2715311.388]profiling_end:touch hardware motion
+[2715311.434]profiling_start:shell touch motion
+[2715311.479]profiling_end:shell touch motion
+[2715311.526]profiling_start:touch hardware motion
+[2715311.572]profiling_end:touch hardware motion
+[2715311.617]profiling_start:shell touch motion
+[2715311.662]profiling_end:shell touch motion
+[2715326.431]profiling_end:graphic hardware
+[2715326.508]profiling_start:weston
+[2715327.549]profiling_end:weston
+[2715327.634]profiling_start:graphic hardware
+[2715327.708]profiling_start:touch hardware motion
+[2715327.760]profiling_end:touch hardware motion
+[2715327.808]profiling_start:shell touch motion
+[2715327.855]profiling_end:shell touch motion
+[2715327.904]profiling_start:touch hardware motion
+[2715327.951]profiling_end:touch hardware motion
+[2715327.996]profiling_start:shell touch motion
+[2715328.041]profiling_end:shell touch motion
+[2715328.089]profiling_start:touch hardware motion
+[2715328.135]profiling_end:touch hardware motion
+[2715328.179]profiling_start:shell touch motion
+[2715328.266]profiling_end:shell touch motion
+[2715343.107]profiling_end:graphic hardware
+[2715343.184]profiling_start:weston
+[2715344.190]profiling_end:weston
+[2715344.320]profiling_start:graphic hardware
+[2715344.395]profiling_start:touch hardware motion
+[2715344.446]profiling_end:touch hardware motion
+[2715344.495]profiling_start:shell touch motion
+[2715344.542]profiling_end:shell touch motion
+[2715344.590]profiling_start:touch hardware motion
+[2715344.637]profiling_end:touch hardware motion
+[2715344.682]profiling_start:shell touch motion
+[2715344.825]profiling_end:shell touch motion
+[2715344.876]profiling_start:touch hardware motion
+[2715344.923]profiling_end:touch hardware motion
+[2715344.968]profiling_start:shell touch motion
+[2715345.012]profiling_end:shell touch motion
+[2715345.066]profiling_start:touch hardware motion
+[2715345.113]profiling_end:touch hardware motion
+[2715345.157]profiling_start:shell touch motion
+[2715345.202]profiling_end:shell touch motion
+[2715359.782]profiling_end:graphic hardware
+[2715359.857]profiling_start:weston
+[2715360.884]profiling_end:weston
+[2715360.969]profiling_start:graphic hardware
+[2715361.042]profiling_start:touch hardware motion
+[2715361.094]profiling_end:touch hardware motion
+[2715361.140]profiling_start:shell touch motion
+[2715361.188]profiling_end:shell touch motion
+[2715361.286]profiling_start:touch hardware motion
+[2715361.345]profiling_end:touch hardware motion
+[2715361.391]profiling_start:shell touch motion
+[2715361.437]profiling_end:shell touch motion
+[2715376.468]profiling_end:graphic hardware
+[2715376.541]profiling_start:weston
+[2715377.558]profiling_end:weston
+[2715377.642]profiling_start:graphic hardware
+[2715393.093]profiling_end:graphic hardware
+[2715393.343]profiling_start:touch hardware motion
+[2715393.401]profiling_end:touch hardware motion
+[2715393.465]profiling_start:shell touch motion
+[2715393.528]profiling_end:shell touch motion
+[2715393.579]profiling_start:touch hardware up
+[2715393.638]profiling_end:touch hardware up
+[2715393.687]profiling_start:shell touch up
+[2715393.734]profiling_end:shell touch up
+[2715409.841]profiling_end:graphic hardware
+[2715409.915]profiling_start:weston
+[2715410.951]profiling_end:weston
+[2715411.026]profiling_start:graphic hardware
+[2715426.490]profiling_end:graphic hardware
+[01:31:55.455] caught signal 15
+[2719311.658]  -> wl_buffer@20.release()
+[2719311.751]  -> wl_registry@2.global_remove(5)
+[2719311.806]  -> wl_registry@2.global_remove(5)
+[2719312.310] wl_registry@2.global_remove(5)
+[2719312.476]  -> wl_registry@2.global_remove(18)
+[2719312.592]  -> wl_surface@18.destroy()
+[2719312.629]  -> wl_surface@17.destroy()
+[2719312.668]  -> wl_buffer@27.destroy()
+[2719315.173]  -> wl_shm_pool@26.destroy()
+[2719315.316]  -> wl_surface@16.destroy()
+[2719315.351]  -> wl_buffer@23.destroy()
+[2719315.506]  -> wl_shm_pool@22.destroy()
+[2719315.548]  -> wl_keyboard@19.release()
+[2719315.653]  -> wl_surface@9.destroy()
+[2719316.640]  -> wl_shm_pool@13.destroy()
+[2719316.739]  -> wl_subcompositor@4.destroy()
+[2719336.297]  -> wl_keyboard@17.leave(19, wl_surface@14)
+[2719336.533]  -> xdg_surface@15.deactivated()
+[2719336.655]  -> wl_seat@7.capabilities(4)
+[2719356.288]  -> wl_seat@7.capabilities(0)
+[2719371.823]  -> wl_registry@2.global_remove(9)
+[2719371.982]  -> wl_registry@2.global_remove(10)
+[2719372.345]  -> wl_registry@2.global_remove(11)
+[2719372.548]  -> wl_registry@2.global_remove(8)
