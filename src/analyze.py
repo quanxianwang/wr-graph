@@ -244,14 +244,9 @@ class Analyzer:
             colors = []
             events = []
             x_labels = []
-            group_time = 0
             self.happened_events_fps = []
-            count = 0
-            accum = 0
             time_list = self.time_dic[id]
             FPS = collections.OrderedDict()
-            first = 0
-            time = 0
             if 'client' + '_' + id in self.events_activate \
 					and self.events_activate['client' + '_' + id] == True:
                 x_axis_num = int(math.floor(width / X_AXIS_INTERVAL))
@@ -260,9 +255,6 @@ class Analyzer:
                 for i in range(x_axis_num + 1):
                     x_labels.append("{0}ms".format(show_start + i * x_interval))
 
-                group_time = (show_end / x_axis_num) / x_axis_num / x_axis_num / x_axis_num
-                group_time = 3
-           
                 for i in range(len(time_list)):
                     if time_list[i].start < show_start:
                         continue
@@ -270,28 +262,12 @@ class Analyzer:
                         break
                     if time_list[i].end == -1:
                         FPS[time_list[i].start] = time_list[i].end
-                        count = 0
-                        accum = 0
-                        first = 0
-                        time = 0
                         continue
-                    time_list[i].end = 1000/time_list[i].end
-                    accum += time_list[i].end
-                    count += 1
-                    if first == 0:
-                        time = 0
-                        first = 1
-                    else:
-                        time += (time_list[i].start - time_list[i-1].start)
-                    if time > group_time:
-                        value = accum / count
-                        FPS[time_list[i - count + 1].start] = value
-                        count = 0
-                        accum = 0
-                        time = 0
+                    FPS[time_list[i].start] = 1000/time_list[i].end
 
                 events.append('client' + '_' + id)
                 colors.append(self.color_table["blue"])
+
             fps_chart = Graphic(name, FPS, width, height, show_end,
                                 x_labels=x_labels, axis=True, grid=True,
                                 background="white", series_colors=colors)
@@ -508,8 +484,9 @@ class Analyzer:
                 lens = len(self.smooth_events[name][id])
                 rate = float(self.sample_rate) * lens
                 rate = int("{0:.0f}".format(rate))
-                del self.smooth_events[name][id][0:rate]
-                del self.smooth_events[name][id][-rate:]
+                if rate > 0:
+                    del self.smooth_events[name][id][0:rate]
+                    del self.smooth_events[name][id][-rate:]
 				
     
     def get_comm_time(self):
@@ -541,8 +518,9 @@ class Analyzer:
                 lens = len(comm_list)
                 rate = float(self.sample_rate) * lens
                 rate = int("{0:.0f}".format(rate))
-                del comm_list[0:rate]
-                del comm_list[-rate:]
+                if rate > 0:
+                    del comm_list[0:rate]
+                    del comm_list[-rate:]
                 lens = len(comm_list)
                 for number in comm_list:
                     total += number
