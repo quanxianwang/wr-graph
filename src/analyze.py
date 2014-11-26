@@ -82,13 +82,14 @@ class Analyzer:
         self.MAX_TIME = MAX_TIME
 
         # log file's start time, will be changed (absolute real world time)
-        self.START_TIME = START_TIME
+        self.start_time = START_TIME
+        self.total_interval = TOTAL_INTERVAL
+        self.end_time = START_TIME + TOTAL_INTERVAL
         # showing interval's start time (relative)
         self.SHOW_START = SHOW_START
         # showing interval's end time
         self.SHOW_END = SHOW_END
         # total interval
-        self.TOTAL_INTERVAL = TOTAL_INTERVAL
         # predefined match pattern
         self.pregex = re.compile('\[\ *(?P<time>[0-9]+\.[0-9]+)\]profiling_point:'
                       + '(?P<name>.*)')
@@ -99,6 +100,7 @@ class Analyzer:
         self.idregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]profiling_id:'
                       + '(?P<name>.*)')
         self.events_dic = {}
+        self.new_events = {}
         # dic of events's activate(accordng to events's activate to draw fps)
         self.events_activate = {}
         # dic of smooth_events's activate(accordng to smooth_events's activate to draw smooth)
@@ -172,110 +174,144 @@ class Analyzer:
         """
         if len(self.smooth_events.keys()) == 0:
             return None
-        for id in self.client_id_list:
+
+        st_dic = collections.OrderedDict()
+
+        for cid in self.client_id_list:
+            st_dic[cid] = collections.OrderedDict()
             data = []
-            if 'client'+'_'+id in self.smooth_activate \
-					and self.smooth_activate['client'+'_'+id]==True:
-                color_index = 0
-                colors = []
-                x_labels = []
-                events = []
-                events.append('client' + '_' + id)
-                smoothtime_dic = collections.OrderedDict()
-                smoothtime_dic[id] = collections.OrderedDict()
-                sum_total = 0
-                for i in range(len(self.smooth_event_list)):
-                    event_len = len(self.smooth_events
-						            [self.smooth_event_list[i]][id])
-                    event = self.smooth_event_list[i]
-                    total = 0
-                    for j in range(event_len):
-                        total += self.smooth_events[event][id][j]
-                    smoothtime_dic[id][event] = (total / event_len)
-                    sum_total += smoothtime_dic[id][event]
-                    if i < len(self.smooth_event_list) - 1:
-                        event_comm = self.comm_events[id].keys()[i]
-                        if self.comm_events[id][event_comm] > 0.05:
-                            smoothtime_dic[id][event_comm] \
-								    = self.comm_events[id][event_comm]
-                            sum_total += smoothtime_dic[id][event_comm]
-				
-                sum_total = float("{0:.2f}".format(sum_total))
-                fps = float("{0:.2f}".format(1000 / sum_total))
-                str1 = 'total_time = ' + str(sum_total) + 'ms'\
-						+ '\n' + 'fps = ' + str(fps) + 'fps'
-                if output_dir == None:
-                    output_dir = '.'
-                fd = open(output_dir + '/fps.txt', 'w')
-                fd.write(str1)
-                fd.close()
-                for i in range(len(smoothtime_dic[id].keys())):
-                    event_name = smoothtime_dic[id].keys()[i]
-                    x_labels.append(event_name)
-                for i in range(len(x_labels)):
-                    color_index = color_index % (len(self.color_table))
-                    colors.append(self.color_table.values()[color_index])
-                    color_index += 1
-            else:
+            if 'client'+'_'+cid not in self.smooth_activate \
+                or self.smooth_activate['client'+'_'+cid] != True:
                 continue
 
-            data = smoothtime_dic[id]
+            color_index = 0
+            colors = []
+            x_labels = []
+            smoothtime_dic = collections.OrderedDict()
+            smoothtime_dic[cid] = collections.OrderedDict()
+            sum_total = 0
+            se_len = len(self.smooth_event_list)
+            for i in range(se_len):
+                total = 0
+                ename = self.smooth_event_list[i]
+                data_len = len(self.smooth_events[cid][ename])
+                for number in self.smooth_events[cid][ename]:
+                    total += number
+                st_dic[cid][ename] = total/data_len
+                if i < se_len - 1:
+                    cname = 'comm' + str(i)
+                    comm_val = self.comm_events[cid][cname]
+                    if comm_val > 0.1:
+                        st_dic[cid][cname]  = comm_val
+	
+            # get sum_total
+            for ename in self.comm_events[cid]:
+                sum_total += self.comm_events[cid][ename]
+
+            sum_total = float("{0:.2f}".format(sum_total))
+            fps = float("{0:.2f}".format(1000 / sum_total))
+            str1 = 'total_time = ' + str(sum_total) + 'ms'\
+		+ '\n' + 'fps = ' + str(fps) + 'fps'
+
+            if output_dir == None:
+                output_dir = '.'
+
+            if not os.path.exists(output_dir):
+                os.path.mkdir(output_dir)
+            fd = open(output_dir + '/fps.txt', 'w')
+            fd.write(str1)
+            fd.close()
+
+            for ename in st_dic[cid].keys():
+                x_labels.append(ename)
+
+            for i in range(len(x_labels)):
+                color_index = color_index % (len(self.color_table))
+                colors.append(self.color_table.values()[color_index])
+                color_index += 1
+
+            data = st_dic[cid]
             smooth_chart = Graphic(name, data, width, 
-					              height, x_labels=x_labels, 
-								  axis=True, grid=True, 
-								  background="white", series_colors=colors)
+                                   height, x_labels=x_labels,
+                                   axis=True, grid=True,
+                                   background="white", series_colors=colors)
             smooth_chart.render()
             smooth_chart.render_smooth()
         return smooth_chart
 
     def draw_fps(self, name, show_start, show_end, width, height, output_dir=None):
         """
-		Input:self.time_dic
-		Output:Graphic instance
-		"""
-        
+        Input:self.time_dic
+        Output:Graphic instance
+        """
+
         if len(self.time_dic) == 0:
             return None
-        show_start -= self.START_TIME
-        show_end -= self.START_TIME
 
-        for id in self.client_id_list:
-            time_list = []
+        # change to relative time
+        rel_start = show_start - self.start_time
+        rel_end = show_end - self.start_time
+
+        for cid in self.client_id_list:
             colors = []
             events = []
             x_labels = []
             self.happened_events_fps = []
-            time_list = self.time_dic[id]
+            time_list = self.time_dic[cid]
             FPS = collections.OrderedDict()
-            if 'client' + '_' + id in self.events_activate \
-					and self.events_activate['client' + '_' + id] == True:
-                x_axis_num = int(math.floor(width / X_AXIS_INTERVAL))
-                x_interval = int(math.floor((show_end - show_start) 
+
+            if 'client' + '_' + cid not in self.events_activate or \
+               self.events_activate['client' + '_' + cid] == False:
+                continue
+
+            x_axis_num = int(math.floor(width / X_AXIS_INTERVAL))
+            x_interval = int(math.floor((rel_end - rel_start) 
 			             / x_axis_num))
-                for i in range(x_axis_num + 1):
-                    x_labels.append("{0}ms".format(show_start + i * x_interval))
+            for i in range(x_axis_num + 1):
+                x_labels.append("{0}ms".format(rel_start + i * x_interval))
 
-                for i in range(len(time_list)):
-                    if time_list[i].start < show_start:
-                        continue
-                    if time_list[i].end > show_end:
-                        break
-                    if time_list[i].end == -1:
-                        FPS[time_list[i].start] = time_list[i].end
-                        continue
-                    FPS[time_list[i].start] = 1000/time_list[i].end
+            for i in range(len(time_list)):
+                if time_list[i].start < rel_start:
+                    continue
+                if time_list[i].end > rel_end:
+                    break
+                if time_list[i].end == -1:
+                    FPS[time_list[i].start] = -1
+                    continue
+                # change ms value to FPS value
+                FPS[time_list[i].start] = 1000/time_list[i].end
 
-                events.append('client' + '_' + id)
-                colors.append(self.color_table["blue"])
+            events.append('client' + '_' + cid)
+            colors.append(self.color_table["blue"])
 
-            fps_chart = Graphic(name, FPS, width, height, show_end,
+            # FPS is defined for every client id
+            # lets calculate start, end, interval and labels.
+
+            fps_chart = Graphic(name, FPS, width, height, rel_end,
                                 x_labels=x_labels, axis=True, grid=True,
                                 background="white", series_colors=colors)
             fps_chart.render()
             fps_chart.render_fps()
             self.happened_events_fps = events
             self.fps_event_colors = colors
+
         return fps_chart
+
+    def create_interval(self, start, end):
+        itv = interval()
+        itv.start = start
+        itv.end = cycle
+    
+    def sample_data(self, time_list = None, start = 0, end = 0):
+        if not time_list:
+           return []
+
+        rate = float(self.sample_rate) * (end-start)
+        rate = int("{0:.0f}".format(rate))
+
+        if rate > 0:
+            del time_list[start:start+rate]
+            del time_list[end-rate*2:end-rate]
 
     def calculate_fps(self):
         """
@@ -291,48 +327,89 @@ class Analyzer:
         rate = 0
         event1 = self.fps_event_list[0]
         event2 = self.fps_event_list[-1]
-        for client_id in self.client_id_list:
-            event_len = len(self.events_dic[event1][client_id].events)
-            self.time_dic[client_id] = []
-            for i in range(event_len):
-                start = self.events_dic[event1][client_id].events[i].start
-                end = self.events_dic[event2][client_id].events[i].start
-                cycle = end - start
-                total += cycle
-                number += 1
-                itv = interval()
-                itv.start = start
-                itv.end = cycle
+        seg_len = len(self.seg_point_time)
 
-                if len(self.seg_point_time) > 0:
-                    seg_time = self.seg_point_time[index]
-                    if start >= seg_time:
-                        lens = len(time_list) - offset
-                        rate = float(self.sample_rate) * lens
-                        rate = int("{0:.0f}".format(rate))
-                        time_list = time_list[0:offset] + \
-								    sorted(time_list[offset:len(time_list)],\
-									       key=lambda e:e.end)
-                        if rate > 0:
-                            del time_list[offset : rate+offset]
-                            del time_list[-rate:]
-                        time_list = time_list[0:offset] + \
-								    sorted(time_list[offset:len(time_list)], \
-									       key=lambda e:e.start)
-                        itv2 = interval()
-                        itv2.start = seg_time
-                        itv2.end = -1
-                        index += 1
-                        time_list.append(itv2) 
-                        offset = len(time_list)
-                time_list.append(itv) 
+        for cid in self.client_id_list:
+            for event in self.new_events[cid]:
+                if event[0] == event1:
+                    start = event[1]
+                    continue
+
+                if event[0] == event2:
+                    end = event[1]
+                    itv = interval()
+                    itv.start = start
+                    itv.end = end - start
+                    total += end - start
+                    number += 1
+
+                    if seg_len > 0 and seg_len > index:
+                        seg_time = self.seg_point_time[index]
+                        if start >= seg_time:
+                            """
+                            Before insert segment point, sample the time data
+                            """
+                            
+                            new_list = sorted(time_list[offset:len(time_list)], key=lambda e:e.end)
+                            self.sample_data(new_list, 0, len(new_list))
+                            new_list.sort(key=lambda e:e.start)
+                            if offset > 0:
+                                time_list = time_list[0:offset] + new_list
+                            else:
+                                time_list = new_list
+
+                            itv2 = interval()
+                            itv2.start = seg_time
+                            itv2.end = -1
+                            index += 1
+                            time_list.append(itv2) 
+                            offset = len(time_list)
+                    time_list.append(itv) 
 
             if self.seg_point_time[-1] not in [e.start for e in time_list]:
                 itv = interval()
                 itv.start = self.seg_point_time[-1]
                 itv.end = -1
                 time_list.append(itv)
-            self.time_dic[client_id] = time_list
+            self.update2rel(time_list)
+
+            self.time_dic[cid] = time_list
+
+    def process_id(self, match):
+        if not match:
+            return
+         
+        ename = match.group('name')
+        if ename not in self.client_id_list:
+            self.client_id_list.append(ename)
+
+    def process_timestr(self, match=None, start=True):
+        if not match:
+            return
+
+        ename_ori = match.group('name')
+        etime = match.group('time')
+        id_index = ename_ori.find('_')
+        if id_index == -1:
+            eid = '0'
+            ename = ename_ori
+        else:
+            ename = ename_ori[:id_index]
+            eid = ename_ori[id_index+1:]
+
+        if start:
+            if self.seg_point == ename:
+                self.seg_point_time.append(float(etime))
+
+        if eid not in self.events_dic:
+            self.events_dic[eid] = []
+
+        if start:
+            new_event = {'name':ename, 'time':float(etime), 'start':True}
+        else:
+            new_event = {'name':ename, 'time':float(etime), 'start':False}
+
+        self.events_dic[eid].append(new_event)
 
     def parse_log_file(self):
         """
@@ -345,60 +422,22 @@ class Analyzer:
                 count_line=0
                 for line in inf:
                     count_line+=1
-                    if count_line >= self.FPS * self.MAX_TIME:
-                        break
+
+                    # Find the match
                     match = self.idregex.match(line)
                     if match is not None:
-                        if len(match.groups()) == 2:
-                            client_id = match.group('name')
-                            event_time = match.group('time')
-                            if client_id not in self.client_id_list:
-                                self.client_id_list.append(client_id)
+                        self.process_id(match)
+                        continue
+
                     match = self.sregex.match(line)
                     if match is not None:
-                        if len(match.groups()) == 2:
-                            event_name_ori = match.group('name')
-                            event_time = match.group('time')
-                            id_index = event_name_ori.find('_')
-                            if id_index == -1:
-                                event_id = '0'
-                                event_name = event_name_ori
-                            else:
-                                event_name = event_name_ori[:id_index]
-                                event_id = event_name_ori[id_index+1:]
-                            if self.seg_point == event_name:
-                                self.seg_point_time.append(float(event_time))
-                            if event_name not in self.events_dic:
-                                self.events_dic[event_name] = {}
-                            if event_id not in self.events_dic[event_name]:
-                                color_index = (color_index + 1) \
-                                                 % len(self.color_table)
-                                opt = interval_opt(event_name, 
-										           self.FPS * self.MAX_TIME)
-                                self.events_dic[event_name][event_id] = opt
-                            event = self.events_dic[event_name][event_id]
-                            event.count += 1
-                            event.events[event.count].start = float(event_time)
-                    # match predefined time interval pattern (end)
+                        self.process_timestr(match, True)
+                        continue
+
                     match = self.eregex.match(line)
                     if match is not None:
-                        if len(match.groups()) == 2:
-                            event_name_ori = match.group('name')
-                            event_time = match.group('time')
-                            id_index = event_name_ori.find('_')
-                            if id_index == -1:
-                                event_id = '0'
-                                event_name = event_name_ori
-                            else:
-                                event_name = event_name_ori[:id_index]
-                                event_id = event_name_ori[id_index+1:]
-                            if event_name in self.events_dic:
-                                if event_id in self.events_dic[event_name]:
-                                    # event should has been added
-                                    event = self.events_dic[event_name][event_id]
-                                    for i in range(0, event.count+1):
-                                        if event.events[i].end is -1:
-								            event.events[i].end = float(event_time)
+                        self.process_timestr(match, False)
+                        continue
 
     def parse_config_file(self, configfile, logfile):
         """
@@ -442,19 +481,11 @@ class Analyzer:
         else:
             self.log_files.extend(config_tags["profile"][1])
  
-    def check_fps(self):
-        """
-        according to self.events_dic 
-		to generate the self.time_dic(be used to draw fps)
-		Return:self.time_dic
-        """
-        first = 0
-        for id in self.client_id_list:
-            if first == 0:
-                self.events_activate['client' + '_' + id] = True
-                first = 1
-            else:
-                self.events_activate['client' + '_' + id] = False
+    def init_events(self):
+        first = self.client_id_list[0]
+        self.events_activate['client' + '_' + first] = True
+        for cid in self.client_id_list[1:]:
+            self.events_activate['client' + '_' + cid] = False
 
     def get_smooth_time(self):
         """
@@ -466,29 +497,21 @@ class Analyzer:
         """
 
         event_len = MAX_LEN
-        for id in self.client_id_list:
-            #for event in self.smooth_event_list:
-            #    if event_len > self.events_dic[event][id].count:
-            #      event_len = self.events_dic[event][id].count
-            ll = len(self.smooth_event_list)
-            for i in range(ll):
-                self.smooth_events[self.smooth_event_list[i]] = {}
-                self.smooth_events[self.smooth_event_list[i]][id] = [] 
-                name = self.smooth_event_list[i]
-                event_len = len(self.events_dic[name][id].events)
-                for j in range(event_len): 
-                    number = float(self.events_dic[name][id].events[j].end) \
-					         - float(self.events_dic[name][id].events[j].start)
-                    self.smooth_events[name][id].append(number)
-                self.smooth_events[name][id].sort()
-                lens = len(self.smooth_events[name][id])
-                rate = float(self.sample_rate) * lens
-                rate = int("{0:.0f}".format(rate))
-                if rate > 0:
-                    del self.smooth_events[name][id][0:rate]
-                    del self.smooth_events[name][id][-rate:]
-				
-    
+        for cid in self.client_id_list:
+            self.smooth_events[cid] = {}
+            for event in self.new_events[cid]:
+                name = event[0]
+                number = event[2] - event[1]
+                if name not in self.smooth_events[cid].keys():
+                    self.smooth_events[cid][name] = []
+                self.smooth_events[cid][name].append(number)
+
+            # merge the data based on the sample rate
+            for name in self.smooth_events[cid].keys():
+                self.smooth_events[cid][name].sort()
+                self.sample_data(self.smooth_events[cid][name], 0, \
+                     len(self.smooth_events[cid][name]))
+
     def get_comm_time(self):
         """
 		Note:According to valid data(self.events_dic) 
@@ -497,37 +520,120 @@ class Analyzer:
 		Return:self.comm_events
 		Data Format:self.comm_events = {client_id:{event_name:time}}
         """
-        for id in self.client_id_list:
-            self.comm_events[id] = collections.OrderedDict()
+        for cid in self.client_id_list:
+            self.comm_events[cid] = collections.OrderedDict()
+            total = 0
+            comm_time = 0
             for i in range(0, len(self.smooth_event_list) - 1):
+                fname = self.smooth_event_list[i]
+                sname = self.smooth_event_list[i+1]
+                fst_end = [e[2] for e in self.new_events[cid] \
+                                  if e[0] == fname]
+                sec_start = [e[1] for e in self.new_events[cid] \
+                                  if e[0] == sname]
                 comm_list = []
-                name = self.smooth_event_list[i]
-                event_len = len(self.events_dic[name][id].events)
-                total = 0
-                lens = 0
-                comm_first_end = []
-                comm_first_end = [e.end for e in 
-				                     self.events_dic[self.event_list[i]][id].events]
-                comm_second_start = []
-                comm_second_start = [e.start for e in 
-				                        self.events_dic[self.event_list[i+1]][id].events]
-                for j in range(event_len):
-                    number = comm_second_start[j] - comm_first_end[j]
+                for j in range(len(fst_end)):
+                    number = sec_start[j] - fst_end[j]
                     comm_list.append(number)
+
                 comm_list.sort()
-                lens = len(comm_list)
-                rate = float(self.sample_rate) * lens
-                rate = int("{0:.0f}".format(rate))
-                if rate > 0:
-                    del comm_list[0:rate]
-                    del comm_list[-rate:]
-                lens = len(comm_list)
+                self.sample_data(comm_list, 0, len(comm_list))
+
                 for number in comm_list:
                     total += number
-                comm_time = total / lens
-                self.comm_events[id]['comm' + str(i)] = comm_time
-       
-            
+                if len(comm_list) > 0:
+                     comm_time = total / len(comm_list)
+                self.comm_events[cid]['comm' + str(i)] = comm_time
+
+    def clean_up(self):
+        # Clean up data unused
+        for cid in self.events_dic.keys():
+            if cid == '0':
+                continue
+
+            # clean up unsed client id
+            if cid not in self.client_id_list:
+                del self.events_dic[client_id]
+
+            # clean up unused event
+            event_len = len(self.events_dic[cid])
+            i = 0
+            while i < event_len:
+                event = self.events_dic[cid][i]
+                if event['name'] not in self.event_list:
+                    del self.events_dic[cid][i]
+                    event_len -= 1
+                    continue
+                i += 1
+
+    def merge_server(self):
+        # merge weston server data with client data
+        events = self.events_dic['0']
+        for cid in self.client_id_list:
+            self.smooth_activate['client'+'_'+cid] = True
+            if cid == '0':
+                continue
+
+            self.events_dic[cid].extend(events)
+            self.events_dic[cid].sort(key=lambda e: e['time'])
+
+    def form_new_dic(self):
+        """
+        Form new event dictionary
+        """
+        for cid in self.client_id_list:
+            self.new_events[cid] = []
+
+        for cid in self.client_id_list:
+            for i in range(len(self.events_dic[cid]) - 1):
+                event = self.events_dic[cid][i]
+                if event['start'] == True:
+                    new_event = (event['name'], event['time'], -1)
+                    self.new_events[cid].append(new_event)
+                    continue
+
+                if event['start'] == False:
+                    # find the last event which end is -1
+                    event_len = len(self.new_events[cid])
+                    if event_len == 0:
+                        continue
+
+                    i = 1
+                    while i < (event_len - 1):
+                        e1 = self.new_events[cid][-i]
+                        if e1[0] == event['name'] and e1[2] != -1:
+                            break
+                        i += 1
+
+                    while i > 0:
+                        e1 = self.new_events[cid][-i]
+                        if e1[0] == event['name'] and e1[2] == -1:
+                            new_event = (e1[0], e1[1], event['time'])
+                            del self.new_events[cid][-i]
+                            self.new_events[cid].append(new_event)
+                        i -= 1
+
+            # sort self.new_events
+            self.new_events[cid].sort(key=lambda e:e[1])
+
+    def build_complete_dic(self):
+        """
+        Form a complete event dictionary
+        """
+        elen = len(self.event_list) 
+        for cid in self.client_id_list:
+            ecount = len(self.new_events[cid])
+            j = 0
+            index = 0
+            while j < ecount:
+                if self.new_events[cid][j][0] == self.event_list[index]:
+                    index += 1
+                    index = index % elen
+                    j += 1
+                else:
+                    del self.new_events[cid][j]
+                    ecount -= 1
+
     def get_valid_data(self):
         """
 		Note:according to the first event in 
@@ -536,164 +642,57 @@ class Analyzer:
 			 the order of the events), rule out the error data.
 		Input:original data:self.events_dic
 		Return:valid data:self.events_dic
-		data format:self.events_dic = {event_name:{id:time}}
+		data format:self.events_dic = {id:[event]}
+                event = {'name':event_name, 'start':start_time, 'end':end_time}
         """
-        for event in self.events_dic.keys():
-            if event not in self.event_list:
-                del self.events_dic[event]
-                continue
-            for client_id in self.events_dic[event].keys():
-                if client_id == '0':
-                    continue
-                if client_id not in self.client_id_list:
-                    del self.events_dic[event][client_id]
 
-        for id in self.client_id_list:
-            self.smooth_activate['client'+'_'+id] = True
-            for i in range(0, len(self.event_list)-1):
-                first = self.event_list[i]
-                if id not in self.events_dic[first].keys() and \
-						'0' in self.events_dic[first].keys() and id != '0':
-					self.events_dic[first][id] = []
-					self.events_dic[first][id] = copy.deepcopy(
-					                                     self.events_dic[first]['0'])
-                second = self.event_list[i+1]
-                event_len = self.events_dic[first][id].count
-                count = 0
-                num = 0
-                if id not in self.events_dic[second].keys() and \
-						'0' in self.events_dic[second].keys() and id != '0':
-					self.events_dic[second][id] = []
-					self.events_dic[second][id] = copy.deepcopy(
-							                              self.events_dic[second]['0'])
+        self.clean_up()
+        self.merge_server()
+        ## activate all ids
+        for cid in self.client_id_list:
+            self.smooth_activate['client'+'_'+cid] = True
 
-                if event_len < self.events_dic[second][id].count:
-					event_len = self.events_dic[second][id].count
+        self.form_new_dic()
 
-                if id == '0' and '0' not in self.events_dic[second].keys():
-					self.events_dic[second][id] = []
-				  	event_len = self.events_dic[second][id].count
-                while num < event_len:
-                    if self.events_dic[first][id].events[count].start == -1:
-                        del self.events_dic[second][id].events[count : 
-								    self.events_dic[second][id].count]
-                        self.events_dic[second][id].count \
-								-= (self.events_dic[second][id].count - count) 
-                        break
-                    elif self.events_dic[second][id].events[count].start == -1:
-                        del self.events_dic[first][id].events[count : 
-								    self.events_dic[first][id].count]
-                        self.events_dic[first][id].count \
-								-= (self.events_dic[first][id].count - count) 
-                        break
-                    elif self.events_dic[first][id].events[count].start \
-						     < self.events_dic[second][id].events[count].start:
-                        if self.events_dic[first][id].events[count+1].start \
-						       > self.events_dic[second][id].events[count].start:
-                            if self.events_dic[first][id].events[count+1].start \
-							       < self.events_dic[second][id].events[count+1].start \
-							           or self.events_dic[second][id].events[count+1].start == -1:
-                                count += 1
-                                num += 1
-                            else:
-                                index = count
-                                while self.events_dic[second][id].events[index].start \
-									      < self.events_dic[first][id].events[count+1].start:
-                                    index += 1
-                                #del self.events_dic[second][id].events[count:index-1]
-                                del self.events_dic[second][id].events[count+1:index]
-                                self.events_dic[second][id].count -= (index - count - 1) 
-                                num += (index - count - 1)
-                        else:
-                            index = count
-                            if self.events_dic[first][id].events[count+1].start == -1:
-                                break
-                            while self.events_dic[first][id].events[index].start \
-								      < self.events_dic[second][id].events[count].start \
-								          and self.events_dic[first][id].events[index].start != -1:
-                                index += 1
-                            for k in range(0, i):
-                                del self.events_dic[self.event_list[k]][id].events[count+1:index]
-                                self.events_dic[self.event_list[k]][id].count -= (index - count - 1) 
-                            del self.events_dic[first][id].events[count+1:index]
-                            self.events_dic[first][id].count -= (index - count - 1) 
-                            num += (index - 1 - count)
-                    else:
-                        index = count
-                        while self.events_dic[second][id].events[index].start < \
-						          self.events_dic[first][id].events[count].start:
-                            index += 1
-                        del self.events_dic[second][id].events[count:index]
-                        self.events_dic[second][id].count -= (index - count) 
-                        num += (index - count)
-                for i in range(count+1, len(self.events_dic[first][id].events)):
-                    self.events_dic[first][id].events[i].start = -1
-                for i in range(count+1, len(self.events_dic[second][id].events)):
-                    self.events_dic[second][id].events[i].start = -1
-                self.events_dic[first][id].count = count
-                self.events_dic[second][id].count = count
+        # del self.events_dic
 
-            event_len = self.events_dic[self.event_list[0]][id].count;
-            for event in self.events_dic.keys():
-                if event_len > self.events_dic[event][id].count:
-                    event_len = self.events_dic[event][id].count
+        # build a complate event dic
+        self.build_complete_dic()
+        self.get_startend_time()
 
-            for event in self.events_dic.keys():
-                del self.events_dic[event][id].events[event_len+1:]
-                self.events_dic[event][id].count = event_len
-
-    def get_start_time(self):
+    def get_startend_time(self):
         """
 		Note:get the start time of log files.
 		Input:self.events_dic
-		Output:self.START_TIME
+		Output:self.start_time
         """
-        for event in self.events_dic.keys():
-            for id in self.client_id_list:
-                del self.events_dic[event][id].events[self.events_dic[event][id].count + 1:]
-                self.events_dic[event][id].events.sort(key=lambda e: e.start)
-                if self.events_dic[event][id].events[0].start < self.START_TIME:
-                    self.START_TIME = self.events_dic[event][id].events[0].start
+        for cid in self.client_id_list:
+            if len(self.events_dic[cid]) <= 0:
+                continue
+
+            start_time = self.new_events[cid][0][1]
+            end_time = self.new_events[cid][-1][2]
+            if self.start_time > start_time:
+               self.start_time = start_time
+            if self.end_time > end_time:
+               self.end_time = end_time 
 
         for time in self.seg_point_time:
-            if time < self.START_TIME:
-                sefl.START_TIME = time
+            if time < self.start_time:
+                self.start_time = time
 
-    def update_to_relative(self):
+        for time in self.seg_point_time:
+            if time > self.end_time:
+                self.end_time = time
+
+        self.total_interval = self.end_time
+
+    def update2rel(self, time_list):
         """
         all event time is decreased by start time
         """
-        for event in self.events_dic.keys():
-            for id in self.events_dic[event].keys():
-                for i in range(self.events_dic[event][id].count + 1):
-                    self.events_dic[event][id].events[i].start -= self.START_TIME
-                    self.events_dic[event][id].events[i].end -= self.START_TIME
-        
-        for i in range(len(self.seg_point_time)):
-            self.seg_point_time[i] -= self.START_TIME
-
-    def get_total_interval(self):
-        """
-        get total interval from recorded events
-        Input:self.events_dic
-		Output:self.TOTAL_INTERVAL
-        """
-        
-        for event in self.events_dic.keys():
-            for id in self.client_id_list:
-                lens = len(self.events_dic[event][id].events)
-                if self.events_dic[event][id].events[lens - 1].end \
-						> self.TOTAL_INTERVAL:
-                    self.TOTAL_INTERVAL \
-							= self.events_dic[event][id].events[lens- 1].end
-
-        for time in self.seg_point_time:
-            if time > self.TOTAL_INTERVAL:
-                self.TOTAL_INTERVAL = time
-
-
-        #if len(self.seg_point_list) == 0:
-        #    self.seg_point_list.append((self.START_TIME, self.TOTAL_INTERVAL))
+        for event in time_list:
+            event.start -= self.start_time
 
     def init(self, configfile, logfile):
         """initialize start time and parse config file"""
@@ -708,10 +707,8 @@ class Analyzer:
         if len(self.smooth_event_list) > 0:
             self.get_smooth_time()
             self.get_comm_time()
-        self.get_start_time()
-        self.get_total_interval()
-        self.update_to_relative()
+
         if len(self.fps_event_list) != 0:
             self.time_dic = {}
-            self.check_fps()
+            self.init_events()
             self.calculate_fps()

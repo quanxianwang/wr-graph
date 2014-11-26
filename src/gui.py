@@ -224,8 +224,8 @@ class Analyzer_Frame(wx.Frame):
     def showTotalInterval(self):
         """Show Initial Chart spans over total interval"""
         init_interval = interval()
-        init_interval.start = self.analyzer.START_TIME
-        init_interval.end = self.analyzer.TOTAL_INTERVAL
+        init_interval.start = self.analyzer.start_time
+        init_interval.end = self.analyzer.total_interval
         self.addShowImage(init_interval)
 
     def OnSize(self, event):
@@ -245,10 +245,10 @@ class Analyzer_Frame(wx.Frame):
         if new_interval.end < new_interval.start:
             return
         if new_interval.end - new_interval.start \
-            > self.analyzer.TOTAL_INTERVAL:
+            > self.analyzer.total_interval:
             new_interval.end = new_interval.start \
-                               + self.analyzer.TOTAL_INTERVAL
-        if new_interval.start > self.analyzer.TOTAL_INTERVAL \
+                               + self.analyzer.total_interval
+        if new_interval.start > self.analyzer.total_interval \
            or new_interval.end < 0:
             return
         del self.fps_charts[0:len(self.fps_charts)]
@@ -294,10 +294,10 @@ class Analyzer_Frame(wx.Frame):
         return img
 
     def relToAbs(self, time):
-        return float(time) + self.analyzer.START_TIME
+        return float(time) + self.analyzer.start_time
 
     def absToRel(self, time):
-        return float(time) - self.analyzer.START_TIME
+        return float(time) - self.analyzer.start_time
 
     def showImage(self):
         """Show image in image list to screen"""
@@ -427,11 +427,11 @@ if Show_Flag == 'false':
     if Prefix == None:
         Prefix = 'wayland_rendering'
     filename = Prefix + '_fps.png'
-    fps_image = analyzer.draw_fps(filename, analyzer.START_TIME,\
-                                  analyzer.TOTAL_INTERVAL, 1200, 600)
+    fps_image = analyzer.draw_fps(filename, analyzer.start_time,\
+                                  analyzer.total_interval, 1200, 600)
     filename = Prefix + '_frame.png'
-    smooth_image = analyzer.draw_smooth(filename, analyzer.START_TIME,\
-                                        analyzer.TOTAL_INTERVAL, 1200,\
+    smooth_image = analyzer.draw_smooth(filename, analyzer.start_time,\
+                                        analyzer.total_interval, 1200,\
                                         600, Output_Dir)
     fps_image.commit(Output_Dir)
     smooth_image.commit(Output_Dir)
