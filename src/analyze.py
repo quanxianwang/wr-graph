@@ -91,13 +91,13 @@ class Analyzer:
         self.SHOW_END = SHOW_END
         # total interval
         # predefined match pattern
-        self.pregex = re.compile('\[\ *(?P<time>[0-9]+\.[0-9]+)\]profiling_point:'
+        self.pregex = re.compile('\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_point:'
                       + '(?P<name>.*)')
-        self.sregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]profiling_start:'
+        self.sregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_start:'
                       + '(?P<name>.*)')
-        self.eregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]profiling_end:'
+        self.eregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_end:'
                       + '(?P<name>.*)')
-        self.idregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]profiling_id:'
+        self.idregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_id:'
                       + '(?P<name>.*)')
         self.events_dic = {}
         self.new_events = {}
