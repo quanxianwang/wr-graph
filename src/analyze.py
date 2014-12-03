@@ -90,15 +90,15 @@ class Analyzer:
         # showing interval's end time
         self.SHOW_END = SHOW_END
         # total interval
-        # predefined match pattern
-        self.pregex = re.compile('\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_point:'
-                      + '(?P<name>.*)')
-        self.sregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_start:'
-                      + '(?P<name>.*)')
-        self.eregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_end:'
-                      + '(?P<name>.*)')
-        self.idregex = re.compile('.*\[\ *(?P<time>[0-9]+\.[0-9]+)\]perf_id:'
-                      + '(?P<name>.*)')
+		# predefined match pattern
+        self.pregex = re.compile('\[\ *(?P<hour>[0-9]+):(?P<min>[0-9]+):(?P<sec>[0-9]+)\.(?P<msec>[0-9]+)\] perf_point:' + \
+                                 '(?P<name>.*)')
+        self.sregex = re.compile('\[\ *(?P<hour>[0-9]+):(?P<min>[0-9]+):(?P<sec>[0-9]+)\.(?P<msec>[0-9]+)\] perf_start:' + \
+                                 '(?P<name>.*)')
+        self.eregex = re.compile('\[\ *(?P<hour>[0-9]+):(?P<min>[0-9]+):(?P<sec>[0-9]+)\.(?P<msec>[0-9]+)\] perf_end:' + \
+                                 '(?P<name>.*)')
+        self.idregex = re.compile('\[\ *(?P<hour>[0-9]+):(?P<min>[0-9]+):(?P<sec>[0-9]+)\.(?P<msec>[0-9]+)\] perf_id:' + \
+                                 '(?P<name>.*)')
         self.events_dic = {}
         self.new_events = {}
         # dic of events's activate(accordng to events's activate to draw fps)
@@ -388,7 +388,10 @@ class Analyzer:
             return
 
         ename_ori = match.group('name')
-        etime = match.group('time')
+        etime = ((float(match.group('hour')) * 60 * 60 * 1000 * 1000) +\
+                  float(match.group('min') * 60 * 1000 * 1000) +\
+                  float(match.group('sec') * 1000 * 1000) +\
+                  float(match.group('msec'))) / 1000
         id_index = ename_ori.find('_')
         if id_index == -1:
             eid = '0'
@@ -548,12 +551,10 @@ class Analyzer:
     def clean_up(self):
         # Clean up data unused
         for cid in self.events_dic.keys():
-            if cid == '0':
-                continue
-
             # clean up unsed client id
-            if cid not in self.client_id_list:
-                del self.events_dic[client_id]
+            if cid not in self.client_id_list and cid != '0':
+			    del self.events_dic[client_id]
+			    continue
 
             # clean up unused event
             event_len = len(self.events_dic[cid])

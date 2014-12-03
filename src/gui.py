@@ -37,56 +37,41 @@ from analyze import interval
 FRAME_WIDTH = 1200
 FRAME_HEIGHT = 600
 
-Output_Dir = None
+OutputDir = None
 Prefix = None
 LogFile = None
 ConfigFile = None
-Show_Flag = None
+ShowFlag = None
 
 def parse_arguments():
-    global Output_Dir
+    global OutputDir
     global Prefix
     global LogFile
     global ConfigFile
-    global Show_Flag
+    global ShowFlag
 
     ll = []
     if(sys.argv) == 0:
         print 'no arguments'
         return
 
-    ll = filter(lambda s:s.startswith('--output'), sys.argv)
-    if (len(ll) != 0):
-        strs = ll[0]
-        index = strs.find('=')
-        Output_Dir = strs[index+1:]
+    argument_tags = {'--output': [], '--config': [],
+                     '--log': [], '--prefix': [],
+                     '--show':[]}
+
+    for key in argument_tags.keys():
+        ll = filter(lambda s:s.startswith(key), sys.argv)
+        if (len(ll) != 0):
+            strs = ll[0]
+            index = strs.find('=')
+            argument_tags[key].append(strs[index+1:])
+
+    OutputDir = argument_tags['--output'][0]
+    ConfigFile = argument_tags['--config'][0]
+    LogFile = argument_tags['--log'][0]
+    Prefix = argument_tags['--prefix'][0]
+    ShowFlag = argument_tags['--show'][0]
     
-    ll = filter(lambda s:s.startswith('--config'), sys.argv)
-    if (len(ll) != 0):
-        strs = ll[0]
-        index = strs.find('=')
-        ConfigFile = strs[index+1:]
-
-    ll = filter(lambda s:s.startswith('--log'), sys.argv)
-    if (len(ll) != 0):
-        strs = ll[0]
-        index = strs.find('=')
-        LogFile = strs[index+1:]
-
-    ll = filter(lambda s:s.startswith('--prefix'), sys.argv)
-    if (len(ll) != 0):
-        strs = ll[0]
-        index = strs.find('=')
-        Prefix = strs[index+1:]
-
-    ll = filter(lambda s:s.startswith('--show'), sys.argv)
-    if (len(ll) != 0):
-        strs = ll[0]
-        index = strs.find('=')
-        Show_Flag = strs[index+1:]
-
-
-
 class TabPanel(wx.Panel):
     """
     Tab Panel Serves as one page in notebook
@@ -281,7 +266,7 @@ class Analyzer_Frame(wx.Frame):
                    + str(int(interval.end)) + '_fps.png'
         img = self.analyzer.draw_fps(filename, interval.start, \
                                      interval.end, self.width, \
-                                     self.height, Output_Dir)
+                                     self.height, OutputDir)
         return img
 
     def getSmoothChart(self, interval):
@@ -290,7 +275,7 @@ class Analyzer_Frame(wx.Frame):
                    + str(int(interval.end)) + '_smooth.png'
         img = self.analyzer.draw_smooth(filename, interval.start, \
                                         interval.end, self.width, \
-                                        self.height, Output_Dir)
+                                        self.height, OutputDir)
         return img
 
     def relToAbs(self, time):
@@ -421,7 +406,7 @@ class Analyzer_Frame(wx.Frame):
         self.updateInterval()
 
 parse_arguments()
-if Show_Flag == 'false':
+if ShowFlag == 'false':
     analyzer = Analyzer()
     analyzer.init(ConfigFile, LogFile)
     if Prefix == None:
@@ -432,10 +417,11 @@ if Show_Flag == 'false':
     filename = Prefix + '_frame.png'
     smooth_image = analyzer.draw_smooth(filename, analyzer.start_time,\
                                         analyzer.total_interval, 1200,\
-                                        600, Output_Dir)
-    fps_image.commit(Output_Dir)
-    smooth_image.commit(Output_Dir)
+                                        600, OutputDir)
+    fps_image.commit(OutputDir)
+    smooth_image.commit(OutputDir)
 else:
     app = wx.App(False)
-    frame = Analyzer_Frame(None, 'Profile Analyzer', Output_Dir, ConfigFile, LogFile)
+    frame = Analyzer_Frame(None, 'Profile Analyzer', OutputDir, \
+                           ConfigFile, LogFile)
     app.MainLoop()

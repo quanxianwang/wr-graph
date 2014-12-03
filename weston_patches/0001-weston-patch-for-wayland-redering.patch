@@ -1,0 +1,49 @@
+From c41fc2e26ce82e92e30534b68f80803f4b22b8be Mon Sep 17 00:00:00 2001
+From: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Date: Wed, 3 Dec 2014 17:11:24 +0800
+Subject: [PATCH] weston patch for wayland redering
+
+Modify weston.log output format:
+time format changes to microseconds unit level.
+This is done to make the change of time more clearly.
+
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+---
+ clients/profile_analyzer.h |    8 ++++----
+ src/log.c                  |    2 +-
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/clients/profile_analyzer.h b/clients/profile_analyzer.h
+index ba01e2d..3a10f85 100644
+--- a/clients/profile_analyzer.h
++++ b/clients/profile_analyzer.h
+@@ -14,9 +14,9 @@
+ 		char string[128];\
+ 		gettimeofday(&tv, NULL);\
+ 		brokendown_time = localtime(&tv.tv_sec);\
+-		strftime(string, sizeof string,\
+-			 "%H:%M:%S", brokendown_time);\
+-		fprintf(stderr, "[%s.%03li] perf_%s:%s\n",\
+-			string, tv.tv_usec/1000, flag?"end":"start",msg); \
++		strftime(string, sizeof(string),\
++				 "%H:%M:%S", brokendown_time);\
++		fprintf(stderr, "[%s.%06li] perf_%s:%s\n",\
++				string, tv.tv_usec, flag?"end":"start", msg); \
+ 	} while (0)
+ #endif
+diff --git a/src/log.c b/src/log.c
+index 99bbe18..08e5ec9 100644
+--- a/src/log.c
++++ b/src/log.c
+@@ -58,7 +58,7 @@ static int weston_log_timestamp(void)
+ 
+ 	strftime(string, sizeof string, "%H:%M:%S", brokendown_time);
+ 
+-	return fprintf(weston_logfile, "[%s.%03li] ", string, tv.tv_usec/1000);
++	return fprintf(weston_logfile, "[%s.%06li] ", string, tv.tv_usec);
+ }
+ 
+ static void
+-- 
+1.7.9.5
+

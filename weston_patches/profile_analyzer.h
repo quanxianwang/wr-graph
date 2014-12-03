@@ -1,46 +1,22 @@
-
-#ifndef __PROFILE_ANALYZER_H
-#define __PROFILE_ANALYZER_H
-
-#ifdef  __cplusplus
-extern "C" {
-#endif
+#ifndef PERF_LOG
+#define PERF_LOG
 
 #include <time.h>
 #include <stdio.h>
 #include <sys/time.h>
-#define ADD_PROFILING_POINT(msg) \
+
+#define START 0
+#define END 1
+#define PERF_TIME(msg, flag) \
 	do { \
-		struct timespec tp; \
-		unsigned int time; \
-		clock_gettime(CLOCK_REALTIME, &tp); \
-		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
-		fprintf(stderr, "[%10.3f]profiling_point:%s\n", \
-			time / 1000.0, msg); \
-	} while(0)
-
-#define ADD_PROFILING_START(msg) \
-    do { \
-        struct timespec tp; \
-        unsigned int time; \
-        clock_gettime(CLOCK_REALTIME, &tp); \
-        time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
-        fprintf(stderr, "[%10.3f]profiling_start:%s\n", \
-            time / 1000.0, msg); \
-    } while(0)
-
-#define ADD_PROFILING_END(msg) \
-    do { \
-        struct timespec tp; \
-        unsigned int time; \
-        clock_gettime(CLOCK_REALTIME, &tp); \
-        time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
-        fprintf(stderr, "[%10.3f]profiling_end:%s\n", \
-            time / 1000.0, msg); \
-    } while(0)
-
-#ifdef  __cplusplus
-}
-#endif
-
+		struct timeval tv; \
+		struct tm *brokendown_time;\
+		char string[128];\
+		gettimeofday(&tv, NULL);\
+		brokendown_time = localtime(&tv.tv_sec);\
+		strftime(string, sizeof(string),\
+				 "%H:%M:%S", brokendown_time);\
+		fprintf(stderr, "[%s.%06li] perf_%s:%s\n",\
+				string, tv.tv_usec, flag?"end":"start", msg); \
+	} while (0)
 #endif
