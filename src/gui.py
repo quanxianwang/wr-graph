@@ -66,11 +66,16 @@ def parse_arguments():
             index = strs.find('=')
             argument_tags[key].append(strs[index+1:])
 
-    OutputDir = argument_tags['--output'][0]
-    ConfigFile = argument_tags['--config'][0]
-    LogFile = argument_tags['--log'][0]
-    Prefix = argument_tags['--prefix'][0]
-    ShowFlag = argument_tags['--show'][0]
+    if (len(argument_tags['--output'])):
+        OutputDir = argument_tags['--output'][0]
+    if (len(argument_tags['--config'])):
+        ConfigFile = argument_tags['--config'][0]
+    if (len(argument_tags['--log'])):
+        LogFile = argument_tags['--log'][0]
+    if (len(argument_tags['--prefix'])):
+        Prefix = argument_tags['--prefix'][0]
+    if (len(argument_tags['--show'])):
+        ShowFlag = argument_tags['--show'][0]
     
 class TabPanel(wx.Panel):
     """
@@ -301,36 +306,20 @@ class Analyzer_Frame(wx.Frame):
         imageBox.SetBitmap(bitmap)
         self.Refresh()
 
-    def checkboxChange(self, event):
-        checkbox = event.GetEventObject()
-        self.event_list[checkbox.GetLabel()] = checkbox.IsChecked()
-        if not (True in self.event_list.values()):
-            self.event_list[checkbox.GetLabel()] = not checkbox.IsChecked()
-            checkbox.SetValue(True)
-            return
-        self.analyzer.updateEvents(self.event_list)
-        self.refreshShowImage()
-
     def checkboxChange_fps(self, event):
         checkbox = event.GetEventObject()
-        self.fps_event_list[checkbox.GetLabel()] = checkbox.IsChecked()
+        happened_events = self.labels_fps[self.imageCountFps - 1]
+        if checkbox.GetLabel() not in happened_events and \
+                self.fps_event_list[checkbox.GetLabel()] != True:
+            self.fps_event_list[checkbox.GetLabel()] = checkbox.IsChecked()
+            self.fps_event_list[self.labels_fps[self.imageCountFps - 1][0]] = False
+
         if not (True in self.fps_event_list.values()):
             self.fps_event_list[checkbox.GetLabel()] = \
 					                            not checkbox.IsChecked()
             checkbox.SetValue(True)
             return
         self.analyzer.updateFpsEvents(self.fps_event_list)
-        self.refreshShowImage()
-
-    def checkboxChange_frame(self, event):
-        checkbox = event.GetEventObject()
-        self.frame_event_list[checkbox.GetLabel()] = checkbox.IsChecked()
-        if not (True in self.frame_event_list.values()):
-            self.frame_event_list[checkbox.GetLabel()] = \
-					                             not checkbox.IsChecked()
-            checkbox.SetValue(True)
-            return
-        self.analyzer.updateFrameEvents(self.frame_event_list)
         self.refreshShowImage()
 
     def updateInterval(self):

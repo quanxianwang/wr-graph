@@ -144,7 +144,16 @@ class Analyzer:
             return event_list
         for id in self.client_id_list:
             event_list['client'+'_'+id] \
-					= self.events_activate['client'+'_'+id]
+                = self.events_activate['client'+'_'+id]
+        return event_list
+
+    def get_fps_event_list(self):
+        event_list = collections.OrderedDict()
+        if len(self.events_activate) == 0:
+            return event_list
+        for id in self.client_id_list:
+            event_list['client'+'_'+id] \
+                = self.events_activate['client'+'_'+id]
         return event_list
 
     def get_happened_events_fps(self):
@@ -156,12 +165,7 @@ class Analyzer:
     def updateFpsEvents(self, events):
         for id in self.client_id_list:
             self.events_activate['client'+'_'+id] \
-					= events['client'+'_'+id]
-
-    def updateSmoothEvents(self, events):
-        for id in self.client_id_list:
-            self.smooth_activate['client'+'_'+id] \
-					= events['client'+'_'+id]
+                = events['client'+'_'+id]
 
     def draw_smooth(self, name, show_start, show_end, width, height, output_dir=None):
         """
@@ -178,12 +182,12 @@ class Analyzer:
         st_dic = collections.OrderedDict()
 
         for cid in self.client_id_list:
-            st_dic[cid] = collections.OrderedDict()
-            data = []
-            if 'client'+'_'+cid not in self.smooth_activate \
-                or self.smooth_activate['client'+'_'+cid] != True:
+            if 'client'+'_'+cid not in self.events_activate \
+                    or self.events_activate['client'+'_'+cid] != True:
                 continue
 
+            st_dic[cid] = collections.OrderedDict()
+            data = []
             color_index = 0
             colors = []
             x_labels = []
@@ -205,19 +209,18 @@ class Analyzer:
                         st_dic[cid][cname]  = comm_val
 	
             # get sum_total
-            for ename in self.comm_events[cid]:
-                sum_total += self.comm_events[cid][ename]
+            for ename in st_dic[cid]:
+                sum_total += st_dic[cid][ename]
 
             sum_total = float("{0:.2f}".format(sum_total))
             fps = float("{0:.2f}".format(1000 / sum_total))
             str1 = 'total_time = ' + str(sum_total) + 'ms'\
-		+ '\n' + 'fps = ' + str(fps) + 'fps'
+                   + '\n' + 'fps = ' + str(fps) + 'fps'
 
             if output_dir == None:
                 output_dir = '.'
-
             if not os.path.exists(output_dir):
-                os.path.mkdir(output_dir)
+                os.mkdir(output_dir)
             fd = open(output_dir + '/fps.txt', 'w')
             fd.write(str1)
             fd.close()
@@ -253,16 +256,17 @@ class Analyzer:
         rel_end = show_end - self.start_time
 
         for cid in self.client_id_list:
+            if 'client' + '_' + cid not in self.events_activate or \
+                self.events_activate['client' + '_' + cid] == False:
+                continue
+
             colors = []
+            time_list = []
             events = []
             x_labels = []
             self.happened_events_fps = []
             time_list = self.time_dic[cid]
             FPS = collections.OrderedDict()
-
-            if 'client' + '_' + cid not in self.events_activate or \
-               self.events_activate['client' + '_' + cid] == False:
-                continue
 
             x_axis_num = int(math.floor(width / X_AXIS_INTERVAL))
             x_interval = int(math.floor((rel_end - rel_start) 
@@ -286,7 +290,6 @@ class Analyzer:
 
             # FPS is defined for every client id
             # lets calculate start, end, interval and labels.
-
             fps_chart = Graphic(name, FPS, width, height, rel_end,
                                 x_labels=x_labels, axis=True, grid=True,
                                 background="white", series_colors=colors)
@@ -319,17 +322,16 @@ class Analyzer:
 		Output:self.time_dic
 		Data Formate:
         """
-        time_list = []
-        total = 0
-        number = 0
-        index = 0
-        offset = 0
-        rate = 0
-        event1 = self.fps_event_list[0]
-        event2 = self.fps_event_list[-1]
-        seg_len = len(self.seg_point_time)
-
         for cid in self.client_id_list:
+            time_list = []
+            total = 0
+            number = 0
+            index = 0
+            offset = 0
+            rate = 0
+            event1 = self.fps_event_list[0]
+            event2 = self.fps_event_list[-1]
+            seg_len = len(self.seg_point_time)
             for event in self.new_events[cid]:
                 if event[0] == event1:
                     start = event[1]
@@ -349,7 +351,6 @@ class Analyzer:
                             """
                             Before insert segment point, sample the time data
                             """
-                            
                             new_list = sorted(time_list[offset:len(time_list)], key=lambda e:e.end)
                             self.sample_data(new_list, 0, len(new_list))
                             new_list.sort(key=lambda e:e.start)
@@ -388,10 +389,10 @@ class Analyzer:
             return
 
         ename_ori = match.group('name')
-        etime = ((float(match.group('hour')) * 60 * 60 * 1000 * 1000) +\
-                  float(match.group('min') * 60 * 1000 * 1000) +\
-                  float(match.group('sec') * 1000 * 1000) +\
-                  float(match.group('msec'))) / 1000
+        etime = float(match.group('hour')) * 60 * 60 * 1000 +\
+                float(match.group('min')) * 60 * 1000 +\
+                float(match.group('sec')) * 1000 +\
+                float(match.group('msec'))/1000
         id_index = ename_ori.find('_')
         if id_index == -1:
             eid = '0'
@@ -422,10 +423,7 @@ class Analyzer:
         color_index = 0
         for debug_file in self.log_files:
             with open(debug_file) as inf:
-                count_line=0
                 for line in inf:
-                    count_line+=1
-
                     # Find the match
                     match = self.idregex.match(line)
                     if match is not None:
@@ -553,7 +551,7 @@ class Analyzer:
         for cid in self.events_dic.keys():
             # clean up unsed client id
             if cid not in self.client_id_list and cid != '0':
-			    del self.events_dic[client_id]
+			    del self.events_dic[cid]
 			    continue
 
             # clean up unused event
@@ -571,7 +569,6 @@ class Analyzer:
         # merge weston server data with client data
         events = self.events_dic['0']
         for cid in self.client_id_list:
-            self.smooth_activate['client'+'_'+cid] = True
             if cid == '0':
                 continue
 
@@ -649,14 +646,7 @@ class Analyzer:
 
         self.clean_up()
         self.merge_server()
-        ## activate all ids
-        for cid in self.client_id_list:
-            self.smooth_activate['client'+'_'+cid] = True
-
         self.form_new_dic()
-
-        # del self.events_dic
-
         # build a complate event dic
         self.build_complete_dic()
         self.get_startend_time()
@@ -703,6 +693,10 @@ class Analyzer:
             self.client_id_list.append('0')
 
         # filer the all data to be valid
+        if len(self.events_dic.keys()) == 0:
+            print 'logfile do not have valid data!'
+            sys.exit(-1)
+        self.init_events()
         self.get_valid_data()
 
         if len(self.smooth_event_list) > 0:
@@ -711,5 +705,4 @@ class Analyzer:
 
         if len(self.fps_event_list) != 0:
             self.time_dic = {}
-            self.init_events()
             self.calculate_fps()
