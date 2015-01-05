@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <profile>
-		<file>PR3/touch/stderr.log</file>
+		<file>../log/mine_test/weston.log</file>
     </profile>
-    <event_item>	
-		<event>touch hardware up</event>
-        <event>shell touch up</event>
+	<event_item>	
+        <event>wcommit</event>
         <event>weston</event>
         <event>graphic hardware</event>
     </event_item>
     <fps_item>	
-        <fps>touch hardware up</fps>
-        <fps>shell touch up</fps>
+        <fps>wcommit</fps>
         <fps>weston</fps>
         <fps>graphic hardware</fps>
     </fps_item>
-    <smooth_item>	
-        <smooth>touch hardware up</smooth>
-        <smooth>shell touch up</smooth>
+	<smooth_item>	
+        <smooth>wcommit</smooth>
         <smooth>weston</smooth>
     </smooth_item>
 </config>

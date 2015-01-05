@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <profile>
-		<file>PR3/touch/stderr.log</file>
+		<file>PR3/pointer/stderr.log</file>
     </profile>
     <event_item>	
-		<event>touch hardware up</event>
-        <event>shell touch up</event>
+		<event>pointer hardware up</event>
+        <event>shell pointer up</event>
         <event>weston</event>
         <event>graphic hardware</event>
     </event_item>
     <fps_item>	
-        <fps>touch hardware up</fps>
-        <fps>shell touch up</fps>
+        <fps>pointer hardware up</fps>
+        <fps>shell pointer up</fps>
         <fps>weston</fps>
         <fps>graphic hardware</fps>
     </fps_item>
     <smooth_item>	
-        <smooth>touch hardware up</smooth>
-        <smooth>shell touch up</smooth>
+        <smooth>pointer hardware up</smooth>
+        <smooth>shell pointer up</smooth>
         <smooth>weston</smooth>
     </smooth_item>
 </config>

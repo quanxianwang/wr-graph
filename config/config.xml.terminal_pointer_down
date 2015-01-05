@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <profile>
-		<file>PR3/touch/stderr.log</file>
+		<file>PR3/pointer/stderr.log</file>
     </profile>
     <event_item>	
-		<event>touch hardware down</event>
-        <event>touch down</event>
+		<event>pointer hardware down</event>
+        <event>pointer down</event>
         <event>client process</event>
         <event>shell process</event>
         <event>weston</event>
         <event>graphic hardware</event>
     </event_item>
     <fps_item>	
-        <fps>touch hardware down</fps>
-        <fps>touch down</fps>
+        <fps>pointer hardware down</fps>
+        <fps>pointer down</fps>
         <fps>client process</fps>
         <fps>shell process</fps>
         <fps>weston</fps>
         <fps>graphic hardware</fps>
     </fps_item>
     <smooth_item>	
-        <smooth>touch hardware down</smooth>
-        <smooth>touch down</smooth>
+        <smooth>pointer hardware down</smooth>
+        <smooth>pointer down</smooth>
         <smooth>client process</smooth>
         <smooth>shell process</smooth>
         <smooth>weston</smooth>

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <profile>
-		<file>PR3/egl/stderr.log</file>
+		<file>../log/egl/weston.log</file>
     </profile>
+    <event_item>	
+        <event>client</event>
+        <event>MESA</event>
+        <event>wcommit</event>
+        <event>weston</event>
+        <event>graphic hardware</event>
+    </event_item>
     <fps_item>	
         <fps>client</fps>
         <fps>MESA</fps>
@@ -10,10 +17,10 @@
         <fps>weston</fps>
         <fps>graphic hardware</fps>
     </fps_item>
-	<frame_item>	
-        <frame>client</frame>
-        <frame>MESA</frame>
-        <frame>wcommit</frame>
-        <frame>weston</frame>
-    </frame_item>
+	<smooth_item>	
+        <smooth>client</smooth>
+        <smooth>MESA</smooth>
+        <smooth>wcommit</smooth>
+        <smooth>weston</smooth>
+    </smooth_item>
 </config>

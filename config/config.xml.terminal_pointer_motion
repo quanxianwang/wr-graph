@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <profile>
-		<file>PR3/touch/stderr.log</file>
+		<file>PR3/pointer/stderr.log</file>
     </profile>
     <event_item>	
-		<event>touch hardware motion</event>
-        <event>shell touch motion</event>
+		<event>pointer hardware motion</event>
+        <event>shell pointer motion</event>
         <event>weston</event>
         <event>graphic hardware</event>
     </event_item>
@@ -13,20 +13,20 @@
 		<rate>0.02</rate>
 	</sample_rate>
 	<action_type>
-		<type>touch</type>
+		<type>pointer</type>
 	</action_type>
 	<segmentation_point>
-		<point>touch segmentation</point>
+		<point>pointer segmentation</point>
 	</segmentation_point>
     <fps_item>	
-        <fps>touch hardware motion</fps>
-        <fps>shell touch motion</fps>
+        <fps>pointer hardware motion</fps>
+        <fps>shell pointer motion</fps>
         <fps>weston</fps>
         <fps>graphic hardware</fps>
     </fps_item>
     <smooth_item>	
-        <smooth>touch hardware motion</smooth>
-        <smooth>shell touch motion</smooth>
+        <smooth>pointer hardware motion</smooth>
+        <smooth>shell pointer motion</smooth>
         <smooth>weston</smooth>
     </smooth_item>
 </config>
