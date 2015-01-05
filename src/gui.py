@@ -114,10 +114,10 @@ class Notebook(wx.Notebook):
         # checkboxes
         checkboxSizer = wx.BoxSizer(wx.VERTICAL)
         checkboxes = []
-        events = frame.fps_event_list.keys()
+        events = frame.client_dic.keys()
         for name in events:
             checkbox = wx.CheckBox(newTab, -1, name)
-            checkbox.SetValue(frame.fps_event_list[name])
+            checkbox.SetValue(frame.client_dic[name])
             wx.EVT_CHECKBOX(frame, checkbox.GetId(), frame.checkboxChange_fps)
             checkboxSizer.Add(checkbox, 0, wx.ALL, 5)
             checkboxes.append(checkbox)
@@ -161,8 +161,8 @@ class Analyzer_Frame(wx.Frame):
         self.imageCountFps = 0
         self.imageCountSmooth = 0
         self.intervals = []
-        self.labels_fps = []
-        self.fps_label_colors = []
+        self.label_clients = []
+        self.label_clients_colors = []
         # UI related panel
         self.scrolling_window = wx.ScrolledWindow(self)
         self.scrolling_window.SetScrollRate(1, 1)
@@ -171,7 +171,7 @@ class Analyzer_Frame(wx.Frame):
         # analyzer class instance
         self.analyzer = Analyzer()
         self.analyzer.init(configfile, logfile)
-        self.fps_event_list = self.analyzer.get_fps_event_list()
+        self.client_dic = self.analyzer.get_client_activate()
         self.addWidgets()
         self.showTotalInterval()
         self.Show(True)
@@ -244,8 +244,8 @@ class Analyzer_Frame(wx.Frame):
         del self.fps_charts[0:len(self.fps_charts)]
         del self.smooth_charts[0:len(self.smooth_charts)]
         del self.intervals[0:len(self.intervals)]
-        del self.labels_fps[0:len(self.labels_fps)]
-        del self.fps_label_colors[0:len(self.fps_label_colors)]
+        del self.label_clients[0:len(self.label_clients)]
+        del self.label_clients_colors[0:len(self.label_clients_colors)]
         self.imageCountFps = 0
         self.imageCountSmooth = 0
         self.label_moved = False
@@ -308,18 +308,18 @@ class Analyzer_Frame(wx.Frame):
 
     def checkboxChange_fps(self, event):
         checkbox = event.GetEventObject()
-        happened_events = self.labels_fps[self.imageCountFps - 1]
-        if checkbox.GetLabel() not in happened_events and \
-                self.fps_event_list[checkbox.GetLabel()] != True:
-            self.fps_event_list[checkbox.GetLabel()] = checkbox.IsChecked()
-            self.fps_event_list[self.labels_fps[self.imageCountFps - 1][0]] = False
+        happened_clients = self.label_clients[self.imageCountFps - 1]
+        if checkbox.GetLabel() not in happened_clients and \
+                self.client_dic[checkbox.GetLabel()] != True:
+            self.client_dic[checkbox.GetLabel()] = checkbox.IsChecked()
+            self.client_dic[self.label_clients[self.imageCountFps - 1][0]] = False
 
-        if not (True in self.fps_event_list.values()):
-            self.fps_event_list[checkbox.GetLabel()] = \
+        if not (True in self.client_dic.values()):
+            self.client_dic[checkbox.GetLabel()] = \
 					                            not checkbox.IsChecked()
             checkbox.SetValue(True)
             return
-        self.analyzer.updateFpsEvents(self.fps_event_list)
+        self.analyzer.updateClient(self.client_dic)
         self.refreshShowImage()
 
     def updateInterval(self):
@@ -328,12 +328,12 @@ class Analyzer_Frame(wx.Frame):
         self.endTimeText.SetValue(str(int(self.relToAbs(interval.end))))
 
     def updateCheckboxes_fps(self):
-        happened_events = self.labels_fps[self.imageCountFps - 1]
-        event_colors = self.fps_label_colors[self.imageCountFps - 1]
+        happened_clients = self.label_clients[self.imageCountFps - 1]
+        event_colors = self.label_clients_colors[self.imageCountFps - 1]
         for checkbox in self.checkboxes_fps:
-            if checkbox.GetLabel() in happened_events:
+            if checkbox.GetLabel() in happened_clients:
                 checkbox.SetValue(True)
-                index = happened_events.index(checkbox.GetLabel())
+                index = happened_clients.index(checkbox.GetLabel())
                 r = event_colors[index][0] * 255
                 g = event_colors[index][1] * 255
                 b = event_colors[index][2] * 255
@@ -347,10 +347,10 @@ class Analyzer_Frame(wx.Frame):
         if fps_image is not None:
             self.fps_charts.append(fps_image)
             self.imageCountFps += 1
-        label_fps = self.analyzer.get_happened_events_fps()
-        fps_colors = self.analyzer.get_fps_event_colors()
-        self.labels_fps.append(label_fps)
-        self.fps_label_colors.append(fps_colors)
+        label_client = self.analyzer.get_happened_clients()
+        label_client_color = self.analyzer.get_happened_clients_colors()
+        self.label_clients.append(label_client)
+        self.label_clients_colors.append(label_client_color)
         smooth_image = self.getSmoothChart(interval)
         if smooth_image is not None:
             self.smooth_charts.append(smooth_image)
@@ -376,20 +376,20 @@ class Analyzer_Frame(wx.Frame):
     def refreshShowImage(self, labels = None):
         new_fps = self.getFPSChart(self.intervals[self.imageCountFps - 1])
         new_smooth = self.getSmoothChart(self.intervals[self.imageCountSmooth - 1])
-        label_fps = self.analyzer.get_happened_events_fps()
-        colors_fps = self.analyzer.get_fps_event_colors()
+        label_client = self.analyzer.get_happened_clients()
+        label_client_color = self.analyzer.get_happened_clients_colors()
         if len(self.fps_charts) == self.imageCountFps \
 		            and self.imageCountFps > 0:
             del self.fps_charts[self.imageCountFps - 1]
-            del self.labels_fps[self.imageCountFps - 1]
-            del self.fps_label_colors[self.imageCountFps - 1]
+            del self.label_clients[self.imageCountFps - 1]
+            del self.label__clients_colors[self.imageCountFps - 1]
         if len(self.smooth_charts) == self.imageCountSmooth \
 		            and self.imageCountSmooth > 0:
             del self.smooth_charts[self.imageCountSmooth - 1]
         self.fps_charts.append(new_fps)
         self.smooth_charts.append(new_smooth)
-        self.labels_fps.append(label_fps)
-        self.fps_label_colors.append(colors_fps)
+        self.label_clients.append(label_client)
+        self.label_clients_colors.append(label_client_color)
         self.showImage()
         self.updateCheckboxes_fps()
         self.updateInterval()

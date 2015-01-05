@@ -33,11 +33,7 @@ import os
 from cairographic import Graphic
 
 #Define macro
-FPS = 60
-MAX_TIME = 500
 START_TIME = 999999999
-SHOW_START = 0
-SHOW_END = 4000
 TOTAL_INTERVAL = 0
 GROUP_NUM = 3
 X_AXIS_INTERVAL = 120
@@ -53,43 +49,18 @@ class interval:
     def __repr__(self):
         return repr(self.start)
 
-
-class option:
-
-    def __init__(self, name):
-        self.name = name
-        self.count = -1
-
-
-class interval_opt(option):
-
-    def __init__(self, name, size):
-        option.__init__(self, name)
-        self.events = [interval() for i in range(size)]
-        self.activate = True
-        self.color = "orange"
-
-
 class Analyzer:
     """
     Profile Analyzer
     It's used to read from log file and visualize the record.
     """
     def __init__(self):
-        # standard FPS
-        self.FPS = FPS
-        # max record time is 10 seconds
-        self.MAX_TIME = MAX_TIME
-
         # log file's start time, will be changed (absolute real world time)
         self.start_time = START_TIME
-        self.total_interval = TOTAL_INTERVAL
-        self.end_time = START_TIME + TOTAL_INTERVAL
-        # showing interval's start time (relative)
-        self.SHOW_START = SHOW_START
-        # showing interval's end time
-        self.SHOW_END = SHOW_END
         # total interval
+        self.total_interval = TOTAL_INTERVAL
+        # log file's end time
+        self.end_time = START_TIME + TOTAL_INTERVAL
 		# predefined match pattern
         self.pregex = re.compile('\[\ *(?P<hour>[0-9]+):(?P<min>[0-9]+):(?P<sec>[0-9]+)\.(?P<msec>[0-9]+)\] perf_point:' + \
                                  '(?P<name>.*)')
@@ -99,29 +70,37 @@ class Analyzer:
                                  '(?P<name>.*)')
         self.idregex = re.compile('\[\ *(?P<hour>[0-9]+):(?P<min>[0-9]+):(?P<sec>[0-9]+)\.(?P<msec>[0-9]+)\] perf_id:' + \
                                  '(?P<name>.*)')
+		# dic of events data generate from log file analysis
         self.events_dic = {}
+		# dic of valid events data generate from self.events_dic
         self.new_events = {}
-        # dic of events's activate(accordng to events's activate to draw fps)
-        self.events_activate = {}
-        # dic of smooth_events's activate(accordng to smooth_events's activate to draw smooth)
-        self.smooth_activate = {}
-		# list of time frame events
+        # dic of client's activate(accordng to client's activate to draw graph)
+        self.client_activate = {}
+		# dic of different data used to represent different functions
+		# the amount of time of each event in order to draw summary frame chart
         self.smooth_events = collections.OrderedDict()
+		# the communication time of between each eventi in order to draw summary frame chart.
         self.comm_events = collections.OrderedDict()
+		# the whole time of each cycle in order to draw fps chart.
         self.time_dic = collections.OrderedDict()
-        # offset of first event in zoomed chart
+        # list of all event
         self.event_list = []
+        # event list to calculate fps
         self.fps_event_list = []
+        # event list to calculate frame summary
         self.smooth_event_list = []
+        # client_id list generate from log file
         self.client_id_list = []
-        # log files
+        # log files list
         self.log_files = []
-        #happened events
-        self.happened_events_fps = []
-        self.fps_event_colors = []
+        # happened events
+        self.happened_clients = []
+        self.fps_events_colors = []
+        # segmentation point
         self.seg_point = None
+        # time list of segmentation point
         self.seg_point_time = []
-        self.seg_point_list = []
+        # sample rate
         self.sample_rate = None
 
         # predefined color hexcode list
@@ -138,43 +117,44 @@ class Analyzer:
 							 "yellow": (1.0, 1.0, 0.0),
 							 "black": (0.0, 0.0, 0.0)}
 
-    def get_fps_event_list(self):
-        event_list = collections.OrderedDict()
-        if len(self.events_activate) == 0:
-            return event_list
+  #  def get_client_activate(self):
+  #      """
+  #      Note: get client's activate
+  #      Args: None
+  #      Input: self.client_activate
+  #      Output: client's activate dic
+  #      """
+  #      client_dic = collections.OrderedDict()
+  #      if len(self.client_activate) == 0:
+  #          return client_dic
+  #      for id in self.client_id_list:
+  #          client_['client'+'_'+id] \
+  #              = self.client_activate['client'+'_'+id]
+  #      return client_dic
+
+    def get_client_activate(self):
+        return self.client_activate
+
+    def get_happened_clients(self):
+        return self.happened_clients
+
+    def get_happened_clients_colors(self):
+        return self.fps_events_colors
+
+    def updateClient(self, clients):
         for id in self.client_id_list:
-            event_list['client'+'_'+id] \
-                = self.events_activate['client'+'_'+id]
-        return event_list
-
-    def get_fps_event_list(self):
-        event_list = collections.OrderedDict()
-        if len(self.events_activate) == 0:
-            return event_list
-        for id in self.client_id_list:
-            event_list['client'+'_'+id] \
-                = self.events_activate['client'+'_'+id]
-        return event_list
-
-    def get_happened_events_fps(self):
-        return self.happened_events_fps
-
-    def get_fps_event_colors(self):
-        return self.fps_event_colors
-
-    def updateFpsEvents(self, events):
-        for id in self.client_id_list:
-            self.events_activate['client'+'_'+id] \
-                = events['client'+'_'+id]
+            self.client_activate['client'+'_'+id] \
+                = clients['client'+'_'+id]
 
     def draw_smooth(self, name, show_start, show_end, width, height, output_dir=None):
         """
-		Note:draw the smooth graphic
+        Note:draw frame summary graph
         Args:
             show_start: the start time to show
             show_end:   the end time to show
-		Input:self.smooth_events
-		Output:Smooth object
+            output_dir: the output directory of fps.txt
+        Input:self.smooth_events, self.comm_events
+        Output:Graphic object
         """
         if len(self.smooth_events.keys()) == 0:
             return None
@@ -182,8 +162,8 @@ class Analyzer:
         st_dic = collections.OrderedDict()
 
         for cid in self.client_id_list:
-            if 'client'+'_'+cid not in self.events_activate \
-                    or self.events_activate['client'+'_'+cid] != True:
+            if 'client'+'_'+cid not in self.client_activate \
+                    or self.client_activate['client'+'_'+cid] != True:
                 continue
 
             st_dic[cid] = collections.OrderedDict()
@@ -191,8 +171,6 @@ class Analyzer:
             color_index = 0
             colors = []
             x_labels = []
-            smoothtime_dic = collections.OrderedDict()
-            smoothtime_dic[cid] = collections.OrderedDict()
             sum_total = 0
             se_len = len(self.smooth_event_list)
             for i in range(se_len):
@@ -244,8 +222,12 @@ class Analyzer:
 
     def draw_fps(self, name, show_start, show_end, width, height, output_dir=None):
         """
+        Note:draw fps graph
+        Args:
+            show_start: the start time to show
+            show_end:   the end time to show
         Input:self.time_dic
-        Output:Graphic instance
+        Output:Graphic object
         """
 
         if len(self.time_dic) == 0:
@@ -256,15 +238,15 @@ class Analyzer:
         rel_end = show_end - self.start_time
 
         for cid in self.client_id_list:
-            if 'client' + '_' + cid not in self.events_activate or \
-                self.events_activate['client' + '_' + cid] == False:
+            if 'client' + '_' + cid not in self.client_activate or \
+                self.client_activate['client' + '_' + cid] == False:
                 continue
 
-            colors = []
+            client_colors = []
             time_list = []
-            events = []
+            clients = []
             x_labels = []
-            self.happened_events_fps = []
+            self.happened_clients = []
             time_list = self.time_dic[cid]
             FPS = collections.OrderedDict()
 
@@ -285,18 +267,18 @@ class Analyzer:
                 # change ms value to FPS value
                 FPS[time_list[i].start] = 1000/time_list[i].end
 
-            events.append('client' + '_' + cid)
-            colors.append(self.color_table["blue"])
+            clients.append('client' + '_' + cid)
+            client_colors.append(self.color_table["blue"])
 
             # FPS is defined for every client id
             # lets calculate start, end, interval and labels.
             fps_chart = Graphic(name, FPS, width, height, rel_end,
                                 x_labels=x_labels, axis=True, grid=True,
-                                background="white", series_colors=colors)
+                                background="white", series_colors=client_colors)
             fps_chart.render()
             fps_chart.render_fps()
-            self.happened_events_fps = events
-            self.fps_event_colors = colors
+            self.happened_clients = clients
+            self.fps_events_colors = client_colors
 
         return fps_chart
 
@@ -324,7 +306,6 @@ class Analyzer:
         """
         for cid in self.client_id_list:
             time_list = []
-            total = 0
             number = 0
             index = 0
             offset = 0
@@ -342,7 +323,6 @@ class Analyzer:
                     itv = interval()
                     itv.start = start
                     itv.end = end - start
-                    total += end - start
                     number += 1
 
                     if seg_len > 0 and seg_len > index:
@@ -363,17 +343,25 @@ class Analyzer:
                             itv2.start = seg_time
                             itv2.end = -1
                             index += 1
-                            time_list.append(itv2) 
+                            time_list.append(itv2)
                             offset = len(time_list)
-                    time_list.append(itv) 
+                    time_list.append(itv)
 
-            if self.seg_point_time[-1] not in [e.start for e in time_list]:
+            if seg_len > 0 and self.seg_point_time[-1] not in [e.start for e in time_list]:
+                new_list = sorted(time_list[offset:len(time_list)], key=lambda e:e.end)
+                self.sample_data(new_list, 0, len(new_list))
+                new_list.sort(key=lambda e:e.start)
+                if offset > 0:
+                    time_list = time_list[0:offset] + new_list
+                else:
+                    time_list = new_list
+
                 itv = interval()
                 itv.start = self.seg_point_time[-1]
                 itv.end = -1
                 time_list.append(itv)
-            self.update2rel(time_list)
 
+            #self.update2rel(time_list)
             self.time_dic[cid] = time_list
 
     def process_id(self, match):
@@ -383,6 +371,18 @@ class Analyzer:
         ename = match.group('name')
         if ename not in self.client_id_list:
             self.client_id_list.append(ename)
+
+    def process_point(self, match):
+		if not match:
+            return
+
+        ename = match.group('name')
+        etime = float(match.group('hour')) * 60 * 60 * 1000 +\
+                float(match.group('min')) * 60 * 1000 +\
+                float(match.group('sec')) * 1000 +\
+                float(match.group('msec'))/1000
+        if self.seg_point == ename:
+            self.seg_point_time.append(float(etime))
 
     def process_timestr(self, match=None, start=True):
         if not match:
@@ -430,6 +430,11 @@ class Analyzer:
                         self.process_id(match)
                         continue
 
+                    match = self.pregex.match(line)
+                    if match is not None:
+                        self.process_point(match)
+                        continue
+
                     match = self.sregex.match(line)
                     if match is not None:
                         self.process_timestr(match, True)
@@ -471,22 +476,26 @@ class Analyzer:
                     config_tags[key][1].append(item.text)
 
         # convert config to global values
-        self.seg_point = config_tags["segmentation_point"][1][0]
+        if len(config_tags["segmentation_point"][1]) > 0:
+            self.seg_point = config_tags["segmentation_point"][1][0]
         self.event_list.extend(config_tags["event_item"][1])
         self.fps_event_list.extend(config_tags["fps_item"][1])
         self.smooth_event_list.extend(config_tags["smooth_item"][1])
-        self.sample_rate = config_tags["sample_rate"][1][0]
+        if len(config_tags["sample_rate"][1]) == 0:
+            self.sample_rate = 0
+        else:
+            self.sample_rate = config_tags["sample_rate"][1][0]
 
         if logfile != None:
             self.log_files.append(logfile)
         else:
             self.log_files.extend(config_tags["profile"][1])
  
-    def init_events(self):
+    def init_client_activate(self):
         first = self.client_id_list[0]
-        self.events_activate['client' + '_' + first] = True
+        self.client_activate['client' + '_' + first] = True
         for cid in self.client_id_list[1:]:
-            self.events_activate['client' + '_' + cid] = False
+            self.client_activate['client' + '_' + cid] = False
 
     def get_smooth_time(self):
         """
@@ -533,6 +542,9 @@ class Analyzer:
                 sec_start = [e[1] for e in self.new_events[cid] \
                                   if e[0] == sname]
                 comm_list = []
+                if len(fst_end) == 0 or len(sec_start) == 0:
+                    print 'smooth invalid data!'
+                    sys.exit(-1)
                 for j in range(len(fst_end)):
                     number = sec_start[j] - fst_end[j]
                     comm_list.append(number)
@@ -564,6 +576,11 @@ class Analyzer:
                     event_len -= 1
                     continue
                 i += 1
+
+        for cid in self.client_id_list:
+            if cid not in self.events_dic.keys():
+			    index = self.client_id_list.index(cid)
+			    del self.client_id_list[index]
 
     def merge_server(self):
         # merge weston server data with client data
@@ -631,6 +648,11 @@ class Analyzer:
                 else:
                     del self.new_events[cid][j]
                     ecount -= 1
+        for cid in self.new_events.keys():
+            if len(self.new_events[cid]) == 0:
+                del self.new_events[cid]
+                index = self.client_id_list.index(cid)
+                del self.client_id_list[index]
 
     def get_valid_data(self):
         """
@@ -649,6 +671,7 @@ class Analyzer:
         self.form_new_dic()
         # build a complate event dic
         self.build_complete_dic()
+        self.init_client_activate()
         self.get_startend_time()
 
     def get_startend_time(self):
@@ -696,7 +719,6 @@ class Analyzer:
         if len(self.events_dic.keys()) == 0:
             print 'logfile do not have valid data!'
             sys.exit(-1)
-        self.init_events()
         self.get_valid_data()
 
         if len(self.smooth_event_list) > 0:
