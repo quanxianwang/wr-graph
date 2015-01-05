@@ -1,0 +1,484 @@
+From ae4dec591d22d8852a7ca11347974210ae6bb556 Mon Sep 17 00:00:00 2001
+From: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Date: Fri, 19 Dec 2014 11:28:07 +0800
+Subject: [PATCH] pacth for weston redering analysis
+
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+---
+ Makefile.am           |    1 +
+ clients/perf_log.h    |   22 ++++++++++++++++++++++
+ clients/simple-egl.c  |   24 ++++++++++++++++++++++++
+ clients/window.c      |    8 +++++++-
+ desktop-shell/shell.c |    5 +++++
+ src/compositor.c      |   24 ++++++++++++++++++++++++
+ src/compositor.h      |   11 +++++++++++
+ src/input.c           |   42 ++++++++++++++++++++++++++++++++++++++----
+ src/log.c             |   23 ++++++++++++++++++++++-
+ 9 files changed, 154 insertions(+), 6 deletions(-)
+ create mode 100644 clients/perf_log.h
+
+diff --git a/Makefile.am b/Makefile.am
+index b72d03e..12d4574 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -427,6 +427,7 @@ demo_clients += weston-simple-egl
+ weston_simple_egl_SOURCES = clients/simple-egl.c
+ nodist_weston_simple_egl_SOURCES =		\
+ 	protocol/xdg-shell-protocol.c		\
++	clients/profile_analyze.h			\
+ 	protocol/xdg-shell-client-protocol.h
+ weston_simple_egl_CFLAGS = $(AM_CFLAGS) $(SIMPLE_EGL_CLIENT_CFLAGS)
+ weston_simple_egl_LDADD = $(SIMPLE_EGL_CLIENT_LIBS) -lm
+diff --git a/clients/perf_log.h b/clients/perf_log.h
+new file mode 100644
+index 0000000..ec1ac75
+--- /dev/null
++++ b/clients/perf_log.h
+@@ -0,0 +1,22 @@
++#ifndef PERF_LOG
++#define PERF_LOG
++
++#include <time.h>
++#include <stdio.h>
++#include <sys/time.h>
++
++#define START 0
++#define END 1
++#define PERF_TIME(msg, flag) \
++	do { \
++		struct timeval tv; \
++		struct tm *brokendown_time;\
++		char string[128];\
++		gettimeofday(&tv, NULL);\
++		brokendown_time = localtime(&tv.tv_sec);\
++		strftime(string, sizeof(string),\
++			 "%H:%M:%S", brokendown_time);\
++		fprintf(stderr, "[%s.%06li] perf_%s:%s\n",\
++			string, tv.tv_usec, flag?"end":"start", msg); \
++	} while (0)
++#endif
+diff --git a/clients/simple-egl.c b/clients/simple-egl.c
+index 33e711c..70aed9e 100644
+--- a/clients/simple-egl.c
++++ b/clients/simple-egl.c
+@@ -39,6 +39,7 @@
+ #include <GLES2/gl2.h>
+ #include <EGL/egl.h>
+ #include <EGL/eglext.h>
++#include "perf_log.h"
+ 
+ #include "xdg-shell-client-protocol.h"
+ 
+@@ -368,6 +369,27 @@ destroy_surface(struct window *window)
+ 		wl_callback_destroy(window->callback);
+ }
+ 
++void print_cid(struct window *window, int start)
++{
++	uint32_t id;
++	char str[32] = {};
++	char mesa_str[32] = {};
++
++	id = wl_proxy_get_id((struct wl_proxy *)window->surface);
++
++	sprintf(str, "client_%d", id);
++	if (start) {
++		/* client start */
++		PERF_TIME(str, START);
++	} else {
++		/* client end */
++		PERF_TIME(str, END);
++		sprintf(str, "MESA_%d", id);
++		/* mesa start */
++		PERF_TIME(str, START);
++	}
++}
++
+ static void
+ redraw(void *data, struct wl_callback *callback, uint32_t time)
+ {
+@@ -425,6 +447,7 @@ redraw(void *data, struct wl_callback *callback, uint32_t time)
+ 		eglQuerySurface(display->egl.dpy, window->egl_surface,
+ 				EGL_BUFFER_AGE_EXT, &buffer_age);
+ 
++	print_cid(window, 1);
+ 	glViewport(0, 0, window->geometry.width, window->geometry.height);
+ 
+ 	glUniformMatrix4fv(window->gl.rotation_uniform, 1, GL_FALSE,
+@@ -454,6 +477,7 @@ redraw(void *data, struct wl_callback *callback, uint32_t time)
+ 		wl_surface_set_opaque_region(window->surface, NULL);
+ 	}
+ 
++	print_cid(window, 0);
+ 	if (display->swap_buffers_with_damage && buffer_age > 0) {
+ 		rect[0] = window->geometry.width / 4 - 1;
+ 		rect[1] = window->geometry.height / 4 - 1;
+diff --git a/clients/window.c b/clients/window.c
+index e44d65c..ab5854e 100644
+--- a/clients/window.c
++++ b/clients/window.c
+@@ -71,6 +71,7 @@ typedef void *EGLContext;
+ #include "../shared/os-compatibility.h"
+ 
+ #include "window.h"
++#include "perf_log.h"
+ 
+ struct shm_pool;
+ 
+@@ -2368,6 +2369,8 @@ frame_handle_status(struct window_frame *frame, struct input *input,
+ 
+ 	if ((status & FRAME_STATUS_MOVE) && window->xdg_surface) {
+ 		input_ungrab(input);
++		PERF_TIME("client touch down", END);
++		PERF_TIME("shell process", START);
+ 		xdg_surface_move(window->xdg_surface,
+ 				 input_get_seat(input),
+ 				 window->display->serial);
+@@ -3050,11 +3053,14 @@ touch_handle_down(void *data, struct wl_touch *wl_touch,
+ 			tp->y = sy;
+ 			wl_list_insert(&input->touch_point_list, &tp->link);
+ 
+-			if (widget->touch_down_handler)
++			if (widget->touch_down_handler) {
++				PERF_TIME("touch down", END);
++				PERF_TIME("client touch down", START);
+ 				(*widget->touch_down_handler)(widget, input, 
+ 							      serial, time, id,
+ 							      sx, sy,
+ 							      widget->user_data);
++			}
+ 		}
+ 	}
+ }
+diff --git a/desktop-shell/shell.c b/desktop-shell/shell.c
+index 8f7457f..1223613 100644
+--- a/desktop-shell/shell.c
++++ b/desktop-shell/shell.c
+@@ -1534,6 +1534,7 @@ touch_move_grab_down(struct weston_touch_grab *grab, uint32_t time,
+ static void
+ touch_move_grab_up(struct weston_touch_grab *grab, uint32_t time, int touch_id)
+ {
++	PERF_TIME("shell touch up", START);
+ 	struct weston_touch_move_grab *move =
+ 		(struct weston_touch_move_grab *) container_of(
+ 			grab, struct shell_touch_grab, grab);
+@@ -1545,12 +1546,14 @@ touch_move_grab_up(struct weston_touch_grab *grab, uint32_t time, int touch_id)
+ 		shell_touch_grab_end(&move->base);
+ 		free(move);
+ 	}
++	PERF_TIME("shell touch up", END);
+ }
+ 
+ static void
+ touch_move_grab_motion(struct weston_touch_grab *grab, uint32_t time,
+ 		       int touch_id, wl_fixed_t sx, wl_fixed_t sy)
+ {
++	PERF_TIME("shell touch motion", START);
+ 	struct weston_touch_move_grab *move = (struct weston_touch_move_grab *) grab;
+ 	struct shell_surface *shsurf = move->base.shsurf;
+ 	struct weston_surface *es;
+@@ -1565,6 +1568,7 @@ touch_move_grab_motion(struct weston_touch_grab *grab, uint32_t time,
+ 	weston_view_set_position(shsurf->view, dx, dy);
+ 
+ 	weston_compositor_schedule_repaint(es->compositor);
++	PERF_TIME("shell touch motion", END);
+ }
+ 
+ static void
+@@ -1758,6 +1762,7 @@ common_surface_move(struct wl_resource *resource,
+ 		    (surface_touch_move(shsurf, seat) < 0))
+ 			wl_resource_post_no_memory(resource);
+ 	}
++	PERF_TIME("shell process", END);
+ }
+ 
+ static void
+diff --git a/src/compositor.c b/src/compositor.c
+index 5547ab2..74037ab 100644
+--- a/src/compositor.c
++++ b/src/compositor.c
+@@ -1909,6 +1909,7 @@ weston_output_repaint(struct weston_output *output, uint32_t msecs)
+ 	if (output->destroying)
+ 		return 0;
+ 
++	PERF_TIME("weston", START);
+ 	/* Rebuild the surface list and update surface transforms up front. */
+ 	weston_compositor_build_view_list(ec);
+ 
+@@ -1948,6 +1949,8 @@ weston_output_repaint(struct weston_output *output, uint32_t msecs)
+ 	output->repaint_needed = 0;
+ 
+ 	weston_compositor_repick(ec);
++	PERF_TIME("weston", END);
++	PERF_TIME("graphic hardware", START);
+ 	wl_event_loop_dispatch(ec->input_loop, 0);
+ 
+ 	wl_list_for_each_safe(cb, cnext, &frame_callback_list, link) {
+@@ -1981,6 +1984,7 @@ weston_output_finish_frame(struct weston_output *output, uint32_t msecs)
+ 		wl_display_get_event_loop(compositor->wl_display);
+ 	int fd, r;
+ 
++	PERF_TIME("graphic hardware", END);
+ 	output->frame_time = msecs;
+ 
+ 	if (output->repaint_needed &&
+@@ -2292,12 +2296,31 @@ static void
+ weston_subsurface_parent_commit(struct weston_subsurface *sub,
+ 				int parent_is_synchronized);
+ 
++void print_wcommit(struct wl_resource *resource, int start)
++{
++	uint32_t id = wl_resource_get_id(resource);
++	char str[32] = {};
++
++	if (start) {
++		sprintf(str, "client process_%d", id);
++		PERF_TIME(str, END);
++		sprintf(str, "MESA_%d", id);
++		PERF_TIME(str, END);
++		sprintf(str, "wcommit_%d", id);
++		PERF_TIME(str, START);
++	} else {
++		sprintf(str, "wcommit_%d", id);
++		PERF_TIME(str, END);
++	}
++}
++
+ static void
+ surface_commit(struct wl_client *client, struct wl_resource *resource)
+ {
+ 	struct weston_surface *surface = wl_resource_get_user_data(resource);
+ 	struct weston_subsurface *sub = weston_surface_to_subsurface(surface);
+ 
++	print_wcommit(resource, 1);
+ 	if (sub) {
+ 		weston_subsurface_commit(sub);
+ 		return;
+@@ -2309,6 +2332,7 @@ surface_commit(struct wl_client *client, struct wl_resource *resource)
+ 		if (sub->surface != surface)
+ 			weston_subsurface_parent_commit(sub, 0);
+ 	}
++	print_wcommit(resource, 0);
+ }
+ 
+ static void
+diff --git a/src/compositor.h b/src/compositor.h
+index f7b5823..e5dcca9 100644
+--- a/src/compositor.h
++++ b/src/compositor.h
+@@ -39,6 +39,17 @@ extern "C" {
+ #include "config-parser.h"
+ #include "zalloc.h"
+ 
++/* Define macro for performance log */
++
++#ifndef __PERF_LOG
++#define __PERF_LOG
++#define START 0
++#define END 1
++#define PERF_TIME(msg, flag) \
++	weston_plog("perf_%s:%s\n", flag?"end":"start", msg);
++#define PERF_ID(msg) weston_plog("perf_id:%s\n", msg);
++#endif
++
+ #ifndef MIN
+ #define MIN(x,y) (((x) < (y)) ? (x) : (y))
+ #endif
+diff --git a/src/input.c b/src/input.c
+index 2181415..3545370 100644
+--- a/src/input.c
++++ b/src/input.c
+@@ -239,15 +239,20 @@ default_grab_touch_down(struct weston_touch_grab *grab, uint32_t time,
+ 	uint32_t serial;
+ 	struct wl_resource *resource;
+ 	struct wl_list *resource_list;
++	uint32_t id;
+ 
+ 	resource_list = &touch->focus_resource_list;
+ 
+ 	if (!wl_list_empty(resource_list) && touch->focus) {
+ 		serial = wl_display_next_serial(display);
+-		wl_resource_for_each(resource, resource_list)
+-				wl_touch_send_down(resource, serial, time,
++		wl_resource_for_each(resource, resource_list) {
++			id = wl_resource_get_id(resource);
++			wl_touch_send_down(resource, serial, time,
+ 						   touch->focus->surface->resource,
+ 						   touch_id, sx, sy);
++			PERF_TIME("touch down", END);
++			PERF_TIME("client process", START);
++		}
+ 	}
+ }
+ 
+@@ -260,13 +265,18 @@ default_grab_touch_up(struct weston_touch_grab *grab,
+ 	uint32_t serial;
+ 	struct wl_resource *resource;
+ 	struct wl_list *resource_list;
++	uint32_t id;
+ 
+ 	resource_list = &touch->focus_resource_list;
+ 
+ 	if (!wl_list_empty(resource_list)) {
+ 		serial = wl_display_next_serial(display);
+-		wl_resource_for_each(resource, resource_list)
++		wl_resource_for_each(resource, resource_list) {
++			id = wl_resource_get_id(resource);
+ 			wl_touch_send_up(resource, serial, time, touch_id);
++			PERF_TIME("touch up", END);
++			PERF_TIME("client process", START);
++		}
+ 	}
+ }
+ 
+@@ -277,12 +287,18 @@ default_grab_touch_motion(struct weston_touch_grab *grab, uint32_t time,
+ 	struct weston_touch *touch = grab->touch;
+ 	struct wl_resource *resource;
+ 	struct wl_list *resource_list;
++	uint32_t id;
++	struct wl_client *surface_client;
+ 
+ 	resource_list = &touch->focus_resource_list;
+ 
+ 	wl_resource_for_each(resource, resource_list) {
++		id = wl_resource_get_id(resource);
++		surface_client = wl_resource_get_client(resource);
+ 		wl_touch_send_motion(resource, time,
+ 				     touch_id, sx, sy);
++		PERF_TIME("touch motion", END);
++		PERF_TIME("client process", START);
+ 	}
+ }
+ 
+@@ -1462,6 +1478,15 @@ notify_keyboard_focus_out(struct weston_seat *seat)
+ 		weston_pointer_cancel_grab(seat->pointer);
+ }
+ 
++void print_resid(struct weston_view *view)
++{
++	uint32_t surface_id = 0;
++	char str_id[32];
++	uint32_t resource_id = wl_resource_get_id(view->surface->resource);
++	sprintf(str_id, "%d", resource_id);
++	PERF_ID(str_id);
++}
++
+ WL_EXPORT void
+ weston_touch_set_focus(struct weston_seat *seat, struct weston_view *view)
+ {
+@@ -1494,6 +1519,7 @@ weston_touch_set_focus(struct weston_seat *seat, struct weston_view *view)
+ 		}
+ 
+ 		surface_client = wl_resource_get_client(view->surface->resource);
++		print_resid(view);
+ 		move_resources_for_client(focus_resource_list,
+ 					  &seat->touch->resource_list,
+ 					  surface_client);
+@@ -1530,6 +1556,7 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 	switch (touch_type) {
+ 	case WL_TOUCH_DOWN:
++		PERF_TIME("touch hardware down", START);
+ 		weston_compositor_idle_inhibit(ec);
+ 
+ 		touch->num_tp++;
+@@ -1554,7 +1581,8 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 		weston_compositor_run_touch_binding(ec, seat,
+ 						    time, touch_type);
+-
++		PERF_TIME("touch hardware down", END);
++		PERF_TIME("touch down", START);
+ 		grab->interface->down(grab, time, touch_id, sx, sy);
+ 		if (touch->num_tp == 1) {
+ 			touch->grab_serial =
+@@ -1567,14 +1595,18 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 		break;
+ 	case WL_TOUCH_MOTION:
++		PERF_TIME("touch hardware motion", START);
+ 		ev = touch->focus;
+ 		if (!ev)
+ 			break;
+ 
+ 		weston_view_from_global_fixed(ev, x, y, &sx, &sy);
++		PERF_TIME("touch hardware motion", END);
++		PERF_TIME("touch motion", START);
+ 		grab->interface->motion(grab, time, touch_id, sx, sy);
+ 		break;
+ 	case WL_TOUCH_UP:
++		PERF_TIME("touch hardware up", START);
+ 		if (touch->num_tp == 0) {
+ 			/* This can happen if we start out with one or
+ 			 * more fingers on the touch screen, in which
+@@ -1586,6 +1618,8 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 		weston_compositor_idle_release(ec);
+ 		touch->num_tp--;
+ 
++		PERF_TIME("touch hardware up", END);
++		PERF_TIME("touch up", START);
+ 		grab->interface->up(grab, time, touch_id);
+ 		if (touch->num_tp == 0)
+ 			weston_touch_set_focus(seat, NULL);
+diff --git a/src/log.c b/src/log.c
+index 99bbe18..117181b 100644
+--- a/src/log.c
++++ b/src/log.c
+@@ -35,6 +35,8 @@
+ 
+ static FILE *weston_logfile = NULL;
+ 
++static int perf_debug = 0;
++
+ static int cached_tm_mday = -1;
+ 
+ static int weston_log_timestamp(void)
+@@ -58,7 +60,7 @@ static int weston_log_timestamp(void)
+ 
+ 	strftime(string, sizeof string, "%H:%M:%S", brokendown_time);
+ 
+-	return fprintf(weston_logfile, "[%s.%03li] ", string, tv.tv_usec/1000);
++	return fprintf(weston_logfile, "[%s.%06li] ", string, tv.tv_usec);
+ }
+ 
+ static void
+@@ -72,10 +74,15 @@ custom_handler(const char *fmt, va_list arg)
+ void
+ weston_log_file_open(const char *filename)
+ {
++	const char *debug;
++
+ 	wl_log_set_handler_server(custom_handler);
+ 
+ 	if (filename != NULL)
+ 		weston_logfile = fopen(filename, "a");
++	debug = getenv("PERF_DEBUG");
++	if (debug && strstr(debug, "1"))
++		perf_debug = 1;
+ 
+ 	if (weston_logfile == NULL)
+ 		weston_logfile = stderr;
+@@ -116,6 +123,20 @@ weston_log(const char *fmt, ...)
+ }
+ 
+ WL_EXPORT int
++weston_plog(const char *fmt, ...)
++{
++	int l;
++	va_list argp;
++	if (perf_debug) {
++		va_start(argp, fmt);
++		l = weston_vlog(fmt, argp);
++		va_end(argp);
++	}
++
++	return l;
++}
++
++WL_EXPORT int
+ weston_vlog_continue(const char *fmt, va_list argp)
+ {
+ 	return vfprintf(weston_logfile, fmt, argp);
+-- 
+1.7.9.5
+

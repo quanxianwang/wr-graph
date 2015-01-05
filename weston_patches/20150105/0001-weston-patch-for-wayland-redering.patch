@@ -1,0 +1,538 @@
+From dbb46f865c73a309ca1ba83ffa42db4b33caab28 Mon Sep 17 00:00:00 2001
+From: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Date: Mon, 5 Jan 2015 16:08:24 +0800
+Subject: [PATCH] weston patch for wayland redering
+
+(1) Add new log to analysis multi-touch
+(2) Modify old log to make weston log more resonable
+(3) Add "PERF_POINT" to mark segmentation
+(4) Modify the code written format to make it more clearly
+
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+---
+ clients/perf_log.h    |   25 +++++
+ clients/simple-egl.c  |    4 +-
+ clients/window.c      |   17 +++-
+ desktop-shell/shell.c |   20 +++-
+ src/compositor.h      |    1 +
+ src/input.c           |  250 +++++++++++++++++++++++++++++++++++++++++++++----
+ 6 files changed, 291 insertions(+), 26 deletions(-)
+
+diff --git a/clients/perf_log.h b/clients/perf_log.h
+index ec1ac75..6229525 100644
+--- a/clients/perf_log.h
++++ b/clients/perf_log.h
+@@ -19,4 +19,29 @@
+ 		fprintf(stderr, "[%s.%06li] perf_%s:%s\n",\
+ 			string, tv.tv_usec, flag?"end":"start", msg); \
+ 	} while (0)
++
++#define PERF_ID(msg) \
++	do { \
++		struct timeval tv; \
++		struct tm *brokendown_time;\
++		char string[128];\
++		gettimeofday(&tv, NULL);\
++		brokendown_time = localtime(&tv.tv_sec);\
++		strftime(string, sizeof(string),\
++			 "%H:%M:%S", brokendown_time);\
++		fprintf(stderr, "[%s.%06li] perf_id:%s\n",\
++			string, tv.tv_usec, msg); \
++	} while (0)
++#define PERF_POINT(msg) \
++	do { \
++		struct timeval tv; \
++		struct tm *brokendown_time;\
++		char string[128];\
++		gettimeofday(&tv, NULL);\
++		brokendown_time = localtime(&tv.tv_sec);\
++		strftime(string, sizeof(string),\
++			 "%H:%M:%S", brokendown_time);\
++		fprintf(stderr, "[%s.%06li] perf_point:%s\n",\
++			string, tv.tv_usec, msg); \
++	} while (0)
+ #endif
+diff --git a/clients/simple-egl.c b/clients/simple-egl.c
+index 70aed9e..e477d6e 100644
+--- a/clients/simple-egl.c
++++ b/clients/simple-egl.c
+@@ -373,7 +373,6 @@ void print_cid(struct window *window, int start)
+ {
+ 	uint32_t id;
+ 	char str[32] = {};
+-	char mesa_str[32] = {};
+ 
+ 	id = wl_proxy_get_id((struct wl_proxy *)window->surface);
+ 
+@@ -381,6 +380,9 @@ void print_cid(struct window *window, int start)
+ 	if (start) {
+ 		/* client start */
+ 		PERF_TIME(str, START);
++		/* client id */
++		sprintf(str, "%d", id);
++		PERF_ID(str);
+ 	} else {
+ 		/* client end */
+ 		PERF_TIME(str, END);
+diff --git a/clients/window.c b/clients/window.c
+index ab5854e..a064d5a 100644
+--- a/clients/window.c
++++ b/clients/window.c
+@@ -2337,6 +2337,18 @@ frame_leave_handler(struct widget *widget,
+ }
+ 
+ static void
++print_cid(struct window *window)
++{
++	char str[32];
++	uint32_t id;
++	id = wl_proxy_get_id((struct wl_proxy *)window->main_surface->surface);
++	sprintf(str, "client process_%d", id);
++	PERF_TIME(str, END);
++	sprintf(str, "shell process_%d", id);
++	PERF_TIME(str, START);
++}
++
++static void
+ frame_handle_status(struct window_frame *frame, struct input *input,
+ 		    uint32_t time, enum theme_location location)
+ {
+@@ -2369,8 +2381,7 @@ frame_handle_status(struct window_frame *frame, struct input *input,
+ 
+ 	if ((status & FRAME_STATUS_MOVE) && window->xdg_surface) {
+ 		input_ungrab(input);
+-		PERF_TIME("client touch down", END);
+-		PERF_TIME("shell process", START);
++		print_cid(window);
+ 		xdg_surface_move(window->xdg_surface,
+ 				 input_get_seat(input),
+ 				 window->display->serial);
+@@ -3054,8 +3065,6 @@ touch_handle_down(void *data, struct wl_touch *wl_touch,
+ 			wl_list_insert(&input->touch_point_list, &tp->link);
+ 
+ 			if (widget->touch_down_handler) {
+-				PERF_TIME("touch down", END);
+-				PERF_TIME("client touch down", START);
+ 				(*widget->touch_down_handler)(widget, input, 
+ 							      serial, time, id,
+ 							      sx, sy,
+diff --git a/desktop-shell/shell.c b/desktop-shell/shell.c
+index 1223613..0639ce3 100644
+--- a/desktop-shell/shell.c
++++ b/desktop-shell/shell.c
+@@ -1553,9 +1553,12 @@ static void
+ touch_move_grab_motion(struct weston_touch_grab *grab, uint32_t time,
+ 		       int touch_id, wl_fixed_t sx, wl_fixed_t sy)
+ {
+-	PERF_TIME("shell touch motion", START);
+ 	struct weston_touch_move_grab *move = (struct weston_touch_move_grab *) grab;
+ 	struct shell_surface *shsurf = move->base.shsurf;
++	char str[32];
++	uint32_t id = wl_resource_get_id(shsurf->surface->resource);
++	sprintf(str, "shell touch motion_%d", id);
++	PERF_TIME(str, START);
+ 	struct weston_surface *es;
+ 	int dx = wl_fixed_to_int(grab->touch->grab_x + move->dx);
+ 	int dy = wl_fixed_to_int(grab->touch->grab_y + move->dy);
+@@ -1568,7 +1571,7 @@ touch_move_grab_motion(struct weston_touch_grab *grab, uint32_t time,
+ 	weston_view_set_position(shsurf->view, dx, dy);
+ 
+ 	weston_compositor_schedule_repaint(es->compositor);
+-	PERF_TIME("shell touch motion", END);
++	PERF_TIME(str, END);
+ }
+ 
+ static void
+@@ -1739,6 +1742,16 @@ surface_move(struct shell_surface *shsurf, struct weston_seat *seat,
+ }
+ 
+ static void
++print_shell_id(struct wl_resource *resource)
++{
++	char str[32] = {};
++	uint32_t id;
++	id = wl_resource_get_id(resource);
++	sprintf(str, "shell process_%d", id);
++	PERF_TIME(str, END);
++}
++
++static void
+ common_surface_move(struct wl_resource *resource,
+ 		    struct wl_resource *seat_resource, uint32_t serial)
+ {
+@@ -1762,7 +1775,8 @@ common_surface_move(struct wl_resource *resource,
+ 		    (surface_touch_move(shsurf, seat) < 0))
+ 			wl_resource_post_no_memory(resource);
+ 	}
+-	PERF_TIME("shell process", END);
++
++	print_shell_id(shsurf->surface->resource);
+ }
+ 
+ static void
+diff --git a/src/compositor.h b/src/compositor.h
+index e5dcca9..9dca566 100644
+--- a/src/compositor.h
++++ b/src/compositor.h
+@@ -48,6 +48,7 @@ extern "C" {
+ #define PERF_TIME(msg, flag) \
+ 	weston_plog("perf_%s:%s\n", flag?"end":"start", msg);
+ #define PERF_ID(msg) weston_plog("perf_id:%s\n", msg);
++#define PERF_POINT(msg) weston_plog("perf_point:%s\n", msg);
+ #endif
+ 
+ #ifndef MIN
+diff --git a/src/input.c b/src/input.c
+index 3545370..8334860 100644
+--- a/src/input.c
++++ b/src/input.c
+@@ -31,9 +31,118 @@
+ #include <fcntl.h>
+ #include <limits.h>
+ 
++#include "../desktop-shell/shell.h"
+ #include "../shared/os-compatibility.h"
+ #include "compositor.h"
+ 
++enum shell_surface_type {
++	SHELL_SURFACE_NONE,
++	SHELL_SURFACE_TOPLEVEL,
++	SHELL_SURFACE_POPUP,
++	SHELL_SURFACE_XWAYLAND
++};
++
++struct shell_surface {
++	struct wl_resource *resource;
++	struct wl_signal destroy_signal;
++	struct shell_client *owner;
++
++	struct weston_surface *surface;
++	struct weston_view *view;
++	int32_t last_width, last_height;
++	struct wl_listener surface_destroy_listener;
++	struct wl_listener resource_destroy_listener;
++
++	struct weston_surface *parent;
++	struct wl_list children_list;  /* child surfaces of this one */
++	struct wl_list children_link;  /* sibling surfaces of this one */
++	struct desktop_shell *shell;
++
++	enum shell_surface_type type;
++	char *title, *class;
++	int32_t saved_x, saved_y;
++	int32_t saved_width, saved_height;
++	bool saved_position_valid;
++	bool saved_size_valid;
++	bool saved_rotation_valid;
++	int unresponsive, grabbed;
++	uint32_t resize_edges;
++
++	struct {
++		struct weston_transform transform;
++		struct weston_matrix rotation;
++	} rotation;
++
++	struct {
++		struct wl_list grab_link;
++		int32_t x, y;
++		struct shell_seat *shseat;
++		uint32_t serial;
++	} popup;
++
++	struct {
++		int32_t x, y;
++		uint32_t flags;
++	} transient;
++
++	struct {
++		enum wl_shell_surface_fullscreen_method type;
++		struct weston_transform transform; /* matrix from x, y */
++		uint32_t framerate;
++		struct weston_view *black_view;
++	} fullscreen;
++
++	struct weston_transform workspace_transform;
++
++	struct weston_output *fullscreen_output;
++	struct weston_output *output;
++	struct weston_output *recommended_output;
++	struct wl_list link;
++
++	const struct weston_shell_client *client;
++
++	struct {
++		bool maximized;
++		bool fullscreen;
++		bool relative;
++		bool lowered;
++	} state, next_state, requested_state; /* surface states */
++	bool state_changed;
++	bool state_requested;
++
++	struct {
++		int left, right, top, bottom;
++	} margin;
++
++	int focus_count;
++};
++
++struct shell_grab {
++	struct weston_pointer_grab grab;
++	struct shell_surface *shsurf;
++	struct wl_listener shsurf_destroy_listener;
++};
++
++struct shell_touch_grab {
++	struct weston_touch_grab grab;
++	struct shell_surface *shsurf;
++	struct wl_listener shsurf_destroy_listener;
++	struct weston_touch *touch;
++};
++
++struct weston_move_grab {
++	struct shell_grab base;
++	wl_fixed_t dx, dy;
++	int client_initiated;
++};
++
++struct weston_touch_move_grab {
++	struct shell_touch_grab base;
++	int active;
++	wl_fixed_t dx, dy;
++};
++
++
+ static void
+ empty_region(pixman_region32_t *region)
+ {
+@@ -200,11 +309,13 @@ default_grab_pointer_button(struct weston_pointer_grab *grab,
+ 	if (!wl_list_empty(resource_list)) {
+ 		serial = wl_display_next_serial(display);
+ 		wl_resource_for_each(resource, resource_list)
++		{
+ 			wl_pointer_send_button(resource,
+ 					       serial,
+ 					       time,
+ 					       button,
+ 					       state_w);
++		}
+ 	}
+ 
+ 	if (pointer->button_count == 0 &&
+@@ -246,12 +357,10 @@ default_grab_touch_down(struct weston_touch_grab *grab, uint32_t time,
+ 	if (!wl_list_empty(resource_list) && touch->focus) {
+ 		serial = wl_display_next_serial(display);
+ 		wl_resource_for_each(resource, resource_list) {
+-			id = wl_resource_get_id(resource);
+ 			wl_touch_send_down(resource, serial, time,
+ 						   touch->focus->surface->resource,
+ 						   touch_id, sx, sy);
+-			PERF_TIME("touch down", END);
+-			PERF_TIME("client process", START);
++			print_touch(touch, WL_TOUCH_DOWN, 0);
+ 		}
+ 	}
+ }
+@@ -274,8 +383,7 @@ default_grab_touch_up(struct weston_touch_grab *grab,
+ 		wl_resource_for_each(resource, resource_list) {
+ 			id = wl_resource_get_id(resource);
+ 			wl_touch_send_up(resource, serial, time, touch_id);
+-			PERF_TIME("touch up", END);
+-			PERF_TIME("client process", START);
++			print_touch(touch, WL_TOUCH_UP, 0);
+ 		}
+ 	}
+ }
+@@ -297,8 +405,7 @@ default_grab_touch_motion(struct weston_touch_grab *grab, uint32_t time,
+ 		surface_client = wl_resource_get_client(resource);
+ 		wl_touch_send_motion(resource, time,
+ 				     touch_id, sx, sy);
+-		PERF_TIME("touch motion", END);
+-		PERF_TIME("client process", START);
++		print_touch(touch, WL_TOUCH_MOTION, 0);
+ 	}
+ }
+ 
+@@ -1480,13 +1587,117 @@ notify_keyboard_focus_out(struct weston_seat *seat)
+ 
+ void print_resid(struct weston_view *view)
+ {
+-	uint32_t surface_id = 0;
+ 	char str_id[32];
+ 	uint32_t resource_id = wl_resource_get_id(view->surface->resource);
+ 	sprintf(str_id, "%d", resource_id);
+ 	PERF_ID(str_id);
+ }
+ 
++void print_touch_hardware(struct weston_touch *touch, int touch_type, int start)
++{
++	struct weston_touch_move_grab *move;
++	struct shell_surface *shsurf;
++	char str[32] = {};
++	uint32_t id;
++
++	move = (struct weston_touch_move_grab *) touch->grab;
++	shsurf = move->base.shsurf;
++	if (touch->focus) {
++		if (shsurf)
++			id = wl_resource_get_id(
++					shsurf->surface->resource);
++		else
++			id = wl_resource_get_id(
++					touch->focus->surface->resource);
++	} else
++		id = 0;
++
++	switch (touch_type) {
++	case WL_TOUCH_DOWN:
++		if (start) {
++			sprintf(str, "touch hardware down_%d", id);
++			PERF_TIME(str, START);
++		} else {
++			sprintf(str, "touch hardware down_%d", id);
++			PERF_TIME(str, END);
++		}
++		break;
++	case WL_TOUCH_MOTION:
++		if (start) {
++			sprintf(str, "touch hardware motion_%d", id);
++			PERF_TIME(str, START);
++		} else {
++			sprintf(str, "touch hardware motion_%d", id);
++			PERF_TIME(str, END);
++		}
++		break;
++	case WL_TOUCH_UP:
++		if (start) {
++			sprintf(str, "touch hardware up_%d", id);
++			PERF_TIME(str, START);
++		} else {
++			sprintf(str, "touch hardware up_%d", id);
++			PERF_TIME(str, END);
++		}
++	}
++}
++
++
++void print_touch(struct weston_touch *touch, int touch_type, int start)
++{
++	struct weston_touch_move_grab *move;
++	struct shell_surface *shsurf;
++	char str[32] = {};
++	uint32_t id;
++
++	move = (struct weston_touch_move_grab *) touch->grab;
++	shsurf = move->base.shsurf;
++	if (touch->focus) {
++		if (shsurf)
++			id = wl_resource_get_id(
++					shsurf->surface->resource);
++		else
++			id = wl_resource_get_id(
++					touch->focus->surface->resource);
++	} else
++		id = 0;
++
++	switch (touch_type) {
++	case WL_TOUCH_DOWN:
++		if (start) {
++			sprintf(str, "touch down_%d", id);
++			PERF_TIME(str, START);
++		} else {
++			sprintf(str, "touch down_%d", id);
++			PERF_TIME(str, END);
++			sprintf(str, "client process_%d", id);
++			PERF_TIME(str, START);
++		}
++		break;
++	case WL_TOUCH_MOTION:
++		if (start) {
++			sprintf(str, "touch motion_%d", id);
++			PERF_TIME(str, START);
++		} else {
++			sprintf(str, "touch motion_%d", id);
++			PERF_TIME(str, END);
++			sprintf(str, "client process_%d", id);
++			PERF_TIME(str, START);
++		}
++		break;
++	case WL_TOUCH_UP:
++		if (start) {
++			sprintf(str, "touch up_%d", id);
++			PERF_TIME(str, START);
++		} else {
++			sprintf(str, "touch up_%d", id);
++			PERF_TIME(str, END);
++			sprintf(str, "client process_%d", id);
++			PERF_TIME(str, START);
++		}
++	}
++}
++
+ WL_EXPORT void
+ weston_touch_set_focus(struct weston_seat *seat, struct weston_view *view)
+ {
+@@ -1556,7 +1767,7 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 	switch (touch_type) {
+ 	case WL_TOUCH_DOWN:
+-		PERF_TIME("touch hardware down", START);
++		print_touch_hardware(touch, touch_type, 1);
+ 		weston_compositor_idle_inhibit(ec);
+ 
+ 		touch->num_tp++;
+@@ -1581,8 +1792,8 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 		weston_compositor_run_touch_binding(ec, seat,
+ 						    time, touch_type);
+-		PERF_TIME("touch hardware down", END);
+-		PERF_TIME("touch down", START);
++		print_touch_hardware(touch, touch_type, 0);
++		print_touch(touch, touch_type, 1);
+ 		grab->interface->down(grab, time, touch_id, sx, sy);
+ 		if (touch->num_tp == 1) {
+ 			touch->grab_serial =
+@@ -1595,18 +1806,18 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 		break;
+ 	case WL_TOUCH_MOTION:
+-		PERF_TIME("touch hardware motion", START);
++		print_touch_hardware(touch, touch_type, 1);
+ 		ev = touch->focus;
+ 		if (!ev)
+ 			break;
+ 
+ 		weston_view_from_global_fixed(ev, x, y, &sx, &sy);
+-		PERF_TIME("touch hardware motion", END);
+-		PERF_TIME("touch motion", START);
++		print_touch_hardware(touch, touch_type, 0);
++		print_touch(touch, touch_type, 1);
+ 		grab->interface->motion(grab, time, touch_id, sx, sy);
+ 		break;
+ 	case WL_TOUCH_UP:
+-		PERF_TIME("touch hardware up", START);
++		print_touch_hardware(touch, touch_type, 1);
+ 		if (touch->num_tp == 0) {
+ 			/* This can happen if we start out with one or
+ 			 * more fingers on the touch screen, in which
+@@ -1618,11 +1829,14 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 		weston_compositor_idle_release(ec);
+ 		touch->num_tp--;
+ 
+-		PERF_TIME("touch hardware up", END);
+-		PERF_TIME("touch up", START);
++		print_touch(touch, touch_type, 1);
++		print_touch_hardware(touch, touch_type, 0);
+ 		grab->interface->up(grab, time, touch_id);
+-		if (touch->num_tp == 0)
++		if (touch->num_tp == 0) {
++			PERF_POINT("touch segmentation");
+ 			weston_touch_set_focus(seat, NULL);
++		}
++
+ 		break;
+ 	}
+ }
+-- 
+1.7.9.5
+
