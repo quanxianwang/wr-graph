@@ -60,7 +60,7 @@ class Analyzer:
         # total interval
         self.total_interval = TOTAL_INTERVAL
         # log file's end time
-        self.end_time = START_TIME + TOTAL_INTERVAL
+        self.end_time = TOTAL_INTERVAL
 		# predefined match pattern
         self.pregex = re.compile('\[\ *(?P<hour>[0-9]+):(?P<min>[0-9]+):(?P<sec>[0-9]+)\.(?P<msec>[0-9]+)\] perf_point:' + \
                                  '(?P<name>.*)')
@@ -116,21 +116,6 @@ class Analyzer:
 							 "navy": (0.0, 0.0, 0.5),
 							 "yellow": (1.0, 1.0, 0.0),
 							 "black": (0.0, 0.0, 0.0)}
-
-  #  def get_client_activate(self):
-  #      """
-  #      Note: get client's activate
-  #      Args: None
-  #      Input: self.client_activate
-  #      Output: client's activate dic
-  #      """
-  #      client_dic = collections.OrderedDict()
-  #      if len(self.client_activate) == 0:
-  #          return client_dic
-  #      for id in self.client_id_list:
-  #          client_['client'+'_'+id] \
-  #              = self.client_activate['client'+'_'+id]
-  #      return client_dic
 
     def get_client_activate(self):
         return self.client_activate
@@ -361,7 +346,7 @@ class Analyzer:
                 itv.end = -1
                 time_list.append(itv)
 
-            #self.update2rel(time_list)
+            self.update2rel(time_list)
             self.time_dic[cid] = time_list
 
     def process_id(self, match):
@@ -373,7 +358,7 @@ class Analyzer:
             self.client_id_list.append(ename)
 
     def process_point(self, match):
-		if not match:
+        if not match:
             return
 
         ename = match.group('name')
@@ -534,6 +519,7 @@ class Analyzer:
             self.comm_events[cid] = collections.OrderedDict()
             total = 0
             comm_time = 0
+            comm_len = 0
             for i in range(0, len(self.smooth_event_list) - 1):
                 fname = self.smooth_event_list[i]
                 sname = self.smooth_event_list[i+1]
@@ -545,7 +531,9 @@ class Analyzer:
                 if len(fst_end) == 0 or len(sec_start) == 0:
                     print 'smooth invalid data!'
                     sys.exit(-1)
-                for j in range(len(fst_end)):
+                comm_len = len(fst_end) > len(sec_start) and \
+                           len(sec_start) or len(fst_end)
+                for j in range(comm_len):
                     number = sec_start[j] - fst_end[j]
                     comm_list.append(number)
 
@@ -600,7 +588,7 @@ class Analyzer:
             self.new_events[cid] = []
 
         for cid in self.client_id_list:
-            for i in range(len(self.events_dic[cid]) - 1):
+            for i in range(len(self.events_dic[cid])):
                 event = self.events_dic[cid][i]
                 if event['start'] == True:
                     new_event = (event['name'], event['time'], -1)
@@ -688,7 +676,7 @@ class Analyzer:
             end_time = self.new_events[cid][-1][2]
             if self.start_time > start_time:
                self.start_time = start_time
-            if self.end_time > end_time:
+            if self.end_time < end_time:
                self.end_time = end_time 
 
         for time in self.seg_point_time:
@@ -713,7 +701,8 @@ class Analyzer:
         self.parse_config_file(configfile, logfile)
         self.parse_log_file()
         if len(self.client_id_list) == 0:
-            self.client_id_list.append('0')
+          #  self.client_id_list.append('0')
+            self.client_id_list.extend(self.events_dic.keys())
 
         # filer the all data to be valid
         if len(self.events_dic.keys()) == 0:

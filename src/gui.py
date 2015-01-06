@@ -382,7 +382,7 @@ class Analyzer_Frame(wx.Frame):
 		            and self.imageCountFps > 0:
             del self.fps_charts[self.imageCountFps - 1]
             del self.label_clients[self.imageCountFps - 1]
-            del self.label__clients_colors[self.imageCountFps - 1]
+            del self.label_clients_colors[self.imageCountFps - 1]
         if len(self.smooth_charts) == self.imageCountSmooth \
 		            and self.imageCountSmooth > 0:
             del self.smooth_charts[self.imageCountSmooth - 1]
