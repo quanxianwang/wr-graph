@@ -94,8 +94,7 @@ class Analyzer:
         # log files list
         self.log_files = []
         # happened events
-        self.happened_clients = []
-        self.fps_events_colors = []
+        self.client_color = []
         # segmentation point
         self.seg_point = None
         # time list of segmentation point
@@ -120,11 +119,9 @@ class Analyzer:
     def get_client_activate(self):
         return self.client_activate
 
-    def get_happened_clients(self):
-        return self.happened_clients
-
-    def get_happened_clients_colors(self):
-        return self.fps_events_colors
+    def get_client_color(self):
+        self.client_color.append(self.color_table["blue"])
+        return self.client_color
 
     def updateClient(self, clients):
         for id in self.client_id_list:
@@ -227,11 +224,9 @@ class Analyzer:
                 self.client_activate['client' + '_' + cid] == False:
                 continue
 
-            client_colors = []
+            client_color = []
             time_list = []
-            clients = []
             x_labels = []
-            self.happened_clients = []
             time_list = self.time_dic[cid]
             FPS = collections.OrderedDict()
 
@@ -252,19 +247,15 @@ class Analyzer:
                 # change ms value to FPS value
                 FPS[time_list[i].start] = 1000/time_list[i].end
 
-            clients.append('client' + '_' + cid)
-            client_colors.append(self.color_table["blue"])
+            client_color.append(self.color_table["blue"])
 
             # FPS is defined for every client id
             # lets calculate start, end, interval and labels.
             fps_chart = Graphic(name, FPS, width, height, rel_end,
                                 x_labels=x_labels, axis=True, grid=True,
-                                background="white", series_colors=client_colors)
+                                background="white", series_colors=client_color)
             fps_chart.render()
             fps_chart.render_fps()
-            self.happened_clients = clients
-            self.fps_events_colors = client_colors
-
         return fps_chart
 
     def create_interval(self, start, end):
@@ -330,7 +321,13 @@ class Analyzer:
                             index += 1
                             time_list.append(itv2)
                             offset = len(time_list)
+
                     time_list.append(itv)
+
+            if seg_len == 0:
+                time_list.sort(key=lambda e:e.end)
+                self.sample_data(time_list, 0, len(time_list))
+                time_list.sort(key=lambda e:e.start)
 
             if seg_len > 0 and self.seg_point_time[-1] not in [e.start for e in time_list]:
                 new_list = sorted(time_list[offset:len(time_list)], key=lambda e:e.end)

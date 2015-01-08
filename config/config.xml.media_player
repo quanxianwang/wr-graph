@@ -8,6 +8,9 @@
         <event>weston</event>
         <event>graphic hardware</event>
     </event_item>
+	<sample_rate>
+		<rate>0.1</rate>
+	</sample_rate>
     <fps_item>	
         <fps>wcommit</fps>
         <fps>weston</fps>
