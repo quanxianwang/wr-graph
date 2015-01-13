@@ -1,2 +1,1 @@
-total_time = 9.47ms
-fps = 105.6fps
+fps = 28fps

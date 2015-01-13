@@ -11,6 +11,9 @@
 	<sample_rate>
 		<rate>0.1</rate>
 	</sample_rate>
+	<action_type>
+		<type>media</type>
+	</action_type>
     <fps_item>	
         <fps>wcommit</fps>
         <fps>weston</fps>
