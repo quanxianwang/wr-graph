@@ -101,6 +101,7 @@ class Analyzer:
         self.seg_point_time = []
         # sample rate
         self.sample_rate = None
+        self.action_type = None
 
         # predefined color hexcode list
         self.color_table = {"blue": (0.0, 0.0, 1.0),
@@ -127,6 +128,9 @@ class Analyzer:
         for id in self.client_id_list:
             self.client_activate['client'+'_'+id] \
                 = clients['client'+'_'+id]
+
+    def get_action_type(self):
+        return self.action_type
 
     def draw_smooth(self, name, show_start, show_end, width, height, output_dir=None):
         """
@@ -258,6 +262,79 @@ class Analyzer:
             fps_chart.render_fps()
         return fps_chart
 
+    def draw_fps_media(self, name, show_start, show_end, width, height, output_dir=None):
+        """
+        Note:draw fps graph
+        Args:
+            show_start: the start time to show
+            show_end:   the end time to show
+        Input:self.new_events
+        Output:Graphic object
+        """
+        if len(self.time_dic) == 0:
+            return None
+
+        # change to relative time
+        rel_start = show_start - self.start_time
+        rel_end = show_end - self.start_time
+        for cid in self.client_id_list:
+            if 'client' + '_' + cid not in self.client_activate or \
+                self.client_activate['client' + '_' + cid] == False:
+                continue
+
+            client_color = []
+            x_labels = []
+            FPS = collections.OrderedDict()
+            offset = 0
+            time_old = 0
+            sum_total = 0
+            fps_len = len(self.fps_event_list)
+            event_name = self.fps_event_list[0]
+
+            x_axis_num = int(math.floor(width / X_AXIS_INTERVAL))
+            x_interval = int(math.floor((rel_end - rel_start)
+			             / x_axis_num))
+            for i in range(x_axis_num + 1):
+                x_labels.append("{0}ms".format(rel_start + i * x_interval))
+
+            for time in range(1000, int(rel_end))[::1000]:
+                count = 0
+                for i in range(offset, len(self.new_events[cid]))[::fps_len]:
+                    event1 = self.new_events[cid][i]
+                    if event1[0] == event_name and time_old <= event1[1] < time:
+                        event2 = self.new_events[cid][i + fps_len - 1]
+                        if event2[2] < time:
+                            count += 1
+                    else:
+                        break
+                offset = i
+                time_old = time
+                if count > 1:
+                    sum_total += count
+                    FPS[time] = count
+
+            fps = int("{0:.0f}".format(sum_total / len(FPS)))
+            str1 = 'fps = ' + str(fps) + 'fps'
+
+            if output_dir == None:
+                output_dir = '.'
+            if not os.path.exists(output_dir):
+                os.mkdir(output_dir)
+            fd = open(output_dir + '/fps.txt', 'w')
+            fd.write(str1)
+            fd.close()
+
+            client_color.append(self.color_table["blue"])
+
+            # FPS is defined for every client id
+            # lets calculate start, end, interval and labels.
+            fps_chart = Graphic(name, FPS, width, height, rel_end,
+                                x_labels=x_labels, axis=True, grid=True,
+                                background="white", series_colors=client_color)
+            fps_chart.render()
+            fps_chart.render_fps()
+        return fps_chart
+
     def create_interval(self, start, end):
         itv = interval()
         itv.start = start
@@ -343,7 +420,6 @@ class Analyzer:
                 itv.end = -1
                 time_list.append(itv)
 
-            self.update2rel(time_list)
             self.time_dic[cid] = time_list
 
     def process_id(self, match):
@@ -445,6 +521,7 @@ class Analyzer:
                     "fps_item":("fps", []),
                     "smooth_item":("smooth", []),
                     "sample_rate":("rate", []),
+                    "action_type":("type", []),
                     "profile":("file", [])}
 
         for key in config_tags.keys():
@@ -472,6 +549,10 @@ class Analyzer:
             self.log_files.append(logfile)
         else:
             self.log_files.extend(config_tags["profile"][1])
+
+        if len(config_tags["action_type"][1]) != 0:
+            self.action_type = config_tags["action_type"][1][0]
+
  
     def init_client_activate(self):
         first = self.client_id_list[0]
@@ -634,7 +715,7 @@ class Analyzer:
                     del self.new_events[cid][j]
                     ecount -= 1
         for cid in self.new_events.keys():
-            if len(self.new_events[cid]) == 0:
+            if len(self.new_events[cid]) < elen:
                 del self.new_events[cid]
                 index = self.client_id_list.index(cid)
                 del self.client_id_list[index]
@@ -686,12 +767,20 @@ class Analyzer:
 
         self.total_interval = self.end_time
 
-    def update2rel(self, time_list):
+    def update2rel(self):
         """
         all event time is decreased by start time
         """
-        for event in time_list:
-            event.start -= self.start_time
+        for cid in self.client_id_list:
+            time_list = self.new_events[cid]
+            for i in range(len(time_list)):
+                event = time_list[i]
+                event_new = (event[0], event[1] - self.start_time, \
+                             event[2] - self.start_time)
+                time_list[i] = event_new
+
+        for i in range(len(self.seg_point_time)):
+            self.seg_point_time[i] -= self.start_time
 
     def init(self, configfile, logfile):
         """initialize start time and parse config file"""
@@ -706,6 +795,7 @@ class Analyzer:
             print 'logfile do not have valid data!'
             sys.exit(-1)
         self.get_valid_data()
+        self.update2rel()
 
         if len(self.smooth_event_list) > 0:
             self.get_smooth_time()

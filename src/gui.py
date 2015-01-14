@@ -169,6 +169,7 @@ class Analyzer_Frame(wx.Frame):
         # analyzer class instance
         self.analyzer = Analyzer()
         self.analyzer.init(configfile, logfile)
+        self.action_type = self.analyzer.get_action_type()
         self.client_color = []
         self.client_dic = self.analyzer.get_client_activate()
         self.addWidgets()
@@ -267,15 +268,23 @@ class Analyzer_Frame(wx.Frame):
         """Request a new dot line chart"""
         filename = str(int(interval.start)) + '-' \
                    + str(int(interval.end)) + '_fps.png'
-        img = self.analyzer.draw_fps(filename, interval.start, \
-                                     interval.end, self.width, \
-                                     self.height, OutputDir)
+
+        if self.action_type == 'media':
+            img = self.analyzer.draw_fps_media(filename, interval.start, \
+                                         interval.end, self.width, \
+                                         self.height, OutputDir)
+        else:
+            img = self.analyzer.draw_fps(filename, interval.start, \
+                                         interval.end, self.width, \
+                                         self.height, OutputDir)
         return img
 
     def getSmoothChart(self, interval):
         """Request a new dot line chart"""
         filename = str(int(interval.start)) + '-' \
                    + str(int(interval.end)) + '_smooth.png'
+        if self.action_type == 'media':
+            return None
         img = self.analyzer.draw_smooth(filename, interval.start, \
                                         interval.end, self.width, \
                                         self.height, OutputDir)
@@ -327,7 +336,7 @@ class Analyzer_Frame(wx.Frame):
                 self.happened_client = key
         client_color = self.client_color[self.imageCountFps - 1]
         for checkbox in self.checkboxes_fps:
-            if checkbox.GetLabel() in self.happened_client:
+            if checkbox.GetLabel() == self.happened_client:
                 checkbox.SetValue(True)
                 index = self.happened_client.index(checkbox.GetLabel())
                 r = client_color[index][0] * 255
@@ -389,17 +398,23 @@ parse_arguments()
 if ShowFlag == 'false':
     analyzer = Analyzer()
     analyzer.init(ConfigFile, LogFile)
+    action_type = analyzer.get_action_type()
     if Prefix == None:
         Prefix = 'wayland_rendering'
     filename = Prefix + '_fps.png'
-    fps_image = analyzer.draw_fps(filename, analyzer.start_time,\
+    if action_type == 'media':
+        fps_image = analyzer.draw_fps_media(filename, analyzer.start_time,\
+                                  analyzer.total_interval, 1200, 600, OutputDir)
+        fps_image.commit(OutputDir)
+    else:
+        fps_image = analyzer.draw_fps(filename, analyzer.start_time,\
                                   analyzer.total_interval, 1200, 600)
-    filename = Prefix + '_frame.png'
-    smooth_image = analyzer.draw_smooth(filename, analyzer.start_time,\
+        filename = Prefix + '_frame.png'
+        smooth_image = analyzer.draw_smooth(filename, analyzer.start_time,\
                                         analyzer.total_interval, 1200,\
                                         600, OutputDir)
-    fps_image.commit(OutputDir)
-    smooth_image.commit(OutputDir)
+        fps_image.commit(OutputDir)
+        smooth_image.commit(OutputDir)
 else:
     app = wx.App(False)
     frame = Analyzer_Frame(None, 'Profile Analyzer', OutputDir, \
