@@ -1,0 +1,74 @@
+From abc12362ab5e531b6220c79a99fb765b135b05e2 Mon Sep 17 00:00:00 2001
+From: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Date: Thu, 11 Dec 2014 10:21:18 +0800
+Subject: [PATCH 6/8] Rename profile_analyzer.h to perf_log.h
+
+It will be more reasonable and clearly.
+
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+---
+ clients/perf_log.h         |   22 ++++++++++++++++++++++
+ clients/profile_analyzer.h |   22 ----------------------
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+ create mode 100644 clients/perf_log.h
+ delete mode 100644 clients/profile_analyzer.h
+
+diff --git a/clients/perf_log.h b/clients/perf_log.h
+new file mode 100644
+index 0000000..ec1ac75
+--- /dev/null
++++ b/clients/perf_log.h
+@@ -0,0 +1,22 @@
++#ifndef PERF_LOG
++#define PERF_LOG
++
++#include <time.h>
++#include <stdio.h>
++#include <sys/time.h>
++
++#define START 0
++#define END 1
++#define PERF_TIME(msg, flag) \
++	do { \
++		struct timeval tv; \
++		struct tm *brokendown_time;\
++		char string[128];\
++		gettimeofday(&tv, NULL);\
++		brokendown_time = localtime(&tv.tv_sec);\
++		strftime(string, sizeof(string),\
++			 "%H:%M:%S", brokendown_time);\
++		fprintf(stderr, "[%s.%06li] perf_%s:%s\n",\
++			string, tv.tv_usec, flag?"end":"start", msg); \
++	} while (0)
++#endif
+diff --git a/clients/profile_analyzer.h b/clients/profile_analyzer.h
+deleted file mode 100644
+index ec1ac75..0000000
+--- a/clients/profile_analyzer.h
++++ /dev/null
+@@ -1,22 +0,0 @@
+-#ifndef PERF_LOG
+-#define PERF_LOG
+-
+-#include <time.h>
+-#include <stdio.h>
+-#include <sys/time.h>
+-
+-#define START 0
+-#define END 1
+-#define PERF_TIME(msg, flag) \
+-	do { \
+-		struct timeval tv; \
+-		struct tm *brokendown_time;\
+-		char string[128];\
+-		gettimeofday(&tv, NULL);\
+-		brokendown_time = localtime(&tv.tv_sec);\
+-		strftime(string, sizeof(string),\
+-			 "%H:%M:%S", brokendown_time);\
+-		fprintf(stderr, "[%s.%06li] perf_%s:%s\n",\
+-			string, tv.tv_usec, flag?"end":"start", msg); \
+-	} while (0)
+-#endif
+-- 
+1.7.9.5
+

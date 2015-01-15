@@ -1,0 +1,37 @@
+From 55f51c2dd5ffb849c85759c1ea9928bff2774a59 Mon Sep 17 00:00:00 2001
+From: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Date: Tue, 9 Dec 2014 11:16:41 +0800
+Subject: [PATCH 4/8] modify the location of weston log
+
+modify the location of weston log for wayland redering test
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+---
+ src/compositor.c |    5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/src/compositor.c b/src/compositor.c
+index c93d763..74037ab 100644
+--- a/src/compositor.c
++++ b/src/compositor.c
+@@ -2302,16 +2302,15 @@ void print_wcommit(struct wl_resource *resource, int start)
+ 	char str[32] = {};
+ 
+ 	if (start) {
++		sprintf(str, "client process_%d", id);
++		PERF_TIME(str, END);
+ 		sprintf(str, "MESA_%d", id);
+ 		PERF_TIME(str, END);
+ 		sprintf(str, "wcommit_%d", id);
+-		PERF_TIME("client process", END);
+-		PERF_TIME("wcommit", START);
+ 		PERF_TIME(str, START);
+ 	} else {
+ 		sprintf(str, "wcommit_%d", id);
+ 		PERF_TIME(str, END);
+-		PERF_TIME("wcommit", END);
+ 	}
+ }
+ 
+-- 
+1.7.9.5
+

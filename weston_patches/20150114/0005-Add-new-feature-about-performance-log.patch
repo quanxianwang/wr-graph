@@ -1,0 +1,81 @@
+From d31ca149b566efc7950c8f45fa1fa3508e7ea69f Mon Sep 17 00:00:00 2001
+From: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Date: Wed, 10 Dec 2014 16:33:10 +0800
+Subject: [PATCH 5/8] Add new feature about performance log
+
+Add performance log function,PERF_DEBUG could be set to enable it.
+
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+---
+ src/compositor.h |    4 ++--
+ src/log.c        |   21 +++++++++++++++++++++
+ 2 files changed, 23 insertions(+), 2 deletions(-)
+
+diff --git a/src/compositor.h b/src/compositor.h
+index 951ba1c..e5dcca9 100644
+--- a/src/compositor.h
++++ b/src/compositor.h
+@@ -46,8 +46,8 @@ extern "C" {
+ #define START 0
+ #define END 1
+ #define PERF_TIME(msg, flag) \
+-	weston_log("perf_%s:%s\n", flag?"end":"start", msg);
+-#define PERF_ID(msg) weston_log("perf_id:%s\n", msg);
++	weston_plog("perf_%s:%s\n", flag?"end":"start", msg);
++#define PERF_ID(msg) weston_plog("perf_id:%s\n", msg);
+ #endif
+ 
+ #ifndef MIN
+diff --git a/src/log.c b/src/log.c
+index 08e5ec9..117181b 100644
+--- a/src/log.c
++++ b/src/log.c
+@@ -35,6 +35,8 @@
+ 
+ static FILE *weston_logfile = NULL;
+ 
++static int perf_debug = 0;
++
+ static int cached_tm_mday = -1;
+ 
+ static int weston_log_timestamp(void)
+@@ -72,10 +74,15 @@ custom_handler(const char *fmt, va_list arg)
+ void
+ weston_log_file_open(const char *filename)
+ {
++	const char *debug;
++
+ 	wl_log_set_handler_server(custom_handler);
+ 
+ 	if (filename != NULL)
+ 		weston_logfile = fopen(filename, "a");
++	debug = getenv("PERF_DEBUG");
++	if (debug && strstr(debug, "1"))
++		perf_debug = 1;
+ 
+ 	if (weston_logfile == NULL)
+ 		weston_logfile = stderr;
+@@ -116,6 +123,20 @@ weston_log(const char *fmt, ...)
+ }
+ 
+ WL_EXPORT int
++weston_plog(const char *fmt, ...)
++{
++	int l;
++	va_list argp;
++	if (perf_debug) {
++		va_start(argp, fmt);
++		l = weston_vlog(fmt, argp);
++		va_end(argp);
++	}
++
++	return l;
++}
++
++WL_EXPORT int
+ weston_vlog_continue(const char *fmt, va_list argp)
+ {
+ 	return vfprintf(weston_logfile, fmt, argp);
+-- 
+1.7.9.5
+

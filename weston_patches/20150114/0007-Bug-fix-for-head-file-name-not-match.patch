@@ -1,0 +1,43 @@
+From 1e3d043ea02620e140420abce94a5dc88c52e665 Mon Sep 17 00:00:00 2001
+From: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Date: Wed, 17 Dec 2014 10:51:16 +0800
+Subject: [PATCH 7/8] Bug fix for head file name not match
+
+I had modified profile_analyzer.h to perf_log.h before, but I forget
+modify the reference file.
+
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+---
+ clients/simple-egl.c |    2 +-
+ clients/window.c     |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/clients/simple-egl.c b/clients/simple-egl.c
+index 0c3deb9..70aed9e 100644
+--- a/clients/simple-egl.c
++++ b/clients/simple-egl.c
+@@ -39,7 +39,7 @@
+ #include <GLES2/gl2.h>
+ #include <EGL/egl.h>
+ #include <EGL/eglext.h>
+-#include "profile_analyzer.h"
++#include "perf_log.h"
+ 
+ #include "xdg-shell-client-protocol.h"
+ 
+diff --git a/clients/window.c b/clients/window.c
+index 9a00da6..ab5854e 100644
+--- a/clients/window.c
++++ b/clients/window.c
+@@ -71,7 +71,7 @@ typedef void *EGLContext;
+ #include "../shared/os-compatibility.h"
+ 
+ #include "window.h"
+-#include "profile_analyzer.h"
++#include "perf_log.h"
+ 
+ struct shm_pool;
+ 
+-- 
+1.7.9.5
+

@@ -1,0 +1,47 @@
+From 85517dc052569784fde58964baa377d47ffcba8d Mon Sep 17 00:00:00 2001
+From: Quanxian Wang <quanxian.wang@intel.com>
+Date: Thu, 4 Dec 2014 13:39:48 +0800
+Subject: [PATCH 3/8] Change time to microsecond unit level
+
+It will be happy to monitor performance of weston
+
+Signed-off-by: Zhang Xiaoyan <xiaoyanx.zhang@intel.com>
+Reviewed-by:  Quanxian Wang <quanxian.wang@intel.com>
+---
+ clients/profile_analyzer.h |    6 +++---
+ src/log.c                  |    2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/clients/profile_analyzer.h b/clients/profile_analyzer.h
+index ba01e2d..ec1ac75 100644
+--- a/clients/profile_analyzer.h
++++ b/clients/profile_analyzer.h
+@@ -14,9 +14,9 @@
+ 		char string[128];\
+ 		gettimeofday(&tv, NULL);\
+ 		brokendown_time = localtime(&tv.tv_sec);\
+-		strftime(string, sizeof string,\
++		strftime(string, sizeof(string),\
+ 			 "%H:%M:%S", brokendown_time);\
+-		fprintf(stderr, "[%s.%03li] perf_%s:%s\n",\
+-			string, tv.tv_usec/1000, flag?"end":"start",msg); \
++		fprintf(stderr, "[%s.%06li] perf_%s:%s\n",\
++			string, tv.tv_usec, flag?"end":"start", msg); \
+ 	} while (0)
+ #endif
+diff --git a/src/log.c b/src/log.c
+index 99bbe18..08e5ec9 100644
+--- a/src/log.c
++++ b/src/log.c
+@@ -58,7 +58,7 @@ static int weston_log_timestamp(void)
+ 
+ 	strftime(string, sizeof string, "%H:%M:%S", brokendown_time);
+ 
+-	return fprintf(weston_logfile, "[%s.%03li] ", string, tv.tv_usec/1000);
++	return fprintf(weston_logfile, "[%s.%06li] ", string, tv.tv_usec);
+ }
+ 
+ static void
+-- 
+1.7.9.5
+

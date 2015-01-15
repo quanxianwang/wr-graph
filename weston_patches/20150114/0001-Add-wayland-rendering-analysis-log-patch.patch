@@ -1,0 +1,521 @@
+From 75c7deb0936bb5a25b34e746155dc08ffdd57aed Mon Sep 17 00:00:00 2001
+From: Quanxian Wang <quanxian.wang@intel.com>
+Date: Thu, 27 Nov 2014 14:30:05 +0800
+Subject: [PATCH 1/8] Add wayland rendering analysis log patch
+
+Collect the rendering log for wayland rendering tools
+
+Signed-off-by: Quanxian Wang <quanxian.wang@intel.com>
+Reviewed-by: Zhang Xiaoyan <xiaoyan.zhang@intel.com>
+---
+ Makefile.am                |    3 +++
+ clients/profile_analyzer.h |   45 ++++++++++++++++++++++++++++++++++++++++++++
+ clients/simple-egl.c       |   24 +++++++++++++++++++++++
+ clients/window.c           |    8 +++++++-
+ desktop-shell/shell.c      |    6 ++++++
+ src/compositor.c           |   26 +++++++++++++++++++++++++
+ src/input.c                |   43 ++++++++++++++++++++++++++++++++++++++----
+ src/profile_analyzer.h     |   45 ++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 195 insertions(+), 5 deletions(-)
+ create mode 100644 clients/profile_analyzer.h
+ create mode 100644 src/profile_analyzer.h
+
+diff --git a/Makefile.am b/Makefile.am
+index b72d03e..349da19 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -65,6 +65,7 @@ weston_SOURCES =					\
+ 	shared/matrix.c					\
+ 	shared/matrix.h					\
+ 	shared/zalloc.h					\
++	src/profile_analyze.h				\
+ 	src/weston-egl-ext.h
+ 
+ nodist_weston_SOURCES =					\
+@@ -219,6 +220,7 @@ drm_backend_la_CFLAGS =				\
+ drm_backend_la_SOURCES =			\
+ 	src/compositor-drm.c			\
+ 	$(INPUT_BACKEND_SOURCES)		\
++	src/profile_analyzer.h			\
+ 	src/libbacklight.c			\
+ 	src/libbacklight.h
+ 
+@@ -427,6 +429,7 @@ demo_clients += weston-simple-egl
+ weston_simple_egl_SOURCES = clients/simple-egl.c
+ nodist_weston_simple_egl_SOURCES =		\
+ 	protocol/xdg-shell-protocol.c		\
++	clients/profile_analyze.h			\
+ 	protocol/xdg-shell-client-protocol.h
+ weston_simple_egl_CFLAGS = $(AM_CFLAGS) $(SIMPLE_EGL_CLIENT_CFLAGS)
+ weston_simple_egl_LDADD = $(SIMPLE_EGL_CLIENT_LIBS) -lm
+diff --git a/clients/profile_analyzer.h b/clients/profile_analyzer.h
+new file mode 100644
+index 0000000..7eadfcd
+--- /dev/null
++++ b/clients/profile_analyzer.h
+@@ -0,0 +1,45 @@
++#ifndef __PROFILE_ANALYZER_H
++#define __PROFILE_ANALYZER_H
++
++#include <time.h>
++#include <stdio.h>
++#include <sys/time.h>
++#define ADD_PROFILING_POINT(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_point:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++#define ADD_PROFILING_ID(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_id:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++
++#define ADD_PROFILING_START(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_start:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++
++#define ADD_PROFILING_END(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_end:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++#endif
+diff --git a/clients/simple-egl.c b/clients/simple-egl.c
+index 33e711c..d1a853b 100644
+--- a/clients/simple-egl.c
++++ b/clients/simple-egl.c
+@@ -39,6 +39,7 @@
+ #include <GLES2/gl2.h>
+ #include <EGL/egl.h>
+ #include <EGL/eglext.h>
++#include "profile_analyzer.h"
+ 
+ #include "xdg-shell-client-protocol.h"
+ 
+@@ -368,6 +369,27 @@ destroy_surface(struct window *window)
+ 		wl_callback_destroy(window->callback);
+ }
+ 
++void print_cid(struct window *window, int start)
++{
++	uint32_t id;
++	char str[32] = {};
++	char mesa_str[32] = {};
++
++	id = wl_proxy_get_id((struct wl_proxy *)window->surface);
++
++	sprintf(str, "client_%d", id);
++	if (start) {
++		/* client start */
++		ADD_PROFILING_START(str);
++	} else {
++		/* client end */
++		ADD_PROFILING_END(str);
++		sprintf(str, "MESA_%d", id);
++		/* mesa start */
++		ADD_PROFILING_START(str);
++	}
++}
++
+ static void
+ redraw(void *data, struct wl_callback *callback, uint32_t time)
+ {
+@@ -425,6 +447,7 @@ redraw(void *data, struct wl_callback *callback, uint32_t time)
+ 		eglQuerySurface(display->egl.dpy, window->egl_surface,
+ 				EGL_BUFFER_AGE_EXT, &buffer_age);
+ 
++	print_cid(window, 1);
+ 	glViewport(0, 0, window->geometry.width, window->geometry.height);
+ 
+ 	glUniformMatrix4fv(window->gl.rotation_uniform, 1, GL_FALSE,
+@@ -454,6 +477,7 @@ redraw(void *data, struct wl_callback *callback, uint32_t time)
+ 		wl_surface_set_opaque_region(window->surface, NULL);
+ 	}
+ 
++	print_cid(window, 0);
+ 	if (display->swap_buffers_with_damage && buffer_age > 0) {
+ 		rect[0] = window->geometry.width / 4 - 1;
+ 		rect[1] = window->geometry.height / 4 - 1;
+diff --git a/clients/window.c b/clients/window.c
+index e44d65c..5f9f257 100644
+--- a/clients/window.c
++++ b/clients/window.c
+@@ -71,6 +71,7 @@ typedef void *EGLContext;
+ #include "../shared/os-compatibility.h"
+ 
+ #include "window.h"
++#include "profile_analyzer.h"
+ 
+ struct shm_pool;
+ 
+@@ -2368,6 +2369,8 @@ frame_handle_status(struct window_frame *frame, struct input *input,
+ 
+ 	if ((status & FRAME_STATUS_MOVE) && window->xdg_surface) {
+ 		input_ungrab(input);
++		ADD_PROFILING_END("client touch down");
++		ADD_PROFILING_START("shell process");
+ 		xdg_surface_move(window->xdg_surface,
+ 				 input_get_seat(input),
+ 				 window->display->serial);
+@@ -3050,11 +3053,14 @@ touch_handle_down(void *data, struct wl_touch *wl_touch,
+ 			tp->y = sy;
+ 			wl_list_insert(&input->touch_point_list, &tp->link);
+ 
+-			if (widget->touch_down_handler)
++			if (widget->touch_down_handler) {
++				ADD_PROFILING_END("touch down");
++				ADD_PROFILING_START("client touch down");
+ 				(*widget->touch_down_handler)(widget, input, 
+ 							      serial, time, id,
+ 							      sx, sy,
+ 							      widget->user_data);
++			}
+ 		}
+ 	}
+ }
+diff --git a/desktop-shell/shell.c b/desktop-shell/shell.c
+index 8f7457f..68c891f 100644
+--- a/desktop-shell/shell.c
++++ b/desktop-shell/shell.c
+@@ -39,6 +39,7 @@
+ #include "workspaces-server-protocol.h"
+ #include "../shared/config-parser.h"
+ #include "xdg-shell-server-protocol.h"
++#include "profile_analyzer.h"
+ 
+ #define DEFAULT_NUM_WORKSPACES 1
+ #define DEFAULT_WORKSPACE_CHANGE_ANIMATION_LENGTH 200
+@@ -1534,6 +1535,7 @@ touch_move_grab_down(struct weston_touch_grab *grab, uint32_t time,
+ static void
+ touch_move_grab_up(struct weston_touch_grab *grab, uint32_t time, int touch_id)
+ {
++	ADD_PROFILING_START("shell touch up");
+ 	struct weston_touch_move_grab *move =
+ 		(struct weston_touch_move_grab *) container_of(
+ 			grab, struct shell_touch_grab, grab);
+@@ -1545,12 +1547,14 @@ touch_move_grab_up(struct weston_touch_grab *grab, uint32_t time, int touch_id)
+ 		shell_touch_grab_end(&move->base);
+ 		free(move);
+ 	}
++	ADD_PROFILING_END("shell touch up");
+ }
+ 
+ static void
+ touch_move_grab_motion(struct weston_touch_grab *grab, uint32_t time,
+ 		       int touch_id, wl_fixed_t sx, wl_fixed_t sy)
+ {
++	ADD_PROFILING_START("shell touch motion");
+ 	struct weston_touch_move_grab *move = (struct weston_touch_move_grab *) grab;
+ 	struct shell_surface *shsurf = move->base.shsurf;
+ 	struct weston_surface *es;
+@@ -1565,6 +1569,7 @@ touch_move_grab_motion(struct weston_touch_grab *grab, uint32_t time,
+ 	weston_view_set_position(shsurf->view, dx, dy);
+ 
+ 	weston_compositor_schedule_repaint(es->compositor);
++	ADD_PROFILING_END("shell touch motion");
+ }
+ 
+ static void
+@@ -1758,6 +1763,7 @@ common_surface_move(struct wl_resource *resource,
+ 		    (surface_touch_move(shsurf, seat) < 0))
+ 			wl_resource_post_no_memory(resource);
+ 	}
++	ADD_PROFILING_END("shell process");
+ }
+ 
+ static void
+diff --git a/src/compositor.c b/src/compositor.c
+index 5547ab2..238bc6c 100644
+--- a/src/compositor.c
++++ b/src/compositor.c
+@@ -59,6 +59,7 @@
+ #include "../shared/str-util.h"
+ #include "git-version.h"
+ #include "version.h"
++#include "profile_analyzer.h"
+ 
+ static struct wl_list child_process_list;
+ static struct weston_compositor *segv_compositor;
+@@ -1909,6 +1910,7 @@ weston_output_repaint(struct weston_output *output, uint32_t msecs)
+ 	if (output->destroying)
+ 		return 0;
+ 
++	ADD_PROFILING_START("weston");
+ 	/* Rebuild the surface list and update surface transforms up front. */
+ 	weston_compositor_build_view_list(ec);
+ 
+@@ -1948,6 +1950,8 @@ weston_output_repaint(struct weston_output *output, uint32_t msecs)
+ 	output->repaint_needed = 0;
+ 
+ 	weston_compositor_repick(ec);
++	ADD_PROFILING_END("weston");
++	ADD_PROFILING_START("graphic hardware");
+ 	wl_event_loop_dispatch(ec->input_loop, 0);
+ 
+ 	wl_list_for_each_safe(cb, cnext, &frame_callback_list, link) {
+@@ -1976,6 +1980,7 @@ weston_compositor_read_input(int fd, uint32_t mask, void *data)
+ WL_EXPORT void
+ weston_output_finish_frame(struct weston_output *output, uint32_t msecs)
+ {
++	ADD_PROFILING_END("graphic hardware");
+ 	struct weston_compositor *compositor = output->compositor;
+ 	struct wl_event_loop *loop =
+ 		wl_display_get_event_loop(compositor->wl_display);
+@@ -2292,12 +2297,32 @@ static void
+ weston_subsurface_parent_commit(struct weston_subsurface *sub,
+ 				int parent_is_synchronized);
+ 
++void print_wcommit(struct wl_resource *resource, int start)
++{
++	uint32_t id = wl_resource_get_id(resource);
++	char str[32] = {};
++
++	if (start) {
++		sprintf(str, "MESA_%d", id);
++		ADD_PROFILING_END(str);
++		sprintf(str, "wcommit_%d", id);
++		ADD_PROFILING_END("client process");
++		ADD_PROFILING_START("wcommit");
++		ADD_PROFILING_START(str);
++	} else {
++		sprintf(str, "wcommit_%d", id);
++		ADD_PROFILING_END(str);
++		ADD_PROFILING_END("wcommit");
++	}
++}
++
+ static void
+ surface_commit(struct wl_client *client, struct wl_resource *resource)
+ {
+ 	struct weston_surface *surface = wl_resource_get_user_data(resource);
+ 	struct weston_subsurface *sub = weston_surface_to_subsurface(surface);
+ 
++	print_wcommit(resource, 1);
+ 	if (sub) {
+ 		weston_subsurface_commit(sub);
+ 		return;
+@@ -2309,6 +2334,7 @@ surface_commit(struct wl_client *client, struct wl_resource *resource)
+ 		if (sub->surface != surface)
+ 			weston_subsurface_parent_commit(sub, 0);
+ 	}
++	print_wcommit(resource, 0);
+ }
+ 
+ static void
+diff --git a/src/input.c b/src/input.c
+index 2181415..f08e887 100644
+--- a/src/input.c
++++ b/src/input.c
+@@ -33,6 +33,7 @@
+ 
+ #include "../shared/os-compatibility.h"
+ #include "compositor.h"
++#include "profile_analyzer.h"
+ 
+ static void
+ empty_region(pixman_region32_t *region)
+@@ -239,15 +240,20 @@ default_grab_touch_down(struct weston_touch_grab *grab, uint32_t time,
+ 	uint32_t serial;
+ 	struct wl_resource *resource;
+ 	struct wl_list *resource_list;
++	uint32_t id;
+ 
+ 	resource_list = &touch->focus_resource_list;
+ 
+ 	if (!wl_list_empty(resource_list) && touch->focus) {
+ 		serial = wl_display_next_serial(display);
+-		wl_resource_for_each(resource, resource_list)
+-				wl_touch_send_down(resource, serial, time,
++		wl_resource_for_each(resource, resource_list) {
++			id = wl_resource_get_id(resource);
++			wl_touch_send_down(resource, serial, time,
+ 						   touch->focus->surface->resource,
+ 						   touch_id, sx, sy);
++			ADD_PROFILING_END("touch down");
++			ADD_PROFILING_START("client process");
++		}
+ 	}
+ }
+ 
+@@ -260,13 +266,18 @@ default_grab_touch_up(struct weston_touch_grab *grab,
+ 	uint32_t serial;
+ 	struct wl_resource *resource;
+ 	struct wl_list *resource_list;
++	uint32_t id;
+ 
+ 	resource_list = &touch->focus_resource_list;
+ 
+ 	if (!wl_list_empty(resource_list)) {
+ 		serial = wl_display_next_serial(display);
+-		wl_resource_for_each(resource, resource_list)
++		wl_resource_for_each(resource, resource_list) {
++			id = wl_resource_get_id(resource);
+ 			wl_touch_send_up(resource, serial, time, touch_id);
++			ADD_PROFILING_END("touch up");
++			ADD_PROFILING_START("client process");
++		}
+ 	}
+ }
+ 
+@@ -277,12 +288,18 @@ default_grab_touch_motion(struct weston_touch_grab *grab, uint32_t time,
+ 	struct weston_touch *touch = grab->touch;
+ 	struct wl_resource *resource;
+ 	struct wl_list *resource_list;
++	uint32_t id;
++	struct wl_client *surface_client;
+ 
+ 	resource_list = &touch->focus_resource_list;
+ 
+ 	wl_resource_for_each(resource, resource_list) {
++		id = wl_resource_get_id(resource);
++		surface_client = wl_resource_get_client(resource);
+ 		wl_touch_send_motion(resource, time,
+ 				     touch_id, sx, sy);
++		ADD_PROFILING_END("touch motion");
++		ADD_PROFILING_START("client process");
+ 	}
+ }
+ 
+@@ -1462,6 +1479,15 @@ notify_keyboard_focus_out(struct weston_seat *seat)
+ 		weston_pointer_cancel_grab(seat->pointer);
+ }
+ 
++void print_resid(struct weston_view *view)
++{
++	uint32_t surface_id = 0;
++	char str_id[32];
++	uint32_t resource_id = wl_resource_get_id(view->surface->resource);
++	sprintf(str_id, "%d", resource_id);
++	ADD_PROFILING_ID(str_id);
++}
++
+ WL_EXPORT void
+ weston_touch_set_focus(struct weston_seat *seat, struct weston_view *view)
+ {
+@@ -1494,6 +1520,7 @@ weston_touch_set_focus(struct weston_seat *seat, struct weston_view *view)
+ 		}
+ 
+ 		surface_client = wl_resource_get_client(view->surface->resource);
++		print_resid(view);
+ 		move_resources_for_client(focus_resource_list,
+ 					  &seat->touch->resource_list,
+ 					  surface_client);
+@@ -1530,6 +1557,7 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 	switch (touch_type) {
+ 	case WL_TOUCH_DOWN:
++		ADD_PROFILING_START("touch hardware down");
+ 		weston_compositor_idle_inhibit(ec);
+ 
+ 		touch->num_tp++;
+@@ -1554,7 +1582,8 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 		weston_compositor_run_touch_binding(ec, seat,
+ 						    time, touch_type);
+-
++		ADD_PROFILING_END("touch hardware down");
++		ADD_PROFILING_START("touch down");
+ 		grab->interface->down(grab, time, touch_id, sx, sy);
+ 		if (touch->num_tp == 1) {
+ 			touch->grab_serial =
+@@ -1567,14 +1596,18 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 
+ 		break;
+ 	case WL_TOUCH_MOTION:
++		ADD_PROFILING_START("touch hardware motion");
+ 		ev = touch->focus;
+ 		if (!ev)
+ 			break;
+ 
+ 		weston_view_from_global_fixed(ev, x, y, &sx, &sy);
++		ADD_PROFILING_END("touch hardware motion");
++		ADD_PROFILING_START("touch motion");
+ 		grab->interface->motion(grab, time, touch_id, sx, sy);
+ 		break;
+ 	case WL_TOUCH_UP:
++		ADD_PROFILING_START("touch hardware up");
+ 		if (touch->num_tp == 0) {
+ 			/* This can happen if we start out with one or
+ 			 * more fingers on the touch screen, in which
+@@ -1586,6 +1619,8 @@ notify_touch(struct weston_seat *seat, uint32_t time, int touch_id,
+ 		weston_compositor_idle_release(ec);
+ 		touch->num_tp--;
+ 
++		ADD_PROFILING_END("touch hardware up");
++		ADD_PROFILING_START("touch up");
+ 		grab->interface->up(grab, time, touch_id);
+ 		if (touch->num_tp == 0)
+ 			weston_touch_set_focus(seat, NULL);
+diff --git a/src/profile_analyzer.h b/src/profile_analyzer.h
+new file mode 100644
+index 0000000..7eadfcd
+--- /dev/null
++++ b/src/profile_analyzer.h
+@@ -0,0 +1,45 @@
++#ifndef __PROFILE_ANALYZER_H
++#define __PROFILE_ANALYZER_H
++
++#include <time.h>
++#include <stdio.h>
++#include <sys/time.h>
++#define ADD_PROFILING_POINT(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_point:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++#define ADD_PROFILING_ID(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_id:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++
++#define ADD_PROFILING_START(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_start:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++
++#define ADD_PROFILING_END(msg) \
++	do { \
++		struct timespec tp; \
++		unsigned int time; \
++		clock_gettime(CLOCK_REALTIME, &tp); \
++		time = (tp.tv_sec * 1000000L) + (tp.tv_nsec / 1000); \
++		fprintf(stderr, "[%10.3f]profiling_end:%s\n", \
++			time / 1000.0, msg); \
++	} while (0)
++#endif
+-- 
+1.7.9.5
+
