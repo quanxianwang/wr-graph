@@ -297,7 +297,7 @@ class Analyzer:
             for i in range(x_axis_num + 1):
                 x_labels.append("{0}ms".format(rel_start + i * x_interval))
 
-            for time in range(1000, int(rel_end))[::1000]:
+            for time in range(1000, int(rel_end) + 1000)[::1000]:
                 count = 0
                 for i in range(offset, len(self.new_events[cid]))[::fps_len]:
                     event1 = self.new_events[cid][i]
@@ -309,20 +309,20 @@ class Analyzer:
                         break
                 offset = i
                 time_old = time
-                if count > 1:
+                if count >= 1:
                     sum_total += count
                     FPS[time] = count
 
-            fps = int("{0:.0f}".format(sum_total / len(FPS)))
-            str1 = 'fps = ' + str(fps) + 'fps'
-
-            if output_dir == None:
-                output_dir = '.'
-            if not os.path.exists(output_dir):
-                os.mkdir(output_dir)
-            fd = open(output_dir + '/fps.txt', 'w')
-            fd.write(str1)
-            fd.close()
+            if sum_total > 0:
+                fps = int("{0:.0f}".format(sum_total / len(FPS)))
+                str1 = 'fps = ' + str(fps) + 'fps'
+                if output_dir == None:
+                    output_dir = '.'
+                if not os.path.exists(output_dir):
+                    os.mkdir(output_dir)
+                fd = open(output_dir + '/fps.txt', 'w')
+                fd.write(str1)
+                fd.close()
 
             client_color.append(self.color_table["blue"])
 
@@ -719,6 +719,12 @@ class Analyzer:
                 del self.new_events[cid]
                 index = self.client_id_list.index(cid)
                 del self.client_id_list[index]
+                continue
+            for i in range(len(self.new_events[cid])):
+                event = self.new_events[cid][i]
+                if event[2] == -1:
+                    del self.new_events[cid][i:]
+                    break
 
     def get_valid_data(self):
         """
@@ -747,7 +753,7 @@ class Analyzer:
 		Output:self.start_time
         """
         for cid in self.client_id_list:
-            if len(self.events_dic[cid]) <= 0:
+            if len(self.new_events[cid]) <= 0:
                 continue
 
             start_time = self.new_events[cid][0][1]
