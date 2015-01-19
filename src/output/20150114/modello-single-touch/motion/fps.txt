@@ -1,0 +1,2 @@
+total_time = 19.35ms
+fps = 51.68fps
