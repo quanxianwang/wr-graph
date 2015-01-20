@@ -289,6 +289,7 @@ class Analyzer:
             time_old = 0
             sum_total = 0
             fps_len = len(self.fps_event_list)
+            event_len = len(self.new_events[cid])
             event_name = self.fps_event_list[0]
 
             x_axis_num = int(math.floor(width / X_AXIS_INTERVAL))
@@ -299,12 +300,13 @@ class Analyzer:
 
             for time in range(1000, int(rel_end) + 1000)[::1000]:
                 count = 0
-                for i in range(offset, len(self.new_events[cid]))[::fps_len]:
+                for i in range(offset, event_len)[::fps_len]:
                     event1 = self.new_events[cid][i]
                     if event1[0] == event_name and time_old <= event1[1] < time:
-                        event2 = self.new_events[cid][i + fps_len - 1]
-                        if event2[2] < time:
-                            count += 1
+                        if (i + fps_len - 1) < event_len: 
+                            event2 = self.new_events[cid][i + fps_len - 1]
+                            if event2[2] < time:
+                                count += 1
                     else:
                         break
                 offset = i
